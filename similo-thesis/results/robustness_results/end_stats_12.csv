@@ -1,0 +1,25 @@
+Algorithm,AccuracyAll%,AccuracyMinor%,AccuracyMajor%,Fitness,Fitness%,LocatorBreakSuccess%
+LegacySimilo,99.11,99.78,351772.00,97.81,96.09
+OptimizedSimilo,99.47,99.80,99.30,355072.00,98.72,97.69
+VonSimilo,90.61,91.96,89.78,323898.00,90.06,83.01
+Vista,79.26,90.10,73.74,251020.00,69.79,62.92
+RobulaPlus,90.78,98.94,87.12,289300.00,80.44,66.43
+Multi-Locator,95.37,99.42,93.53,315404.00,87.69,76.90
+COLOR,98.79,99.71,98.35,348512.00,96.90,94.33
+SeleniumIDE,68.49,68.35,68.26,227328.00,63.20,50.65
+Montoto,51.40,71.17,43.46,143792.00,39.98,34.16
+IDXPath,78.83,89.24,73.30,186008.00,51.72,8.16
+absXPath,60.98,71.89,52.22,99112.00,27.55,7.26
+
+Vista,79,26,8208,10355,90,10,1885,2092,73,74,5326,7222,251020,00,69,79,62,92,1256,1996
+
+
+  private val firePathAbsWeight   = 0.32   // From paper
+  private val firePathRelWeight   = 0.50   // From paper
+  private val seleniumIDEWeight   = 0.81   // From paper
+  private val montotoWeight       = 0.64   // From paper
+  private val robulaplusWeight    = 0.87   // From paper
+ML before vista:
+Multi Locator,93,90,9724,10355,99,13,2074,2092,91,51,6609,7222,301140,00,83,73,69,38,1385,1996
+ML after vista:
+Multi Locator,95,34,9873,10355,99,37,2079,2092,93,50,6753,7222,315084,00,87,61,76,70,1531,1996

@@ -1,0 +1,13 @@
+# XPATH=/html/body/div/main/div/div[3]/div[1]/ol/li[28]/a
+algorithm;2019-01-01;2019-05-01;2019-09-01;2020-01-01;2020-05-01;2020-09-01;2021-01-01;2021-05-01;2021-09-01;2022-01-01;2022-05-01;2022-09-01;2023-01-01;2023-05-01;2023-09-01
+LegacySimilo;SAME;MINOR;DELETED;;;;;;;;;;;;
+OptimizedSimilo;SAME;MINOR;DELETED;;;;;;;;;;;;
+COLOR;SAME;MINOR;DELETED;;;;;;;;;;;;
+VONSimilo;SAME;MINOR;DELETED;;;;;;;;;;;;
+Multi-Locator;SAME;MINOR;DELETED;;;;;;;;;;;;
+ROBULA+;SAME;MINOR;DELETED;;;;;;;;;;;;
+SeleniumIDE;SAME;MINOR;DELETED;;;;;;;;;;;;
+Montoto;SAME;MINOR;DELETED;;;;;;;;;;;;
+IDXPath;SAME;MINOR;DELETED;;;;;;;;;;;;
+absXPath;SAME;MINOR;DELETED;;;;;;;;;;;;
+VISTA;SAME;MINOR;DELETED;;;;;;;;;;;;

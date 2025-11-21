@@ -1,0 +1,8 @@
+Algorithm,AccuracyAll%,AccuracyMinor%,AccuracyMajor%,Fitness,Fitness%,LocatorBreakSuccess%
+LegacySimilo,99.11,99.80,98.78,351772.00,97.81,96.09
+OptimizedSimilo,99.47,99.80,99.30,355072.00,98.72,97.69
+VonSimilo,90.61,91.96,89.78,323898.00,90.06,83.01
+Vista,78.67,88.43,73.52,250874.00,69.75,63.22
+RobulaPlus,90.78,98.94,87.12,289300.00,80.44,66.43
+Multi Locator,94.84,99.18,92.84,314732.00,87.51,77.20
+COLOR,98.79,99.71,98.35,348512.00,96.90,94.33
