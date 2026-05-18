@@ -1,2 +1,2 @@
-# comparison-robust-locators-algorithms
+# Robust Locator Generation Algorithms: A Comparative Benchmark
 Codebase of the paper "Robust Locator Generation Algorithms: A Comparative Benchmark"
