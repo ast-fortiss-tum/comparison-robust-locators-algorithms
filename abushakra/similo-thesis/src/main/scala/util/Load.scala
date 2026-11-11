@@ -79,39 +79,30 @@ object Load:
       .map(LocalDate.parse(_))
       .sorted
 
+  /**
+   * The (date, site directory) of a snapshot URL, looked up in the urls.csv of every site under sitesDir (the first
+   * line wins when a site reuses a capture for two dates). This used to guess the directory from the domain
+   * (cnn.com -> sites/cnn), which failed for the held-out zz_ sites and for wikia.com/fandom.
+   */
   def getDateAndSiteFromArchiveUrl(archiveUrl: String, sitesDir: String = "sites"): Option[(String, String)] =
+    urlIndex(sitesDir).get(archiveUrl.stripSuffix("/"))
 
-    // Helper: extract site name from archive URL
-    def extractSiteName(url: String): Option[String] =
-      val pattern = """https?://web\.archive\.org/web/\d+(if_)?/(https?:\/\/)?([^/]+).*""".r
-      url match
-        case pattern(_, _, domain) =>
-          val baseDomain = domain.toLowerCase.split("\\.").filter(_.nonEmpty)
-          val secondLevel = if baseDomain.length >= 2 then baseDomain(baseDomain.length - 2) else domain
-          secondLevel match
-            case "discordapp" => Some("discord")
-            case other => Some(other)
-        case _ => None
+  private val urlIndexes = new java.util.concurrent.ConcurrentHashMap[String, Map[String, (String, String)]]()
 
-    // Step 1: extract site name
-    val maybeSite = extractSiteName(archiveUrl)
-    if maybeSite.isEmpty then return None
-    val siteName = maybeSite.get
-
-    // Step 2: build path to urls.csv
-    val urlsCsvPath = Paths.get(s"$sitesDir/$siteName/urls.csv")
-    if !Files.exists(urlsCsvPath) then return None
-
-    // Step 3: look for matching line
-    val lines = scala.util.Using.resource(Source.fromFile(urlsCsvPath.toFile))(_.getLines().drop(1).toList)  // close the file (was leaking one descriptor per call)
-
-    lines
-      .map(_.split(";", 2))
-      .collect {
-        case Array(date, url) if url.stripSuffix("/") == archiveUrl.stripSuffix("/") =>
-          (date.trim, siteName)
-      }
-      .headOption
+  private def urlIndex(sitesDir: String): Map[String, (String, String)] =
+    urlIndexes.computeIfAbsent(sitesDir, dir =>
+      val sites = Option(new File(dir).listFiles()).toSeq.flatten.filter(f => new File(f, "urls.csv").isFile).sortBy(_.getName)
+      val entries = for
+        site <- sites
+        line <- scala.util.Using.resource(Source.fromFile(new File(site, "urls.csv")))(_.getLines().drop(1).toList)
+        Array(date, url) <- Some(line.split(";", 2)).filter(_.length == 2)
+      yield url.trim.stripSuffix("/") -> (date.trim, site.getName)
+      entries.foldLeft(Map.empty[String, (String, String)]) { case (m, (url, v)) =>
+        m.get(url) match
+          case Some((_, other)) if other != v._2 => throw new IllegalStateException(s"$url is in sites $other and ${v._2}")
+          case Some(_) => m
+          case None => m + (url -> v)
+      })
 
   def getFilePathToChromeDOM(url: String): String =
 
