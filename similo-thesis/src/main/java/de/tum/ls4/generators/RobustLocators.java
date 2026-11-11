@@ -46,6 +46,16 @@ public final class RobustLocators {
         return By.xpath(generateRobulaPlus(driver, element).xpath());
     }
 
+    /** Multi-locator: five generated locators vote (Leotta et al., ICST 2015). See {@link MultiLocator#repaired}. */
+    public static MultiLocator multiLocator(WebDriver driver, WebElement element) {
+        return MultiLocator.generate(driver, element);
+    }
+
+    /** Multi-locator that falls back to VISTA's visual relocation when every locator fails. */
+    public static MultiLocator multiLocatorWithVista(WebDriver driver, WebElement element) {
+        return MultiLocator.generateWithVista(driver, element);
+    }
+
     /** SIDEREAL with the given fragility model; use {@link FragilityModel#empty()} when there is no history yet. */
     public static By sidereal(WebDriver driver, WebElement element, FragilityModel model) {
         return By.xpath(generateSidereal(driver, element, model).xpath());

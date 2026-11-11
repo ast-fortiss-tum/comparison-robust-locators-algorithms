@@ -249,4 +249,33 @@ class LiveDomTest {
             driver.navigate().refresh();
         }
     }
+
+    @Test
+    void multiLocatorFallsBackToVistaWhenEveryLocatorBreaks() {
+        WebElement save = driver.findElement(By.cssSelector("button.primary"));
+        MultiLocator plain = MultiLocator.generate(driver, save);
+        MultiLocator withVista = MultiLocator.generateWithVista(driver, save);
+        assertTrue(withVista.usesVista());
+        assertEquals(save, driver.findElement(withVista));
+        assertFalse(withVista.lastFoundByVista(), "the vote finds it on the unchanged page");
+
+        // Same look, nothing for the locators: the form becomes a div with another id, the button loses its
+        // classes, type and DOM text (the label is drawn by CSS)
+        ((org.openqa.selenium.JavascriptExecutor) driver).executeScript(
+                "const st = document.createElement('style'); document.head.appendChild(st);"
+                        + "st.sheet.insertRule('.x::before{content:\\'Save\\'}');" // no text node in the DOM
+                        + "const f = document.getElementById('mce_42'); const d = document.createElement('div'); d.id = 'mce_97';"
+                        + "while (f.firstChild) d.appendChild(f.firstChild); f.replaceWith(d);"
+                        + "const b = d.querySelector('button.primary'); b.className = 'x'; b.removeAttribute('type'); b.textContent = '';");
+        try {
+            WebElement moved = driver.findElement(By.cssSelector("button.x"));
+            assertTrue(driver.findElements(plain).isEmpty(), "no locator survives: " + plain.lastVotes());
+            List<WebElement> found = driver.findElements(withVista);
+            assertEquals(List.of(moved), found, "VISTA relocates the button");
+            assertTrue(withVista.lastFoundByVista());
+            assertTrue(withVista.repaired(driver) == withVista, "not repaired after a VISTA-only find, as in the benchmark");
+        } finally {
+            driver.navigate().refresh();
+        }
+    }
 }

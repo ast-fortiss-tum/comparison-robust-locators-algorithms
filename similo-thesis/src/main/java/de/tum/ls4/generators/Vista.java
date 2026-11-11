@@ -70,6 +70,15 @@ public final class Vista {
 
     /** Finds the element whose rendering best matches the snapshot's template, or null if no good match exists. */
     public Match relocate(WebDriver driver, Snapshot snapshot) {
+        return relocate(driver, snapshot, null);
+    }
+
+    /**
+     * As {@link #relocate(WebDriver, Snapshot)}, but returns the outermost element with tag {@code tag} under the
+     * matched point (as the benchmark's multi-locator fallback does: an element of the target's tag containing the
+     * match), or no match if there is none. {@code tag == null} returns the topmost element at the point.
+     */
+    public Match relocate(WebDriver driver, Snapshot snapshot, String tag) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         Mat template = Imgcodecs.imdecode(new MatOfByte(snapshot.template()), Imgcodecs.IMREAD_COLOR);
         long pageHeight = ((Number) js.executeScript("return document.documentElement.scrollHeight;")).longValue();
@@ -88,7 +97,10 @@ public final class Vista {
                 double cx = (mm.maxLoc.x + template.cols() / 2.0) / dpr;
                 double cy = (mm.maxLoc.y + template.rows() / 2.0) / dpr;
                 WebElement el = (WebElement) js.executeScript(
-                        "return document.elementFromPoint(arguments[0], arguments[1]);", cx, cy);
+                        "const all = document.elementsFromPoint(arguments[0], arguments[1]);"
+                                + "if (!arguments[2]) return all.length ? all[0] : null;"
+                                + "const same = all.filter(e => e.tagName.toLowerCase() === arguments[2].toLowerCase());"
+                                + "return same.length ? same[same.length - 1] : null;", cx, cy, tag);
                 if (el != null) best = new Match(el, mm.maxVal);
             }
             if (top + viewport >= pageHeight) break;

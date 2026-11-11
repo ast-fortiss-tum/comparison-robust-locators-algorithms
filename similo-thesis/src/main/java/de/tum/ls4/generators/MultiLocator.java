@@ -16,8 +16,16 @@ import java.util.Map;
  * the element each of them finds; the element with the highest combined vote {@code 1 - prod(1 - weight)} wins.
  * Weights are the paper's (absolute XPath 0.32, relative XPath 0.50, Selenium IDE 0.81, Montoto 0.64, ROBULA+ 0.87).
  * <p>
- * {@link #repaired(SearchContext)} returns a multi-locator whose locators that disagreed with the winner are
- * regenerated on the current page (the "with repair" variant).
+ * The four variants of the benchmark (multilocator.MultiLocator(withRepair, withVista)):
+ * <ul>
+ *   <li>{@link #generate(WebDriver, WebElement)}: voting only;</li>
+ *   <li>{@link #generateWithVista(WebDriver, WebElement)}: when no locator finds anything, VISTA relocates the element
+ *       visually from a snapshot taken at generation time (the element of the target's tag at the best template
+ *       match);</li>
+ *   <li>{@link #repaired(SearchContext)} on either: the locators that disagreed with the winning vote are regenerated
+ *       on the current page ("with repair"). As in the benchmark, a multi-locator is not repaired when the element was
+ *       only found by the VISTA fallback.</li>
+ * </ul>
  */
 public final class MultiLocator extends By {
 
@@ -36,16 +44,54 @@ public final class MultiLocator extends By {
 
     private final WebDriver driver;
     private final List<Voter> voters;
+    private final Vista.Snapshot snapshot; // null: no VISTA fallback
+    private final String tag;
+    private final Vista vista;
     private List<Vote> lastVotes = List.of();
+    private boolean lastFoundByVista;
 
     public MultiLocator(WebDriver driver, List<Voter> voters) {
+        this(driver, voters, null, null, null);
+    }
+
+    /**
+     * @param snapshot VISTA snapshot of the element, used when no locator finds anything (null: no fallback)
+     * @param tag      the element's tag name; the fallback only returns an element with this tag (null: any)
+     * @param vista    the VISTA matcher (null: default threshold)
+     */
+    public MultiLocator(WebDriver driver, List<Voter> voters, Vista.Snapshot snapshot, String tag, Vista vista) {
         this.driver = driver;
         this.voters = List.copyOf(voters);
+        this.snapshot = snapshot;
+        this.tag = tag;
+        this.vista = snapshot == null ? null : (vista == null ? new Vista() : vista);
     }
 
     /** Generates the five locators of the paper for {@code element} on the current page. */
     public static MultiLocator generate(WebDriver driver, WebElement element) {
         return new MultiLocator(driver, voters(driver, element));
+    }
+
+    /** As {@link #generate}, plus a VISTA snapshot of the element as fallback when every locator fails. */
+    public static MultiLocator generateWithVista(WebDriver driver, WebElement element) {
+        return generateWithVista(driver, element, new Vista());
+    }
+
+    public static MultiLocator generateWithVista(WebDriver driver, WebElement element, Vista vista) {
+        List<Voter> voters = voters(driver, element);
+        Vista.Snapshot snapshot = Vista.capture(driver, element);
+        ((org.openqa.selenium.JavascriptExecutor) driver).executeScript("window.scrollTo(0, 0);");
+        return new MultiLocator(driver, voters, snapshot, element.getTagName(), vista);
+    }
+
+    /** Whether this multi-locator falls back to VISTA. */
+    public boolean usesVista() {
+        return snapshot != null;
+    }
+
+    /** Whether the last {@link #findElements} found the element only through the VISTA fallback. */
+    public boolean lastFoundByVista() {
+        return lastFoundByVista;
     }
 
     private static List<Voter> voters(WebDriver driver, WebElement element) {
@@ -92,7 +138,16 @@ public final class MultiLocator extends By {
         });
         votes.sort((a, b) -> Double.compare(b.score(), a.score()));
         lastVotes = List.copyOf(votes);
-        return votes.isEmpty() ? List.of() : List.of(votes.get(0).element());
+        lastFoundByVista = false;
+        if (!votes.isEmpty()) return List.of(votes.get(0).element());
+        if (snapshot != null) {
+            Vista.Match match = vista.relocate(driver, snapshot, tag);
+            if (match != null) {
+                lastFoundByVista = true;
+                return List.of(match.element());
+            }
+        }
+        return List.of();
     }
 
     /**
@@ -101,7 +156,7 @@ public final class MultiLocator extends By {
      */
     public MultiLocator repaired(SearchContext context) {
         List<WebElement> winner = findElements(context);
-        if (winner.isEmpty()) {
+        if (winner.isEmpty() || lastFoundByVista) {
             return this;
         }
         List<String> agreeing = lastVotes.get(0).voters();
@@ -113,11 +168,11 @@ public final class MultiLocator extends By {
         }
         fresh.values().stream().filter(v -> repaired.stream().noneMatch(r -> r.strategy().equals(v.strategy())))
                 .forEach(repaired::add);
-        return new MultiLocator(driver, repaired);
+        return new MultiLocator(driver, repaired, snapshot, tag, vista);
     }
 
     @Override
     public String toString() {
-        return "MultiLocator" + voters;
+        return "MultiLocator" + (snapshot != null ? "+VISTA" : "") + voters;
     }
 }
