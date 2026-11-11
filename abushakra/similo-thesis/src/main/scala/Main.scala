@@ -91,9 +91,16 @@ object Main:
       "SeleniumIDE" -> similo.Guarded(SeleniumIDE()),
       "RobulaPlus" -> similo.Guarded(RobulaPlus()),
       "EAGL" -> similo.Guarded(eagl.Eagl()),
+      "EAGL-scaled-adobe" -> similo.Guarded(eagl.Eagl("cache/eagl_scaled_adobe_cache.json")), // released model, paper features
+      "EAGL-scaled-f0" -> similo.Guarded(eagl.Eagl("cache/eagl_scaled_f0_cache.json")), // paper setting, rq4 category model fold 0
+      "EAGL-scaled-f1" -> similo.Guarded(eagl.Eagl("cache/eagl_scaled_f1_cache.json")), // paper setting, rq4 category model fold 1
+      "EAGL-scaled-f2" -> similo.Guarded(eagl.Eagl("cache/eagl_scaled_f2_cache.json")), // paper setting, rq4 category model fold 2
+      "EAGL-scaled-f3" -> similo.Guarded(eagl.Eagl("cache/eagl_scaled_f3_cache.json")), // paper setting, rq4 category model fold 3
+      "EAGL-scaled-f4" -> similo.Guarded(eagl.Eagl("cache/eagl_scaled_f4_cache.json")), // paper setting, rq4 category model fold 4
       "SIDEREAL" -> similo.Guarded(siderealnew.SiderealNew()),
       "SIDEREAL-uniform" -> similo.Guarded(siderealnew.SiderealNew(useHistory = false)),
-      "MultiLocator" -> similo.Guarded(multilocator.MultiLocator(false, true)),
+      "MultiLocator" -> similo.Guarded(multilocator.MultiLocator(false, true)), // VISTA fallback when no voter resolves
+      "MultiLocator-noVISTA" -> similo.Guarded(multilocator.MultiLocator(false, false)),
       "MultiLocator+repair" -> similo.Guarded(multilocator.MultiLocator(true, true))
     )
     def row(name: String, scope: String, stats: EvaluationStatistics, seconds: Double): String =
