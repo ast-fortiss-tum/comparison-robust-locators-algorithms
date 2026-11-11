@@ -201,10 +201,26 @@ object RegenerateDoms:
       Files.writeString(LogFile, "timestamp,site,date,variant,targets,consistent,absResolved,idResolved,tried\n")
     Files.writeString(LogFile, line + "\n", StandardOpenOption.APPEND)
 
+  /**
+   * With -Dregen.resume=true (used by scripts/regen_forever.sh): snapshots that already have a chromeDOM.html, or
+   * that failed in two earlier runs, are skipped, so a restart after a block does not re-request them. Prints
+   * "REMAINING <n>" after a pass that was not stopped by a block.
+   */
+  private val Resume = sys.props.get("regen.resume").contains("true")
+
+  private def failures(site: String, date: String): Int =
+    if !Files.exists(LogFile) then 0
+    else Using.resource(scala.io.Source.fromFile(LogFile.toFile))(_.getLines().count(_.contains(s",$site,$date,FAIL,")))
+
+  private def pending(site: String, date: String): Boolean =
+    !Files.exists(Paths.get(s"$SitesDir/$site/$date/chromeDOM.html")) && failures(site, date) < 2
+
   def fetch(sites: Seq[String]): Unit =
     try
-      for site <- sites; (date, url) <- snapshots(site) do
+      for site <- sites; (date, url) <- snapshots(site) if !Resume || pending(site, date) do
         processSnapshot(site, date, url)
+      if Resume then
+        println(s"REMAINING ${sites.map(s => snapshots(s).count((d, _) => pending(s, d))).sum}")
     catch
       case e: BlockedByArchive =>
         println(s"STOPPED: ${e.getMessage}. Wait (hours) before resuming; finished snapshots are kept.")
