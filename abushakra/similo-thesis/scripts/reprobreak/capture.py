@@ -11,7 +11,7 @@ The application code is built and run only inside Docker (ReproBreak's Dockerfil
 database); the test file is mounted read-only. Images are removed after use.
 
 Usage: python capture.py --plan plan.json --db ReproBreak.db --repos <clones> --work <dir> --out <dir>
-                         [--repo koenig] [--commits N] [--keep-images]
+                         [--repo koenig] [--commits N] [--ids 1,2] [--force] [--keep-images]
 """
 import argparse
 import collections
@@ -55,6 +55,7 @@ def main():
     ap.add_argument("--commits", type=int, help="only the first N fixing commits per repository")
     ap.add_argument("--ids", help="only these break ids (comma-separated)")
     ap.add_argument("--keep-images", action="store_true")
+    ap.add_argument("--force", action="store_true", help="capture again even if a previous run succeeded")
     ap.add_argument("--build-timeout", type=int, default=5400)
     ap.add_argument("--test-timeout", type=int, default=2400)
     args = ap.parse_args()
@@ -82,7 +83,7 @@ def main():
     status_path = os.path.join(args.out, "status.jsonl")
     os.makedirs(args.out, exist_ok=True)
     done = set()
-    if os.path.exists(status_path):
+    if os.path.exists(status_path) and not args.force:
         for line in open(status_path):
             r = json.loads(line)
             if r["status"] == "ran":  # failed checkouts/builds are retried
@@ -147,6 +148,8 @@ def main():
                          "-v", f"{os.path.abspath(inst)}:/app/{f}:ro",
                          "-v", f"{out_dir}:/rb/out",
                          "-e", "CYPRESS_screenshotsFolder=/rb/out/shots",
+                         # one run per test file into the same folder: keep the screenshots of the earlier runs
+                         "-e", "CYPRESS_trashAssetsBeforeRuns=false",
                          image, "bash", "/run_tests.sh", f"/app/{f}"], log, timeout=args.test_timeout)
                 if rc == 124:
                     subprocess.run(["docker", "rm", "-f", cname], capture_output=True)
