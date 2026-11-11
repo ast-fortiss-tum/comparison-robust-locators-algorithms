@@ -1,0 +1,13 @@
+# XPATH=/html/body/div[4]/div/div[4]/div/div[6]/div/div/div/h2/a
+algorithm;2019-01-01;2019-05-01;2019-09-01;2020-01-01;2020-05-01;2020-09-01;2021-01-01;2021-05-01;2021-09-01;2022-01-01;2022-05-01;2022-09-01;2023-01-01;2023-05-01;2023-09-01
+LegacySimilo;MINOR;MAJOR;DELETED;;;;;;;;;;;;
+OptimizedSimilo;MINOR;MAJOR;DELETED;;;;;;;;;;;;
+COLOR;MINOR;MAJOR;DELETED;;;;;;;;;;;;
+VONSimilo;MINOR;MAJOR;DELETED;;;;;;;;;;;;
+Multi-Locator;MINOR;MAJOR;DELETED;;;;;;;;;;;;
+ROBULA+;MINOR;MAJOR;DELETED;;;;;;;;;;;;
+SeleniumIDE;MINOR;MAJOR;DELETED;;;;;;;;;;;;
+Montoto;MINOR;MAJOR;DELETED;;;;;;;;;;;;
+IDXPath;MINOR;MAJOR;DELETED;;;;;;;;;;;;
+absXPath;MINOR;MAJOR;DELETED;;;;;;;;;;;;
+VISTA;MINOR;MAJOR;DELETED;;;;;;;;;;;;
