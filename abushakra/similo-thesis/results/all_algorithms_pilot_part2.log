@@ -1,0 +1,178 @@
+[info] welcome to sbt 1.9.2 (Eclipse Adoptium Java 17.0.21)
+[info] loading project definition from ./similo-thesis/project/project
+[info] loading settings for project similo-thesis-build from plugins.sbt ...
+[info] loading project definition from ./similo-thesis/project
+[info] loading settings for project root from build.sbt ...
+[info] set current project to similo-thesis (in build file:./similo-thesis/)
+[info] compiling 1 Scala source to ./similo-thesis/target/scala-3.3.0/classes ...
+[info] done compiling
+[warn] Compile / run / javaOptions will be ignored, Compile / run / fork is set to false
+[info] running Main 
+Algorithm,AccuracyAll%,AccAll_Num,AccAll_Denom,AccuracyMinor%,AccMinor_Num,AccMinor_Denom,AccuracyMajor%,AccMajor_Num,AccMajor_Denom,Fitness,Fitness%,LocatorBreakSuccess%,LocatorBreak_Num,LocatorBreak_Denom,Seconds
+absXPath@wikipedia,52.20,154,295,62.34,101,162,21.56,22,102,1208.00,13.41,0.00,0,82,12.2
+absXPath@zillow,50.29,169,336,0.00,0,26,51.87,152,293,2880.00,19.51,1.75,2,114,13.3
+absXPath@amazon,49.01,248,506,84.12,53,63,43.37,190,438,3504.00,17.36,1.03,1,97,251.6
+absXPath@ALL,50.21,571,1137,61.35,154,251,43.69,364,833,7592.00,17.27,1.02,3,293,277.1
+# absXPath: no locator generated for 40 elements
+IDXPath@wikipedia,72.20,213,295,62.96,102,162,78.43,80,102,4016.00,44.58,0.00,0,82,10.1
+IDXPath@zillow,56.54,190,336,65.38,17,26,53.24,156,293,3384.00,22.92,0.00,0,114,10.3
+IDXPath@amazon,81.22,411,506,95.23,60,63,78.99,346,438,11208.00,55.52,2.06,2,97,364.7
+IDXPath@ALL,71.59,814,1137,71.31,179,251,69.86,582,833,18608.00,42.33,0.68,2,293,385.1
+# IDXPath: no locator generated for 40 elements
+Montoto@wikipedia,95.93,283,295,96.91,157,162,93.13,95,102,8224.00,91.29,87.80,72,82,13.5
+Montoto@zillow,42.26,142,336,61.53,16,26,37.54,110,293,5936.00,40.21,41.22,47,114,7.2
+Montoto@amazon,19.96,101,506,82.53,52,63,10.04,44,438,1480.00,7.33,1.03,1,97,93.6
+Montoto@ALL,46.26,526,1137,89.64,225,251,29.89,249,833,15640.00,35.58,40.95,120,293,114.2
+# Montoto: no locator generated for 40 elements
+SeleniumIDE@wikipedia,99.66,294,295,100.00,162,162,99.01,101,102,8912.00,98.93,98.78,81,82,13.6
+SeleniumIDE@zillow,52.67,177,336,34.61,9,26,54.26,159,293,8392.00,56.85,56.14,64,114,11.1
+SeleniumIDE@amazon,90.90,460,506,96.82,61,63,89.95,394,438,17448.00,86.44,77.31,75,97,348.5
+SeleniumIDE@ALL,81.88,931,1137,92.43,232,251,78.51,654,833,34752.00,79.06,75.08,220,293,373.2
+# SeleniumIDE: no locator generated for 40 elements
+RobulaPlus@wikipedia,100.00,295,295,100.00,162,162,100.00,102,102,9008.00,100.00,100.00,82,82,15.1
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul/li[1]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul/li[2]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul/li[3]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul/li[4]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul/li[5]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul/li[6]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul/li[8]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul/li[11]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul/li[13]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[2]/ul[2]/li[2]/div/a[1]
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[2]/ul[2]/li[2]/div/a[2]
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[1]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[2]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[3]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[4]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[5]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[6]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[8]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[11]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[13]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[2]/ul[2]/li[2]/div/a[1]
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[2]/ul[2]/li[2]/div/a[4]
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[1]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[2]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[3]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[4]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[5]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[6]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[8]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[11]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[13]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[1]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[2]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[3]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[4]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[5]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[6]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[8]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[11]/a
+************************************************************
+************************************************************
+Il seguente XPATH ritorna 0 elementi sulla pagina target old: /html/body/div[3]/div/footer/div[1]/nav/ul[1]/li[13]/a
+************************************************************
+RobulaPlus@zillow,76.48,257,336,65.38,17,26,76.10,223,293,9976.00,67.58,57.01,65,114,16.0
+RobulaPlus@amazon,93.87,475,506,100.00,63,63,92.92,407,438,17384.00,86.12,71.13,69,97,358.6
+RobulaPlus@ALL,90.32,1027,1137,96.41,242,251,87.87,732,833,36368.00,82.74,73.72,216,293,389.7
+EAGL@wikipedia,100.00,295,295,100.00,162,162,100.00,102,102,9008.00,100.00,100.00,82,82,11.9
+EAGL@zillow,53.57,180,336,26.92,7,26,55.63,163,293,7304.00,49.48,41.22,47,114,8.9
+EAGL@amazon,81.22,411,506,95.23,60,63,78.99,346,438,11256.00,55.76,3.09,3,97,357.4
+EAGL@ALL,77.92,886,1137,91.23,229,251,73.34,611,833,27568.00,62.72,45.05,132,293,378.1
+SIDEREAL@wikipedia,99.32,293,295,100.00,162,162,98.03,100,102,8896.00,98.75,98.78,81,82,13.6
+SIDEREAL@zillow,79.46,267,336,65.38,17,26,79.52,233,293,10520.00,71.27,62.28,71,114,20.5
+SIDEREAL@amazon,93.47,473,506,98.41,62,63,92.69,406,438,18272.00,90.52,86.59,84,97,354.9
+SIDEREAL@ALL,90.85,1033,1137,96.01,241,251,88.71,739,833,37688.00,85.74,80.54,236,293,389.0
+SIDEREAL-uniform@wikipedia,99.32,293,295,100.00,162,162,98.03,100,102,8896.00,98.75,98.78,81,82,13.6
+SIDEREAL-uniform@zillow,78.57,264,336,65.38,17,26,78.49,230,293,10472.00,70.94,62.28,71,114,18.4
+SIDEREAL-uniform@amazon,82.80,419,506,100.00,63,63,80.13,351,438,16008.00,79.31,77.31,75,97,309.7
+SIDEREAL-uniform@ALL,85.83,976,1137,96.41,242,251,81.75,681,833,35376.00,80.48,77.47,227,293,341.7
+MultiLocator@wikipedia,100.00,295,295,100.00,162,162,100.00,102,102,9008.00,100.00,100.00,82,82,14.0
+MultiLocator@zillow,82.14,276,336,65.38,17,26,82.59,242,293,11112.00,75.28,65.78,75,114,17.2
+MultiLocator@amazon,94.46,478,506,100.00,63,63,93.60,410,438,17496.00,86.68,71.13,69,97,367.5
+MultiLocator@ALL,92.26,1049,1137,96.41,242,251,90.51,754,833,37616.00,85.58,77.13,226,293,398.6
+# MultiLocator: no locator generated for 40 elements
+MultiLocator+repair@wikipedia,100.00,295,295,100.00,162,162,100.00,102,102,9008.00,100.00,100.00,82,82,15.0
+MultiLocator+repair@zillow,82.14,276,336,65.38,17,26,82.59,242,293,11112.00,75.28,65.78,75,114,18.5
+MultiLocator+repair@amazon,94.46,478,506,100.00,63,63,93.60,410,438,17496.00,86.68,71.13,69,97,372.3
+MultiLocator+repair@ALL,92.26,1049,1137,96.41,242,251,90.51,754,833,37616.00,85.58,77.13,226,293,405.9
+# MultiLocator+repair: no locator generated for 40 elements
+[success] Total time: 3457 s (57:37), completed 11 Nov 2026, 15:43:48

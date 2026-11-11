@@ -67,6 +67,53 @@ import java.nio.charset.StandardCharsets
 object Main:
 
   def main(args: Array[String]): Unit =
+    // Smoke test: robustness of the locators that only need elements.json
+    // (same computation as printRobustnessTable). The other locators need chromeDOM.html / templates.
+    java.util.Locale.setDefault(java.util.Locale.US)
+    println("Algorithm,AccuracyAll%,AccAll_Num,AccAll_Denom,AccuracyMinor%,AccMinor_Num,AccMinor_Denom,AccuracyMajor%,AccMajor_Num,AccMajor_Denom,Fitness,Fitness%,LocatorBreakSuccess%,LocatorBreak_Num,LocatorBreak_Denom,Seconds")
+    // All algorithms on the sites given as arguments (default: the 3 pilot sites with regenerated chromeDOM.html),
+    // per site and merged ("ALL"). DOM-based locators are wrapped in Guarded: an element whose locator cannot be
+    // generated (e.g. not resolvable in the DOM) scores 0 instead of aborting the run.
+    val sites = if args.nonEmpty then args.toSeq else Seq("wikipedia", "zillow", "amazon")
+    val algorithms: Seq[(String, similo.Locator)] = Seq(
+      "LegacySimilo" -> LegacySimilo,
+      "OptimizedSimilo" -> OptimizedSimilo,
+      "VonSimilo" -> LegacyVonSimilo,
+      "OptimizedVonSimilo" -> OptimizedVonSimilo,
+      "LegacyCombined" -> LegacyCombined,
+      "OptimizedCombined" -> OptimizedCombinedSimilo,
+      "OptimizedMinimal" -> OptimizedMinimalSimilo,
+      "COLOR" -> LegacyColor,
+      "VISTA" -> Vista(),
+      "absXPath" -> similo.Guarded(absXPath()),
+      "IDXPath" -> similo.Guarded(IDXPath()),
+      "Montoto" -> similo.Guarded(Montoto()),
+      "SeleniumIDE" -> similo.Guarded(SeleniumIDE()),
+      "RobulaPlus" -> similo.Guarded(RobulaPlus()),
+      "EAGL" -> similo.Guarded(eagl.Eagl()),
+      "SIDEREAL" -> similo.Guarded(siderealnew.SiderealNew()),
+      "SIDEREAL-uniform" -> similo.Guarded(siderealnew.SiderealNew(useHistory = false)),
+      "MultiLocator" -> similo.Guarded(multilocator.MultiLocator(false, true)),
+      "MultiLocator+repair" -> similo.Guarded(multilocator.MultiLocator(true, true))
+    )
+    def row(name: String, scope: String, stats: EvaluationStatistics, seconds: Double): String =
+      val (accAll, accAllNum, accAllDenom, accMinor, accMinorNum, accMinorDenom,
+           accMajor, accMajorNum, accMajorDenom, fit, fitPercent, breakSuccess, breakNum, breakDenom) = stats.robustnessStats
+      f"$name@$scope,$accAll%.2f,$accAllNum%d,$accAllDenom%d,$accMinor%.2f,$accMinorNum%d,$accMinorDenom%d,$accMajor%.2f,$accMajorNum%d,$accMajorDenom%d,$fit%.2f,$fitPercent%.2f,$breakSuccess%.2f,$breakNum%d,$breakDenom%d,$seconds%.1f"
+    // Optional subset, e.g. ALGOS=absXPath,IDXPath (comma-separated names as above)
+    val only = sys.env.get("ALGOS").map(_.split(",").map(_.trim).toSet)
+    for (name, locator) <- algorithms if only.forall(_.contains(name)) do
+      val t0 = System.nanoTime()
+      val perSite = sites.map { s =>
+        val t = System.nanoTime()
+        val stats = EvaluationComputing.computeAll(locator, Seq(java.nio.file.Path.of("sites", s)))
+        println(row(name, s, stats, (System.nanoTime() - t) / 1e9))
+        stats
+      }
+      println(row(name, "ALL", perSite.reduce(_ append _), (System.nanoTime() - t0) / 1e9))
+      locator match
+        case g: similo.Guarded if g.failedInits > 0 => println(s"# $name: no locator generated for ${g.failedInits} elements")
+        case _ => ()
 
 //    printRobustnessTable()
 

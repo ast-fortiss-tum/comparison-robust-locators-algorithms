@@ -36,8 +36,10 @@ case class RobulaPlus() extends Locator:
   override def init(element: Element, elements: Seq[Element]): RobulaPlusState =
         val document = getJDOMDocumentFromURL(element.url.getOrElse(""))
         val startTime = System.nanoTime()
-        val robulaPlusCandidates = buildRobulaPlusXPath(document, element.xpath.idxpath, element.url.getOrElse(""))
-        val firstXPath: String = robulaPlusCandidates.head
+        // If the element cannot be resolved in the (regenerated) DOM, no locator is generated: an XPath that selects
+        // nothing, so locate() scores every candidate 0 (same treatment as EAGL's failed generations).
+        val firstXPath: String = Try(buildRobulaPlusXPath(document, element.xpath.idxpath, element.url.getOrElse("")).head)
+          .getOrElse("/no-locator-generated")
         val endTime = System.nanoTime()
         val durationMs = (endTime - startTime) / 1_000_000.0
         logTiming(getDateAndSiteFromArchiveUrl(element.url.getOrElse("")).map(_._2), "RobulaPlus", element.xpath.chrome, durationMs)

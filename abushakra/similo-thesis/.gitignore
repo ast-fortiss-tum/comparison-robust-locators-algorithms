@@ -62,3 +62,11 @@ comparison
 sites
 *.png
 *.pdf
+
+# Local environments, outputs and binaries (not versioned)
+.venv/
+.venv-eagl/
+out/
+driver/chrome/chrome-mac-arm64/
+driver/chrome/chromedriver-mac-arm64/chromedriver
+cache/vista_cache.orig.json

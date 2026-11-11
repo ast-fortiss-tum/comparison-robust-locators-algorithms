@@ -45,7 +45,7 @@ object SetupDrivers:
     // Set path to chromedriver
     System.setProperty("webdriver.chrome.silentOutput", "true")
 //    System.setProperty("webdriver.chrome.logfile", "chromedriver.log")
-//    val chromeBinaryPath = "/Applications/Google Chrome For Testing.app/Contents/MacOS/Google Chrome for Testing"
+    val chromeBinaryPath = "driver/chrome/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing"
     java.util.logging.Logger.getLogger("org.openqa.selenium").setLevel(Level.OFF)
 
     try System.setProperty("webdriver.chrome.driver", "driver/chrome/chromedriver-mac-arm64/chromedriver")
@@ -56,7 +56,7 @@ object SetupDrivers:
 
     val options = new ChromeOptions()
     options.addArguments("--remote-allow-origins=*")
-    //    options.setBinary(chromeBinaryPath)
+    options.setBinary(chromeBinaryPath)
 //    options.setPageLoadStrategy(PageLoadStrategy.EAGER)
     // Uncomment the following line if you want to run Chrome in headless mode
 //    options.addArguments("--headless")

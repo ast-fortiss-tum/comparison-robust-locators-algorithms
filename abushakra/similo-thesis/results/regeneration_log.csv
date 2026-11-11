@@ -1,0 +1,16 @@
+timestamp,site,date,variant,targets,consistent,absResolved,idResolved,tried
+2026-11-11T11:26:06.587115,wikipedia,2019-01-01,en+scroll,21,21,21,21,existing=18/21 de+scroll=17/21 de+toolbar+scroll=3/21 en+scroll=21/21
+2026-11-11T11:26:35.002626,wikipedia,2019-05-01,en+scroll,21,21,21,21,existing=17/21 de+scroll=17/21 de+toolbar+scroll=3/21 en+scroll=21/21
+2026-11-11T11:26:45.914206,wikipedia,2022-01-01,de+scroll,19,19,19,19,existing=15/19 de+scroll=19/19
+2026-11-11T11:27:18.071051,wikipedia,2022-09-01,en+scroll,19,19,19,19,existing=14/19 de+scroll=14/19 de+toolbar+scroll=2/19 en+scroll=19/19
+2026-11-11T11:27:45.897555,wikipedia,2023-05-01,en+scroll,19,19,19,19,existing=15/19 de+scroll=15/19 de+toolbar+scroll=2/19 en+scroll=19/19
+2026-11-11T11:28:55.724537,zillow,2018-09-01,existing,51,50,51,50,existing=50/51 de+scroll=50/51 de+toolbar+scroll=0/51 en+scroll=50/51 de+early=50/51 en+early=50/51 en+toolbar+scroll=0/51
+2026-11-11T11:29:56.115680,zillow,2021-05-01,existing,20,1,1,9,existing=1/20 de+scroll=1/20 de+toolbar+scroll=1/20 en+scroll=1/20 de+early=1/20 en+early=1/20 en+toolbar+scroll=1/20
+2026-11-11T11:30:56.192277,zillow,2021-09-01,existing,20,1,1,9,existing=1/20 de+scroll=1/20 de+toolbar+scroll=1/20 en+scroll=1/20 de+early=1/20 en+early=1/20 en+toolbar+scroll=1/20
+2026-11-11T11:31:56.574257,zillow,2022-01-01,existing,20,1,1,11,existing=1/20 de+scroll=1/20 de+toolbar+scroll=1/20 en+scroll=1/20 de+early=1/20 en+early=1/20 en+toolbar+scroll=1/20
+2026-11-11T11:32:58.446543,zillow,2022-05-01,existing,20,1,1,11,existing=1/20 de+scroll=1/20 de+toolbar+scroll=1/20 en+scroll=1/20 de+early=1/20 en+early=1/20 en+toolbar+scroll=1/20
+2026-11-11T11:34:53.317676,zillow,2018-09-01,existing,51,50,51,50,existing=50/51 de+scroll=50/51 de+toolbar+scroll=0/51 en+scroll=50/51 de+early=50/51 en+early=50/51 en+toolbar+scroll=0/51
+2026-11-11T11:35:56.472080,zillow,2021-05-01,existing,20,1,1,9,existing=1/20 de+scroll=1/20 de+toolbar+scroll=1/20 en+scroll=1/20 de+early=1/20 en+early=1/20 en+toolbar+scroll=1/20
+2026-11-11T11:37:03.232709,zillow,2021-09-01,existing,20,1,1,9,existing=1/20 de+scroll=1/20 de+toolbar+scroll=1/20 en+scroll=1/20 de+early=1/20 en+early=1/20 en+toolbar+scroll=1/20
+2026-11-11T11:38:05.871525,zillow,2022-01-01,existing,20,1,1,11,existing=1/20 de+scroll=1/20 de+toolbar+scroll=1/20 en+scroll=1/20 de+early=1/20 en+early=1/20 en+toolbar+scroll=1/20
+2026-11-11T11:39:07.973051,zillow,2022-05-01,existing,20,1,1,11,existing=1/20 de+scroll=1/20 de+toolbar+scroll=1/20 en+scroll=1/20 de+early=1/20 en+early=1/20 en+toolbar+scroll=1/20

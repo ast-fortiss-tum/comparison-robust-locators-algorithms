@@ -103,7 +103,7 @@ object Load:
     if !Files.exists(urlsCsvPath) then return None
 
     // Step 3: look for matching line
-    val lines = Source.fromFile(urlsCsvPath.toFile).getLines().drop(1).toList
+    val lines = scala.util.Using.resource(Source.fromFile(urlsCsvPath.toFile))(_.getLines().drop(1).toList)  // close the file (was leaking one descriptor per call)
 
     lines
       .map(_.split(";", 2))
