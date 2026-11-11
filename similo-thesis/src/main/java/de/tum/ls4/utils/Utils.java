@@ -95,17 +95,19 @@ public class Utils {
         }
     }
 
+    @SuppressWarnings("unchecked")
     public static Map<String, Object> checkedCastToMap(Object object) {
         if (object instanceof Map) {
-            return checkedCastToMap(object);
+            return (Map<String, Object>) object; // was a self-call (infinite recursion / StackOverflowError)
         } else {
             throw new RuntimeException("Could not cast object to Map<String, Object>");
         }
     }
 
+    @SuppressWarnings("unchecked")
     public static List<Object> checkedCastToList(Object object) {
         if (object instanceof List) {
-            return checkedCastToList(object);
+            return (List<Object>) object; // was a self-call (infinite recursion / StackOverflowError)
         } else {
             throw new RuntimeException("Could not cast object to List<Object>");
         }
