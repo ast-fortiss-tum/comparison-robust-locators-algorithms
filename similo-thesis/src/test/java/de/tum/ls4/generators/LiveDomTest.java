@@ -165,6 +165,45 @@ class LiveDomTest {
     }
 
     @Test
+    void colorImageHashesAreStableAndDiscriminative() {
+
+        WebElement save = driver.findElement(By.cssSelector("button.primary"));
+        WebElement cancel = driver.findElement(By.xpath("//button[@type='button']"));
+        WebElement input = driver.findElement(By.cssSelector("input"));
+        Long single = de.tum.ls4.locators.ElementImages.hash(driver, save);
+        assertTrue(single != null, "no hash for a visible button");
+        assertEquals(single, de.tum.ls4.locators.ElementImages.hash(driver, save), "same rendering, same hash");
+        var all = de.tum.ls4.locators.ElementImages.hashAll(driver, List.of(save, cancel, input));
+        assertEquals(3, all.size());
+        assertEquals(single, all.get(save), "single and batch crops agree");
+        assertEquals(1.0, de.tum.ls4.locators.ElementImages.similarity(single, all.get(save)));
+        assertEquals(0.0, de.tum.ls4.locators.ElementImages.similarity(single, null), "missing hash scores 0");
+        assertTrue(de.tum.ls4.locators.ElementImages.similarity(all.get(save), all.get(input)) < 1.0);
+
+        // with the image property, the stored element scores higher against itself than without it
+        var stored = scrape(save);
+        @SuppressWarnings("unchecked")
+        var raw = (java.util.Map<String, Object>) ((org.openqa.selenium.JavascriptExecutor) driver).executeScript(
+                de.tum.ls4.Javascript.create().addFile("extractors/attributes.js").addFile("extractors/css_styles.js")
+                        .addFile("extractors/xpath.js").addFile("extractors/css_selector.js").addFile("extractors/direct_text.js")
+                        .addFile("extractors/element.js").addScript("return extract_element_from_web_element(arguments[0]);")
+                        .getScript(), save);
+        var withImage = new de.tum.ls4.artifacts.Element(withHash(raw, single));
+        double plain = de.tum.ls4.locators.ByColor.score(stored, stored);
+        double image = de.tum.ls4.locators.ByColor.score(withImage, withImage);
+        assertEquals(0.12 / 10.27, image - plain, 1e-9, "the image property adds its weight (0.12 of 10.27)");
+    }
+
+    private static java.util.Map<String, Object> withHash(java.util.Map<String, Object> raw, long hash) {
+        var copy = new java.util.HashMap<>(raw);
+        @SuppressWarnings("unchecked")
+        var attrs = new java.util.HashMap<>((java.util.Map<String, Object>) raw.get("attributes"));
+        attrs.put(de.tum.ls4.locators.ByColor.IMAGE_HASH_ATTRIBUTE, Long.toHexString(hash));
+        copy.put("attributes", attrs);
+        return copy;
+    }
+
+    @Test
     void vistaRelocatesAnElementVisually() {
         WebElement save = driver.findElement(By.cssSelector("button.primary"));
         Vista.Snapshot snapshot = Vista.capture(driver, save);

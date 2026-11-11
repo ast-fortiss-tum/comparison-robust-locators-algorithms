@@ -60,7 +60,9 @@ public class Utils {
     }
 
     public static String getByName(By by) {
-        if (by instanceof By.ByName) {
+        if (by instanceof By.ById) { // was missing: every By.id locator failed with "Unknown By type"
+            return "id";
+        } else if (by instanceof By.ByName) {
             return "name";
         } else if (by instanceof By.ByCssSelector) {
             return "css";
