@@ -14,7 +14,9 @@ import java.util.zip.GZIPInputStream;
  * are summed in order and divided by the number of trees.
  * <p>
  * Features: (position, length, depth, nr_siblings, nr_children, isattribute). The bundled model is EAGL's
- * {@code database/cross_training.joblib} (https://github.com/hilalosoft/EAGL, MIT License, Copyright (c) 2025 Hilal TAHA).
+ * {@code database/cross_training.joblib} (https://github.com/hilalosoft/EAGL, MIT License, Copyright (c) 2025 Hilal TAHA),
+ * which EAGL_excutor.py loads by default. Despite its name it is byte-identical to the authors' per-site model
+ * {@code scaled/adobe_scaled.joblib} (models_and_pickles_all_projects.7z), i.e. a model trained on adobe.com only.
  */
 final class EaglForest {
 

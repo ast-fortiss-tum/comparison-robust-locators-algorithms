@@ -56,7 +56,7 @@ public final class Eagl {
 
     private final EaglForest model;
 
-    /** EAGL with its cross-project model ({@code cross_training.joblib}). */
+    /** EAGL with the model its implementation loads by default ({@code cross_training.joblib}; see {@link EaglForest}). */
     public Eagl() {
         this(EaglForest.bundled());
     }
