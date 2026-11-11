@@ -70,3 +70,4 @@ out/
 driver/chrome/chrome-mac-arm64/
 driver/chrome/chromedriver-mac-arm64/chromedriver
 cache/vista_cache.orig.json
+scripts/reprobreak/node_modules/
