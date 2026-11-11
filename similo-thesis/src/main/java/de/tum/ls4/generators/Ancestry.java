@@ -83,4 +83,21 @@ public record Ancestry(List<AncestorNode> nodes) {
         }
         return new Ancestry(nodes);
     }
+
+    /** The inverse of {@link #fromBrowser}: plain lists and maps (e.g. for JSON persistence). */
+    public List<Map<String, Object>> toRaw() {
+        List<Map<String, Object>> out = new ArrayList<>(nodes.size());
+        for (AncestorNode n : nodes) {
+            Map<String, Object> m = new LinkedHashMap<>();
+            m.put("tag", n.tag());
+            m.put("position", n.position());
+            m.put("positionStar", n.positionStar());
+            List<List<String>> attrs = new ArrayList<>();
+            n.attributes().forEach((k, v) -> attrs.add(List.of(k, v)));
+            m.put("attributes", attrs);
+            m.put("text", n.text());
+            out.add(m);
+        }
+        return out;
+    }
 }
