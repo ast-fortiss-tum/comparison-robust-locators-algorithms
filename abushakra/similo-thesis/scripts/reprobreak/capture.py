@@ -179,6 +179,13 @@ def patch_dockerfile(content, keep_bullseye=False, chromium_only=False):
             # Debian 11 security support ended (Aug 2026): its security mirror no longer serves the packages
             # Playwright needs. Same Node major version on Debian 12.
             line = line.rstrip()[: -len("-bullseye")] + "-bookworm"
+        elif keep_bullseye and line.startswith("FROM ") and line.rstrip().endswith("-bullseye"):
+            # The live Debian 11 security mirror lists packages it no longer serves; archive.debian.org has them all.
+            out.append(line)
+            line = ("RUN sed -i -e 's|deb.debian.org/debian-security|archive.debian.org/debian-security|g' "
+                    "-e 's|security.debian.org/debian-security|archive.debian.org/debian-security|g' "
+                    "-e 's|deb.debian.org/debian |archive.debian.org/debian |g' -e '/bullseye-updates/d' "
+                    "/etc/apt/sources.list")
         if line.strip() == "FROM cypress/browsers":
             # The floating tag now has no yarn; use the pin of ReproBreak's own second environment for this repo.
             line = "FROM cypress/browsers:node-20.18.0-chrome-130.0.6723.69-1-ff-131.0.3-edge-130.0.2849.52-1"
