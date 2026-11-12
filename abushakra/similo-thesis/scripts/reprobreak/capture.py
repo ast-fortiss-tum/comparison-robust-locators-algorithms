@@ -124,12 +124,12 @@ def main():
                     # Older Playwright versions only know the Debian 11 package names: keep the original base.
                     with open(os.path.join(ctx, "Dockerfile"), "w") as fh:
                         fh.write(patch_dockerfile(original, keep_bullseye=True))
-                    rc = sh(["docker", "build", "--pull", "-t", image, ctx], log, timeout=args.build_timeout)
+                    rc = sh(["docker", "build", "--pull", "--no-cache", "-t", image, ctx], log, timeout=args.build_timeout)
                 if rc and "playwright install --with-deps" in original:
                     # Last resort: only Chromium, which the snapshots use (no Firefox build for Debian 12 on arm64).
                     with open(os.path.join(ctx, "Dockerfile"), "w") as fh:
                         fh.write(patch_dockerfile(original, keep_bullseye=True, chromium_only=True))
-                    rc = sh(["docker", "build", "--pull", "-t", image, ctx], log, timeout=args.build_timeout)
+                    rc = sh(["docker", "build", "--pull", "--no-cache", "-t", image, ctx], log, timeout=args.build_timeout)
                 if rc:
                     for f in todo:
                         record(status_path, name, side, sha, f, f"build failed ({rc})", log)
@@ -183,7 +183,8 @@ def patch_dockerfile(content, keep_bullseye=False, chromium_only=False):
             # The floating tag now has no yarn; use the pin of ReproBreak's own second environment for this repo.
             line = "FROM cypress/browsers:node-20.18.0-chrome-130.0.6723.69-1-ff-131.0.3-edge-130.0.2849.52-1"
         if "playwright install --with-deps" in line and line.startswith("RUN "):
-            out.append("RUN apt-get update")
+            # Refresh the apt index in the same layer: a separately cached update layer goes stale (404s).
+            line = "RUN apt-get update && " + line[len("RUN "):]
             if chromium_only and "--with-deps chromium" not in line:
                 line = line.replace("playwright install --with-deps", "playwright install --with-deps chromium")
         out.append(line)
