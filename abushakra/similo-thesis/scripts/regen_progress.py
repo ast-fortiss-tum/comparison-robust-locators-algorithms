@@ -1,7 +1,7 @@
 """Summarises the chromeDOM.html regeneration per site (for the dashboard): snapshots, regenerated, failed, consistency."""
 import csv, os, sys, datetime
 out = sys.argv[1]
-sites = sorted(s for s in os.listdir("sites") if os.path.isfile(f"sites/{s}/xpaths.csv") and os.path.isfile(f"sites/{s}/classified.csv"))
+sites = sorted(s for s in os.listdir("sites") if not s.startswith("rb_") and os.path.isfile(f"sites/{s}/xpaths.csv") and os.path.isfile(f"sites/{s}/classified.csv"))
 last = {}
 fails = {}
 blocked = None
