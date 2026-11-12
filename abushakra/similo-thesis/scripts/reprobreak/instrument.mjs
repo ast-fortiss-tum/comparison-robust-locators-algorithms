@@ -85,7 +85,7 @@ function __rbCaptureCy($rbEls, id) {
   const n = (counts[id] = (counts[id] || 0) + 1);
   data.matches = els.length;
   cy.writeFile('/rb/out/' + id + '-' + n + '.json', JSON.stringify(data), { log: false });
-  cy.screenshot('rb-' + id + '-' + n, { capture: 'viewport', log: false, overwrite: true });
+  cy.screenshot('rb-' + id + '-' + n, { capture: 'fullPage', log: false, overwrite: true });
 }
 var __RB_SRC = ${JSON.stringify(snapshotSrc)};
 ` : `
@@ -105,7 +105,7 @@ async function __rbCapture(loc, id) {
     const data = await page.evaluate((els) => window.__rbSnapshot(els), handles);
     data.matches = handles.length;
     fs.writeFileSync(base + '.json', JSON.stringify(data));
-    await page.screenshot({ path: base + '.png' });
+    await page.screenshot({ path: base + '.png', fullPage: true });
   } catch (e) { console.log('RBCAPTURE-ERROR ' + id + ' ' + e); }
 }
 var __RB_SRC = ${JSON.stringify(snapshotSrc)};

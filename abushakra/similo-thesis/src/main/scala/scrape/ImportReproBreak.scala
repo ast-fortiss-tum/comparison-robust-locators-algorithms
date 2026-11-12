@@ -33,7 +33,8 @@ object ImportReproBreak:
   case class PlanEntry(id: Int, repo: String, commit: String, parent: String, file: String, framework: String,
                        old_locator: String, new_locator: String)
 
-  case class Capture(elements: Seq[Element], dom: String, targets: Seq[Json], matches: Int, screenshot: Option[Path])
+  case class Capture(elements: Seq[Element], dom: String, targets: Seq[Json], matches: Int, screenshot: Option[Path],
+                     scroll: (Int, Int), viewportWidth: Int)
 
   def main(args: Array[String]): Unit =
     val planPath = Paths.get(args(0))
@@ -77,7 +78,9 @@ object ImportReproBreak:
         c.downField("dom").as[String].getOrElse(""),
         c.downField("targets").as[Seq[Json]].getOrElse(Nil),
         c.downField("matches").as[Int].getOrElse(0),
-        Some(png).filter(Files.exists(_)).orElse(cypressShot))
+        Some(png).filter(Files.exists(_)).orElse(cypressShot),
+        c.downField("scroll").as[(Int, Int)].getOrElse((0, 0)),
+        c.downField("viewport").downN(0).as[Int].getOrElse(0))
     }
 
   private def check(c: Capture, side: String): Option[String] =
@@ -97,11 +100,17 @@ object ImportReproBreak:
       val d = dir.resolve(date)
       Files.createDirectories(d)
       val url = s"http://reprobreak.local/$site/$date"
-      val withUrl = c.elements.map(_.copy(url = Some(url)))
+      // Element boxes are viewport coordinates (getBoundingClientRect); the screenshots are full-page, so shift by the
+      // scroll offset at capture time.
+      val (sx, sy) = c.scroll
+      val withUrl = c.elements.map(e => e.copy(url = Some(url), location = (e.location._1 + sx, e.location._2 + sy)))
       val processed = withUrl.map(_.addNeighborTexts(withUrl))
       Files.writeString(d.resolve("elements.json"), processed.asJson.spaces2, UTF_8)
       Files.writeString(d.resolve("chromeDOM.html"), c.dom, UTF_8)
       Files.copy(c.screenshot.get, d.resolve("screenshot.png"), StandardCopyOption.REPLACE_EXISTING)
+      val pngWidth = javax.imageio.ImageIO.read(d.resolve("screenshot.png").toFile).getWidth
+      val scale = if c.viewportWidth > 0 then pngWidth.toDouble / c.viewportWidth else 1.0
+      Files.writeString(d.resolve("screenshot_scale.txt"), f"$scale%.4f\n", UTF_8)
     Files.writeString(dir.resolve("urls.csv"),
       s"date;url\n$OldDate;http://reprobreak.local/$site/$OldDate\n$NewDate;http://reprobreak.local/$site/$NewDate\n", UTF_8)
     Files.writeString(dir.resolve("xpaths.csv"), s"$OldDate;$NewDate\n${oldTarget.xpath.chrome};${newTarget.xpath.chrome}\n", UTF_8)

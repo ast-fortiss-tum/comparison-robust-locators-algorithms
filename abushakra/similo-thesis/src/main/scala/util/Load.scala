@@ -486,6 +486,12 @@ object Load:
     allElements.filter(e => first10XPaths.contains(e.xpath.chrome))
   }
 
+  /** Screenshot pixels per CSS pixel, when recorded next to the screenshot (screenshot_scale.txt, e.g. for the
+   * ReproBreak captures); the Wayback screenshots have none and keep the inferred/default scale. */
+  def screenshotScale(screenshot: String): Option[Double] =
+    val f = Paths.get(screenshot).resolveSibling("screenshot_scale.txt")
+    if Files.exists(f) then scala.util.Try(Files.readString(f).trim.toDouble).toOption else None
+
   private def inferScale(imgW: Int, imgH: Int): Double =
     // If you recorded coordinates at a different logical width, override at runtime:
     // sbt -Dvista.logicalWidth=1366 run
@@ -512,7 +518,7 @@ object Load:
     if (h0 < 0) { y0 = y0 + h0; h0 = -h0 }
 
     // Scale from logical coords → pixel coords
-    val scale = inferScale(img.getWidth, img.getHeight)
+    val scale = screenshotScale(screenshot).getOrElse(inferScale(img.getWidth, img.getHeight))
     var X = (x0 * scale).toInt
     var Y = (y0 * scale).toInt
     var W = (w0 * scale).toInt
@@ -546,7 +552,7 @@ object Load:
     try {
       val out = cmd.!!
       val Array(x, y) = out.trim.split(" ").map(_.toInt)
-      val scale = 2.0
+      val scale = screenshotScale(fullImg).getOrElse(2.0) // the Wayback screenshots are at device pixel ratio 2
       Some((x / scale).toInt, (y / scale).toInt)
     } catch {
       case _: Exception => None
