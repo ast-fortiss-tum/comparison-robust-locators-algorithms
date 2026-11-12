@@ -119,6 +119,17 @@ def main():
             have = subprocess.run(["docker", "image", "inspect", image], capture_output=True).returncode == 0
             if not have:
                 rc = sh(["docker", "build", "--pull", "-t", image, ctx], log, timeout=args.build_timeout)
+                original = reproduce_files(args.db, breaks[0]["reproduce_files_id"]).get("Dockerfile", "")
+                if rc and "-bullseye" in original:
+                    # Older Playwright versions only know the Debian 11 package names: keep the original base.
+                    with open(os.path.join(ctx, "Dockerfile"), "w") as fh:
+                        fh.write(patch_dockerfile(original, keep_bullseye=True))
+                    rc = sh(["docker", "build", "--pull", "-t", image, ctx], log, timeout=args.build_timeout)
+                if rc and "playwright install --with-deps" in original:
+                    # Last resort: only Chromium, which the snapshots use (no Firefox build for Debian 12 on arm64).
+                    with open(os.path.join(ctx, "Dockerfile"), "w") as fh:
+                        fh.write(patch_dockerfile(original, keep_bullseye=True, chromium_only=True))
+                    rc = sh(["docker", "build", "--pull", "-t", image, ctx], log, timeout=args.build_timeout)
                 if rc:
                     for f in todo:
                         record(status_path, name, side, sha, f, f"build failed ({rc})", log)
@@ -158,13 +169,13 @@ def main():
             cleanup(args, name, ctx, image)
 
 
-def patch_dockerfile(content):
+def patch_dockerfile(content, keep_bullseye=False, chromium_only=False):
     """Environment-only patches: Debian 12 instead of the end-of-life Debian 11 base, and refresh the apt index before Playwright installs its system dependencies (the pinned
     Debian images otherwise fail with 404s on superseded security updates). The application and test steps are
     unchanged."""
     out = []
     for line in content.splitlines():
-        if line.startswith("FROM ") and line.rstrip().endswith("-bullseye"):
+        if not keep_bullseye and line.startswith("FROM ") and line.rstrip().endswith("-bullseye"):
             # Debian 11 security support ended (Aug 2026): its security mirror no longer serves the packages
             # Playwright needs. Same Node major version on Debian 12.
             line = line.rstrip()[: -len("-bullseye")] + "-bookworm"
@@ -173,6 +184,8 @@ def patch_dockerfile(content):
             line = "FROM cypress/browsers:node-20.18.0-chrome-130.0.6723.69-1-ff-131.0.3-edge-130.0.2849.52-1"
         if "playwright install --with-deps" in line and line.startswith("RUN "):
             out.append("RUN apt-get update")
+            if chromium_only and "--with-deps chromium" not in line:
+                line = line.replace("playwright install --with-deps", "playwright install --with-deps chromium")
         out.append(line)
     return "\n".join(out) + "\n"
 

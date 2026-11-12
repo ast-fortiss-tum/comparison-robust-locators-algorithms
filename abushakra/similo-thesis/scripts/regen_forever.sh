@@ -28,7 +28,7 @@ backoff=21600
 while true; do
   PASS=out/regen/pass-$(date +%Y%m%d-%H%M%S).log
   say "pass starts -> $PASS"
-  "$J/bin/java" -Xmx4g -Dregen.resume=true -cp "$CP" scrape.RegenerateDoms fetch all > "$PASS" 2>&1
+  "$J/bin/java" -Xmx10g -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=out/regen -Dregen.resume=true -cp "$CP" scrape.RegenerateDoms fetch all > "$PASS" 2>&1
   if grep -q "^STOPPED:" "$PASS"; then
     say "blocked by archive.org; sleeping $backoff s"; sleep "$backoff"
     backoff=$(( backoff * 2 > 172800 ? 172800 : backoff * 2 ))
