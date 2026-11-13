@@ -1,0 +1,5 @@
+{
+ "amazon": "/models/retail_websites_fold1.joblib",
+ "zillow": "/models/retail_websites_fold1.joblib",
+ "wikipedia": "/models/news_websites_fold1.joblib"
+}

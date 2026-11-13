@@ -1,0 +1,96 @@
+algorithm,subset,found,pairs,accuracy
+COLOR,ALL,184,350,52.57
+COLOR,same position,178,181,98.34
+COLOR,"moved, same element",5,11,45.45
+COLOR,"moved, different element",0,121,0.00
+COLOR,"moved, unsure/bad/unlabelled",1,37,2.70
+IDXPath,ALL,181,350,51.71
+IDXPath,same position,180,181,99.45
+IDXPath,"moved, same element",1,11,9.09
+IDXPath,"moved, different element",0,121,0.00
+IDXPath,"moved, unsure/bad/unlabelled",0,37,0.00
+LegacyCombined,ALL,181,350,51.71
+LegacyCombined,same position,174,181,96.13
+LegacyCombined,"moved, same element",4,11,36.36
+LegacyCombined,"moved, different element",2,121,1.65
+LegacyCombined,"moved, unsure/bad/unlabelled",1,37,2.70
+LegacySimilo,ALL,181,350,51.71
+LegacySimilo,same position,174,181,96.13
+LegacySimilo,"moved, same element",4,11,36.36
+LegacySimilo,"moved, different element",2,121,1.65
+LegacySimilo,"moved, unsure/bad/unlabelled",1,37,2.70
+Montoto,ALL,78,350,22.29
+Montoto,same position,77,181,42.54
+Montoto,"moved, same element",1,11,9.09
+Montoto,"moved, different element",0,121,0.00
+Montoto,"moved, unsure/bad/unlabelled",0,37,0.00
+MultiLocator,ALL,181,350,51.71
+MultiLocator,same position,178,181,98.34
+MultiLocator,"moved, same element",2,11,18.18
+MultiLocator,"moved, different element",0,121,0.00
+MultiLocator,"moved, unsure/bad/unlabelled",1,37,2.70
+MultiLocator+repair,ALL,178,350,50.86
+MultiLocator+repair,same position,175,181,96.69
+MultiLocator+repair,"moved, same element",2,11,18.18
+MultiLocator+repair,"moved, different element",0,121,0.00
+MultiLocator+repair,"moved, unsure/bad/unlabelled",1,37,2.70
+MultiLocator-noVISTA,ALL,181,350,51.71
+MultiLocator-noVISTA,same position,178,181,98.34
+MultiLocator-noVISTA,"moved, same element",2,11,18.18
+MultiLocator-noVISTA,"moved, different element",0,121,0.00
+MultiLocator-noVISTA,"moved, unsure/bad/unlabelled",1,37,2.70
+OptimizedCombined,ALL,180,350,51.43
+OptimizedCombined,same position,173,181,95.58
+OptimizedCombined,"moved, same element",5,11,45.45
+OptimizedCombined,"moved, different element",1,121,0.83
+OptimizedCombined,"moved, unsure/bad/unlabelled",1,37,2.70
+OptimizedMinimal,ALL,179,350,51.14
+OptimizedMinimal,same position,172,181,95.03
+OptimizedMinimal,"moved, same element",5,11,45.45
+OptimizedMinimal,"moved, different element",1,121,0.83
+OptimizedMinimal,"moved, unsure/bad/unlabelled",1,37,2.70
+OptimizedSimilo,ALL,179,350,51.14
+OptimizedSimilo,same position,173,181,95.58
+OptimizedSimilo,"moved, same element",4,11,36.36
+OptimizedSimilo,"moved, different element",1,121,0.83
+OptimizedSimilo,"moved, unsure/bad/unlabelled",1,37,2.70
+OptimizedVonSimilo,ALL,192,350,54.86
+OptimizedVonSimilo,same position,157,181,86.74
+OptimizedVonSimilo,"moved, same element",5,11,45.45
+OptimizedVonSimilo,"moved, different element",13,121,10.74
+OptimizedVonSimilo,"moved, unsure/bad/unlabelled",17,37,45.95
+RobulaPlus,ALL,143,350,40.86
+RobulaPlus,same position,141,181,77.90
+RobulaPlus,"moved, same element",1,11,9.09
+RobulaPlus,"moved, different element",0,121,0.00
+RobulaPlus,"moved, unsure/bad/unlabelled",1,37,2.70
+SIDEREAL,ALL,109,350,31.14
+SIDEREAL,same position,107,181,59.12
+SIDEREAL,"moved, same element",1,11,9.09
+SIDEREAL,"moved, different element",0,121,0.00
+SIDEREAL,"moved, unsure/bad/unlabelled",1,37,2.70
+SIDEREAL-uniform,ALL,109,350,31.14
+SIDEREAL-uniform,same position,107,181,59.12
+SIDEREAL-uniform,"moved, same element",1,11,9.09
+SIDEREAL-uniform,"moved, different element",0,121,0.00
+SIDEREAL-uniform,"moved, unsure/bad/unlabelled",1,37,2.70
+SeleniumIDE,ALL,54,350,15.43
+SeleniumIDE,same position,53,181,29.28
+SeleniumIDE,"moved, same element",1,11,9.09
+SeleniumIDE,"moved, different element",0,121,0.00
+SeleniumIDE,"moved, unsure/bad/unlabelled",0,37,0.00
+VISTA,ALL,104,350,29.71
+VISTA,same position,101,181,55.80
+VISTA,"moved, same element",2,11,18.18
+VISTA,"moved, different element",1,121,0.83
+VISTA,"moved, unsure/bad/unlabelled",0,37,0.00
+VonSimilo,ALL,193,350,55.14
+VonSimilo,same position,156,181,86.19
+VonSimilo,"moved, same element",5,11,45.45
+VonSimilo,"moved, different element",15,121,12.40
+VonSimilo,"moved, unsure/bad/unlabelled",17,37,45.95
+absXPath,ALL,182,350,52.00
+absXPath,same position,181,181,100.00
+absXPath,"moved, same element",1,11,9.09
+absXPath,"moved, different element",0,121,0.00
+absXPath,"moved, unsure/bad/unlabelled",0,37,0.00

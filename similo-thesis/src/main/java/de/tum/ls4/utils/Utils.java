@@ -60,7 +60,9 @@ public class Utils {
     }
 
     public static String getByName(By by) {
-        if (by instanceof By.ByName) {
+        if (by instanceof By.ById) { // was missing: every By.id locator failed with "Unknown By type"
+            return "id";
+        } else if (by instanceof By.ByName) {
             return "name";
         } else if (by instanceof By.ByCssSelector) {
             return "css";
@@ -95,17 +97,19 @@ public class Utils {
         }
     }
 
+    @SuppressWarnings("unchecked")
     public static Map<String, Object> checkedCastToMap(Object object) {
         if (object instanceof Map) {
-            return checkedCastToMap(object);
+            return (Map<String, Object>) object; // was a self-call (infinite recursion / StackOverflowError)
         } else {
             throw new RuntimeException("Could not cast object to Map<String, Object>");
         }
     }
 
+    @SuppressWarnings("unchecked")
     public static List<Object> checkedCastToList(Object object) {
         if (object instanceof List) {
-            return checkedCastToList(object);
+            return (List<Object>) object; // was a self-call (infinite recursion / StackOverflowError)
         } else {
             throw new RuntimeException("Could not cast object to List<Object>");
         }

@@ -1,0 +1,9 @@
+Algorithm,AccuracyAll%,AccAll_Num,AccAll_Denom,AccuracyMinor%,AccMinor_Num,AccMinor_Denom,AccuracyMajor%,AccMajor_Num,AccMajor_Denom,Fitness,Fitness%,LocatorBreakSuccess%,LocatorBreak_Num,LocatorBreak_Denom,Seconds
+MultiLocator@wikipedia,100.00,295,295,100.00,162,162,100.00,102,102,9008.00,100.00,100.00,82,82,20.3
+MultiLocator@zillow,82.14,276,336,65.38,17,26,82.59,242,293,11112.00,75.28,65.78,75,114,20.7
+MultiLocator@amazon,94.46,478,506,100.00,63,63,93.60,410,438,17496.00,86.68,71.13,69,97,453.0
+MultiLocator@ALL,92.26,1049,1137,96.41,242,251,90.51,754,833,37616.00,85.58,77.13,226,293,494.1
+MultiLocator-noVISTA@wikipedia,100.00,295,295,100.00,162,162,100.00,102,102,9008.00,100.00,100.00,82,82,18.5
+MultiLocator-noVISTA@zillow,79.76,268,336,65.38,17,26,79.86,234,293,10344.00,70.08,58.77,67,114,22.2
+MultiLocator-noVISTA@amazon,94.46,478,506,100.00,63,63,93.60,410,438,17496.00,86.68,71.13,69,97,416.7
+MultiLocator-noVISTA@ALL,91.55,1041,1137,96.41,242,251,89.55,746,833,36848.00,83.83,74.40,218,293,457.3
