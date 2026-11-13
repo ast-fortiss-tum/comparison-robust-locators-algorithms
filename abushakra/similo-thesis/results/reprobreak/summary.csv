@@ -1,286 +1,96 @@
-algorithm,repo,subset,found,pairs,accuracy
-LegacySimilo,ALL,all,183,350,52.29
-LegacySimilo,ALL,moved,7,169,4.14
-LegacySimilo,ALL,same_xpath,176,181,97.24
-LegacySimilo,angular-slickgrid,all,92,239,38.49
-LegacySimilo,angular-slickgrid,moved,1,144,0.69
-LegacySimilo,angular-slickgrid,same_xpath,91,95,95.79
-LegacySimilo,koenig,all,52,57,91.23
-LegacySimilo,koenig,moved,4,9,44.44
-LegacySimilo,koenig,same_xpath,48,48,100.00
-LegacySimilo,openmct,all,23,32,71.88
-LegacySimilo,openmct,moved,1,10,10.00
-LegacySimilo,openmct,same_xpath,22,22,100.00
-LegacySimilo,playwright,all,16,22,72.73
-LegacySimilo,playwright,moved,1,6,16.67
-LegacySimilo,playwright,same_xpath,15,16,93.75
-OptimizedSimilo,ALL,all,180,350,51.43
-OptimizedSimilo,ALL,moved,6,169,3.55
-OptimizedSimilo,ALL,same_xpath,174,181,96.13
-OptimizedSimilo,angular-slickgrid,all,89,239,37.24
-OptimizedSimilo,angular-slickgrid,moved,1,144,0.69
-OptimizedSimilo,angular-slickgrid,same_xpath,88,95,92.63
-OptimizedSimilo,koenig,all,51,57,89.47
-OptimizedSimilo,koenig,moved,3,9,33.33
-OptimizedSimilo,koenig,same_xpath,48,48,100.00
-OptimizedSimilo,openmct,all,23,32,71.88
-OptimizedSimilo,openmct,moved,1,10,10.00
-OptimizedSimilo,openmct,same_xpath,22,22,100.00
-OptimizedSimilo,playwright,all,17,22,77.27
-OptimizedSimilo,playwright,moved,1,6,16.67
-OptimizedSimilo,playwright,same_xpath,16,16,100.00
-VonSimilo,ALL,all,195,350,55.71
-VonSimilo,ALL,moved,37,169,21.89
-VonSimilo,ALL,same_xpath,158,181,87.29
-VonSimilo,angular-slickgrid,all,121,239,50.63
-VonSimilo,angular-slickgrid,moved,30,144,20.83
-VonSimilo,angular-slickgrid,same_xpath,91,95,95.79
-VonSimilo,koenig,all,46,57,80.70
-VonSimilo,koenig,moved,5,9,55.56
-VonSimilo,koenig,same_xpath,41,48,85.42
-VonSimilo,openmct,all,23,32,71.88
-VonSimilo,openmct,moved,1,10,10.00
-VonSimilo,openmct,same_xpath,22,22,100.00
-VonSimilo,playwright,all,5,22,22.73
-VonSimilo,playwright,moved,1,6,16.67
-VonSimilo,playwright,same_xpath,4,16,25.00
-OptimizedVonSimilo,ALL,all,194,350,55.43
-OptimizedVonSimilo,ALL,moved,35,169,20.71
-OptimizedVonSimilo,ALL,same_xpath,159,181,87.85
-OptimizedVonSimilo,angular-slickgrid,all,121,239,50.63
-OptimizedVonSimilo,angular-slickgrid,moved,29,144,20.14
-OptimizedVonSimilo,angular-slickgrid,same_xpath,92,95,96.84
-OptimizedVonSimilo,koenig,all,45,57,78.95
-OptimizedVonSimilo,koenig,moved,4,9,44.44
-OptimizedVonSimilo,koenig,same_xpath,41,48,85.42
-OptimizedVonSimilo,openmct,all,23,32,71.88
-OptimizedVonSimilo,openmct,moved,1,10,10.00
-OptimizedVonSimilo,openmct,same_xpath,22,22,100.00
-OptimizedVonSimilo,playwright,all,5,22,22.73
-OptimizedVonSimilo,playwright,moved,1,6,16.67
-OptimizedVonSimilo,playwright,same_xpath,4,16,25.00
-LegacyCombined,ALL,all,183,350,52.29
-LegacyCombined,ALL,moved,7,169,4.14
-LegacyCombined,ALL,same_xpath,176,181,97.24
-LegacyCombined,angular-slickgrid,all,92,239,38.49
-LegacyCombined,angular-slickgrid,moved,1,144,0.69
-LegacyCombined,angular-slickgrid,same_xpath,91,95,95.79
-LegacyCombined,koenig,all,52,57,91.23
-LegacyCombined,koenig,moved,4,9,44.44
-LegacyCombined,koenig,same_xpath,48,48,100.00
-LegacyCombined,openmct,all,23,32,71.88
-LegacyCombined,openmct,moved,1,10,10.00
-LegacyCombined,openmct,same_xpath,22,22,100.00
-LegacyCombined,playwright,all,16,22,72.73
-LegacyCombined,playwright,moved,1,6,16.67
-LegacyCombined,playwright,same_xpath,15,16,93.75
-OptimizedCombined,ALL,all,180,350,51.43
-OptimizedCombined,ALL,moved,6,169,3.55
-OptimizedCombined,ALL,same_xpath,174,181,96.13
-OptimizedCombined,angular-slickgrid,all,89,239,37.24
-OptimizedCombined,angular-slickgrid,moved,1,144,0.69
-OptimizedCombined,angular-slickgrid,same_xpath,88,95,92.63
-OptimizedCombined,koenig,all,51,57,89.47
-OptimizedCombined,koenig,moved,3,9,33.33
-OptimizedCombined,koenig,same_xpath,48,48,100.00
-OptimizedCombined,openmct,all,23,32,71.88
-OptimizedCombined,openmct,moved,1,10,10.00
-OptimizedCombined,openmct,same_xpath,22,22,100.00
-OptimizedCombined,playwright,all,17,22,77.27
-OptimizedCombined,playwright,moved,1,6,16.67
-OptimizedCombined,playwright,same_xpath,16,16,100.00
-OptimizedMinimal,ALL,all,179,350,51.14
-OptimizedMinimal,ALL,moved,7,169,4.14
-OptimizedMinimal,ALL,same_xpath,172,181,95.03
-OptimizedMinimal,angular-slickgrid,all,87,239,36.40
-OptimizedMinimal,angular-slickgrid,moved,1,144,0.69
-OptimizedMinimal,angular-slickgrid,same_xpath,86,95,90.53
-OptimizedMinimal,koenig,all,52,57,91.23
-OptimizedMinimal,koenig,moved,4,9,44.44
-OptimizedMinimal,koenig,same_xpath,48,48,100.00
-OptimizedMinimal,openmct,all,23,32,71.88
-OptimizedMinimal,openmct,moved,1,10,10.00
-OptimizedMinimal,openmct,same_xpath,22,22,100.00
-OptimizedMinimal,playwright,all,17,22,77.27
-OptimizedMinimal,playwright,moved,1,6,16.67
-OptimizedMinimal,playwright,same_xpath,16,16,100.00
-COLOR,ALL,all,184,350,52.57
-COLOR,ALL,moved,6,169,3.55
-COLOR,ALL,same_xpath,178,181,98.34
-COLOR,angular-slickgrid,all,92,239,38.49
-COLOR,angular-slickgrid,moved,0,144,0.00
-COLOR,angular-slickgrid,same_xpath,92,95,96.84
-COLOR,koenig,all,53,57,92.98
-COLOR,koenig,moved,5,9,55.56
-COLOR,koenig,same_xpath,48,48,100.00
-COLOR,openmct,all,22,32,68.75
-COLOR,openmct,moved,0,10,0.00
-COLOR,openmct,same_xpath,22,22,100.00
-COLOR,playwright,all,17,22,77.27
-COLOR,playwright,moved,1,6,16.67
-COLOR,playwright,same_xpath,16,16,100.00
-VISTA,ALL,all,2,350,0.57
-VISTA,ALL,moved,0,169,0.00
-VISTA,ALL,same_xpath,2,181,1.10
-VISTA,angular-slickgrid,all,0,239,0.00
-VISTA,angular-slickgrid,moved,0,144,0.00
-VISTA,angular-slickgrid,same_xpath,0,95,0.00
-VISTA,koenig,all,0,57,0.00
-VISTA,koenig,moved,0,9,0.00
-VISTA,koenig,same_xpath,0,48,0.00
-VISTA,openmct,all,2,32,6.25
-VISTA,openmct,moved,0,10,0.00
-VISTA,openmct,same_xpath,2,22,9.09
-VISTA,playwright,all,0,22,0.00
-VISTA,playwright,moved,0,6,0.00
-VISTA,playwright,same_xpath,0,16,0.00
-absXPath,ALL,all,182,350,52.00
-absXPath,ALL,moved,1,169,0.59
-absXPath,ALL,same_xpath,181,181,100.00
-absXPath,angular-slickgrid,all,95,239,39.75
-absXPath,angular-slickgrid,moved,0,144,0.00
-absXPath,angular-slickgrid,same_xpath,95,95,100.00
-absXPath,koenig,all,49,57,85.96
-absXPath,koenig,moved,1,9,11.11
-absXPath,koenig,same_xpath,48,48,100.00
-absXPath,openmct,all,22,32,68.75
-absXPath,openmct,moved,0,10,0.00
-absXPath,openmct,same_xpath,22,22,100.00
-absXPath,playwright,all,16,22,72.73
-absXPath,playwright,moved,0,6,0.00
-absXPath,playwright,same_xpath,16,16,100.00
-IDXPath,ALL,all,181,350,51.71
-IDXPath,ALL,moved,1,169,0.59
-IDXPath,ALL,same_xpath,180,181,99.45
-IDXPath,angular-slickgrid,all,95,239,39.75
-IDXPath,angular-slickgrid,moved,0,144,0.00
-IDXPath,angular-slickgrid,same_xpath,95,95,100.00
-IDXPath,koenig,all,49,57,85.96
-IDXPath,koenig,moved,1,9,11.11
-IDXPath,koenig,same_xpath,48,48,100.00
-IDXPath,openmct,all,22,32,68.75
-IDXPath,openmct,moved,0,10,0.00
-IDXPath,openmct,same_xpath,22,22,100.00
-IDXPath,playwright,all,15,22,68.18
-IDXPath,playwright,moved,0,6,0.00
-IDXPath,playwright,same_xpath,15,16,93.75
-Montoto,ALL,all,78,350,22.29
-Montoto,ALL,moved,1,169,0.59
-Montoto,ALL,same_xpath,77,181,42.54
-Montoto,angular-slickgrid,all,24,239,10.04
-Montoto,angular-slickgrid,moved,0,144,0.00
-Montoto,angular-slickgrid,same_xpath,24,95,25.26
-Montoto,koenig,all,37,57,64.91
-Montoto,koenig,moved,1,9,11.11
-Montoto,koenig,same_xpath,36,48,75.00
-Montoto,openmct,all,10,32,31.25
-Montoto,openmct,moved,0,10,0.00
-Montoto,openmct,same_xpath,10,22,45.45
-Montoto,playwright,all,7,22,31.82
-Montoto,playwright,moved,0,6,0.00
-Montoto,playwright,same_xpath,7,16,43.75
-SeleniumIDE,ALL,all,55,350,15.71
-SeleniumIDE,ALL,moved,1,169,0.59
-SeleniumIDE,ALL,same_xpath,54,181,29.83
-SeleniumIDE,angular-slickgrid,all,17,239,7.11
-SeleniumIDE,angular-slickgrid,moved,0,144,0.00
-SeleniumIDE,angular-slickgrid,same_xpath,17,95,17.89
-SeleniumIDE,koenig,all,23,57,40.35
-SeleniumIDE,koenig,moved,1,9,11.11
-SeleniumIDE,koenig,same_xpath,22,48,45.83
-SeleniumIDE,openmct,all,11,32,34.38
-SeleniumIDE,openmct,moved,0,10,0.00
-SeleniumIDE,openmct,same_xpath,11,22,50.00
-SeleniumIDE,playwright,all,4,22,18.18
-SeleniumIDE,playwright,moved,0,6,0.00
-SeleniumIDE,playwright,same_xpath,4,16,25.00
-RobulaPlus,ALL,all,145,350,41.43
-RobulaPlus,ALL,moved,2,169,1.18
-RobulaPlus,ALL,same_xpath,143,181,79.01
-RobulaPlus,angular-slickgrid,all,82,239,34.31
-RobulaPlus,angular-slickgrid,moved,0,144,0.00
-RobulaPlus,angular-slickgrid,same_xpath,82,95,86.32
-RobulaPlus,koenig,all,41,57,71.93
-RobulaPlus,koenig,moved,1,9,11.11
-RobulaPlus,koenig,same_xpath,40,48,83.33
-RobulaPlus,openmct,all,16,32,50.00
-RobulaPlus,openmct,moved,0,10,0.00
-RobulaPlus,openmct,same_xpath,16,22,72.73
-RobulaPlus,playwright,all,6,22,27.27
-RobulaPlus,playwright,moved,1,6,16.67
-RobulaPlus,playwright,same_xpath,5,16,31.25
-SIDEREAL,ALL,all,110,350,31.43
-SIDEREAL,ALL,moved,2,169,1.18
-SIDEREAL,ALL,same_xpath,108,181,59.67
-SIDEREAL,angular-slickgrid,all,47,239,19.67
-SIDEREAL,angular-slickgrid,moved,0,144,0.00
-SIDEREAL,angular-slickgrid,same_xpath,47,95,49.47
-SIDEREAL,koenig,all,41,57,71.93
-SIDEREAL,koenig,moved,1,9,11.11
-SIDEREAL,koenig,same_xpath,40,48,83.33
-SIDEREAL,openmct,all,16,32,50.00
-SIDEREAL,openmct,moved,0,10,0.00
-SIDEREAL,openmct,same_xpath,16,22,72.73
-SIDEREAL,playwright,all,6,22,27.27
-SIDEREAL,playwright,moved,1,6,16.67
-SIDEREAL,playwright,same_xpath,5,16,31.25
-SIDEREAL-uniform,ALL,all,110,350,31.43
-SIDEREAL-uniform,ALL,moved,2,169,1.18
-SIDEREAL-uniform,ALL,same_xpath,108,181,59.67
-SIDEREAL-uniform,angular-slickgrid,all,47,239,19.67
-SIDEREAL-uniform,angular-slickgrid,moved,0,144,0.00
-SIDEREAL-uniform,angular-slickgrid,same_xpath,47,95,49.47
-SIDEREAL-uniform,koenig,all,41,57,71.93
-SIDEREAL-uniform,koenig,moved,1,9,11.11
-SIDEREAL-uniform,koenig,same_xpath,40,48,83.33
-SIDEREAL-uniform,openmct,all,16,32,50.00
-SIDEREAL-uniform,openmct,moved,0,10,0.00
-SIDEREAL-uniform,openmct,same_xpath,16,22,72.73
-SIDEREAL-uniform,playwright,all,6,22,27.27
-SIDEREAL-uniform,playwright,moved,1,6,16.67
-SIDEREAL-uniform,playwright,same_xpath,5,16,31.25
-MultiLocator,ALL,all,180,350,51.43
-MultiLocator,ALL,moved,3,169,1.78
-MultiLocator,ALL,same_xpath,177,181,97.79
-MultiLocator,angular-slickgrid,all,91,239,38.08
-MultiLocator,angular-slickgrid,moved,0,144,0.00
-MultiLocator,angular-slickgrid,same_xpath,91,95,95.79
-MultiLocator,koenig,all,50,57,87.72
-MultiLocator,koenig,moved,2,9,22.22
-MultiLocator,koenig,same_xpath,48,48,100.00
-MultiLocator,openmct,all,22,32,68.75
-MultiLocator,openmct,moved,0,10,0.00
-MultiLocator,openmct,same_xpath,22,22,100.00
-MultiLocator,playwright,all,17,22,77.27
-MultiLocator,playwright,moved,1,6,16.67
-MultiLocator,playwright,same_xpath,16,16,100.00
-MultiLocator-noVISTA,ALL,all,180,350,51.43
-MultiLocator-noVISTA,ALL,moved,3,169,1.78
-MultiLocator-noVISTA,ALL,same_xpath,177,181,97.79
-MultiLocator-noVISTA,angular-slickgrid,all,91,239,38.08
-MultiLocator-noVISTA,angular-slickgrid,moved,0,144,0.00
-MultiLocator-noVISTA,angular-slickgrid,same_xpath,91,95,95.79
-MultiLocator-noVISTA,koenig,all,50,57,87.72
-MultiLocator-noVISTA,koenig,moved,2,9,22.22
-MultiLocator-noVISTA,koenig,same_xpath,48,48,100.00
-MultiLocator-noVISTA,openmct,all,22,32,68.75
-MultiLocator-noVISTA,openmct,moved,0,10,0.00
-MultiLocator-noVISTA,openmct,same_xpath,22,22,100.00
-MultiLocator-noVISTA,playwright,all,17,22,77.27
-MultiLocator-noVISTA,playwright,moved,1,6,16.67
-MultiLocator-noVISTA,playwright,same_xpath,16,16,100.00
-MultiLocator+repair,ALL,all,180,350,51.43
-MultiLocator+repair,ALL,moved,3,169,1.78
-MultiLocator+repair,ALL,same_xpath,177,181,97.79
-MultiLocator+repair,angular-slickgrid,all,91,239,38.08
-MultiLocator+repair,angular-slickgrid,moved,0,144,0.00
-MultiLocator+repair,angular-slickgrid,same_xpath,91,95,95.79
-MultiLocator+repair,koenig,all,50,57,87.72
-MultiLocator+repair,koenig,moved,2,9,22.22
-MultiLocator+repair,koenig,same_xpath,48,48,100.00
-MultiLocator+repair,openmct,all,22,32,68.75
-MultiLocator+repair,openmct,moved,0,10,0.00
-MultiLocator+repair,openmct,same_xpath,22,22,100.00
-MultiLocator+repair,playwright,all,17,22,77.27
-MultiLocator+repair,playwright,moved,1,6,16.67
-MultiLocator+repair,playwright,same_xpath,16,16,100.00
+algorithm,subset,found,pairs,accuracy
+COLOR,ALL,184,350,52.57
+COLOR,same position,178,181,98.34
+COLOR,"moved, same element",5,11,45.45
+COLOR,"moved, different element",0,121,0.00
+COLOR,"moved, unsure/bad/unlabelled",1,37,2.70
+IDXPath,ALL,181,350,51.71
+IDXPath,same position,180,181,99.45
+IDXPath,"moved, same element",1,11,9.09
+IDXPath,"moved, different element",0,121,0.00
+IDXPath,"moved, unsure/bad/unlabelled",0,37,0.00
+LegacyCombined,ALL,181,350,51.71
+LegacyCombined,same position,174,181,96.13
+LegacyCombined,"moved, same element",4,11,36.36
+LegacyCombined,"moved, different element",2,121,1.65
+LegacyCombined,"moved, unsure/bad/unlabelled",1,37,2.70
+LegacySimilo,ALL,181,350,51.71
+LegacySimilo,same position,174,181,96.13
+LegacySimilo,"moved, same element",4,11,36.36
+LegacySimilo,"moved, different element",2,121,1.65
+LegacySimilo,"moved, unsure/bad/unlabelled",1,37,2.70
+Montoto,ALL,78,350,22.29
+Montoto,same position,77,181,42.54
+Montoto,"moved, same element",1,11,9.09
+Montoto,"moved, different element",0,121,0.00
+Montoto,"moved, unsure/bad/unlabelled",0,37,0.00
+MultiLocator,ALL,181,350,51.71
+MultiLocator,same position,178,181,98.34
+MultiLocator,"moved, same element",2,11,18.18
+MultiLocator,"moved, different element",0,121,0.00
+MultiLocator,"moved, unsure/bad/unlabelled",1,37,2.70
+MultiLocator+repair,ALL,178,350,50.86
+MultiLocator+repair,same position,175,181,96.69
+MultiLocator+repair,"moved, same element",2,11,18.18
+MultiLocator+repair,"moved, different element",0,121,0.00
+MultiLocator+repair,"moved, unsure/bad/unlabelled",1,37,2.70
+MultiLocator-noVISTA,ALL,181,350,51.71
+MultiLocator-noVISTA,same position,178,181,98.34
+MultiLocator-noVISTA,"moved, same element",2,11,18.18
+MultiLocator-noVISTA,"moved, different element",0,121,0.00
+MultiLocator-noVISTA,"moved, unsure/bad/unlabelled",1,37,2.70
+OptimizedCombined,ALL,180,350,51.43
+OptimizedCombined,same position,173,181,95.58
+OptimizedCombined,"moved, same element",5,11,45.45
+OptimizedCombined,"moved, different element",1,121,0.83
+OptimizedCombined,"moved, unsure/bad/unlabelled",1,37,2.70
+OptimizedMinimal,ALL,179,350,51.14
+OptimizedMinimal,same position,172,181,95.03
+OptimizedMinimal,"moved, same element",5,11,45.45
+OptimizedMinimal,"moved, different element",1,121,0.83
+OptimizedMinimal,"moved, unsure/bad/unlabelled",1,37,2.70
+OptimizedSimilo,ALL,179,350,51.14
+OptimizedSimilo,same position,173,181,95.58
+OptimizedSimilo,"moved, same element",4,11,36.36
+OptimizedSimilo,"moved, different element",1,121,0.83
+OptimizedSimilo,"moved, unsure/bad/unlabelled",1,37,2.70
+OptimizedVonSimilo,ALL,192,350,54.86
+OptimizedVonSimilo,same position,157,181,86.74
+OptimizedVonSimilo,"moved, same element",5,11,45.45
+OptimizedVonSimilo,"moved, different element",13,121,10.74
+OptimizedVonSimilo,"moved, unsure/bad/unlabelled",17,37,45.95
+RobulaPlus,ALL,143,350,40.86
+RobulaPlus,same position,141,181,77.90
+RobulaPlus,"moved, same element",1,11,9.09
+RobulaPlus,"moved, different element",0,121,0.00
+RobulaPlus,"moved, unsure/bad/unlabelled",1,37,2.70
+SIDEREAL,ALL,109,350,31.14
+SIDEREAL,same position,107,181,59.12
+SIDEREAL,"moved, same element",1,11,9.09
+SIDEREAL,"moved, different element",0,121,0.00
+SIDEREAL,"moved, unsure/bad/unlabelled",1,37,2.70
+SIDEREAL-uniform,ALL,109,350,31.14
+SIDEREAL-uniform,same position,107,181,59.12
+SIDEREAL-uniform,"moved, same element",1,11,9.09
+SIDEREAL-uniform,"moved, different element",0,121,0.00
+SIDEREAL-uniform,"moved, unsure/bad/unlabelled",1,37,2.70
+SeleniumIDE,ALL,54,350,15.43
+SeleniumIDE,same position,53,181,29.28
+SeleniumIDE,"moved, same element",1,11,9.09
+SeleniumIDE,"moved, different element",0,121,0.00
+SeleniumIDE,"moved, unsure/bad/unlabelled",0,37,0.00
+VISTA,ALL,104,350,29.71
+VISTA,same position,101,181,55.80
+VISTA,"moved, same element",2,11,18.18
+VISTA,"moved, different element",1,121,0.83
+VISTA,"moved, unsure/bad/unlabelled",0,37,0.00
+VonSimilo,ALL,193,350,55.14
+VonSimilo,same position,156,181,86.19
+VonSimilo,"moved, same element",5,11,45.45
+VonSimilo,"moved, different element",15,121,12.40
+VonSimilo,"moved, unsure/bad/unlabelled",17,37,45.95
+absXPath,ALL,182,350,52.00
+absXPath,same position,181,181,100.00
+absXPath,"moved, same element",1,11,9.09
+absXPath,"moved, different element",0,121,0.00
+absXPath,"moved, unsure/bad/unlabelled",0,37,0.00

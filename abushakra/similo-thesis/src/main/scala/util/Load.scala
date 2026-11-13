@@ -490,7 +490,7 @@ object Load:
    * ReproBreak captures); the Wayback screenshots have none and keep the inferred/default scale. */
   def screenshotScale(screenshot: String): Option[Double] =
     val f = Paths.get(screenshot).resolveSibling("screenshot_scale.txt")
-    if Files.exists(f) then scala.util.Try(Files.readString(f).trim.toDouble).toOption else None
+    if Files.exists(f) then scala.util.Try(Files.readString(f).trim.replace(',', '.').toDouble).toOption else None
 
   private def inferScale(imgW: Int, imgH: Int): Double =
     // If you recorded coordinates at a different logical width, override at runtime:

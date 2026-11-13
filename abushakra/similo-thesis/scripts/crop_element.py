@@ -1,6 +1,12 @@
 # crop_element.py
-import sys
-import cv2
+import os, sys
+try:
+    import cv2
+except ImportError:  # launched with a python3 that lacks OpenCV: use the project's virtualenv
+    _venv = os.path.join(os.path.dirname(os.path.realpath(__file__)), "..", ".venv", "bin", "python")
+    if os.path.exists(_venv) and os.path.realpath(sys.executable) != os.path.realpath(_venv):
+        os.execv(_venv, [_venv] + sys.argv)
+    raise
 
 def main():
     screenshot = sys.argv[1]

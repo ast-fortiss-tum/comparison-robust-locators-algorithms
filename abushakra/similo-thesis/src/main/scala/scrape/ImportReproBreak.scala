@@ -109,8 +109,11 @@ object ImportReproBreak:
       Files.writeString(d.resolve("chromeDOM.html"), c.dom, UTF_8)
       Files.copy(c.screenshot.get, d.resolve("screenshot.png"), StandardCopyOption.REPLACE_EXISTING)
       val pngWidth = javax.imageio.ImageIO.read(d.resolve("screenshot.png").toFile).getWidth
-      val scale = if c.viewportWidth > 0 then pngWidth.toDouble / c.viewportWidth else 1.0
-      Files.writeString(d.resolve("screenshot_scale.txt"), f"$scale%.4f\n", UTF_8)
+      // A full-page screenshot is wider than the viewport when the page overflows horizontally, but is still 1:1 with
+      // page coordinates; only a ratio of about 2 or more is a device-pixel ratio.
+      val ratio = if c.viewportWidth > 0 then pngWidth.toDouble / c.viewportWidth else 1.0
+      val scale = if ratio < 1.5 then 1.0 else Math.round(ratio).toDouble
+      Files.writeString(d.resolve("screenshot_scale.txt"), String.format(java.util.Locale.ROOT, "%.4f\n", scale), UTF_8)
     Files.writeString(dir.resolve("urls.csv"),
       s"date;url\n$OldDate;http://reprobreak.local/$site/$OldDate\n$NewDate;http://reprobreak.local/$site/$NewDate\n", UTF_8)
     Files.writeString(dir.resolve("xpaths.csv"), s"$OldDate;$NewDate\n${oldTarget.xpath.chrome};${newTarget.xpath.chrome}\n", UTF_8)
