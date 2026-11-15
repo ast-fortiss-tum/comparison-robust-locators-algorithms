@@ -85,6 +85,7 @@ object Main:
       "OptimizedMinimal" -> OptimizedMinimalSimilo,
       "COLOR" -> LegacyColor,
       "VISTA" -> Vista(),
+      "VISTA+repair" -> Vista(withRepair = true),
       "absXPath" -> similo.Guarded(absXPath()),
       "IDXPath" -> similo.Guarded(IDXPath()),
       "Montoto" -> similo.Guarded(Montoto()),
@@ -100,7 +101,8 @@ object Main:
       "SIDEREAL" -> similo.Guarded(siderealnew.SiderealNew()),
       "SIDEREAL-uniform" -> similo.Guarded(siderealnew.SiderealNew(useHistory = false)),
       "MultiLocator+VISTA" -> similo.Guarded(multilocator.MultiLocator(false, true)), // VISTA fallback when no voter resolves
-      "MultiLocator-noVISTA" -> similo.Guarded(multilocator.MultiLocator(false, false)),
+      "MultiLocator" -> similo.Guarded(multilocator.MultiLocator(false, false)),
+      "MultiLocator+repair" -> similo.Guarded(multilocator.MultiLocator(true, false)),
       "MultiLocator+VISTA+repair" -> similo.Guarded(multilocator.MultiLocator(true, true))
     )
     def row(name: String, scope: String, stats: EvaluationStatistics, seconds: Double): String =

@@ -34,11 +34,11 @@ MultiLocator+VISTA+repair,same position,175,181,96.69
 MultiLocator+VISTA+repair,"moved, same element",2,11,18.18
 MultiLocator+VISTA+repair,"moved, different element",0,121,0.00
 MultiLocator+VISTA+repair,"moved, unsure/bad/unlabelled",1,37,2.70
-MultiLocator-noVISTA,ALL,181,350,51.71
-MultiLocator-noVISTA,same position,178,181,98.34
-MultiLocator-noVISTA,"moved, same element",2,11,18.18
-MultiLocator-noVISTA,"moved, different element",0,121,0.00
-MultiLocator-noVISTA,"moved, unsure/bad/unlabelled",1,37,2.70
+MultiLocator,ALL,181,350,51.71
+MultiLocator,same position,178,181,98.34
+MultiLocator,"moved, same element",2,11,18.18
+MultiLocator,"moved, different element",0,121,0.00
+MultiLocator,"moved, unsure/bad/unlabelled",1,37,2.70
 OptimizedCombined,ALL,180,350,51.43
 OptimizedCombined,same position,173,181,95.58
 OptimizedCombined,"moved, same element",5,11,45.45

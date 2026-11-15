@@ -170,15 +170,15 @@ MultiLocator+VISTA,locator changed,80,219,36.5
 MultiLocator+VISTA,locator unchanged,105,118,89.0
 MultiLocator+VISTA,moved,158,310,51.0
 MultiLocator+VISTA,same position,27,27,100.0
-MultiLocator-noVISTA,ALL,171,337,50.7
-MultiLocator-noVISTA,app: bludit,37,57,64.9
-MultiLocator-noVISTA,app: joomla,31,37,83.8
-MultiLocator-noVISTA,app: mantisbt,76,124,61.3
-MultiLocator-noVISTA,app: prestashop,27,119,22.7
-MultiLocator-noVISTA,locator changed,69,219,31.5
-MultiLocator-noVISTA,locator unchanged,102,118,86.4
-MultiLocator-noVISTA,moved,144,310,46.5
-MultiLocator-noVISTA,same position,27,27,100.0
+MultiLocator,ALL,171,337,50.7
+MultiLocator,app: bludit,37,57,64.9
+MultiLocator,app: joomla,31,37,83.8
+MultiLocator,app: mantisbt,76,124,61.3
+MultiLocator,app: prestashop,27,119,22.7
+MultiLocator,locator changed,69,219,31.5
+MultiLocator,locator unchanged,102,118,86.4
+MultiLocator,moved,144,310,46.5
+MultiLocator,same position,27,27,100.0
 MultiLocator+VISTA+repair,ALL,185,337,54.9
 MultiLocator+VISTA+repair,app: bludit,37,57,64.9
 MultiLocator+VISTA+repair,app: joomla,31,37,83.8

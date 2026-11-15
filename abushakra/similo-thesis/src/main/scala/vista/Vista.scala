@@ -15,7 +15,14 @@ import Load.matchTemplate
 import Load.getMatchPointFromCache
 import java.nio.file.{Files, Paths}
 
-case class Vista() extends Locator:
+/** withRepair: after a successful match the template of the element is replaced by the crop of the matched element
+  * in the page just processed (the next version is matched against the most recent appearance, not version A).
+  * The repaired templates live in memory only, so repeated runs do not influence each other. */
+case class Vista(withRepair: Boolean = false) extends Locator:
+
+  private val repaired = scala.collection.concurrent.TrieMap[String, String]()
+  private def repairKey(e: Element): String = s"${e.url.getOrElse("")}|${e.xpath.chrome}"
+
 
   override type S = VistaState
 
@@ -23,7 +30,8 @@ case class Vista() extends Locator:
 
   override def locate(state: VistaState, elements: Seq[Element]): Seq[(Double, Element)] =
 
-    val templatePath = getFilePathToTemplates(state.element.url.getOrElse(""), state.element)
+    val originalTemplate = getFilePathToTemplates(state.element.url.getOrElse(""), state.element)
+    val templatePath = if withRepair then repaired.getOrElse(repairKey(state.element), originalTemplate) else originalTemplate
     val pageUrlB = elements.headOption.flatMap(_.url)
     val filePathB = getFilePathToScreenshot(pageUrlB.getOrElse(""))
 
@@ -69,7 +77,15 @@ case class Vista() extends Locator:
         case None =>
           elements.map(el => (0.0, el))
 
-    result.sortBy(-_._1)
+    val sorted = result.sortBy(-_._1)
+    if withRepair then
+      sorted.headOption.filter(_._1 > 0.0).foreach { case (_, winner) =>
+        val dateB = getDateAndSiteFromArchiveUrl(pageUrlB.getOrElse("")).map(_._1).getOrElse("unknown")
+        val newTemplate = originalTemplate.stripSuffix(".png") + s"_repaired_$dateB.png"
+        if Files.exists(Paths.get(newTemplate)) || cropTemplate(filePathB, newTemplate, winner.x, winner.y, winner.width, winner.height) then
+          repaired.put(repairKey(state.element), newTemplate)
+      }
+    sorted
 
   def isPointInsideElement(x: Int, y: Int, w1: Int, h1: Int, targetTag: String, targetText: Option[String], targetID: Option[String], el: Element): Double = {
     val (ex, ey) = el.location
