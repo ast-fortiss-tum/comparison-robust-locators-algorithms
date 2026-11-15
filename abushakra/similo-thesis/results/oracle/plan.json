@@ -1,0 +1,292 @@
+[
+ {
+  "id": 1,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "initial/toolbar-arrow",
+  "framework": "testid",
+  "old_locator": "[data-testid=toolbar-arrow]",
+  "new_locator": "[data-testid=toolbar-arrow]"
+ },
+ {
+  "id": 2,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "initial/toolbar-diamond",
+  "framework": "testid",
+  "old_locator": "[data-testid=toolbar-diamond]",
+  "new_locator": "[data-testid=toolbar-diamond]"
+ },
+ {
+  "id": 3,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "initial/toolbar-ellipse",
+  "framework": "testid",
+  "old_locator": "[data-testid=toolbar-ellipse]",
+  "new_locator": "[data-testid=toolbar-ellipse]"
+ },
+ {
+  "id": 4,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "initial/toolbar-eraser",
+  "framework": "testid",
+  "old_locator": "[data-testid=toolbar-eraser]",
+  "new_locator": "[data-testid=toolbar-eraser]"
+ },
+ {
+  "id": 5,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "initial/toolbar-freedraw",
+  "framework": "testid",
+  "old_locator": "[data-testid=toolbar-freedraw]",
+  "new_locator": "[data-testid=toolbar-freedraw]"
+ },
+ {
+  "id": 6,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "initial/toolbar-image",
+  "framework": "testid",
+  "old_locator": "[data-testid=toolbar-image]",
+  "new_locator": "[data-testid=toolbar-image]"
+ },
+ {
+  "id": 7,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "initial/toolbar-line",
+  "framework": "testid",
+  "old_locator": "[data-testid=toolbar-line]",
+  "new_locator": "[data-testid=toolbar-line]"
+ },
+ {
+  "id": 8,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "initial/toolbar-lock",
+  "framework": "testid",
+  "old_locator": "[data-testid=toolbar-lock]",
+  "new_locator": "[data-testid=toolbar-lock]"
+ },
+ {
+  "id": 9,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "initial/toolbar-rectangle",
+  "framework": "testid",
+  "old_locator": "[data-testid=toolbar-rectangle]",
+  "new_locator": "[data-testid=toolbar-rectangle]"
+ },
+ {
+  "id": 10,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "initial/toolbar-selection",
+  "framework": "testid",
+  "old_locator": "[data-testid=toolbar-selection]",
+  "new_locator": "[data-testid=toolbar-selection]"
+ },
+ {
+  "id": 11,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "initial/toolbar-text",
+  "framework": "testid",
+  "old_locator": "[data-testid=toolbar-text]",
+  "new_locator": "[data-testid=toolbar-text]"
+ },
+ {
+  "id": 12,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "main-menu/clear-canvas-button",
+  "framework": "testid",
+  "old_locator": "[data-testid=clear-canvas-button]",
+  "new_locator": "[data-testid=clear-canvas-button]"
+ },
+ {
+  "id": 13,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "main-menu/collab-button",
+  "framework": "testid",
+  "old_locator": "[data-testid=collab-button]",
+  "new_locator": "[data-testid=collab-button]"
+ },
+ {
+  "id": 14,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "main-menu/dropdown-menu",
+  "framework": "testid",
+  "old_locator": "[data-testid=dropdown-menu]",
+  "new_locator": "[data-testid=dropdown-menu]"
+ },
+ {
+  "id": 15,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "main-menu/help-menu-item",
+  "framework": "testid",
+  "old_locator": "[data-testid=help-menu-item]",
+  "new_locator": "[data-testid=help-menu-item]"
+ },
+ {
+  "id": 16,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "main-menu/image-export-button",
+  "framework": "testid",
+  "old_locator": "[data-testid=image-export-button]",
+  "new_locator": "[data-testid=image-export-button]"
+ },
+ {
+  "id": 17,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "main-menu/json-export-button",
+  "framework": "testid",
+  "old_locator": "[data-testid=json-export-button]",
+  "new_locator": "[data-testid=json-export-button]"
+ },
+ {
+  "id": 18,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "main-menu/load-button",
+  "framework": "testid",
+  "old_locator": "[data-testid=load-button]",
+  "new_locator": "[data-testid=load-button]"
+ },
+ {
+  "id": 19,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "rectangle-selected/toolbar-arrow",
+  "framework": "testid",
+  "old_locator": "[data-testid=toolbar-arrow]",
+  "new_locator": "[data-testid=toolbar-arrow]"
+ },
+ {
+  "id": 20,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "rectangle-selected/toolbar-diamond",
+  "framework": "testid",
+  "old_locator": "[data-testid=toolbar-diamond]",
+  "new_locator": "[data-testid=toolbar-diamond]"
+ },
+ {
+  "id": 21,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "rectangle-selected/toolbar-ellipse",
+  "framework": "testid",
+  "old_locator": "[data-testid=toolbar-ellipse]",
+  "new_locator": "[data-testid=toolbar-ellipse]"
+ },
+ {
+  "id": 22,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "rectangle-selected/toolbar-eraser",
+  "framework": "testid",
+  "old_locator": "[data-testid=toolbar-eraser]",
+  "new_locator": "[data-testid=toolbar-eraser]"
+ },
+ {
+  "id": 23,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "rectangle-selected/toolbar-freedraw",
+  "framework": "testid",
+  "old_locator": "[data-testid=toolbar-freedraw]",
+  "new_locator": "[data-testid=toolbar-freedraw]"
+ },
+ {
+  "id": 24,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "rectangle-selected/toolbar-image",
+  "framework": "testid",
+  "old_locator": "[data-testid=toolbar-image]",
+  "new_locator": "[data-testid=toolbar-image]"
+ },
+ {
+  "id": 25,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "rectangle-selected/toolbar-line",
+  "framework": "testid",
+  "old_locator": "[data-testid=toolbar-line]",
+  "new_locator": "[data-testid=toolbar-line]"
+ },
+ {
+  "id": 26,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "rectangle-selected/toolbar-lock",
+  "framework": "testid",
+  "old_locator": "[data-testid=toolbar-lock]",
+  "new_locator": "[data-testid=toolbar-lock]"
+ },
+ {
+  "id": 27,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "rectangle-selected/toolbar-rectangle",
+  "framework": "testid",
+  "old_locator": "[data-testid=toolbar-rectangle]",
+  "new_locator": "[data-testid=toolbar-rectangle]"
+ },
+ {
+  "id": 28,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "rectangle-selected/toolbar-selection",
+  "framework": "testid",
+  "old_locator": "[data-testid=toolbar-selection]",
+  "new_locator": "[data-testid=toolbar-selection]"
+ },
+ {
+  "id": 29,
+  "repo": "oracle/excalidraw",
+  "commit": "v0.18.0",
+  "parent": "v0.14.0",
+  "file": "rectangle-selected/toolbar-text",
+  "framework": "testid",
+  "old_locator": "[data-testid=toolbar-text]",
+  "new_locator": "[data-testid=toolbar-text]"
+ }
+]

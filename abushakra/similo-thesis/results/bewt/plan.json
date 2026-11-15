@@ -2184,29 +2184,1189 @@
   "repo": "bewt/prestashop",
   "commit": "prestashop-1.7.8.5",
   "parent": "prestashop-1.6.1.23",
-  "file": "testaddattributes/PrestaLogin.loginToPresta",
+  "file": "testaddaddress/AddAddressPage.addAddress",
   "framework": "selenium",
-  "old_locator": "By.name: email",
-  "new_locator": "By.name: email"
+  "old_locator": "By.id: email",
+  "new_locator": "By.id: customer_address_customer_email"
  },
  {
   "id": 2,
   "repo": "bewt/prestashop",
   "commit": "prestashop-1.7.8.5",
   "parent": "prestashop-1.6.1.23",
-  "file": "testaddattributes/PrestaLogin.loginToPresta",
+  "file": "testaddaddress/AddAddressPage.addAddress",
   "framework": "selenium",
-  "old_locator": "By.name: passwd",
-  "new_locator": "By.name: passwd"
+  "old_locator": "By.id: alias",
+  "new_locator": "By.id: customer_address_alias"
  },
  {
   "id": 3,
   "repo": "bewt/prestashop",
   "commit": "prestashop-1.7.8.5",
   "parent": "prestashop-1.6.1.23",
-  "file": "testaddattributes/PrestaLogin.loginToPresta",
+  "file": "testaddaddress/AddAddressPage.addAddress",
+  "framework": "selenium",
+  "old_locator": "By.id: firstname",
+  "new_locator": "By.id: customer_address_first_name"
+ },
+ {
+  "id": 4,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/AddAddressPage.addAddress",
+  "framework": "selenium",
+  "old_locator": "By.id: lastname",
+  "new_locator": "By.id: customer_address_last_name"
+ },
+ {
+  "id": 5,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/AddAddressPage.addAddress",
+  "framework": "selenium",
+  "old_locator": "By.id: address1",
+  "new_locator": "By.id: customer_address_address1"
+ },
+ {
+  "id": 6,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/AddAddressPage.addAddress",
+  "framework": "selenium",
+  "old_locator": "By.id: postcode",
+  "new_locator": "By.id: customer_address_postcode"
+ },
+ {
+  "id": 7,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/AddAddressPage.addAddress",
+  "framework": "selenium",
+  "old_locator": "By.id: phone",
+  "new_locator": "By.id: customer_address_phone"
+ },
+ {
+  "id": 8,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/AddAddressPage.addAddress",
+  "framework": "selenium",
+  "old_locator": "By.id: phone_mobile",
+  "new_locator": "By.id: customer_address_phone_mobile"
+ },
+ {
+  "id": 9,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/AddAddressPage.addAddress",
+  "framework": "selenium",
+  "old_locator": "By.name: id_state",
+  "new_locator": "By.id: customer_address_city"
+ },
+ {
+  "id": 10,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/AddAddressPage.addAddress",
+  "framework": "selenium",
+  "old_locator": "By.id: city",
+  "new_locator": "By.id: save-button"
+ },
+ {
+  "id": 11,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/AddressesPage.addAddress",
+  "framework": "selenium",
+  "old_locator": "By.id: page-header-desc-address-new_address",
+  "new_locator": "By.id: page-header-desc-configuration-add"
+ },
+ {
+  "id": 12,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/AdminSidebar.goToAddresses",
+  "framework": "selenium",
+  "old_locator": "By.id: maintab-AdminParentCustomer",
+  "new_locator": "By.id: subtab-AdminParentCustomer"
+ },
+ {
+  "id": 13,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/PrestaLogin.loginToPresta",
+  "framework": "selenium",
+  "old_locator": "By.name: email",
+  "new_locator": "By.name: email"
+ },
+ {
+  "id": 14,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/PrestaLogin.loginToPresta",
+  "framework": "selenium",
+  "old_locator": "By.name: passwd",
+  "new_locator": "By.name: passwd"
+ },
+ {
+  "id": 15,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/PrestaLogin.loginToPresta",
   "framework": "selenium",
   "old_locator": "By.name: submitLogin",
   "new_locator": "By.name: submitLogin"
+ },
+ {
+  "id": 16,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddattributes/AddAttributePage.setName",
+  "framework": "selenium",
+  "old_locator": "By.id: name_1",
+  "new_locator": "By.id: name_1"
+ },
+ {
+  "id": 17,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddattributes/AddAttributePage.setPublicName",
+  "framework": "selenium",
+  "old_locator": "By.id: public_name_1",
+  "new_locator": "By.id: public_name_1"
+ },
+ {
+  "id": 18,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddattributes/AddAttributePage.submitAttribute",
+  "framework": "selenium",
+  "old_locator": "By.id: attribute_group_form_submit_btn",
+  "new_locator": "By.id: attribute_group_form_submit_btn"
+ },
+ {
+  "id": 19,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddattributes/AdminSidebar.goToAttributes",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"maintab-AdminCatalog\"]/a",
+  "new_locator": "By.xpath: //*[@id=\"subtab-AdminCatalog\"]/a"
+ },
+ {
+  "id": 20,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddattributes/AttributesPage.clickAddAttribute",
+  "framework": "selenium",
+  "old_locator": "By.id: page-header-desc-attribute_group-new_attribute_group",
+  "new_locator": "By.id: page-header-desc-attribute_group-new_attribute_group"
+ },
+ {
+  "id": 21,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddcategory/AddCategoryPage.submitCategory",
+  "framework": "selenium",
+  "old_locator": "By.id: name_1",
+  "new_locator": "By.id: category_name_1"
+ },
+ {
+  "id": 22,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddcategory/AddCategoryPage.submitCategory",
+  "framework": "selenium",
+  "old_locator": "By.name: submitAddcategoryAndBackToParent",
+  "new_locator": "By.id: save-button"
+ },
+ {
+  "id": 23,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddcategory/AdminSidebar.goToCategories",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"maintab-AdminCatalog\"]/a",
+  "new_locator": "By.xpath: //*[@id=\"subtab-AdminCatalog\"]/a"
+ },
+ {
+  "id": 24,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddcurrency/AddCurrencyPage.addCurrency",
+  "framework": "selenium",
+  "old_locator": "By.id: name",
+  "new_locator": "By.xpath: //*[@id=\"currency_form\"]/div/div[2]/div/div[2]/div"
+ },
+ {
+  "id": 25,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddcurrency/AddCurrencyPage.addCurrency",
+  "framework": "selenium",
+  "old_locator": "By.id: iso_code",
+  "new_locator": "By.id: currency_names_1"
+ },
+ {
+  "id": 26,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddcurrency/AddCurrencyPage.addCurrency",
+  "framework": "selenium",
+  "old_locator": "By.id: iso_code_num",
+  "new_locator": "By.id: currency_iso_code"
+ },
+ {
+  "id": 27,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddcurrency/AddCurrencyPage.addCurrency",
+  "framework": "selenium",
+  "old_locator": "By.id: sign",
+  "new_locator": "By.id: currency_exchange_rate"
+ },
+ {
+  "id": 28,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddcurrency/AddCurrencyPage.addCurrency",
+  "framework": "selenium",
+  "old_locator": "By.id: currency_form_submit_btn",
+  "new_locator": "By.id: save-button"
+ },
+ {
+  "id": 29,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddcurrency/AdminSidebar.goToCurrency",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"maintab-AdminParentLocalization\"]/a",
+  "new_locator": "By.xpath: //*[@id=\"subtab-AdminInternational\"]/a/span"
+ },
+ {
+  "id": 30,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddcurrency/CurrencyPage.clickAddCurrency",
+  "framework": "selenium",
+  "old_locator": "By.id: page-header-desc-currency-new_currency",
+  "new_locator": "By.id: page-header-desc-configuration-add"
+ },
+ {
+  "id": 31,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptyaddress/AddAddressPage.addEmptyAddress",
+  "framework": "selenium",
+  "old_locator": "By.id: address_form_submit_btn",
+  "new_locator": "By.id: save-button"
+ },
+ {
+  "id": 32,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptyattributes/AddAttributePage.getAlertMessage",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"content\"]/div[4]/div",
+  "new_locator": "By.className: alert-danger"
+ },
+ {
+  "id": 33,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptyattributes/AddAttributePage.submitError",
+  "framework": "selenium",
+  "old_locator": "By.id: attribute_group_form_submit_btn",
+  "new_locator": "By.id: attribute_group_form_submit_btn"
+ },
+ {
+  "id": 34,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptycategory/AddCategoryPage.getAlertMessage",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"content\"]/div[4]/div",
+  "new_locator": "By.xpath: //*[@id=\"main-div\"]/div/div/div/div[2]/div/form/div/div[1]/div/div[1]/div/div[2]/div[2]/div"
+ },
+ {
+  "id": 35,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptycategory/AddCategoryPage.submitEmptyCategory",
+  "framework": "selenium",
+  "old_locator": "By.name: submitAddcategoryAndBackToParent",
+  "new_locator": "By.id: save-button"
+ },
+ {
+  "id": 36,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptycurrency/AddCurrencyPage.addEmptyCurrency",
+  "framework": "selenium",
+  "old_locator": "By.id: currency_form_submit_btn",
+  "new_locator": "By.id: save-button"
+ },
+ {
+  "id": 37,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptyfeature/AddFeaturesPage.getAlertMessage",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"content\"]/div[4]/div",
+  "new_locator": "By.className: alert-danger"
+ },
+ {
+  "id": 38,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptyfeature/AddFeaturesPage.submitError",
+  "framework": "selenium",
+  "old_locator": "By.id: feature_form_submit_btn",
+  "new_locator": "By.id: feature_form_submit_btn"
+ },
+ {
+  "id": 39,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptyfeature/AdminSidebar.goToFeatures",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"maintab-AdminCatalog\"]/a",
+  "new_locator": "By.xpath: //*[@id=\"subtab-AdminCatalog\"]/a"
+ },
+ {
+  "id": 40,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptyfeature/FeaturesPage.clickAddFeature",
+  "framework": "selenium",
+  "old_locator": "By.id: page-header-desc-feature-new_feature",
+  "new_locator": "By.id: page-header-desc-feature-new_feature"
+ },
+ {
+  "id": 41,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptymanufacturer/AddManufacturerPage.addEmptyManufacturer",
+  "framework": "selenium",
+  "old_locator": "By.id: manufacturer_form_submit_btn",
+  "new_locator": "By.xpath: //*[@id=\"main-div\"]/div/div[1]/div/div[2]/div/form/div/div[2]/button"
+ },
+ {
+  "id": 42,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptymanufacturer/AdminSidebar.goToManufacturer",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"maintab-AdminCatalog\"]/a",
+  "new_locator": "By.xpath: //*[@id=\"subtab-AdminCatalog\"]/a"
+ },
+ {
+  "id": 43,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptymanufacturer/ManufacturerPage.clickAddManufacturer",
+  "framework": "selenium",
+  "old_locator": "By.id: page-header-desc-address-new_manufacturer",
+  "new_locator": "By.id: page-header-desc-configuration-add_manufacturer"
+ },
+ {
+  "id": 44,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptyproduct/AddProductPage.getAlertMessage",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"content\"]/div[4]/div",
+  "new_locator": "By.xpath: //*[@id=\"form_step1_name\"]/div/div[1]/ul"
+ },
+ {
+  "id": 45,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptyproduct/AdminSidebar.goToProducts",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"maintab-AdminCatalog\"]/a",
+  "new_locator": "By.xpath: //*[@id=\"subtab-AdminCatalog\"]/a"
+ },
+ {
+  "id": 46,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptyproduct/ProductsPage.addNewProduct",
+  "framework": "selenium",
+  "old_locator": "By.id: page-header-desc-product-new_product",
+  "new_locator": "By.id: page-header-desc-configuration-add"
+ },
+ {
+  "id": 47,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptystate/AddNewStatePage.addEmptyState",
+  "framework": "selenium",
+  "old_locator": "By.id: state_form_submit_btn",
+  "new_locator": "By.id: state_form_submit_btn"
+ },
+ {
+  "id": 48,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptystate/AddNewStatePage.getAlertMessage",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"content\"]/div[4]/div",
+  "new_locator": "By.xpath: //*[@id=\"content\"]/div[3]/div"
+ },
+ {
+  "id": 49,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptystate/AdminSidebar.goToStates",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"maintab-AdminParentLocalization\"]/a",
+  "new_locator": "By.xpath: //*[@id=\"subtab-AdminInternational\"]/a/span"
+ },
+ {
+  "id": 50,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptystate/StatesPage.addNewState",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"page-header-desc-state-new_state\"]",
+  "new_locator": "By.id: page-header-desc-state-new_state"
+ },
+ {
+  "id": 51,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptysupplier/AddSupplierPage.addEmptySupplier",
+  "framework": "selenium",
+  "old_locator": "By.id: supplier_form_submit_btn",
+  "new_locator": "By.xpath: //*[@id=\"main-div\"]/div/div/div/div[2]/div/form/div/div[2]/button"
+ },
+ {
+  "id": 52,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptysupplier/SupplierPage.clickAddSupplier",
+  "framework": "selenium",
+  "old_locator": "By.id: page-header-desc-supplier-new_supplier",
+  "new_locator": "By.id: page-header-desc-configuration-add"
+ },
+ {
+  "id": 53,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptytag/AddTagPage.addEmptyTag",
+  "framework": "selenium",
+  "old_locator": "By.id: tag_form_submit_btn",
+  "new_locator": "By.id: tag_form_submit_btn"
+ },
+ {
+  "id": 54,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptytag/AddTagPage.getAlertMessage",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"content\"]/div[4]/div",
+  "new_locator": "By.xpath: //*[@id=\"content\"]/div[3]/div"
+ },
+ {
+  "id": 55,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptytag/AdminSidebar.goToTags",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"maintab-AdminCatalog\"]/a",
+  "new_locator": "By.id: subtab-ShopParameters"
+ },
+ {
+  "id": 56,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptytag/TagsPage.addTag",
+  "framework": "selenium",
+  "old_locator": "By.id: page-header-desc-tag-new_tag",
+  "new_locator": "By.id: page-header-desc-tag-new_tag"
+ },
+ {
+  "id": 57,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddfeatures/AddFeaturesPage.addName",
+  "framework": "selenium",
+  "old_locator": "By.id: name_1",
+  "new_locator": "By.id: name_1"
+ },
+ {
+  "id": 58,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddfeatures/AddFeaturesPage.submitFeature",
+  "framework": "selenium",
+  "old_locator": "By.id: feature_form_submit_btn",
+  "new_locator": "By.id: feature_form_submit_btn"
+ },
+ {
+  "id": 59,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddmanufacturer/AddManufacturerPage.addManufacturer",
+  "framework": "selenium",
+  "old_locator": "By.id: name",
+  "new_locator": "By.id: manufacturer_name"
+ },
+ {
+  "id": 60,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddmanufacturer/AddManufacturerPage.addManufacturer",
+  "framework": "selenium",
+  "old_locator": "By.id: manufacturer_form_submit_btn",
+  "new_locator": "By.xpath: //*[@id=\"main-div\"]/div/div[1]/div/div[2]/div/form/div/div[2]/button"
+ },
+ {
+  "id": 61,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewproduct/AddProductPage.addNameOfProduct",
+  "framework": "selenium",
+  "old_locator": "By.id: name_1",
+  "new_locator": "By.id: form_step1_name_1"
+ },
+ {
+  "id": 62,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewproduct/AddProductPage.submitProduct",
+  "framework": "selenium",
+  "old_locator": "By.name: submitAddproduct",
+  "new_locator": "By.id: submit"
+ },
+ {
+  "id": 63,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewproductwithtax/AddProductPage.prices",
+  "framework": "selenium",
+  "old_locator": "By.id: link-Prices",
+  "new_locator": "By.id: tab_step2"
+ },
+ {
+  "id": 64,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewproductwithtax/PricesPage.getFinalPrice",
+  "framework": "selenium",
+  "old_locator": "By.id: finalPrice",
+  "new_locator": "By.id: final_retail_price_ti"
+ },
+ {
+  "id": 65,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewproductwithtax/PricesPage.setPretaxRetail",
+  "framework": "selenium",
+  "old_locator": "By.id: priceTE",
+  "new_locator": "By.id: form_step2_price"
+ },
+ {
+  "id": 66,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewproductwithtax10/AddProductPage.prices",
+  "framework": "selenium",
+  "old_locator": "By.id: link-Prices",
+  "new_locator": "By.id: tab_step2"
+ },
+ {
+  "id": 67,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewproductwithtax10/PricesPage.chooseTaxRules10",
+  "framework": "selenium",
+  "old_locator": "By.id: id_tax_rules_group",
+  "new_locator": "By.xpath: //*[@id=\"step2\"]/div/div/div/div/div[3]/div/div[1]/span"
+ },
+ {
+  "id": 68,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewproductwithtax10/PricesPage.getFinalPrice",
+  "framework": "selenium",
+  "old_locator": "By.id: finalPrice",
+  "new_locator": "By.id: final_retail_price_ti"
+ },
+ {
+  "id": 69,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewproductwithtax10/PricesPage.setPretaxRetail",
+  "framework": "selenium",
+  "old_locator": "By.id: priceTE",
+  "new_locator": "By.id: form_step2_price"
+ },
+ {
+  "id": 70,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewstate/AddNewStatePage.addNewState",
+  "framework": "selenium",
+  "old_locator": "By.id: name",
+  "new_locator": "By.name: name"
+ },
+ {
+  "id": 71,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewstate/AddNewStatePage.addNewState",
+  "framework": "selenium",
+  "old_locator": "By.name: iso_code",
+  "new_locator": "By.name: iso_code"
+ },
+ {
+  "id": 72,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewstate/AddNewStatePage.addNewState",
+  "framework": "selenium",
+  "old_locator": "By.id: id_country",
+  "new_locator": "By.id: id_country"
+ },
+ {
+  "id": 73,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewstate/AddNewStatePage.addNewState",
+  "framework": "selenium",
+  "old_locator": "By.id: id_zone",
+  "new_locator": "By.id: id_zone"
+ },
+ {
+  "id": 74,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewstate/AddNewStatePage.addNewState",
+  "framework": "selenium",
+  "old_locator": "By.id: state_form_submit_btn",
+  "new_locator": "By.id: state_form_submit_btn"
+ },
+ {
+  "id": 75,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddsupplier/AddSupplierPage.addSupplier",
+  "framework": "selenium",
+  "old_locator": "By.id: name",
+  "new_locator": "By.id: supplier_name"
+ },
+ {
+  "id": 76,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddsupplier/AddSupplierPage.addSupplier",
+  "framework": "selenium",
+  "old_locator": "By.id: address",
+  "new_locator": "By.id: supplier_address"
+ },
+ {
+  "id": 77,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddsupplier/AddSupplierPage.addSupplier",
+  "framework": "selenium",
+  "old_locator": "By.id: city",
+  "new_locator": "By.id: supplier_city"
+ },
+ {
+  "id": 78,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddsupplier/AddSupplierPage.addSupplier",
+  "framework": "selenium",
+  "old_locator": "By.id: id_country",
+  "new_locator": "By.xpath: //*[@id=\"main-div\"]/div/div/div/div[2]/div/form/div/div[2]/button"
+ },
+ {
+  "id": 79,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddtag/AddTagPage.addTag",
+  "framework": "selenium",
+  "old_locator": "By.id: name",
+  "new_locator": "By.id: name"
+ },
+ {
+  "id": 80,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddtag/AddTagPage.addTag",
+  "framework": "selenium",
+  "old_locator": "By.id: tag_form_submit_btn",
+  "new_locator": "By.id: tag_form_submit_btn"
+ },
+ {
+  "id": 81,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testeditaddress/AddAddressPage.editName",
+  "framework": "selenium",
+  "old_locator": "By.id: firstname",
+  "new_locator": "By.id: customer_address_first_name"
+ },
+ {
+  "id": 82,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testeditaddress/AddAddressPage.editName",
+  "framework": "selenium",
+  "old_locator": "By.id: address_form_submit_btn",
+  "new_locator": "By.id: save-button"
+ },
+ {
+  "id": 83,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testeditaddress/AddressesPage.editAddress",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"form-address\"]/div/div[2]/table/tbody/tr[1]/td[9]/div/div/a",
+  "new_locator": "By.xpath: //*[@id=\"address_grid_table\"]/tbody/tr[1]/td[9]/div/div/a[1]"
+ },
+ {
+  "id": 84,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testeditcategory/AddCategoryPage.submitCategory",
+  "framework": "selenium",
+  "old_locator": "By.id: name_1",
+  "new_locator": "By.id: category_name_1"
+ },
+ {
+  "id": 85,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testeditcategory/AddCategoryPage.submitCategory",
+  "framework": "selenium",
+  "old_locator": "By.name: submitAddcategoryAndBackToParent",
+  "new_locator": "By.id: save-button"
+ },
+ {
+  "id": 86,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testeditcategory/CategoriesPage.editCategory",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"tr_2_12_1\"]/td[7]/div/div/a",
+  "new_locator": "By.xpath: //*[@id=\"tr_2_10_3\"]/td[7]/div/div/a[1]"
+ },
+ {
+  "id": 87,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testeditmanufactureraddress/ManufacturerPage.editManufacturer",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"form-manufacturer\"]/div/div[2]/table/tbody/tr[2]/td[8]/div/div/button",
+  "new_locator": "By.xpath: //*[@id=\"manufacturer_grid_table\"]/tbody/tr/td[8]/div/div/a[2]"
+ },
+ {
+  "id": 88,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testeditproduct/AddProductPage.submitProduct",
+  "framework": "selenium",
+  "old_locator": "By.name: submitAddproduct",
+  "new_locator": "By.id: submit"
+ },
+ {
+  "id": 89,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testeditproduct/ProductsPage.editProduct",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"tr__7_0\"]/td[11]/div/div/a",
+  "new_locator": "By.xpath: //*[@id=\"product_catalog_list\"]/div[2]/div/div/table/tbody/tr/td[11]/div/div/a"
+ },
+ {
+  "id": 90,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testoutofstock/AddToCartPage.addCustomerName",
+  "framework": "selenium",
+  "old_locator": "By.id: customer",
+  "new_locator": "By.id: customer-search-input"
+ },
+ {
+  "id": 91,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testoutofstock/AddToCartPage.addQuantity",
+  "framework": "selenium",
+  "old_locator": "By.id: qty",
+  "new_locator": "By.id: quantity-input"
+ },
+ {
+  "id": 92,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testoutofstock/AddToCartPage.clickOnChooseCustomer",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"customers\"]/div/div/div[2]/button",
+  "new_locator": "By.xpath: //*[@id=\"customer-search-block\"]/div/div[4]/div/div/div/div/div[3]/button[1]"
+ },
+ {
+  "id": 93,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testoutofstock/AddToCartPage.getErrorMessage",
+  "framework": "selenium",
+  "old_locator": "By.id: products_err",
+  "new_locator": "By.id: js-cart-error-block"
+ },
+ {
+  "id": 94,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testoutofstock/AddToCartPage.submitProductAndFail",
+  "framework": "selenium",
+  "old_locator": "By.id: submitAddProduct",
+  "new_locator": "By.id: add-product-to-cart-btn"
+ },
+ {
+  "id": 95,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testoutofstock/AdminSidebar.goToOrders",
+  "framework": "selenium",
+  "old_locator": "By.id: maintab-AdminParentOrders",
+  "new_locator": "By.id: subtab-AdminParentOrders"
+ },
+ {
+  "id": 96,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testoutofstock/OrdersPage.addOrder",
+  "framework": "selenium",
+  "old_locator": "By.id: page-header-desc-order-new_order",
+  "new_locator": "By.id: page-header-desc-configuration-add"
+ },
+ {
+  "id": 97,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployee/AdminSidebar.goToEmployees",
+  "framework": "selenium",
+  "old_locator": "By.id: maintab-AdminAdmin",
+  "new_locator": "By.id: subtab-AdminAdvancedParameters"
+ },
+ {
+  "id": 98,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployee/EmployeesPage.addEmployee",
+  "framework": "selenium",
+  "old_locator": "By.id: page-header-desc-employee-new_employee",
+  "new_locator": "By.id: page-header-desc-configuration-add"
+ },
+ {
+  "id": 99,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployee/RegisterEmployeePage.addEmployee",
+  "framework": "selenium",
+  "old_locator": "By.id: firstname",
+  "new_locator": "By.id: employee_firstname"
+ },
+ {
+  "id": 100,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployee/RegisterEmployeePage.addEmployee",
+  "framework": "selenium",
+  "old_locator": "By.id: lastname",
+  "new_locator": "By.id: employee_lastname"
+ },
+ {
+  "id": 101,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployee/RegisterEmployeePage.addEmployee",
+  "framework": "selenium",
+  "old_locator": "By.id: email",
+  "new_locator": "By.id: employee_email"
+ },
+ {
+  "id": 102,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployee/RegisterEmployeePage.addEmployee",
+  "framework": "selenium",
+  "old_locator": "By.id: passwd",
+  "new_locator": "By.id: employee_password"
+ },
+ {
+  "id": 103,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployee/RegisterEmployeePage.addEmployee",
+  "framework": "selenium",
+  "old_locator": "By.id: id_profile",
+  "new_locator": "By.id: save-button"
+ },
+ {
+  "id": 104,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployeenoemail/RegisterEmployeePage.addEmployeeNoEmail",
+  "framework": "selenium",
+  "old_locator": "By.id: firstname",
+  "new_locator": "By.id: employee_firstname"
+ },
+ {
+  "id": 105,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployeenoemail/RegisterEmployeePage.addEmployeeNoEmail",
+  "framework": "selenium",
+  "old_locator": "By.id: lastname",
+  "new_locator": "By.id: employee_lastname"
+ },
+ {
+  "id": 106,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployeenoemail/RegisterEmployeePage.addEmployeeNoEmail",
+  "framework": "selenium",
+  "old_locator": "By.id: passwd",
+  "new_locator": "By.id: employee_password"
+ },
+ {
+  "id": 107,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployeenoemail/RegisterEmployeePage.addEmployeeNoEmail",
+  "framework": "selenium",
+  "old_locator": "By.id: id_profile",
+  "new_locator": "By.id: save-button"
+ },
+ {
+  "id": 108,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployeenoname/RegisterEmployeePage.addEmployeeNoName",
+  "framework": "selenium",
+  "old_locator": "By.id: email",
+  "new_locator": "By.id: employee_email"
+ },
+ {
+  "id": 109,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployeenoname/RegisterEmployeePage.addEmployeeNoName",
+  "framework": "selenium",
+  "old_locator": "By.id: passwd",
+  "new_locator": "By.id: employee_password"
+ },
+ {
+  "id": 110,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployeenoname/RegisterEmployeePage.addEmployeeNoName",
+  "framework": "selenium",
+  "old_locator": "By.id: id_profile",
+  "new_locator": "By.id: save-button"
+ },
+ {
+  "id": 111,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployeenopasssword/RegisterEmployeePage.addEmployeeNoPassword",
+  "framework": "selenium",
+  "old_locator": "By.id: firstname",
+  "new_locator": "By.id: employee_firstname"
+ },
+ {
+  "id": 112,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployeenopasssword/RegisterEmployeePage.addEmployeeNoPassword",
+  "framework": "selenium",
+  "old_locator": "By.id: lastname",
+  "new_locator": "By.id: employee_lastname"
+ },
+ {
+  "id": 113,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployeenopasssword/RegisterEmployeePage.addEmployeeNoPassword",
+  "framework": "selenium",
+  "old_locator": "By.id: email",
+  "new_locator": "By.id: employee_email"
+ },
+ {
+  "id": 114,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployeenopasssword/RegisterEmployeePage.addEmployeeNoPassword",
+  "framework": "selenium",
+  "old_locator": "By.id: id_profile",
+  "new_locator": "By.id: save-button"
+ },
+ {
+  "id": 115,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testremovesupplier/SupplierPage.removeSupplier",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"form-supplier\"]/div/div[2]/table/tbody/tr[2]/td[7]/div/div/button",
+  "new_locator": "By.xpath: //*[@id=\"supplier_grid_table\"]/tbody/tr[1]/td[7]/div/div/a[2]"
+ },
+ {
+  "id": 116,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testremovesupplier/SupplierPage.removeSupplier",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"form-supplier\"]/div/div[2]/table/tbody/tr[2]/td[7]/div/div/ul/li[3]/a",
+  "new_locator": "By.xpath: //*[@id=\"supplier_grid_table\"]/tbody/tr[1]/td[7]/div/div/div/a[2]"
+ },
+ {
+  "id": 117,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testupdateemployee/EmployeesPage.editEmployee",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"form-employee\"]/div/div[2]/table/tbody/tr[1]/td[8]/div/a",
+  "new_locator": "By.xpath: //*[@id=\"employee_grid_table\"]/tbody/tr[2]/td[8]/div/div/a[1]"
+ },
+ {
+  "id": 118,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testupdateemployee/RegisterEmployeePage.editEmployee",
+  "framework": "selenium",
+  "old_locator": "By.id: lastname",
+  "new_locator": "By.id: employee_lastname"
+ },
+ {
+  "id": 119,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testupdateemployee/RegisterEmployeePage.editEmployee",
+  "framework": "selenium",
+  "old_locator": "By.id: employee_form_submit_btn",
+  "new_locator": "By.id: save-button"
  }
 ]
