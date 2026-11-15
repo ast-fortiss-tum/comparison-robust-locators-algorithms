@@ -2,6 +2,7 @@
 # Repair variants, clean state. Lane A (disk-based repair store, so strictly sequential and cleaned before every run):
 #   run_repair_variants.sh A  ;  lane B (in-memory VISTA templates): run_repair_variants.sh B
 cd "$(dirname "$0")/.."
+export PATH="$PWD/.venv/bin:$PATH"  # VISTA needs OpenCV (cv2) in the venv
 export JAVA_HOME=/Users/stocco/Library/Java/JavaVirtualMachines/jdk-17.0.21+9/Contents/Home
 TUNING="accuweather adobe amazon apple bestbuy bing discord ebay espn etsy facebook fidelity google indeed linkedin netflix office paypal reddit roblox t-mobile tiktok twitter usps walmart weather wikipedia yahoo zillow zoom"
 HELD="zz_aol zz_cnn zz_fandom zz_foxnews zz_imdb zz_instagram"

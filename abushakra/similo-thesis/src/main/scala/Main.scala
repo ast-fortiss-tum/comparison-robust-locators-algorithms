@@ -103,12 +103,33 @@ object Main:
       "MultiLocator+VISTA" -> similo.Guarded(multilocator.MultiLocator(false, true)), // VISTA fallback when no voter resolves
       "MultiLocator" -> similo.Guarded(multilocator.MultiLocator(false, false)),
       "MultiLocator+repair" -> similo.Guarded(multilocator.MultiLocator(true, false)),
-      "MultiLocator+VISTA+repair" -> similo.Guarded(multilocator.MultiLocator(true, true))
+      "MultiLocator+VISTA+repair" -> similo.Guarded(multilocator.MultiLocator(true, true)),
+      // hybrids of the voting generators (no VISTA) with the OptimizedSimilo relocator
+      "MultiLocator+Similo-fallback" -> similo.Guarded(multilocator.Hybrid(multilocator.HybridMode.Fallback)),
+      "MultiLocator+Similo-voter" -> similo.Guarded(multilocator.Hybrid(multilocator.HybridMode.Voter)),
+      "MultiLocator+Similo-gated" -> similo.Guarded(multilocator.Hybrid(multilocator.HybridMode.Gated)),
+      "MultiLocator+Similo-repair" -> similo.Guarded(multilocator.Hybrid(multilocator.HybridMode.Repair))
     )
     def row(name: String, scope: String, stats: EvaluationStatistics, seconds: Double): String =
       val (accAll, accAllNum, accAllDenom, accMinor, accMinorNum, accMinorDenom,
            accMajor, accMajorNum, accMajorDenom, fit, fitPercent, breakSuccess, breakNum, breakDenom) = stats.robustnessStats
       f"$name@$scope,$accAll%.2f,$accAllNum%d,$accAllDenom%d,$accMinor%.2f,$accMinorNum%d,$accMinorDenom%d,$accMajor%.2f,$accMajorNum%d,$accMajorDenom%d,$fit%.2f,$fitPercent%.2f,$breakSuccess%.2f,$breakNum%d,$breakDenom%d,$seconds%.1f"
+    // Optional per-element outcomes (DUMP_DIR=dir): one file per algorithm, one row per (element, version) that exists in the
+    // new version. outcome = right (top answer is the target), wrong (another element, silently), abstain (no answer: every
+    // candidate scores 0; a generator whose locator resolves to nothing).
+    def dumpPerElement(name: String, site: String, stats: EvaluationStatistics): Unit =
+      sys.env.get("DUMP_DIR").foreach { dir =>
+        Files.createDirectories(Paths.get(dir))
+        val f = Paths.get(dir, name.replace("/", "_") + ".csv")
+        val sb = new StringBuilder
+        if !Files.exists(f) then sb.append("algorithm,site,date,element,locator_class,element_class,outcome,top_score,found_in_top10\n")
+        for loc <- stats.results; r <- loc.results if r.existsOnNewVersion do
+          val topScore = r.found.headOption.map(_._3).getOrElse(0.0)
+          val outcome = if topScore <= 0.0 then "abstain" else if r.exactMatch then "right" else "wrong"
+          val key = r.toFind.xpath.chrome.replace(",", ";")
+          sb.append(s"$name,$site,${r.date},$key,${r.classification.locator},${r.classification.element},$outcome,$topScore,${r.found.exists(_._2 == EvaluationStatistics.MatchType.ExactMatch)}\n")
+        Files.write(f, sb.toString.getBytes(StandardCharsets.UTF_8), java.nio.file.StandardOpenOption.CREATE, java.nio.file.StandardOpenOption.APPEND)
+      }
     // Optional subset, e.g. ALGOS=absXPath,IDXPath (comma-separated names as above)
     val only = sys.env.get("ALGOS").map(_.split(",").map(_.trim).toSet)
     for (name, locator) <- algorithms if only.forall(_.contains(name)) do
@@ -117,6 +138,7 @@ object Main:
         val t = System.nanoTime()
         val stats = EvaluationComputing.computeAll(locator, Seq(java.nio.file.Path.of("sites", s)))
         println(row(name, s, stats, (System.nanoTime() - t) / 1e9))
+        dumpPerElement(name, s, stats)
         stats
       }
       println(row(name, "ALL", perSite.reduce(_ append _), (System.nanoTime() - t0) / 1e9))

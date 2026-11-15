@@ -267,6 +267,48 @@ case class MultiLocator(withRepair: Boolean = false, withVista: Boolean = false)
 
     result
 
+  // ---- building blocks for the hybrids (Hybrid.scala) ----
+
+  /** Votes of the five generated locators on the new page (best first, keyed by the absolute XPath of the element they
+    * resolve to), together with the page's DOM. */
+  def voteTable(state: MultiLocatorState, elements: Seq[MyElement]): (Seq[(Double, String)], Document) =
+    val pageUrl = elements.headOption.flatMap(_.url).getOrElse("")
+    val domDocument = Load.htmlToJDOM(new File(getFilePathToChromeDOM(pageUrl)))
+    val results = List(state.firePathAbs, state.firePathRel, state.seleniumIDE, state.montoto, state.robulaplus)
+      .flatMap(applyLocator(_, domDocument))
+    val grouped = results.groupBy(_.elementLocatedXPath).view.mapValues(_.map(_.locator)).toMap
+    val votes = grouped.map { case (abs, ls) => (1 - ls.map(l => 1 - l.weight).product, abs) }.toSeq.sortBy(-_._1)
+    (votes, domDocument)
+
+  /** Candidate elements that are the element at this absolute XPath. */
+  def elementsAtAbsPath(abs: String, elements: Seq[MyElement], dom: Document): Seq[MyElement] =
+    val found = getJDOMElementsByXPath(abs, dom)
+    if found.isEmpty then Seq.empty
+    else elements.filter(el => getJDOMElementsByXPath(el.xpath.idxpath, dom).headOption.exists(c => found.exists(_ eq c)))
+
+  def absPathOf(el: MyElement, dom: Document): Option[String] =
+    getJDOMElementsByXPath(el.xpath.idxpath, dom).headOption.map(getAbsolutePath)
+
+  /** The five locators regenerated from the element that was found (the repair step). */
+  def regenerate(state: MultiLocatorState, winner: Element, dom: Document, pageUrl: String): Seq[GeneratedLocator] =
+    Seq(
+      GeneratedLocator(getAbsolutePath(winner), "ABSOLUTE_XPATH", firePathAbsWeight),
+      GeneratedLocator(state.element.xpath.idxpath, "RELATIVE_XPATH", firePathRelWeight),
+      GeneratedLocator(XPathGeneratorUtil.getSeleniumIDEXPath(winner, dom), "SELENIUM_IDE", seleniumIDEWeight),
+      GeneratedLocator(XPathGeneratorUtil.getMontotoXPath(winner, dom), "MONTOTO", montotoWeight),
+      GeneratedLocator(buildRobulaPlusXPath(dom, getAbsolutePath(winner), pageUrl).head, "ROBULA+", robulaplusWeight)
+    )
+
+  def withHealed(state: MultiLocatorState, healed: Seq[GeneratedLocator]): MultiLocatorState =
+    def pick(name: String, fallback: GeneratedLocator) = healed.find(_.strategy.equalsIgnoreCase(name)).getOrElse(fallback)
+    state.copy(
+      firePathAbs = pick("ABSOLUTE_XPATH", state.firePathAbs),
+      firePathRel = pick("RELATIVE_XPATH", state.firePathRel),
+      seleniumIDE = pick("SELENIUM_IDE", state.seleniumIDE),
+      montoto = pick("MONTOTO", state.montoto),
+      robulaplus = pick("ROBULA+", state.robulaplus)
+    )
+
   def applyLocator(locator: GeneratedLocator, dom: Document): Option[LocatorResult] =
     val expr = XPathFactory.instance().compile(locator.xpath, Filters.element())
     val result = expr.evaluate(dom).asScala
