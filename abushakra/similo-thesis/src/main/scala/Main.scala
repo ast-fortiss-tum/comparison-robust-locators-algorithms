@@ -99,9 +99,9 @@ object Main:
       "EAGL-scaled-f4" -> similo.Guarded(eagl.Eagl("cache/eagl_scaled_f4_cache.json")), // paper setting, rq4 category model fold 4
       "SIDEREAL" -> similo.Guarded(siderealnew.SiderealNew()),
       "SIDEREAL-uniform" -> similo.Guarded(siderealnew.SiderealNew(useHistory = false)),
-      "MultiLocator" -> similo.Guarded(multilocator.MultiLocator(false, true)), // VISTA fallback when no voter resolves
+      "MultiLocator+VISTA" -> similo.Guarded(multilocator.MultiLocator(false, true)), // VISTA fallback when no voter resolves
       "MultiLocator-noVISTA" -> similo.Guarded(multilocator.MultiLocator(false, false)),
-      "MultiLocator+repair" -> similo.Guarded(multilocator.MultiLocator(true, true))
+      "MultiLocator+VISTA+repair" -> similo.Guarded(multilocator.MultiLocator(true, true))
     )
     def row(name: String, scope: String, stats: EvaluationStatistics, seconds: Double): String =
       val (accAll, accAllNum, accAllDenom, accMinor, accMinorNum, accMinorDenom,

@@ -161,15 +161,15 @@ SIDEREAL-uniform,locator changed,63,219,28.8
 SIDEREAL-uniform,locator unchanged,102,118,86.4
 SIDEREAL-uniform,moved,139,310,44.8
 SIDEREAL-uniform,same position,26,27,96.3
-MultiLocator,ALL,185,337,54.9
-MultiLocator,app: bludit,37,57,64.9
-MultiLocator,app: joomla,31,37,83.8
-MultiLocator,app: mantisbt,85,124,68.5
-MultiLocator,app: prestashop,32,119,26.9
-MultiLocator,locator changed,80,219,36.5
-MultiLocator,locator unchanged,105,118,89.0
-MultiLocator,moved,158,310,51.0
-MultiLocator,same position,27,27,100.0
+MultiLocator+VISTA,ALL,185,337,54.9
+MultiLocator+VISTA,app: bludit,37,57,64.9
+MultiLocator+VISTA,app: joomla,31,37,83.8
+MultiLocator+VISTA,app: mantisbt,85,124,68.5
+MultiLocator+VISTA,app: prestashop,32,119,26.9
+MultiLocator+VISTA,locator changed,80,219,36.5
+MultiLocator+VISTA,locator unchanged,105,118,89.0
+MultiLocator+VISTA,moved,158,310,51.0
+MultiLocator+VISTA,same position,27,27,100.0
 MultiLocator-noVISTA,ALL,171,337,50.7
 MultiLocator-noVISTA,app: bludit,37,57,64.9
 MultiLocator-noVISTA,app: joomla,31,37,83.8
@@ -179,15 +179,15 @@ MultiLocator-noVISTA,locator changed,69,219,31.5
 MultiLocator-noVISTA,locator unchanged,102,118,86.4
 MultiLocator-noVISTA,moved,144,310,46.5
 MultiLocator-noVISTA,same position,27,27,100.0
-MultiLocator+repair,ALL,185,337,54.9
-MultiLocator+repair,app: bludit,37,57,64.9
-MultiLocator+repair,app: joomla,31,37,83.8
-MultiLocator+repair,app: mantisbt,85,124,68.5
-MultiLocator+repair,app: prestashop,32,119,26.9
-MultiLocator+repair,locator changed,80,219,36.5
-MultiLocator+repair,locator unchanged,105,118,89.0
-MultiLocator+repair,moved,158,310,51.0
-MultiLocator+repair,same position,27,27,100.0
+MultiLocator+VISTA+repair,ALL,185,337,54.9
+MultiLocator+VISTA+repair,app: bludit,37,57,64.9
+MultiLocator+VISTA+repair,app: joomla,31,37,83.8
+MultiLocator+VISTA+repair,app: mantisbt,85,124,68.5
+MultiLocator+VISTA+repair,app: prestashop,32,119,26.9
+MultiLocator+VISTA+repair,locator changed,80,219,36.5
+MultiLocator+VISTA+repair,locator unchanged,105,118,89.0
+MultiLocator+VISTA+repair,moved,158,310,51.0
+MultiLocator+VISTA+repair,same position,27,27,100.0
 EAGL-scaled-f0,ALL,125,337,37.1
 EAGL-scaled-f0,app: bludit,32,57,56.1
 EAGL-scaled-f0,app: joomla,28,37,75.7
