@@ -21,3 +21,9 @@ MultiLocator 69.2% (noVISTA 64.9%), RobulaPlus 68.2%, SIDEREAL 62.6%, SeleniumID
 
 ## Files
 Work dir /Users/stocco/repos/tools/bewt-work (LOG.md, out/, imp/); repo changes uncommitted in comparison-robust-locators-algorithms: results/bewt/, scripts/bewt/, ImportReproBreak.scala (prefix arg), crop_element.py/visual_match.py.
+
+## Update (2026-11-15 morning): Joomla re-run
+- Joomla 3: failures were a race (the "Site Administrator" link opens a new tab and the page object looks elements up before it loads; the suite has no implicit wait). A 10 s implicit wait in the instrumented BaseTest makes all 35 tests pass. Joomla 4 re-run alone: all 35 pass (earlier failures were timeouts under load).
+- Pairs: 221 (bludit 57, joomla 37, mantisbt 124, prestashop 3). EAGL regenerated for all.
+- Found / 221: LegacySimilo 85.5%, OptimizedMinimal 84.6%, OptimizedSimilo/Combined 84.2%, LegacyCombined 83.7%, VonSimilo/COLOR 81.9%, OptimizedVonSimilo 80.1%, MultiLocator(+repair) 70.6% (noVISTA 66.5%), RobulaPlus 68.3%, SIDEREAL 63.3%, SeleniumIDE 56.1%, EAGL 45.2%, VISTA 31.2%, IDXPath 23.5%, Montoto 19.9%, absXPath 14.5%.
+(The numbers in the first sections above are from the earlier 211-pair run.)

@@ -764,13 +764,73 @@
   "repo": "bewt/joomla",
   "commit": "joomla-4.2.0",
   "parent": "joomla-3.10.11",
+  "file": "changepassword/EditProfilePage.confirmPassword",
+  "framework": "selenium",
+  "old_locator": "By.id: jform_password2",
+  "new_locator": "By.id: jform_password2"
+ },
+ {
+  "id": 21,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "changepassword/EditProfilePage.getAlertMessage",
+  "framework": "selenium",
+  "old_locator": "By.className: alert-message",
+  "new_locator": "By.className: alert-message"
+ },
+ {
+  "id": 22,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "changepassword/EditProfilePage.setPassword",
+  "framework": "selenium",
+  "old_locator": "By.id: jform_password1",
+  "new_locator": "By.id: jform_password1"
+ },
+ {
+  "id": 23,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "changepassword/EditProfilePage.submit",
+  "framework": "selenium",
+  "old_locator": "By.className: btn-primary",
+  "new_locator": "By.className: btn-primary"
+ },
+ {
+  "id": 24,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "changepassword/LoggedNavBar.standardUserLogOut",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Author Login",
+  "new_locator": "By.linkText: Author Login"
+ },
+ {
+  "id": 25,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "changepassword/LoggedNavBar.standardUserLogOut",
+  "framework": "selenium",
+  "old_locator": "By.className: btn-primary",
+  "new_locator": "By.className: btn-primary"
+ },
+ {
+  "id": 26,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
   "file": "editarticle/BaseNavBar.home",
   "framework": "selenium",
   "old_locator": "By.linkText: Home",
   "new_locator": "By.linkText: Home"
  },
  {
-  "id": 21,
+  "id": 27,
   "repo": "bewt/joomla",
   "commit": "joomla-4.2.0",
   "parent": "joomla-3.10.11",
@@ -780,7 +840,7 @@
   "new_locator": "By.xpath: //*[@id=\"adminForm\"]/div/button[2]"
  },
  {
-  "id": 22,
+  "id": 28,
   "repo": "bewt/joomla",
   "commit": "joomla-4.2.0",
   "parent": "joomla-3.10.11",
@@ -790,7 +850,7 @@
   "new_locator": "By.id: jform_articletext_ifr"
  },
  {
-  "id": 23,
+  "id": 29,
   "repo": "bewt/joomla",
   "commit": "joomla-4.2.0",
   "parent": "joomla-3.10.11",
@@ -800,7 +860,7 @@
   "new_locator": "By.id: tinymce"
  },
  {
-  "id": 24,
+  "id": 30,
   "repo": "bewt/joomla",
   "commit": "joomla-4.2.0",
   "parent": "joomla-3.10.11",
@@ -810,7 +870,7 @@
   "new_locator": "By.xpath: /html/body/div/div/div/main/div[3]/div[1]/div[1]/div/div[2]/div/div/a/div"
  },
  {
-  "id": 25,
+  "id": 31,
   "repo": "bewt/joomla",
   "commit": "joomla-4.2.0",
   "parent": "joomla-3.10.11",
@@ -820,7 +880,7 @@
   "new_locator": "By.xpath: //*[@id=\"content\"]/div[3]/div[1]/div[1]/div/p"
  },
  {
-  "id": 26,
+  "id": 32,
   "repo": "bewt/joomla",
   "commit": "joomla-4.2.0",
   "parent": "joomla-3.10.11",
@@ -830,7 +890,7 @@
   "new_locator": "By.linkText: Log out"
  },
  {
-  "id": 27,
+  "id": 33,
   "repo": "bewt/joomla",
   "commit": "joomla-4.2.0",
   "parent": "joomla-3.10.11",
@@ -838,6 +898,46 @@
   "framework": "selenium",
   "old_locator": "By.id: username",
   "new_locator": "By.xpath: //*[@id=\"username-lbl\"]/span[2]"
+ },
+ {
+  "id": 34,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "loginasnewuser/LoggedNavBar.standardUserLogOut",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Author Login",
+  "new_locator": "By.linkText: Author Login"
+ },
+ {
+  "id": 35,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "seearchivedarticle/ArchivedArticlesPage.containsArticle",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Your Modules",
+  "new_locator": "By.linkText: Your Modules"
+ },
+ {
+  "id": 36,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "seearchivedarticle/LoggedHome.testMenuItem",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Test menu item",
+  "new_locator": "By.linkText: Test menu item"
+ },
+ {
+  "id": 37,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "seearchivedarticle/LoggedNavBar.adminLogout",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Log out",
+  "new_locator": "By.linkText: Log out"
  },
  {
   "id": 1,
@@ -2084,7 +2184,7 @@
   "repo": "bewt/prestashop",
   "commit": "prestashop-1.7.8.5",
   "parent": "prestashop-1.6.1.23",
-  "file": "testaddemptyproduct/PrestaLogin.loginToPresta",
+  "file": "testaddattributes/PrestaLogin.loginToPresta",
   "framework": "selenium",
   "old_locator": "By.name: email",
   "new_locator": "By.name: email"
@@ -2094,7 +2194,7 @@
   "repo": "bewt/prestashop",
   "commit": "prestashop-1.7.8.5",
   "parent": "prestashop-1.6.1.23",
-  "file": "testaddemptyproduct/PrestaLogin.loginToPresta",
+  "file": "testaddattributes/PrestaLogin.loginToPresta",
   "framework": "selenium",
   "old_locator": "By.name: passwd",
   "new_locator": "By.name: passwd"
@@ -2104,7 +2204,7 @@
   "repo": "bewt/prestashop",
   "commit": "prestashop-1.7.8.5",
   "parent": "prestashop-1.6.1.23",
-  "file": "testaddemptyproduct/PrestaLogin.loginToPresta",
+  "file": "testaddattributes/PrestaLogin.loginToPresta",
   "framework": "selenium",
   "old_locator": "By.name: submitLogin",
   "new_locator": "By.name: submitLogin"

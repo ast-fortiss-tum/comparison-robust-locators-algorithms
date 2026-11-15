@@ -14,3 +14,8 @@
 - 01:39 imported 211 pairs as sites/bewt_<app>_<n> (all ok); dry-run of non-EAGL algorithms started -> similo-thesis/out/bewt_eval_dry.log
 - 01:41 fixed VISTA's OpenCV fallback (venv python is a symlink: compare sys.prefix, not executable; both repos). Started EAGL (plain + scaled-adobe) in Docker for bludit/joomla/mantis BEWT sites -> out/bewt_eagl_np.log; prestashop sites follow once ps16 recapture is done.
 - 01:42 EAGL caches merged (+414 non-presta, +6 presta entries; backups cache/*.before_bewt). Starting FINAL eval of all algorithms on 211 pairs -> out/bewt_eval_final.log
+- 02:56 FINAL eval done, status report written (results/bewt/STATUS_REPORT.md). Nothing committed.
+- 07:36 step 5 done: committed BEWT results/scripts. Next per user order: 2 (joomla), 6 (Wayback MultiLocator+repair), 7 (ReproBreak EAGL), 1 (ps16).
+- 07:36 step 2 (joomla): root cause of most joomla3 failures = SiteAdmin link opens new tab, page object looks up elements before load (no implicit wait). Added 10s implicitlyWait to src/joomla-3.10.11 BaseTest (instrumented copy only), re-running run_joomla3.sh; old captures kept in out_v1capture/joomla-3.10.11-noimplicitwait.
+- 07:40 joomla3 rc=0 (all 35 tests pass with implicit wait). Re-running joomla4 alone (earlier failures were browser/http timeouts under load).
+- 07:47 joomla4 rc=0 (35 tests). Re-aligned: 221 pairs (joomla 37). Stripped stale bewt_ keys from EAGL caches; re-importing, regenerating EAGL for all 221, then final eval.
