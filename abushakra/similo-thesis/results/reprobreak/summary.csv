@@ -94,3 +94,28 @@ absXPath,same position,181,181,100.00
 absXPath,"moved, same element",1,11,9.09
 absXPath,"moved, different element",0,121,0.00
 absXPath,"moved, unsure/bad/unlabelled",0,37,0.00
+EAGL-scaled-f0,ALL,96,350,27.43
+EAGL-scaled-f0,same position,92,181,50.83
+EAGL-scaled-f0,"moved, same element",3,11,27.27
+EAGL-scaled-f0,"moved, different element",0,121,0.00
+EAGL-scaled-f0,"moved, unsure/bad/unlabelled",1,37,2.70
+EAGL-scaled-f1,ALL,85,350,24.29
+EAGL-scaled-f1,same position,81,181,44.75
+EAGL-scaled-f1,"moved, same element",3,11,27.27
+EAGL-scaled-f1,"moved, different element",0,121,0.00
+EAGL-scaled-f1,"moved, unsure/bad/unlabelled",1,37,2.70
+EAGL-scaled-f2,ALL,93,350,26.57
+EAGL-scaled-f2,same position,89,181,49.17
+EAGL-scaled-f2,"moved, same element",3,11,27.27
+EAGL-scaled-f2,"moved, different element",0,121,0.00
+EAGL-scaled-f2,"moved, unsure/bad/unlabelled",1,37,2.70
+EAGL-scaled-f3,ALL,89,350,25.43
+EAGL-scaled-f3,same position,85,181,46.96
+EAGL-scaled-f3,"moved, same element",3,11,27.27
+EAGL-scaled-f3,"moved, different element",0,121,0.00
+EAGL-scaled-f3,"moved, unsure/bad/unlabelled",1,37,2.70
+EAGL-scaled-f4,ALL,89,350,25.43
+EAGL-scaled-f4,same position,85,181,46.96
+EAGL-scaled-f4,"moved, same element",3,11,27.27
+EAGL-scaled-f4,"moved, different element",0,121,0.00
+EAGL-scaled-f4,"moved, unsure/bad/unlabelled",1,37,2.70

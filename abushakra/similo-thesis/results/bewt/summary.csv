@@ -188,3 +188,48 @@ MultiLocator+repair,locator changed,80,219,36.5
 MultiLocator+repair,locator unchanged,105,118,89.0
 MultiLocator+repair,moved,158,310,51.0
 MultiLocator+repair,same position,27,27,100.0
+EAGL-scaled-f0,ALL,125,337,37.1
+EAGL-scaled-f0,app: bludit,32,57,56.1
+EAGL-scaled-f0,app: joomla,28,37,75.7
+EAGL-scaled-f0,app: mantisbt,37,124,29.8
+EAGL-scaled-f0,app: prestashop,28,119,23.5
+EAGL-scaled-f0,locator changed,39,219,17.8
+EAGL-scaled-f0,locator unchanged,86,118,72.9
+EAGL-scaled-f0,moved,99,310,31.9
+EAGL-scaled-f0,same position,26,27,96.3
+EAGL-scaled-f1,ALL,125,337,37.1
+EAGL-scaled-f1,app: bludit,32,57,56.1
+EAGL-scaled-f1,app: joomla,28,37,75.7
+EAGL-scaled-f1,app: mantisbt,37,124,29.8
+EAGL-scaled-f1,app: prestashop,28,119,23.5
+EAGL-scaled-f1,locator changed,39,219,17.8
+EAGL-scaled-f1,locator unchanged,86,118,72.9
+EAGL-scaled-f1,moved,99,310,31.9
+EAGL-scaled-f1,same position,26,27,96.3
+EAGL-scaled-f2,ALL,125,337,37.1
+EAGL-scaled-f2,app: bludit,32,57,56.1
+EAGL-scaled-f2,app: joomla,28,37,75.7
+EAGL-scaled-f2,app: mantisbt,37,124,29.8
+EAGL-scaled-f2,app: prestashop,28,119,23.5
+EAGL-scaled-f2,locator changed,39,219,17.8
+EAGL-scaled-f2,locator unchanged,86,118,72.9
+EAGL-scaled-f2,moved,99,310,31.9
+EAGL-scaled-f2,same position,26,27,96.3
+EAGL-scaled-f3,ALL,125,337,37.1
+EAGL-scaled-f3,app: bludit,32,57,56.1
+EAGL-scaled-f3,app: joomla,28,37,75.7
+EAGL-scaled-f3,app: mantisbt,37,124,29.8
+EAGL-scaled-f3,app: prestashop,28,119,23.5
+EAGL-scaled-f3,locator changed,39,219,17.8
+EAGL-scaled-f3,locator unchanged,86,118,72.9
+EAGL-scaled-f3,moved,99,310,31.9
+EAGL-scaled-f3,same position,26,27,96.3
+EAGL-scaled-f4,ALL,125,337,37.1
+EAGL-scaled-f4,app: bludit,32,57,56.1
+EAGL-scaled-f4,app: joomla,28,37,75.7
+EAGL-scaled-f4,app: mantisbt,37,124,29.8
+EAGL-scaled-f4,app: prestashop,28,119,23.5
+EAGL-scaled-f4,locator changed,39,219,17.8
+EAGL-scaled-f4,locator unchanged,86,118,72.9
+EAGL-scaled-f4,moved,99,310,31.9
+EAGL-scaled-f4,same position,26,27,96.3
