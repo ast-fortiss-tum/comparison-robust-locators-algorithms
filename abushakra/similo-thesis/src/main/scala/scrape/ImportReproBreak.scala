@@ -23,7 +23,7 @@ import scala.jdk.CollectionConverters.*
  * visible element of the main document that is among the extracted candidates; the outcome of every break is written
  * to sites/reprobreak_manifest.csv.
  *
- *   runMain scrape.ImportReproBreak <plan.json> <capture dir> [sites dir]
+ *   runMain scrape.ImportReproBreak <plan.json> <capture dir> [sites dir] [site prefix, default rb]
  */
 object ImportReproBreak:
 
@@ -40,12 +40,13 @@ object ImportReproBreak:
     val planPath = Paths.get(args(0))
     val captures = Paths.get(args(1))
     val sitesDir = Paths.get(if args.length > 2 then args(2) else "sites")
+    val prefix = if args.length > 3 then args(3) else "rb" // "bewt" for the BEWT pairs written by bewt-work/align.py
     val plan = parse(Files.readString(planPath)).flatMap(_.as[Seq[PlanEntry]]).fold(throw _, identity)
     val manifest = Seq.newBuilder[String]
     manifest += "site;id;repo;commit;status;old_matches;new_matches;old_tag;new_tag;old_xpath;new_xpath;old_text;new_text;old_locator;new_locator"
     for e <- plan do
       val repo = e.repo.split("/").last
-      val site = s"rb_${repo.replace('-', '_')}_${e.id}"
+      val site = s"${prefix}_${repo.replace('-', '_')}_${e.id}"
       val old = load(captures.resolve(s"$repo/old/${e.parent}"), e.id)
       val nw = load(captures.resolve(s"$repo/new/${e.commit}"), e.id)
       val status = (old, nw) match
@@ -60,7 +61,7 @@ object ImportReproBreak:
         clean(ot.flatMap(_.innerText)), clean(nt.flatMap(_.innerText)), clean(Some(e.old_locator)), clean(Some(e.new_locator))).mkString(";")
       if status == "ok" then write(sitesDir, site, old.get, ot.get, nw.get, nt.get)
       println(s"$site: $status")
-    Files.writeString(sitesDir.resolve("reprobreak_manifest.csv"), manifest.result().mkString("\n") + "\n", UTF_8)
+    Files.writeString(sitesDir.resolve(if prefix == "rb" then "reprobreak_manifest.csv" else s"${prefix}_manifest.csv"), manifest.result().mkString("\n") + "\n", UTF_8)
 
   /** The first occurrence of the capture of break `id` (chromium preferred), with its screenshot. */
   private def load(dir: Path, id: Int): Option[Capture] =

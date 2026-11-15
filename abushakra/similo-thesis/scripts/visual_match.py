@@ -4,7 +4,7 @@ try:
     import cv2
 except ImportError:  # launched with a python3 that lacks OpenCV: use the project's virtualenv
     _venv = os.path.join(os.path.dirname(os.path.realpath(__file__)), "..", ".venv", "bin", "python")
-    if os.path.exists(_venv) and os.path.realpath(sys.executable) != os.path.realpath(_venv):
+    if os.path.exists(_venv) and os.path.realpath(sys.prefix) != os.path.realpath(os.path.join(os.path.dirname(_venv), "..")):  # the venv python is a symlink, so compare prefixes, not executables
         os.execv(_venv, [_venv] + sys.argv)
     raise
 import numpy as np
