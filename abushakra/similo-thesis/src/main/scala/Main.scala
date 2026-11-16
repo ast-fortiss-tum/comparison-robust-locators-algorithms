@@ -104,6 +104,9 @@ object Main:
       "MultiLocator" -> similo.Guarded(multilocator.MultiLocator(false, false)),
       "MultiLocator+repair" -> similo.Guarded(multilocator.MultiLocator(true, false)),
       "MultiLocator+VISTA+repair" -> similo.Guarded(multilocator.MultiLocator(true, true)),
+      // repair only the locators that did not vote for the winner, verified, kept in memory
+      "MultiLocator+selective-repair" -> similo.Guarded(multilocator.MultiLocator(true, false, selective = true)),
+      "MultiLocator+VISTA+selective-repair" -> similo.Guarded(multilocator.MultiLocator(true, true, selective = true)),
       // hybrids of the voting generators (no VISTA) with the OptimizedSimilo relocator
       "MultiLocator+Similo-fallback" -> similo.Guarded(multilocator.Hybrid(multilocator.HybridMode.Fallback)),
       "MultiLocator+Similo-voter" -> similo.Guarded(multilocator.Hybrid(multilocator.HybridMode.Voter)),
@@ -130,13 +133,18 @@ object Main:
           sb.append(s"$name,$site,${r.date},$key,${r.classification.locator},${r.classification.element},$outcome,$topScore,${r.found.exists(_._2 == EvaluationStatistics.MatchType.ExactMatch)}\n")
         Files.write(f, sb.toString.getBytes(StandardCharsets.UTF_8), java.nio.file.StandardOpenOption.CREATE, java.nio.file.StandardOpenOption.APPEND)
       }
+    // PAIRING=firstToAll: every later version is paired with the FIRST version (a fixed anchor element, so that repaired
+    // locators can be reused from version to version). Default: consecutive versions (v_i -> v_i+1), where the old
+    // element is regenerated from the ground truth at every step.
+    val pairing: evalutation.EvaluationData.SiteData => evalutation.EvaluationData.SiteData =
+      if sys.env.get("PAIRING").contains("firstToAll") then EvaluationComputing.firstToAllMapper else identity
     // Optional subset, e.g. ALGOS=absXPath,IDXPath (comma-separated names as above)
     val only = sys.env.get("ALGOS").map(_.split(",").map(_.trim).toSet)
     for (name, locator) <- algorithms if only.forall(_.contains(name)) do
       val t0 = System.nanoTime()
       val perSite = sites.map { s =>
         val t = System.nanoTime()
-        val stats = EvaluationComputing.computeAll(locator, Seq(java.nio.file.Path.of("sites", s)))
+        val stats = EvaluationComputing.computeAll(locator, Seq(java.nio.file.Path.of("sites", s)), mapper = pairing)
         println(row(name, s, stats, (System.nanoTime() - t) / 1e9))
         dumpPerElement(name, s, stats)
         stats
@@ -144,6 +152,11 @@ object Main:
       println(row(name, "ALL", perSite.reduce(_ append _), (System.nanoTime() - t0) / 1e9))
       locator match
         case g: similo.Guarded if g.failedInits > 0 => println(s"# $name: no locator generated for ${g.failedInits} elements")
+        case _ => ()
+      locator match
+        case g: similo.Guarded => g.inner match
+          case m: multilocator.MultiLocator if m.selective => println(s"# $name: ${m.repairStats}")
+          case _ => ()
         case _ => ()
 
 //    printRobustnessTable()
