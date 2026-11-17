@@ -106,6 +106,8 @@ object Main:
       "MultiLocator+VISTA+repair" -> similo.Guarded(multilocator.MultiLocator(true, true)),
       // repair only the locators that did not vote for the winner, verified, kept in memory
       "MultiLocator+selective-repair" -> similo.Guarded(multilocator.MultiLocator(true, false, selective = true)),
+      // Algorithm 2 of the Multi-Locator paper: repair only the locators of the original set L that no longer select the winner
+      "MultiLocator+paper-repair" -> similo.Guarded(multilocator.MultiLocator(true, false, selective = true, paperSet = true)),
       "MultiLocator+VISTA+selective-repair" -> similo.Guarded(multilocator.MultiLocator(true, true, selective = true)),
       // hybrids of the voting generators (no VISTA) with the OptimizedSimilo relocator
       "MultiLocator+Similo-fallback" -> similo.Guarded(multilocator.Hybrid(multilocator.HybridMode.Fallback)),
@@ -155,7 +157,7 @@ object Main:
         case _ => ()
       locator match
         case g: similo.Guarded => g.inner match
-          case m: multilocator.MultiLocator if m.selective => println(s"# $name: ${m.repairStats}")
+          case m: multilocator.MultiLocator if m.selective || m.paperSet => println(s"# $name: ${m.repairStats}")
           case _ => ()
         case _ => ()
 

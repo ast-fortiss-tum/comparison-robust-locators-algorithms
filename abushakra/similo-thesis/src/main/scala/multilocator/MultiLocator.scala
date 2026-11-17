@@ -33,8 +33,11 @@ import java.io.File
   * all five locators are regenerated after every lookup).
   * selective (with withRepair): in-memory repair, only the locators that did NOT vote for the winner are regenerated from
   * the winning element, and a regenerated locator is accepted only if it resolves uniquely to that winner on the page it
-  * was generated from (verification). Counters in repairStats. */
-case class MultiLocator(withRepair: Boolean = false, withVista: Boolean = false, selective: Boolean = false) extends Locator:
+  * was generated from (verification). Counters in repairStats.
+  * paperSet (with selective): as in Algorithm 2 of the Multi-Locator paper, only the locators of the set L (those that uniquely
+  * select the target on the ORIGINAL page) are ever repaired; per-locator outcomes are classified against the ground truth
+  * with the categories of the paper's Table III (C1, C2, B1-B4, plus the repairs prevented by verification). */
+case class MultiLocator(withRepair: Boolean = false, withVista: Boolean = false, selective: Boolean = false, paperSet: Boolean = false) extends Locator:
 
   override type S = MultiLocatorState
 
@@ -111,10 +114,18 @@ case class MultiLocator(withRepair: Boolean = false, withVista: Boolean = false,
       startTime = startTime
     )
 
+    val stateWithSet =
+      if paperSet then
+        val absOfTarget = getAbsolutePath(firstElement)
+        val valid = List(firePathAbs, firePathRel, seleniumIDE, montoto, robulaplus)
+          .filter(l => scala.util.Try(applyLocator(l, document)).toOption.flatten.exists(_.elementLocatedXPath == absOfTarget)).map(_.strategy).toSet
+        defaultState.copy(inSet = valid)
+      else defaultState
+
     if(withRepair && selective){
       selectiveStore.get((element.url.getOrElse(""), element.xpath.chrome)) match {
-        case Some(healed) => withHealed(defaultState, healed.values.toSeq)
-        case None         => defaultState
+        case Some(healed) => withHealed(stateWithSet, healed.values.toSeq)
+        case None         => stateWithSet
       }
     }else if(withRepair){
       // Try healed locators
@@ -294,7 +305,8 @@ case class MultiLocator(withRepair: Boolean = false, withVista: Boolean = false,
     s"selective repair: lookups with an answer=${cLookups.get}, repair triggered=${cTriggered.get}, locators regenerated=${cRegenerated.get}, " +
       s"accepted=${cAccepted.get} [${by(cAcceptedBy)}], rejected=${cRejected.get} [${by(cRejectedBy)}]; " +
       s"lookups run with a repaired locator=${cHealedUsed.get} (no answer: ${cHealedNoAnswer.get}), rescues=${cRescue.get}, repaired locator lost a vote=${cLost.get}, " +
-      s"repaired locator points elsewhere=${cHarm.get}, answer changed by repair=${cChanged.get}"
+      s"repaired locator points elsewhere=${cHarm.get}, answer changed by repair=${cChanged.get}" +
+      (if paperSet then s"\n    paper categories (per locator of L, per lookup with an answer): ${categoryStats}" else "")
 
   // does a repaired locator ever change anything? (audited at every lookup that ran with a repaired locator)
   private val cHealedUsed, cHealedNoAnswer, cRescue, cHarm, cLost, cChanged = new java.util.concurrent.atomic.AtomicLong()
@@ -321,29 +333,54 @@ case class MultiLocator(withRepair: Boolean = false, withVista: Boolean = false,
 
   private val strategies = Seq("ABSOLUTE_XPATH", "RELATIVE_XPATH", "SELENIUM_IDE", "MONTOTO", "ROBULA+")
 
+  private val cCat = scala.collection.concurrent.TrieMap[String, java.util.concurrent.atomic.AtomicLong]()
+  private def cat(name: String): Unit = cCat.getOrElseUpdate(name, new java.util.concurrent.atomic.AtomicLong()).incrementAndGet()
+  def categoryStats: String =
+    Seq("C1 correct, no repair", "C2 correct, wrongly repaired", "C2x correct, wrong repair rejected", "B1 broken, correctly repaired",
+        "B2 broken, no repair (points at the wrong winner)", "B3 broken, wrongly repaired", "B3x broken, wrong repair rejected",
+        "B4 broken, unrepairable").map(k => s"$k=${cCat.get(k).map(_.get).getOrElse(0L)}").mkString("; ")
+
   private def selectiveRepair(state: MultiLocatorState, winnerAbs: String, winnerJdom: Element, winnerEl: () => Option[MyElement],
                               voters: Set[String], dom: Document, pageUrl: String): Unit =
     cLookups.incrementAndGet()
-    val failed = strategies.filterNot(voters.contains)
+    val pool = if paperSet then strategies.filter(state.inSet.contains) else strategies
+    val failed = pool.filterNot(voters.contains)
+    // ground truth, for the counters only
+    val truthAbs: Option[String] =
+      if paperSet then GroundTruthProbe.current.get.flatMap(t => scala.util.Try(absPathOf(t, dom)).toOption.flatten) else None
+    val winnerIsTruth = truthAbs.contains(winnerAbs)
+    if paperSet && truthAbs.isDefined then
+      for s <- pool.filter(voters.contains) do                       // locators that already select the winner: no repair triggered
+        val toTruth = scala.util.Try(applyLocator(locatorOf(state, s), dom)).toOption.flatten.exists(r => truthAbs.contains(r.elementLocatedXPath))
+        cat(if toTruth then "C1 correct, no repair" else "B2 broken, no repair (points at the wrong winner)")
     if failed.nonEmpty then
       cTriggered.incrementAndGet()
       val key = (state.element.url.getOrElse(""), state.element.xpath.chrome)
       var current = selectiveStore.getOrElse(key, Map.empty)
       for s <- failed do
+        val toTruth = paperSet && truthAbs.isDefined &&
+          scala.util.Try(applyLocator(locatorOf(state, s), dom)).toOption.flatten.exists(r => truthAbs.contains(r.elementLocatedXPath))
         val regenerated = scala.util.Try(s match
           case "ABSOLUTE_XPATH" => GeneratedLocator(winnerAbs, s, firePathAbsWeight)
           case "RELATIVE_XPATH" => GeneratedLocator(winnerEl().get.xpath.idxpath, s, firePathRelWeight)
           case "SELENIUM_IDE"   => GeneratedLocator(XPathGeneratorUtil.getSeleniumIDEXPath(winnerJdom, dom), s, seleniumIDEWeight)
           case "MONTOTO"        => GeneratedLocator(XPathGeneratorUtil.getMontotoXPath(winnerJdom, dom), s, montotoWeight)
           case _                => GeneratedLocator(buildRobulaPlusXPath(dom, winnerAbs, pageUrl).head, s, robulaplusWeight)).toOption
+        var accepted = false
         regenerated.foreach { l =>
           cRegenerated.incrementAndGet()
           // verification: the new locator must resolve uniquely to the winner on this page
           if scala.util.Try(applyLocator(l, dom)).toOption.flatten.exists(_.elementLocatedXPath == winnerAbs) then
+            accepted = true
             current = current + (s -> l); cAccepted.incrementAndGet(); cAcceptedBy.getOrElseUpdate(s, new java.util.concurrent.atomic.AtomicLong()).incrementAndGet()
           else
             cRejected.incrementAndGet(); cRejectedBy.getOrElseUpdate(s, new java.util.concurrent.atomic.AtomicLong()).incrementAndGet()
         }
+        if paperSet && truthAbs.isDefined then
+          cat(
+            if toTruth then (if accepted then "C2 correct, wrongly repaired" else "C2x correct, wrong repair rejected")
+            else if winnerIsTruth then (if accepted then "B1 broken, correctly repaired" else "B4 broken, unrepairable")
+            else (if accepted then "B3 broken, wrongly repaired" else "B3x broken, wrong repair rejected"))
       selectiveStore.put(key, current)
 
   // ---- building blocks for the hybrids (Hybrid.scala) ----

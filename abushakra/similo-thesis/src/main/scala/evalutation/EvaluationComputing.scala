@@ -99,6 +99,7 @@ case class EvaluationComputing(locator: Locator, site: Path, mapper: SiteData =>
     EvaluationStatistics(resultsTransformed.map(ElementLocalisation(data.site, _)))
 
   private def determineResult(dateData: DateData, elementData: ElementPair): Result =
+    multilocator.GroundTruthProbe.current.set(Option(elementData.target).filterNot(_.isEmpty))
     val state = locator.init(elementData.oldElement, dateData.oldElements)
     val located = locator.locateSortedNormalized(state, dateData.newElements)
     val overlap = VonSimilo.getOverlap(elementData.target, dateData.newElements)
