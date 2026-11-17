@@ -115,3 +115,90 @@ Implemented and run, but not understood well enough to report. Code: `multilocat
     - Runtime per element for locator generation (Table 5.3, 300 elements): Montoto 0.03 ms, Selenium IDE 0.48, Legacy Similo 1.81, Optimized Similo 4.57, VON Similo 11.34, ROBULA+ 16.17, COLOR 20.71, Multi-Locator 22.08, VISTA 2,282.79. Reuse for the cost metric instead of measuring again.
     - Its future work suggests SIDEREAL as a sixth voter in Multi-Locator (VISTA). We have SIDEREAL results; a MultiLocator with SIDEREAL as an extra voter is a cheap hybrid to add.
 
+
+## 5. One algorithm that locates and repairs (idea, 2026-11-17)
+
+Locating (where is the old element in the new page?) and repairing (what do we write back into the test?) have been attacked separately. They are one loop: repair is relocation plus a decision about what to keep, and the test itself gives feedback that relocation alone lacks. Idea: a single algorithm that takes a Selenium test and keeps its locators working.
+
+**What our results say a design must handle**
+- Similarity matching (Similo) gives coverage (about 99% of elements in consecutive pairs, about 92% of pairs in first-to-all) but never abstains, so its errors are silent.
+- Voting among generated XPaths is precise (BEWT: 171 right of 178 answered) but answers only about half the elements.
+- Repair adds coverage and silent errors together: 81% of the abstentions it turned into answers were right on the tuning sites, 7 of 64 on the held-out news pages.
+- Hybrids of voting and Similo never beat Similo alone on accuracy, so any gain has to come from calibration, abstention and survival, not from top-line accuracy.
+
+**Design sketch**
+1. **Record.** Run the test once at authoring time and store a trace per step: the action, a fingerprint of the target (attributes with a stability estimate, volatile values such as hashed classes and counters stripped; text; neighbours; a small visual crop), the DOM or screenshot, and the observable effect of the step (page change, assertion, next state). Check the authoring-time quality of the generated locators then (unique, correct, no positional steps), with a repair loop if an LLM generates them (section 3).
+2. **Execute.** Run the test on the new version. At the first failing step, relocate the element in two stages: the cheap precise stage (the stored locators, voting), then a Similo-style matcher over the fingerprint for recall.
+3. **Verify by continuing.** Apply the candidate and check that the step's effect matches the recorded trace; rank several candidates by whether the rest of the test goes through. Abstention then means "no candidate keeps the test consistent", not a score threshold.
+4. **Write back.** Heal only from a confident, agreeing winner (the two stages agree, or the matcher's margin is clear), keep the original locator next to the healed one so a bad repair cannot spread, and report every repair for review. This is the confidence gate and re-anchoring of section 4, item 12.
+
+**Expected effect.** Fewer silent wrong answers and longer survival, not a higher top-line accuracy. A wrong element that is clicked usually breaks a later step or an assertion; the matcher no longer has to be right alone.
+
+**Limits**
+- Weak oracles: a test with weak assertions passes on the wrong element, so the check is only as good as the recorded effects. Require the same effect as in the old run, which is stricter than "the test is green".
+- Structural breaks (added or removed steps, changed flows, new waits) are not locator breaks. Keep them out of the first version.
+- Cost: verification executes the application, which is slow and needs an environment, so offline benchmarks such as Wayback cannot evaluate it.
+
+**First experiments**
+1. Offline, on the per-element dumps we already have (right, wrong, abstain, top score, found in top 10): simulate the agreement gate between the voting stage and Similo and report gain per added wrong answer. No new runs needed.
+2. End to end on BEWT (runnable page-object suites for two versions of four apps, 337 aligned pairs) and ReproBreak (developer fixes as ground truth, 350 pairs): the same matcher with and without verify-by-continuing, reporting right, wrong and abstain. Worth building the full version only if verification cuts the wrong answers without losing right ones.
+3. Report with the metrics of section 4: right, wrong and abstain separately, survival at first failure (the survivability tab), and gain per added wrong answer.
+
+## 6. Online evaluation: run real tests with the algorithm in the loop (idea, 2026-11-17)
+
+Everything we report is offline: for each element, is the top candidate the ground-truth element on a static snapshot, with elements scored independently. In autonomous-driving testing, offline error on recorded drives does not predict whether the car stays in its lane when the model drives (online). The same gap may exist for locators, so the ranking of algorithms may change when the locator is used by a running test.
+
+**Where online results can differ from offline**
+- **Equivalent elements.** A "wrong" answer can be harmless: the test clicks another element with the same effect (duplicate link, parent against child) and passes. Offline counts it as an error and understates those algorithms. The pairing-validity problem of ReproBreak (old and new fix targets not always the same element) is the same issue seen from the labels.
+- **Compounding.** A wrong click changes the application state, so a later step fails or passes for the wrong reason. Offline scores each element in isolation.
+- **Silent against loud failures.** Offline treats a wrong answer and an abstention as separate classes of equal cost. In a run an abstention stops the test at once, while a wrong answer can pass silently (a false pass), fail later, or do no harm. This can reverse the ranking of Similo (never abstains) and voting (abstains often).
+- **Dynamic state.** Snapshots miss modals, hover menus, logged-in state, waits and animations, so offline overstates algorithms that were only tested on settled pages.
+- **Cost.** Online we can measure the steps a test survives and the extra executions a repair needs.
+
+**Metrics**
+- Test pass rate, with the developer-fixed (or original-version) test as reference.
+- Step at which a run first fails.
+- False passes: the test is green but a step used the wrong element (needs a step-level oracle, for example the ground-truth element from the page-object alignment).
+- Wrong-but-harmless answers.
+- Per test, the correlation between the online result and the offline accuracy of its elements; and whether the ranking of the algorithms changes between the two.
+
+**Where to start: BEWT.** Runnable Java Selenium page-object suites for two versions of four apps (129 shared tests, 337 aligned elements, Docker environments already built; see the BEWT notes in the memory directory and `scripts/bewt`). Wrap `findElement` so each lookup goes through an algorithm, and run the v2 suite with the v1 locators. ReproBreak (Cypress and Playwright projects with developer fixes) is a second option but needs per-project work.
+
+**Risks**
+- 129 tests give noisy comparisons: report per-test results with intervals and do not rank close algorithms.
+- Test results depend on assertion strength; weak assertions inflate pass rates.
+- Setup is expensive and the environments were fragile (Joomla 3 needs an implicit wait, Joomla 4 has a stale apache pid, PrestaShop 1.6 needs native MariaDB and installer country US).
+
+**Link to section 5.** The unified locate-and-repair algorithm needs execution feedback, so this harness is also its evaluation: the same matcher with and without verify-by-continuing, scored online on BEWT.
+
+## 7. An own LLM/VLM relocator, not built on Similo (idea, 2026-11-17)
+
+VISTA is a computer-vision method (template matching, OpenCV) and is dated; keep it as a reference baseline only. The aim here is an algorithm of our own, built on language and vision-language models, evaluated with the LLM trials of sections 1 and 3. It does not use Similo scores or a Similo shortlist. Similo, MultiLocator and VISTA are baselines; a Similo-shortlist hybrid is a late ablation, not the design.
+
+**Task.** Given an element at authoring time and a later version of the page, return the element in the new page, or abstain. Same measures as everywhere else: right, wrong, abstain.
+
+**Design**
+1. **Anchor, written once at authoring time.** The model writes a short semantic description of the element (what it is, what it does, where it sits, its neighbours) and the anchor stores it with the crop, a DOM snippet and the page context. A description survives renames and restyling, which an XPath or a set of attributes does not. The anchor is cheap: one call per element, reused across versions.
+2. **Page representation, built without Similo.** Turn the new page into (a) a compact accessibility-style tree: role, accessible name, visible text, a few stable attributes, bounding box, one node id per visible interactive or labelled node; and (b) a screenshot with the same node ids drawn as numbered marks. Long pages are handled by windowing: the visual view picks a region first, then only that subtree goes to the DOM view.
+3. **Two independent answers.** The DOM view answers with a node id. The visual view points at the element (or a mark) in the screenshot, and the point is mapped to the DOM node whose box contains it. Neither answer sees the other.
+4. **Decision and abstention.** Answer only when the two agree. When they disagree, or either is unsure, abstain, or send a third call with both candidates side by side and the anchor description. Abstention is a first-class output, because silent wrong answers were the main failure of the algorithms we measured (section 5).
+5. **Write back.** For confirmed answers, refresh the anchor (new crop, new description) and generate a robust locator for the node (section 1), keeping the old anchor beside the new one. This is the confidence-gated repair of section 4, item 12.
+
+**Variants and ablations**
+- **LLM-only** (DOM view alone) against **LLM+VLM** (both views): what the screenshot adds, and where.
+- With and without the semantic description; screenshot with marks against a plain crop; windowed against whole-page input; number of calls and agreement rule; model size; stripping volatile values (section 1).
+- Baselines: Similo, OptimizedSimilo, MultiLocator, VISTA, the generators. Late hybrid: let Similo shortlist for pages too large for the model.
+
+**Metrics.** Right, wrong and abstain per element; gain per added wrong answer against each baseline; first-to-all survival (the write-back step is what makes answers reusable); tokens, latency and cost on a subset only (the full benchmarks are too large to run with a paid model); run-to-run agreement with the model's randomness set to the minimum.
+
+**Where it should help.** Icon-only controls without text, look-alikes (`add-new-item-top-btn` and `add-new-item-bottom-btn`, toolbar buttons), elements whose text and classes changed but whose look and role did not, and renamed or moved controls. Where tag, text and position are intact (most of Wayback and Excalidraw) expect no gain over the Similo family.
+
+**Benchmarks.** BEWT and ReproBreak (developer fixes as ground truth); the identity-oracle sets (Excalidraw, Angular-Slickgrid), where the hidden test id gives the ground truth and the chains test survival over many releases.
+
+**Risks**
+- **Contamination:** Excalidraw, Angular-Slickgrid and the Wayback sites are public and likely seen by the model. Report the BEWT apps (less public) separately and say so.
+- **Cost and speed:** each lookup is several model calls, against milliseconds for the baselines. Realistic use is when the cheap locators fail or disagree (section 5, step 3), not for every step.
+- **Page size:** whole pages do not fit; the windowing step is part of the algorithm and has to be evaluated separately (does the region step lose the target?).
+- **Reproducibility:** pin the model version and the prompts, log the full inputs, and keep the tree and screenshot representations on disk so a rerun does not depend on the extraction code.
+
+**Order.** (1) DOM view only, on BEWT with a mid-size model, on pages that fit. (2) Add the visual view and the agreement rule. (3) Add the anchor description and the windowing. (4) Repeat on the oracle sets. (5) Write-back and survival. Only then the Similo hybrid.
