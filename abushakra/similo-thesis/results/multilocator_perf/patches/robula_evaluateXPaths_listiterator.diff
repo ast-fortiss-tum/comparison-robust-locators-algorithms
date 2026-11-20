@@ -1,0 +1,26 @@
+--- /Users/stocco/repos/tools/hybrid-work/dev/src/main/java/robulanew/UtilsROBULAPlusNew.java	2026-11-16 21:35:51
++++ /Users/stocco/repos/tools/hybrid-work/ob/src/main/java/robulanew/UtilsROBULAPlusNew.java	2026-11-19 18:47:14
+@@ -177,13 +177,17 @@
+ 		    { // inserimento ordinato
+ 			if (!candidateXPathLocatorsList.isEmpty())
+ 			{
+-			    for (int i = 0; i < candidateXPathLocatorsList.size(); i++)
++			    // Same result as the former indexed loop (get(i) / add(i, ...)), but a ListIterator walks a LinkedList in linear time;
++			    // get(i) on a LinkedList is linear itself, which made this insertion quadratic on large pages.
++			    java.util.ListIterator<XPathInfo> it = candidateXPathLocatorsList.listIterator();
++			    while (it.hasNext())
+ 			    {
+-				if (candidateXPathLocatorsList.get(i).getPrecision() < precision)
+-				{
+-				    candidateXPathLocatorsList.add(i, new XPathInfo(xPath, precision));
+-				    break;
+-				}
++			        if (it.next().getPrecision() < precision)
++			        {
++			            it.previous(); // step back so the new element goes before the one just read, as add(i, ...) did
++			            it.add(new XPathInfo(xPath, precision));
++			            break;
++			        }
+ 			    }
+ 			    candidateXPathLocatorsList.add(new XPathInfo(xPath, precision));
+ 			}

@@ -1,0 +1,6 @@
+accuweather before rc=0 wall=44s
+accuweather after rc=0 wall=42s
+bestbuy before rc=0 wall=517s
+bestbuy after rc=0 wall=525s
+adobe after rc=142 wall=900s
+done

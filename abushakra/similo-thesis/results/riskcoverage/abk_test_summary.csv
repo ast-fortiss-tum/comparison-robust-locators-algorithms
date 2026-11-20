@@ -1,0 +1,5 @@
+algorithm,pairs,right,wrong,silent,accuracy,coverage,precision,kind
+LegacySimilo,165,149,16,0,0.903,1.0,0.903,scored
+MultiLocator,165,116,9,40,0.703,0.7576,0.928,fixed
+absXPath,165,110,14,41,0.6667,0.7515,0.8871,fixed
+RobulaPlus,165,89,0,76,0.5394,0.5394,1.0,fixed

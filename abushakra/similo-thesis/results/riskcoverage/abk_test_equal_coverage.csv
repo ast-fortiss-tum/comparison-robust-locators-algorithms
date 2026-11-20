@@ -1,0 +1,4 @@
+reference,ref_answers,ref_precision,ref_accuracy,scored_algorithm,precision_at_same_answers,accuracy_at_same_answers
+MultiLocator,125,0.928,0.703,LegacySimilo,0.992,0.7515
+absXPath,124,0.8871,0.6667,LegacySimilo,1.0,0.7515
+RobulaPlus,89,1.0,0.5394,LegacySimilo,1.0,0.5394

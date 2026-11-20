@@ -1,0 +1,78 @@
+[info] welcome to sbt 1.9.2 (Eclipse Adoptium Java 17.0.21)
+[info] loading project definition from ./similo-thesis/project/project
+[info] loading settings for project similo-thesis-build from plugins.sbt ...
+[info] loading project definition from ./similo-thesis/project
+[info] loading settings for project root from build.sbt ...
+[info] set current project to similo-thesis (in build file:./similo-thesis/)
+[warn] Compile / run / javaOptions will be ignored, Compile / run / fork is set to false
+[info] running BiasCheck 
+locator;site;date;match;picked_twin;twin_rank;top_score;twin_score
+LegacySimilo;amazon;2019-05-01;tag+text+href;true;1;0,665;0,665
+OptimizedSimilo;amazon;2019-05-01;tag+text+href;true;1;0,460;0,460
+LegacySimilo;bestbuy;2020-09-01;id;true;1;0,719;0,719
+OptimizedSimilo;bestbuy;2020-09-01;id;true;1;0,500;0,500
+LegacySimilo;bestbuy;2021-05-01;tag+text+href;true;1;0,658;0,658
+OptimizedSimilo;bestbuy;2021-05-01;tag+text+href;true;1;0,444;0,444
+LegacySimilo;bestbuy;2021-05-01;tag+text+href;true;1;0,589;0,589
+OptimizedSimilo;bestbuy;2021-05-01;tag+text+href;true;1;0,414;0,414
+LegacySimilo;discord;2019-01-01;tag+text+href;true;1;0,480;0,480
+OptimizedSimilo;discord;2019-01-01;tag+text+href;true;1;0,314;0,314
+LegacySimilo;discord;2020-09-01;tag+text+href;true;1;0,470;0,470
+OptimizedSimilo;discord;2020-09-01;tag+text+href;true;1;0,295;0,295
+LegacySimilo;etsy;2019-05-01;tag+text+href;true;1;0,582;0,582
+OptimizedSimilo;etsy;2019-05-01;tag+text+href;true;1;0,398;0,398
+LegacySimilo;paypal;2022-01-01;tag+text+href;true;1;0,530;0,530
+OptimizedSimilo;paypal;2022-01-01;tag+text+href;true;1;0,420;0,420
+LegacySimilo;reddit;2022-01-01;tag+text+href;true;1;0,708;0,708
+OptimizedSimilo;reddit;2022-01-01;tag+text+href;true;1;0,499;0,499
+LegacySimilo;reddit;2021-09-01;tag+text+href;true;1;0,610;0,610
+OptimizedSimilo;reddit;2021-09-01;tag+text+href;true;1;0,381;0,381
+LegacySimilo;t-mobile;2019-05-01;tag+text+href;true;1;0,664;0,664
+OptimizedSimilo;t-mobile;2019-05-01;tag+text+href;true;1;0,507;0,507
+LegacySimilo;tiktok;2019-05-01;tag+text+href;true;1;0,463;0,463
+OptimizedSimilo;tiktok;2019-05-01;tag+text+href;true;1;0,292;0,292
+LegacySimilo;usps;2021-01-01;id;true;1;0,700;0,700
+OptimizedSimilo;usps;2021-01-01;id;true;1;0,400;0,400
+LegacySimilo;usps;2020-01-01;tag+text+href;true;1;0,402;0,402
+OptimizedSimilo;usps;2020-01-01;tag+text+href;true;1;0,280;0,280
+LegacySimilo;walmart;2019-05-01;id;true;1;0,505;0,505
+OptimizedSimilo;walmart;2019-05-01;id;true;1;0,206;0,206
+LegacySimilo;walmart;2019-05-01;id;true;1;0,496;0,496
+OptimizedSimilo;walmart;2019-05-01;id;true;1;0,193;0,193
+LegacySimilo;yahoo;2019-01-01;tag+text+href;false;2;0,554;0,491
+OptimizedSimilo;yahoo;2019-01-01;tag+text+href;false;2;0,346;0,308
+LegacySimilo;yahoo;2019-01-01;tag+text+href;true;1;0,583;0,583
+OptimizedSimilo;yahoo;2019-01-01;tag+text+href;true;1;0,344;0,344
+LegacySimilo;yahoo;2019-01-01;tag+text+href;true;1;0,583;0,583
+OptimizedSimilo;yahoo;2019-01-01;tag+text+href;true;1;0,344;0,344
+LegacySimilo;zz_aol;2020-01-01;tag+text+href;true;1;0,662;0,662
+OptimizedSimilo;zz_aol;2020-01-01;tag+text+href;true;1;0,470;0,470
+LegacySimilo;zz_cnn;2022-05-01;tag+text+href;true;1;0,628;0,628
+OptimizedSimilo;zz_cnn;2022-05-01;tag+text+href;true;1;0,466;0,466
+LegacySimilo;zz_cnn;2022-05-01;tag+text+href;true;1;0,626;0,626
+OptimizedSimilo;zz_cnn;2022-05-01;tag+text+href;true;1;0,466;0,466
+LegacySimilo;zz_cnn;2022-05-01;tag+text+href;true;1;0,626;0,626
+OptimizedSimilo;zz_cnn;2022-05-01;tag+text+href;true;1;0,466;0,466
+LegacySimilo;zz_cnn;2022-05-01;tag+text+href;true;1;0,628;0,628
+OptimizedSimilo;zz_cnn;2022-05-01;tag+text+href;true;1;0,466;0,466
+LegacySimilo;zz_cnn;2022-05-01;tag+text+href;true;1;0,632;0,632
+OptimizedSimilo;zz_cnn;2022-05-01;tag+text+href;true;1;0,468;0,468
+LegacySimilo;zz_cnn;2022-05-01;tag+text+href;true;1;0,629;0,629
+OptimizedSimilo;zz_cnn;2022-05-01;tag+text+href;true;1;0,468;0,468
+LegacySimilo;zz_cnn;2022-05-01;tag+text+href;true;1;0,626;0,626
+OptimizedSimilo;zz_cnn;2022-05-01;tag+text+href;true;1;0,466;0,466
+LegacySimilo;zz_foxnews;2021-01-01;tag+text+href;false;18;0,497;0,436
+OptimizedSimilo;zz_foxnews;2021-01-01;tag+text+href;false;10;0,293;0,164
+LegacySimilo;zz_foxnews;2023-05-01;tag+text+href;false;7;0,464;0,449
+OptimizedSimilo;zz_foxnews;2023-05-01;tag+text+href;false;2;0,356;0,322
+LegacySimilo;zz_foxnews;2020-05-01;tag+text+href;false;10;0,478;0,428
+OptimizedSimilo;zz_foxnews;2020-05-01;tag+text+href;false;7;0,321;0,167
+LegacySimilo;zz_foxnews;2023-05-01;tag+text+href;true;1;0,437;0,437
+OptimizedSimilo;zz_foxnews;2023-05-01;tag+text+href;true;1;0,286;0,286
+LegacySimilo;zz_imdb;2021-05-01;tag+text+href;false;7;0,600;0,355
+OptimizedSimilo;zz_imdb;2021-05-01;tag+text+href;false;5;0,357;0,248
+# LegacySimilo picks twin: 27
+# LegacySimilo total: 32
+# OptimizedSimilo picks twin: 27
+# OptimizedSimilo total: 32
+[success] Total time: 30 s, completed 11 Nov 2026, 15:45:02

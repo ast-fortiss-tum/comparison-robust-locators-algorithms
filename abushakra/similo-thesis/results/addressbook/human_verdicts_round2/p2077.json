@@ -1,0 +1,10 @@
+{
+  "at": "2026-11-19T17:47:57.689Z",
+  "id": 2077,
+  "new": "3.3.10",
+  "note": "",
+  "old": "3.3.9",
+  "step": 7,
+  "test": "SearchByLetter",
+  "verdict": "same"
+}

@@ -1,0 +1,602 @@
+{
+ "3.3.0": {
+  "zip": "3.3.0",
+  "patched": [
+   "include/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.3.1": {
+  "zip": "3.3.1",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.3.10": {
+  "zip": "3.3.10",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.3.12": {
+  "zip": "3.3.12",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.3.13": {
+  "zip": "3.3.13",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.3.14": {
+  "zip": "3.3.14",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.3.15": {
+  "zip": "3.3.15",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.3.16": {
+  "zip": "3.3.16",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.3.17": {
+  "zip": "3.3.17",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.3.18": {
+  "zip": "3.3.18",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.3.2": {
+  "zip": "3.3.2",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.3.3": {
+  "zip": "3.3.3",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.3.4": {
+  "zip": "3.3.4",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.3.5": {
+  "zip": "3.3.5",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.3.6": {
+  "zip": "3.3.6",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.3.7": {
+  "zip": "3.3.7",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.3.8": {
+  "zip": "3.3.8",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.3.9": {
+  "zip": "3.3.9",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.4": {
+  "zip": "3.4.0",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.4.1": {
+  "zip": "3.4.1",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.4.2": {
+  "zip": "3.4.2",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.4.3": {
+  "zip": "3.4.3",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.4.4": {
+  "zip": "3.4.4",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.4.5": {
+  "zip": "3.4.5",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.4.6": {
+  "zip": "3.4.6",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.4.7": {
+  "zip": "3.4.7",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "3.4.8": {
+  "zip": "3.4.8",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "4.0": {
+  "zip": "4.0.0",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "4.0.2": {
+  "zip": "4.0.2",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "4.1.1": {
+  "zip": "4.1.1",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "4.1.3": {
+  "zip": "4.1.3",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "4.1.4": {
+  "zip": "4.1.4",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "5.0-beta": {
+  "zip": "5.0-beta",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "5.0.0": {
+  "zip": "5.0",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "5.1": {
+  "zip": "5.1",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "5.2": {
+  "zip": "5.2",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "5.3": {
+  "zip": "5.3",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "5.4": {
+  "zip": "5.4.0",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "5.4.1": {
+  "zip": "5.4.1",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "5.4.2": {
+  "zip": "5.4.2",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "5.4.3": {
+  "zip": "5.4.3",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "5.4.4": {
+  "zip": "5.4.4",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "5.4.5": {
+  "zip": "5.4.5",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "5.4.6": {
+  "zip": "5.4.6",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "5.4.7": {
+  "zip": "5.4.7",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "5.4.9": {
+  "zip": "5.4.9",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "5.5": {
+  "zip": "5.5",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "5.6": {
+  "zip": "5.6",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "5.7": {
+  "zip": "5.7.0",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "5.7.1": {
+  "zip": "5.7.1",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "5.7.2": {
+  "zip": "5.7.2",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "5.7.3": {
+  "zip": "5.7.3",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "5.7.4": {
+  "zip": "5.7.4",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "5.7.5": {
+  "zip": "5.7.5",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "5.8": {
+  "zip": "5.8.0",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "5.8.1": {
+  "zip": "5.8.1",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "6.0": {
+  "zip": "6.0",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "5",
+  "http": 200
+ },
+ "6.1": {
+  "zip": "6.1.0",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "7",
+  "http": 200
+ },
+ "6.1.1": {
+  "zip": "6.1.1",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "7",
+  "http": 200
+ },
+ "6.1.2": {
+  "zip": "6.1.2",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "7",
+  "http": 200
+ },
+ "6.1.3": {
+  "zip": "6.1.3",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "7",
+  "http": 200
+ },
+ "6.2": {
+  "zip": "6.2.0",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "6.2.1": {
+  "zip": "6.2.1",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "6.2.10": {
+  "zip": "6.2.10",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "6.2.11": {
+  "zip": "6.2.11",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "6.2.12": {
+  "zip": "6.2.12",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "6.2.2": {
+  "zip": "6.2.2",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "6.2.3": {
+  "zip": "6.2.3",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "6.2.4": {
+  "zip": "6.2.4",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "6.2.5": {
+  "zip": "6.2.5",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "6.2.6": {
+  "zip": "6.2.6",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "6.2.7": {
+  "zip": "6.2.7",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "6.2.9": {
+  "zip": "6.2.9",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "7.0.0": {
+  "zip": "7.0.0",
+  "patched": [
+   "config/config.php"
+  ],
+  "tables": "4",
+  "http": 200
+ },
+ "8.0.0": {
+  "zip": "8.0.0",
+  "patched": [
+   "config/cfg.sys.php"
+  ],
+  "tables": "5",
+  "http": 200
+ }
+}

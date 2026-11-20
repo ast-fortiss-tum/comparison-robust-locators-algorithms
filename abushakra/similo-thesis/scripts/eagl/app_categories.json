@@ -1,0 +1,13 @@
+{
+ "note": "EAGL category models for the BEWT and ReproBreak apps: judgement calls (none of the fold models saw these apps)",
+ "category": {
+  "bewt_bludit": "news",
+  "bewt_joomla": "news",
+  "bewt_mantisbt": "web_services",
+  "bewt_prestashop": "retail",
+  "rb_angular_slickgrid": "web_services",
+  "rb_koenig": "news",
+  "rb_openmct": "web_services",
+  "rb_playwright": "web_services"
+ }
+}

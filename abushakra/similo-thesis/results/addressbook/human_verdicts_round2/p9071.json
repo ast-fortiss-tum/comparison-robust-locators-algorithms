@@ -1,0 +1,10 @@
+{
+  "at": "2026-11-19T17:50:29.137Z",
+  "id": 9071,
+  "new": "5.4.7",
+  "note": "",
+  "old": "5.4.6",
+  "step": 2,
+  "test": "DeleteGroup",
+  "verdict": "same"
+}

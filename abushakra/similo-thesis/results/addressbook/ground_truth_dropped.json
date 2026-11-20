@@ -1,0 +1,882 @@
+[
+{
+"idx": 772,
+"old": "3.3.3",
+"new": "3.3.4",
+"test": "UpdateBlank",
+"step_old": 1,
+"loc_old": "css=img[alt=\"Edit\"]",
+"loc_new": "css=img[alt=\"edit\"]",
+"validation": "human-same"
+},
+{
+"idx": 773,
+"old": "3.3.3",
+"new": "3.3.4",
+"test": "UpdateBlank",
+"step_old": 2,
+"loc_old": "name=firstname",
+"loc_new": "name=firstname",
+"validation": "auto-only"
+},
+{
+"idx": 774,
+"old": "3.3.3",
+"new": "3.3.4",
+"test": "UpdateBlank",
+"step_old": 3,
+"loc_old": "name=lastname",
+"loc_new": "name=lastname",
+"validation": "auto-only"
+},
+{
+"idx": 775,
+"old": "3.3.3",
+"new": "3.3.4",
+"test": "UpdateBlank",
+"step_old": 4,
+"loc_old": "name=update",
+"loc_new": "name=update",
+"validation": "auto-only"
+},
+{
+"idx": 777,
+"old": "3.3.3",
+"new": "3.3.4",
+"test": "UpdateContact",
+"step_old": 1,
+"loc_old": "link=P",
+"loc_new": "link=P",
+"validation": "auto-only"
+},
+{
+"idx": 778,
+"old": "3.3.3",
+"new": "3.3.4",
+"test": "UpdateContact",
+"step_old": 2,
+"loc_old": "css=img[alt=\"Edit\"]",
+"loc_new": "css=img[alt=\"edit\"]",
+"validation": "human-same"
+},
+{
+"idx": 779,
+"old": "3.3.3",
+"new": "3.3.4",
+"test": "UpdateContact",
+"step_old": 3,
+"loc_old": "name=lastname",
+"loc_new": "name=lastname",
+"validation": "auto-only"
+},
+{
+"idx": 780,
+"old": "3.3.3",
+"new": "3.3.4",
+"test": "UpdateContact",
+"step_old": 4,
+"loc_old": "name=address",
+"loc_new": "name=address",
+"validation": "auto-only"
+},
+{
+"idx": 781,
+"old": "3.3.3",
+"new": "3.3.4",
+"test": "UpdateContact",
+"step_old": 5,
+"loc_old": "name=home",
+"loc_new": "name=home",
+"validation": "auto-only"
+},
+{
+"idx": 782,
+"old": "3.3.3",
+"new": "3.3.4",
+"test": "UpdateContact",
+"step_old": 6,
+"loc_old": "name=mobile",
+"loc_new": "name=mobile",
+"validation": "auto-only"
+},
+{
+"idx": 783,
+"old": "3.3.3",
+"new": "3.3.4",
+"test": "UpdateContact",
+"step_old": 7,
+"loc_old": "name=work",
+"loc_new": "name=work",
+"validation": "auto-only"
+},
+{
+"idx": 784,
+"old": "3.3.3",
+"new": "3.3.4",
+"test": "UpdateContact",
+"step_old": 8,
+"loc_old": "name=email",
+"loc_new": "name=email",
+"validation": "auto-only"
+},
+{
+"idx": 785,
+"old": "3.3.3",
+"new": "3.3.4",
+"test": "UpdateContact",
+"step_old": 9,
+"loc_old": "name=update",
+"loc_new": "name=update",
+"validation": "auto-only"
+},
+{
+"idx": 787,
+"old": "3.3.3",
+"new": "3.3.4",
+"test": "UpdateContact2",
+"step_old": 1,
+"loc_old": "link=P",
+"loc_new": "link=P",
+"validation": "auto-only"
+},
+{
+"idx": 788,
+"old": "3.3.3",
+"new": "3.3.4",
+"test": "UpdateContact2",
+"step_old": 2,
+"loc_old": "css=img[alt=\"Details\"]",
+"loc_new": "css=img[alt=\"details\"]",
+"validation": "human-same"
+},
+{
+"idx": 789,
+"old": "3.3.3",
+"new": "3.3.4",
+"test": "UpdateContact2",
+"step_old": 3,
+"loc_old": "name=modifiy",
+"loc_new": "name=modifiy",
+"validation": "auto-only"
+},
+{
+"idx": 790,
+"old": "3.3.3",
+"new": "3.3.4",
+"test": "UpdateContact2",
+"step_old": 4,
+"loc_old": "name=lastname",
+"loc_new": "name=lastname",
+"validation": "auto-only"
+},
+{
+"idx": 791,
+"old": "3.3.3",
+"new": "3.3.4",
+"test": "UpdateContact2",
+"step_old": 5,
+"loc_old": "name=firstname",
+"loc_new": "name=firstname",
+"validation": "auto-only"
+},
+{
+"idx": 792,
+"old": "3.3.3",
+"new": "3.3.4",
+"test": "UpdateContact2",
+"step_old": 6,
+"loc_old": "name=update",
+"loc_new": "name=update",
+"validation": "auto-only"
+},
+{
+"idx": 794,
+"old": "3.3.3",
+"new": "3.3.4",
+"test": "UpdateOneField",
+"step_old": 1,
+"loc_old": "link=F",
+"loc_new": "link=F",
+"validation": "auto-only"
+},
+{
+"idx": 795,
+"old": "3.3.3",
+"new": "3.3.4",
+"test": "UpdateOneField",
+"step_old": 2,
+"loc_old": "css=img[alt=\"Edit\"]",
+"loc_new": "css=img[alt=\"edit\"]",
+"validation": "human-same"
+},
+{
+"idx": 796,
+"old": "3.3.3",
+"new": "3.3.4",
+"test": "UpdateOneField",
+"step_old": 3,
+"loc_old": "name=lastname",
+"loc_new": "name=lastname",
+"validation": "auto-only"
+},
+{
+"idx": 797,
+"old": "3.3.3",
+"new": "3.3.4",
+"test": "UpdateOneField",
+"step_old": 4,
+"loc_old": "name=update",
+"loc_new": "name=update",
+"validation": "auto-only"
+},
+{
+"idx": 5822,
+"old": "3.4.8",
+"new": "4.0",
+"test": "AddContactToGroup",
+"step_old": 1,
+"loc_old": "//form/table/tbody/tr/td/input",
+"loc_new": "//form/table/tbody/tr/td/input",
+"validation": "human-same"
+},
+{
+"idx": 5825,
+"old": "3.4.8",
+"new": "4.0",
+"test": "AddContactToGroup",
+"step_old": 4,
+"loc_old": "name=add",
+"loc_new": "name=add",
+"validation": "auto-only"
+},
+{
+"idx": 5858,
+"old": "3.4.8",
+"new": "4.0",
+"test": "Gmail",
+"step_old": 1,
+"loc_old": "link=Preferences",
+"loc_new": "link=Preferences",
+"validation": "auto-only"
+},
+{
+"idx": 5859,
+"old": "3.4.8",
+"new": "4.0",
+"test": "Gmail",
+"step_old": 2,
+"loc_old": "name=mailer",
+"loc_new": "name=mailer",
+"validation": "auto-only"
+},
+{
+"idx": 5860,
+"old": "3.4.8",
+"new": "4.0",
+"test": "Gmail",
+"step_old": 3,
+"loc_old": "name=update",
+"loc_new": "name=update",
+"validation": "auto-only"
+},
+{
+"idx": 5861,
+"old": "3.4.8",
+"new": "4.0",
+"test": "Gmail",
+"step_old": 4,
+"loc_old": "css=input[type=\"button\"]",
+"loc_new": "css=input[type=\"button\"]",
+"validation": "auto-only"
+},
+{
+"idx": 5862,
+"old": "3.4.8",
+"new": "4.0",
+"test": "Gmail",
+"step_old": 6,
+"loc_old": "//form/table/tbody/tr/td/input",
+"loc_new": "//form/table/tbody/tr/td/input",
+"validation": "human-same"
+},
+{
+"idx": 5865,
+"old": "3.4.8",
+"new": "4.0",
+"test": "Gmail",
+"step_old": 9,
+"loc_old": "id=MassCB",
+"loc_new": "id=MassCB",
+"validation": "auto-only"
+},
+{
+"idx": 5866,
+"old": "3.4.8",
+"new": "4.0",
+"test": "Gmail",
+"step_old": 10,
+"loc_old": "css=input[type=\"button\"]",
+"loc_new": "css=input[type=\"button\"]",
+"validation": "auto-only"
+},
+{
+"idx": 5890,
+"old": "3.4.8",
+"new": "4.0",
+"test": "RemoveContactFromGroup",
+"step_old": 1,
+"loc_old": "name=group",
+"loc_new": "name=group",
+"validation": "human-same"
+},
+{
+"idx": 5891,
+"old": "3.4.8",
+"new": "4.0",
+"test": "RemoveContactFromGroup",
+"step_old": 2,
+"loc_old": "//form/table/tbody/tr/td/input",
+"loc_new": "//form/table/tbody/tr/td/input",
+"validation": "human-same"
+},
+{
+"idx": 5893,
+"old": "3.4.8",
+"new": "4.0",
+"test": "RemoveContactFromGroup",
+"step_old": 4,
+"loc_old": "name=remove",
+"loc_new": "name=remove",
+"validation": "auto-only"
+},
+{
+"idx": 5894,
+"old": "3.4.8",
+"new": "4.0",
+"test": "RemoveContactFromGroup",
+"step_old": 5,
+"loc_old": "link=group page \"ANOTHER EDITED GROUP\"",
+"loc_new": "link=group page \"ANOTHER EDITED GROUP\"",
+"validation": "auto-only"
+},
+{
+"idx": 6343,
+"old": "4.0.2",
+"new": "4.1.1",
+"test": "SearchEmail",
+"step_old": 1,
+"loc_old": "name=searchstring",
+"loc_new": "name=searchstring",
+"validation": "auto-only"
+},
+{
+"idx": 6345,
+"old": "4.0.2",
+"new": "4.1.1",
+"test": "SearchFirstName",
+"step_old": 1,
+"loc_old": "name=searchstring",
+"loc_new": "name=searchstring",
+"validation": "auto-only"
+},
+{
+"idx": 6347,
+"old": "4.0.2",
+"new": "4.1.1",
+"test": "SearchLastName",
+"step_old": 1,
+"loc_old": "name=searchstring",
+"loc_new": "name=searchstring",
+"validation": "auto-only"
+},
+{
+"idx": 13801,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddAllBlank",
+"step_old": 1,
+"loc_old": "link=add new",
+"loc_new": "link=add new",
+"validation": "auto-only"
+},
+{
+"idx": 13821,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact1",
+"step_old": 2,
+"loc_old": "name=firstname",
+"loc_new": "name=firstname",
+"validation": "auto-only"
+},
+{
+"idx": 13822,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact1",
+"step_old": 3,
+"loc_old": "name=lastname",
+"loc_new": "name=lastname",
+"validation": "auto-only"
+},
+{
+"idx": 13823,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact1",
+"step_old": 4,
+"loc_old": "name=address",
+"loc_new": "name=address",
+"validation": "auto-only"
+},
+{
+"idx": 13824,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact1",
+"step_old": 5,
+"loc_old": "name=home",
+"loc_new": "name=home",
+"validation": "auto-only"
+},
+{
+"idx": 13825,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact1",
+"step_old": 6,
+"loc_old": "name=mobile",
+"loc_new": "name=mobile",
+"validation": "auto-only"
+},
+{
+"idx": 13826,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact1",
+"step_old": 7,
+"loc_old": "name=work",
+"loc_new": "name=work",
+"validation": "auto-only"
+},
+{
+"idx": 13827,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact1",
+"step_old": 8,
+"loc_old": "name=email",
+"loc_new": "name=email",
+"validation": "auto-only"
+},
+{
+"idx": 13828,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact1",
+"step_old": 9,
+"loc_old": "name=email2",
+"loc_new": "name=email2",
+"validation": "auto-only"
+},
+{
+"idx": 13829,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact1",
+"step_old": 10,
+"loc_old": "name=bday",
+"loc_new": "name=bday",
+"validation": "auto-only"
+},
+{
+"idx": 13830,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact1",
+"step_old": 11,
+"loc_old": "name=bmonth",
+"loc_new": "name=bmonth",
+"validation": "auto-only"
+},
+{
+"idx": 13831,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact1",
+"step_old": 12,
+"loc_old": "name=byear",
+"loc_new": "name=byear",
+"validation": "auto-only"
+},
+{
+"idx": 13832,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact1",
+"step_old": 13,
+"loc_old": "name=address2",
+"loc_new": "name=address2",
+"validation": "auto-only"
+},
+{
+"idx": 13833,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact1",
+"step_old": 14,
+"loc_old": "name=phone2",
+"loc_new": "name=phone2",
+"validation": "auto-only"
+},
+{
+"idx": 13834,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact1",
+"step_old": 15,
+"loc_old": "name=submit",
+"loc_new": "name=submit",
+"validation": "auto-only"
+},
+{
+"idx": 13835,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact1",
+"step_old": 16,
+"loc_old": "link=home page",
+"loc_new": "link=home page",
+"validation": "auto-only"
+},
+{
+"idx": 13837,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact2",
+"step_old": 2,
+"loc_old": "name=firstname",
+"loc_new": "name=firstname",
+"validation": "auto-only"
+},
+{
+"idx": 13838,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact2",
+"step_old": 3,
+"loc_old": "name=lastname",
+"loc_new": "name=lastname",
+"validation": "auto-only"
+},
+{
+"idx": 13839,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact2",
+"step_old": 4,
+"loc_old": "name=address",
+"loc_new": "name=address",
+"validation": "auto-only"
+},
+{
+"idx": 13840,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact2",
+"step_old": 5,
+"loc_old": "name=home",
+"loc_new": "name=home",
+"validation": "auto-only"
+},
+{
+"idx": 13841,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact2",
+"step_old": 6,
+"loc_old": "name=mobile",
+"loc_new": "name=mobile",
+"validation": "auto-only"
+},
+{
+"idx": 13842,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact2",
+"step_old": 7,
+"loc_old": "name=work",
+"loc_new": "name=work",
+"validation": "auto-only"
+},
+{
+"idx": 13843,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact2",
+"step_old": 8,
+"loc_old": "name=email",
+"loc_new": "name=email",
+"validation": "auto-only"
+},
+{
+"idx": 13844,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact2",
+"step_old": 9,
+"loc_old": "name=email2",
+"loc_new": "name=email2",
+"validation": "auto-only"
+},
+{
+"idx": 13845,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact2",
+"step_old": 10,
+"loc_old": "name=bday",
+"loc_new": "name=bday",
+"validation": "auto-only"
+},
+{
+"idx": 13846,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact2",
+"step_old": 11,
+"loc_old": "name=bmonth",
+"loc_new": "name=bmonth",
+"validation": "auto-only"
+},
+{
+"idx": 13847,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact2",
+"step_old": 12,
+"loc_old": "name=byear",
+"loc_new": "name=byear",
+"validation": "auto-only"
+},
+{
+"idx": 13848,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact2",
+"step_old": 13,
+"loc_old": "name=address2",
+"loc_new": "name=address2",
+"validation": "auto-only"
+},
+{
+"idx": 13849,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact2",
+"step_old": 14,
+"loc_old": "name=phone2",
+"loc_new": "name=phone2",
+"validation": "auto-only"
+},
+{
+"idx": 13850,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact2",
+"step_old": 15,
+"loc_old": "name=submit",
+"loc_new": "name=submit",
+"validation": "auto-only"
+},
+{
+"idx": 13851,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact2",
+"step_old": 16,
+"loc_old": "link=home page",
+"loc_new": "link=home page",
+"validation": "auto-only"
+},
+{
+"idx": 13853,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact3",
+"step_old": 2,
+"loc_old": "name=firstname",
+"loc_new": "name=firstname",
+"validation": "auto-only"
+},
+{
+"idx": 13854,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact3",
+"step_old": 3,
+"loc_old": "name=lastname",
+"loc_new": "name=lastname",
+"validation": "auto-only"
+},
+{
+"idx": 13855,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact3",
+"step_old": 4,
+"loc_old": "name=address",
+"loc_new": "name=address",
+"validation": "auto-only"
+},
+{
+"idx": 13856,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact3",
+"step_old": 5,
+"loc_old": "name=home",
+"loc_new": "name=home",
+"validation": "auto-only"
+},
+{
+"idx": 13857,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact3",
+"step_old": 6,
+"loc_old": "name=mobile",
+"loc_new": "name=mobile",
+"validation": "auto-only"
+},
+{
+"idx": 13858,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact3",
+"step_old": 7,
+"loc_old": "name=work",
+"loc_new": "name=work",
+"validation": "auto-only"
+},
+{
+"idx": 13859,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact3",
+"step_old": 8,
+"loc_old": "name=email",
+"loc_new": "name=email",
+"validation": "auto-only"
+},
+{
+"idx": 13860,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact3",
+"step_old": 9,
+"loc_old": "name=email2",
+"loc_new": "name=email2",
+"validation": "auto-only"
+},
+{
+"idx": 13861,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact3",
+"step_old": 10,
+"loc_old": "name=bday",
+"loc_new": "name=bday",
+"validation": "auto-only"
+},
+{
+"idx": 13862,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact3",
+"step_old": 11,
+"loc_old": "name=bmonth",
+"loc_new": "name=bmonth",
+"validation": "auto-only"
+},
+{
+"idx": 13863,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact3",
+"step_old": 12,
+"loc_old": "name=byear",
+"loc_new": "name=byear",
+"validation": "auto-only"
+},
+{
+"idx": 13864,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact3",
+"step_old": 13,
+"loc_old": "name=address2",
+"loc_new": "name=address2",
+"validation": "auto-only"
+},
+{
+"idx": 13865,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact3",
+"step_old": 14,
+"loc_old": "name=phone2",
+"loc_new": "name=phone2",
+"validation": "auto-only"
+},
+{
+"idx": 13866,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact3",
+"step_old": 15,
+"loc_old": "name=submit",
+"loc_new": "name=submit",
+"validation": "auto-only"
+},
+{
+"idx": 13867,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddContact3",
+"step_old": 16,
+"loc_old": "link=home page",
+"loc_new": "link=home page",
+"validation": "auto-only"
+},
+{
+"idx": 13880,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddOneField",
+"step_old": 2,
+"loc_old": "name=lastname",
+"loc_new": "name=lastname",
+"validation": "auto-only"
+},
+{
+"idx": 13881,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddOneField",
+"step_old": 3,
+"loc_old": "name=submit",
+"loc_new": "name=submit",
+"validation": "auto-only"
+},
+{
+"idx": 13882,
+"old": "6.2.12",
+"new": "7.0.0",
+"test": "AddOneField",
+"step_old": 4,
+"loc_old": "link=home page",
+"loc_new": "link=home page",
+"validation": "auto-only"
+}
+]

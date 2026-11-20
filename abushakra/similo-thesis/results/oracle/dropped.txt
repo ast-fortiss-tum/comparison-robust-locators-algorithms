@@ -1,0 +1,5 @@
+initial/dropdown-menu-button: moved [16, 16] -> [1195, 20]
+main-menu/dropdown-menu-button: moved [16, 16] -> [1195, 20]
+rectangle-selected/dropdown-menu-button: moved [16, 16] -> [1195, 20]
+text-added/dropdown-menu-button: moved [16, 16] -> [1195, 20]
+library-open/dropdown-menu-button: moved [16, 16] -> [1195, 20]

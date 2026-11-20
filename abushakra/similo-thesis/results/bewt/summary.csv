@@ -1,0 +1,235 @@
+algorithm,subset,found,pairs,percent
+LegacySimilo,ALL,257,337,76.3
+LegacySimilo,app: bludit,54,57,94.7
+LegacySimilo,app: joomla,31,37,83.8
+LegacySimilo,app: mantisbt,101,124,81.5
+LegacySimilo,app: prestashop,71,119,59.7
+LegacySimilo,locator changed,140,219,63.9
+LegacySimilo,locator unchanged,117,118,99.2
+LegacySimilo,moved,230,310,74.2
+LegacySimilo,same position,27,27,100.0
+OptimizedSimilo,ALL,267,337,79.2
+OptimizedSimilo,app: bludit,49,57,86.0
+OptimizedSimilo,app: joomla,31,37,83.8
+OptimizedSimilo,app: mantisbt,103,124,83.1
+OptimizedSimilo,app: prestashop,84,119,70.6
+OptimizedSimilo,locator changed,152,219,69.4
+OptimizedSimilo,locator unchanged,115,118,97.5
+OptimizedSimilo,moved,240,310,77.4
+OptimizedSimilo,same position,27,27,100.0
+VonSimilo,ALL,241,337,71.5
+VonSimilo,app: bludit,49,57,86.0
+VonSimilo,app: joomla,29,37,78.4
+VonSimilo,app: mantisbt,100,124,80.6
+VonSimilo,app: prestashop,63,119,52.9
+VonSimilo,locator changed,129,219,58.9
+VonSimilo,locator unchanged,112,118,94.9
+VonSimilo,moved,219,310,70.6
+VonSimilo,same position,22,27,81.5
+OptimizedVonSimilo,ALL,245,337,72.7
+OptimizedVonSimilo,app: bludit,50,57,87.7
+OptimizedVonSimilo,app: joomla,29,37,78.4
+OptimizedVonSimilo,app: mantisbt,95,124,76.6
+OptimizedVonSimilo,app: prestashop,71,119,59.7
+OptimizedVonSimilo,locator changed,140,219,63.9
+OptimizedVonSimilo,locator unchanged,105,118,89.0
+OptimizedVonSimilo,moved,222,310,71.6
+OptimizedVonSimilo,same position,23,27,85.2
+LegacyCombined,ALL,247,337,73.3
+LegacyCombined,app: bludit,50,57,87.7
+LegacyCombined,app: joomla,31,37,83.8
+LegacyCombined,app: mantisbt,101,124,81.5
+LegacyCombined,app: prestashop,65,119,54.6
+LegacyCombined,locator changed,130,219,59.4
+LegacyCombined,locator unchanged,117,118,99.2
+LegacyCombined,moved,220,310,71.0
+LegacyCombined,same position,27,27,100.0
+OptimizedCombined,ALL,267,337,79.2
+OptimizedCombined,app: bludit,49,57,86.0
+OptimizedCombined,app: joomla,31,37,83.8
+OptimizedCombined,app: mantisbt,103,124,83.1
+OptimizedCombined,app: prestashop,84,119,70.6
+OptimizedCombined,locator changed,152,219,69.4
+OptimizedCombined,locator unchanged,115,118,97.5
+OptimizedCombined,moved,240,310,77.4
+OptimizedCombined,same position,27,27,100.0
+OptimizedMinimal,ALL,266,337,78.9
+OptimizedMinimal,app: bludit,50,57,87.7
+OptimizedMinimal,app: joomla,31,37,83.8
+OptimizedMinimal,app: mantisbt,103,124,83.1
+OptimizedMinimal,app: prestashop,82,119,68.9
+OptimizedMinimal,locator changed,151,219,68.9
+OptimizedMinimal,locator unchanged,115,118,97.5
+OptimizedMinimal,moved,239,310,77.1
+OptimizedMinimal,same position,27,27,100.0
+COLOR,ALL,262,337,77.7
+COLOR,app: bludit,49,57,86.0
+COLOR,app: joomla,29,37,78.4
+COLOR,app: mantisbt,100,124,80.6
+COLOR,app: prestashop,84,119,70.6
+COLOR,locator changed,145,219,66.2
+COLOR,locator unchanged,117,118,99.2
+COLOR,moved,235,310,75.8
+COLOR,same position,27,27,100.0
+VISTA,ALL,84,337,24.9
+VISTA,app: bludit,14,57,24.6
+VISTA,app: joomla,25,37,67.6
+VISTA,app: mantisbt,27,124,21.8
+VISTA,app: prestashop,18,119,15.1
+VISTA,locator changed,40,219,18.3
+VISTA,locator unchanged,44,118,37.3
+VISTA,moved,64,310,20.6
+VISTA,same position,20,27,74.1
+absXPath,ALL,32,337,9.5
+absXPath,app: bludit,7,57,12.3
+absXPath,app: joomla,20,37,54.1
+absXPath,app: mantisbt,2,124,1.6
+absXPath,app: prestashop,3,119,2.5
+absXPath,locator changed,4,219,1.8
+absXPath,locator unchanged,28,118,23.7
+absXPath,moved,5,310,1.6
+absXPath,same position,27,27,100.0
+IDXPath,ALL,72,337,21.4
+IDXPath,app: bludit,19,57,33.3
+IDXPath,app: joomla,28,37,75.7
+IDXPath,app: mantisbt,2,124,1.6
+IDXPath,app: prestashop,23,119,19.3
+IDXPath,locator changed,4,219,1.8
+IDXPath,locator unchanged,68,118,57.6
+IDXPath,moved,45,310,14.5
+IDXPath,same position,27,27,100.0
+Montoto,ALL,66,337,19.6
+Montoto,app: bludit,6,57,10.5
+Montoto,app: joomla,18,37,48.6
+Montoto,app: mantisbt,17,124,13.7
+Montoto,app: prestashop,25,119,21.0
+Montoto,locator changed,13,219,5.9
+Montoto,locator unchanged,53,118,44.9
+Montoto,moved,42,310,13.5
+Montoto,same position,24,27,88.9
+SeleniumIDE,ALL,144,337,42.7
+SeleniumIDE,app: bludit,37,57,64.9
+SeleniumIDE,app: joomla,26,37,70.3
+SeleniumIDE,app: mantisbt,59,124,47.6
+SeleniumIDE,app: prestashop,22,119,18.5
+SeleniumIDE,locator changed,47,219,21.5
+SeleniumIDE,locator unchanged,97,118,82.2
+SeleniumIDE,moved,121,310,39.0
+SeleniumIDE,same position,23,27,85.2
+RobulaPlus,ALL,175,337,51.9
+RobulaPlus,app: bludit,41,57,71.9
+RobulaPlus,app: joomla,29,37,78.4
+RobulaPlus,app: mantisbt,78,124,62.9
+RobulaPlus,app: prestashop,27,119,22.7
+RobulaPlus,locator changed,71,219,32.4
+RobulaPlus,locator unchanged,104,118,88.1
+RobulaPlus,moved,151,310,48.7
+RobulaPlus,same position,24,27,88.9
+EAGL,ALL,125,337,37.1
+EAGL,app: bludit,32,57,56.1
+EAGL,app: joomla,28,37,75.7
+EAGL,app: mantisbt,37,124,29.8
+EAGL,app: prestashop,28,119,23.5
+EAGL,locator changed,39,219,17.8
+EAGL,locator unchanged,86,118,72.9
+EAGL,moved,99,310,31.9
+EAGL,same position,26,27,96.3
+EAGL-scaled-adobe,ALL,125,337,37.1
+EAGL-scaled-adobe,app: bludit,32,57,56.1
+EAGL-scaled-adobe,app: joomla,28,37,75.7
+EAGL-scaled-adobe,app: mantisbt,37,124,29.8
+EAGL-scaled-adobe,app: prestashop,28,119,23.5
+EAGL-scaled-adobe,locator changed,39,219,17.8
+EAGL-scaled-adobe,locator unchanged,86,118,72.9
+EAGL-scaled-adobe,moved,99,310,31.9
+EAGL-scaled-adobe,same position,26,27,96.3
+SIDEREAL,ALL,165,337,49.0
+SIDEREAL,app: bludit,34,57,59.6
+SIDEREAL,app: joomla,31,37,83.8
+SIDEREAL,app: mantisbt,72,124,58.1
+SIDEREAL,app: prestashop,28,119,23.5
+SIDEREAL,locator changed,63,219,28.8
+SIDEREAL,locator unchanged,102,118,86.4
+SIDEREAL,moved,139,310,44.8
+SIDEREAL,same position,26,27,96.3
+SIDEREAL-uniform,ALL,165,337,49.0
+SIDEREAL-uniform,app: bludit,34,57,59.6
+SIDEREAL-uniform,app: joomla,31,37,83.8
+SIDEREAL-uniform,app: mantisbt,72,124,58.1
+SIDEREAL-uniform,app: prestashop,28,119,23.5
+SIDEREAL-uniform,locator changed,63,219,28.8
+SIDEREAL-uniform,locator unchanged,102,118,86.4
+SIDEREAL-uniform,moved,139,310,44.8
+SIDEREAL-uniform,same position,26,27,96.3
+MultiLocator+VISTA,ALL,185,337,54.9
+MultiLocator+VISTA,app: bludit,37,57,64.9
+MultiLocator+VISTA,app: joomla,31,37,83.8
+MultiLocator+VISTA,app: mantisbt,85,124,68.5
+MultiLocator+VISTA,app: prestashop,32,119,26.9
+MultiLocator+VISTA,locator changed,80,219,36.5
+MultiLocator+VISTA,locator unchanged,105,118,89.0
+MultiLocator+VISTA,moved,158,310,51.0
+MultiLocator+VISTA,same position,27,27,100.0
+MultiLocator,ALL,171,337,50.7
+MultiLocator,app: bludit,37,57,64.9
+MultiLocator,app: joomla,31,37,83.8
+MultiLocator,app: mantisbt,76,124,61.3
+MultiLocator,app: prestashop,27,119,22.7
+MultiLocator,locator changed,69,219,31.5
+MultiLocator,locator unchanged,102,118,86.4
+MultiLocator,moved,144,310,46.5
+MultiLocator,same position,27,27,100.0
+MultiLocator+VISTA+repair,ALL,185,337,54.9
+MultiLocator+VISTA+repair,app: bludit,37,57,64.9
+MultiLocator+VISTA+repair,app: joomla,31,37,83.8
+MultiLocator+VISTA+repair,app: mantisbt,85,124,68.5
+MultiLocator+VISTA+repair,app: prestashop,32,119,26.9
+MultiLocator+VISTA+repair,locator changed,80,219,36.5
+MultiLocator+VISTA+repair,locator unchanged,105,118,89.0
+MultiLocator+VISTA+repair,moved,158,310,51.0
+MultiLocator+VISTA+repair,same position,27,27,100.0
+EAGL-scaled-f0,ALL,125,337,37.1
+EAGL-scaled-f0,app: bludit,32,57,56.1
+EAGL-scaled-f0,app: joomla,28,37,75.7
+EAGL-scaled-f0,app: mantisbt,37,124,29.8
+EAGL-scaled-f0,app: prestashop,28,119,23.5
+EAGL-scaled-f0,locator changed,39,219,17.8
+EAGL-scaled-f0,locator unchanged,86,118,72.9
+EAGL-scaled-f0,moved,99,310,31.9
+EAGL-scaled-f0,same position,26,27,96.3
+EAGL-scaled-f1,ALL,125,337,37.1
+EAGL-scaled-f1,app: bludit,32,57,56.1
+EAGL-scaled-f1,app: joomla,28,37,75.7
+EAGL-scaled-f1,app: mantisbt,37,124,29.8
+EAGL-scaled-f1,app: prestashop,28,119,23.5
+EAGL-scaled-f1,locator changed,39,219,17.8
+EAGL-scaled-f1,locator unchanged,86,118,72.9
+EAGL-scaled-f1,moved,99,310,31.9
+EAGL-scaled-f1,same position,26,27,96.3
+EAGL-scaled-f2,ALL,125,337,37.1
+EAGL-scaled-f2,app: bludit,32,57,56.1
+EAGL-scaled-f2,app: joomla,28,37,75.7
+EAGL-scaled-f2,app: mantisbt,37,124,29.8
+EAGL-scaled-f2,app: prestashop,28,119,23.5
+EAGL-scaled-f2,locator changed,39,219,17.8
+EAGL-scaled-f2,locator unchanged,86,118,72.9
+EAGL-scaled-f2,moved,99,310,31.9
+EAGL-scaled-f2,same position,26,27,96.3
+EAGL-scaled-f3,ALL,125,337,37.1
+EAGL-scaled-f3,app: bludit,32,57,56.1
+EAGL-scaled-f3,app: joomla,28,37,75.7
+EAGL-scaled-f3,app: mantisbt,37,124,29.8
+EAGL-scaled-f3,app: prestashop,28,119,23.5
+EAGL-scaled-f3,locator changed,39,219,17.8
+EAGL-scaled-f3,locator unchanged,86,118,72.9
+EAGL-scaled-f3,moved,99,310,31.9
+EAGL-scaled-f3,same position,26,27,96.3
+EAGL-scaled-f4,ALL,125,337,37.1
+EAGL-scaled-f4,app: bludit,32,57,56.1
+EAGL-scaled-f4,app: joomla,28,37,75.7
+EAGL-scaled-f4,app: mantisbt,37,124,29.8
+EAGL-scaled-f4,app: prestashop,28,119,23.5
+EAGL-scaled-f4,locator changed,39,219,17.8
+EAGL-scaled-f4,locator unchanged,86,118,72.9
+EAGL-scaled-f4,moved,99,310,31.9
+EAGL-scaled-f4,same position,26,27,96.3

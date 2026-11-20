@@ -1,0 +1,13 @@
+# XPATH=/html/body/div/main/div/div[2]/form/section/input[4]
+algorithm;2019-01-01;2019-05-01;2019-09-01;2020-01-01;2020-05-01;2020-09-01;2021-01-01;2021-05-01;2021-09-01;2022-01-01;2022-05-01;2022-09-01;2023-01-01;2023-05-01;2023-09-01
+LegacySimilo;SAME;MAJOR;DELETED;;;;;;;;;;;;
+OptimizedSimilo;SAME;MAJOR;DELETED;;;;;;;;;;;;
+COLOR;SAME;MAJOR;DELETED;;;;;;;;;;;;
+VONSimilo;SAME;MAJOR;DELETED;;;;;;;;;;;;
+Multi-Locator;SAME;MAJOR;DELETED;;;;;;;;;;;;
+ROBULA+;SAME;MAJOR;DELETED;;;;;;;;;;;;
+SeleniumIDE;SAME;MAJOR;DELETED;;;;;;;;;;;;
+Montoto;SAME;MAJOR;DELETED;;;;;;;;;;;;
+IDXPath;SAME;MAJOR;DELETED;;;;;;;;;;;;
+absXPath;SAME;MAJOR;DELETED;;;;;;;;;;;;
+VISTA;SAME;MAJOR;DELETED;;;;;;;;;;;;

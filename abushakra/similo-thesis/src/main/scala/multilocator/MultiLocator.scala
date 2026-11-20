@@ -1,0 +1,512 @@
+package multilocator
+
+import similo.{Locator, State}
+import elements.Element as MyElement
+import util.Load
+import util.Setup.count
+import elements.Element.buildRobulaPlusXPath
+import elements.Element.getSeleniumIDEXPath
+import elements.Element.getMontotoXPath
+import util.Load.getDateAndSiteFromArchiveUrl
+import util.Load.getElementByXPath
+import util.Load.getFilePathToChromeDOM
+import util.Load.getJDOMDocumentFromURL
+import util.Load.getJDOMElementsByXPath
+import util.Load.{getFilePathToScreenshot, getFilePathToTemplates, cropTemplate, matchTemplate, getJDOMElementsByXPath, getMatchPointFromCache}
+import robulanew.UtilsROBULAPlusNew
+import robulanew.AlgorithmSettings
+import robulanew.ElementInfo
+import robulanew.XPathInfo
+import robulanew.EuristicXPath
+import robulanew.Utils
+import robulanew.XPathGeneratorUtil
+
+import org.jdom2.Document
+import org.jdom2.Element
+import org.jdom2.xpath.XPathFactory
+import org.jdom2.filter.Filters
+
+import scala.jdk.CollectionConverters.*
+import java.io.File
+
+/** withRepair: refresh the locators after a successful lookup (state kept in files under sites/, original behaviour:
+  * all five locators are regenerated after every lookup).
+  * selective (with withRepair): in-memory repair, only the locators that did NOT vote for the winner are regenerated from
+  * the winning element, and a regenerated locator is accepted only if it resolves uniquely to that winner on the page it
+  * was generated from (verification). Counters in repairStats.
+  * paperSet (with selective): as in Algorithm 2 of the Multi-Locator paper, only the locators of the set L (those that uniquely
+  * select the target on the ORIGINAL page) are ever repaired; per-locator outcomes are classified against the ground truth
+  * with the categories of the paper's Table III (C1, C2, B1-B4, plus the repairs prevented by verification). */
+case class MultiLocator(withRepair: Boolean = false, withVista: Boolean = false, selective: Boolean = false, paperSet: Boolean = false) extends Locator:
+
+  override type S = MultiLocatorState
+
+  private val firePathAbsWeight   = 0.32   // From paper
+  private val firePathRelWeight   = 0.50   // From paper
+  private val seleniumIDEWeight   = 0.81   // From paper
+  private val montotoWeight       = 0.64   // From paper
+  private val robulaplusWeight    = 0.87   // From paper
+
+  override def init(element: MyElement, elements: Seq[MyElement]): MultiLocatorState =
+
+    val document = getJDOMDocumentFromURL(element.url.getOrElse(""))
+    val site = getDateAndSiteFromArchiveUrl(element.url.getOrElse(""))
+//    println(s"Site: $site")
+    val jdomElements: Seq[Element] = getJDOMElementsByXPath(element.xpath.idxpath, document)
+    val firstElement: Element = jdomElements.head
+    val absXPath = UtilsROBULAPlusNew.getAbsolutePathFromJDOMElement(firstElement)
+
+    val firePathAbs = GeneratedLocator(
+      xpath = absXPath,
+      strategy = "ABSOLUTE_XPATH",
+      weight = firePathAbsWeight
+    )
+//    println(s"ABSOLUTE_XPATH generated XPath: $absXPath")
+
+    val firePathRel = GeneratedLocator(
+      xpath = element.xpath.idxpath,
+      strategy = "RELATIVE_XPATH",
+      weight = firePathRelWeight
+    )
+//    println(s"RELATIVE_XPATH generated XPath: ${element.xpath.idxpath}")
+
+    val startTime = System.nanoTime()
+    val seleniumIDE = GeneratedLocator(
+      xpath = XPathGeneratorUtil.getSeleniumIDEXPath(firstElement, document),
+      strategy = "SELENIUM_IDE",
+      weight = seleniumIDEWeight
+    )
+//    println(s"SELENIUM_IDE generated XPath: ${seleniumIDE.xpath}")
+
+    val montoto = GeneratedLocator(
+      xpath = XPathGeneratorUtil.getMontotoXPath(firstElement, document),
+      strategy = "MONTOTO",
+      weight = montotoWeight
+    )
+//    println(s"MONTOTO generated XPath: ${montoto.xpath}")
+
+    val robulaPlusCandidates = buildRobulaPlusXPath(document, element.xpath.idxpath, element.url.getOrElse(""))
+    val firstXPath: String = robulaPlusCandidates.head
+    val robulaplus = GeneratedLocator(
+      xpath = firstXPath,
+      strategy = "ROBULA+",
+      weight = robulaplusWeight
+    )
+//    println(s"ROBULA+ generated XPath: $firstXPath")
+//    println(s"ROBULA+: $robulaplus")
+//    if(element.xpath.chrome == "/html/body/div[1]/header/nav/div/div[2]/section[1]/header/a"){
+//      println(
+//        s"""FirePathAbs: ${firePathAbs.xpath}
+//           |FirePathRel: ${firePathRel.xpath}
+//           |SeleniumIDE: ${seleniumIDE.xpath}
+//           |Montoto: ${montoto.xpath}
+//           |ROBULA+: ${robulaplus.xpath}""".stripMargin
+//      )
+//    }
+
+    val defaultState = MultiLocatorState(
+      element = element,
+      firePathAbs = firePathAbs,
+      firePathRel = firePathRel,
+      seleniumIDE = seleniumIDE,
+      montoto = montoto,
+      robulaplus = robulaplus,
+      startTime = startTime
+    )
+
+    val stateWithSet =
+      if paperSet then
+        val absOfTarget = getAbsolutePath(firstElement)
+        val valid = List(firePathAbs, firePathRel, seleniumIDE, montoto, robulaplus)
+          .filter(l => scala.util.Try(applyLocator(l, document)).toOption.flatten.exists(_.elementLocatedXPath == absOfTarget)).map(_.strategy).toSet
+        defaultState.copy(inSet = valid)
+      else defaultState
+
+    if(withRepair && selective){
+      selectiveStore.get((element.url.getOrElse(""), element.xpath.chrome)) match {
+        case Some(healed) => withHealed(stateWithSet, healed.values.toSeq)
+        case None         => stateWithSet
+      }
+    }else if(withRepair){
+      // Try healed locators
+      RepairStore.loadPromoted(element) match {
+        case Some(healed) =>
+//          println(s"[DEBUG] Healed locators loaded: ${healed.map(_.strategy).mkString(", ")}")
+          def pick(name: String, fallback: GeneratedLocator): GeneratedLocator =
+            healed.find(_.strategy.equalsIgnoreCase(name)).getOrElse(fallback)
+
+          defaultState.copy(
+            firePathAbs = pick("ABSOLUTE_XPATH", defaultState.firePathAbs),
+            firePathRel = pick("RELATIVE_XPATH", defaultState.firePathRel),
+            seleniumIDE = pick("SELENIUM_IDE", defaultState.seleniumIDE),
+            montoto     = pick("MONTOTO", defaultState.montoto),
+            robulaplus  = pick("ROBULA+", defaultState.robulaplus)
+          )
+        case None =>
+//          println("[DEBUG] No healed locators found or MinConfirmations not reached.")
+          defaultState
+      }
+    }else{
+      defaultState
+    }
+
+  override def locate(state: MultiLocatorState, elements: Seq[MyElement]): Seq[(Double, MyElement)] =
+    val shouldDebug = state.element.xpath.chrome == "/html/body/div[1]/div/div/div[11]/div[3]/div/div/div/div/button"
+    val pageUrl: Option[String] = elements.headOption.flatMap(_.url)
+    val siteNameOpt = getDateAndSiteFromArchiveUrl(pageUrl.getOrElse("")).map(_._2)
+    val siteDateOpt = getDateAndSiteFromArchiveUrl(pageUrl.getOrElse("")).map(_._1)
+    val siteNameStr = siteNameOpt.getOrElse("")
+    val siteDateStr = siteDateOpt.getOrElse("")
+    val filePath = getFilePathToChromeDOM(pageUrl.getOrElse(""))
+    val file = new File(filePath)
+    val domDocument = Load.htmlToJDOM(file)
+
+    // Your existing 5 locators (ABS, REL, IDE, Montoto, Robula+)
+    val locators = List(
+      state.firePathAbs,
+      state.firePathRel,
+      state.seleniumIDE,
+      state.montoto,
+      state.robulaplus
+    )
+
+    // Turn DOM-based locators into results
+    val domLocatorResults: Seq[LocatorResult] =
+      locators.flatMap(locator => applyLocator(locator, domDocument))
+
+    // Combine all voters
+    val locatorResults: Seq[LocatorResult] = domLocatorResults
+
+    val grouped: Map[String, Seq[GeneratedLocator]] =
+      locatorResults.groupBy(_.elementLocatedXPath).view.mapValues(_.map(_.locator)).toMap
+
+    val scoredVotes: Seq[(Double, String)] = grouped.map { case (absPath, locators) =>
+      val vote = 1 - locators.map(l => 1 - l.weight).product
+      (vote, absPath)
+    }.toSeq
+
+    val scoredVotesSorted = scoredVotes.sortBy(-_._1)
+
+    // Debug print for all locators voted for that element
+    if (shouldDebug) println(s"[$siteDateStr/$siteNameStr] Locator votes:")
+    for ((vote, absPath) <- scoredVotesSorted) {
+      val locs = grouped.getOrElse(absPath, Seq.empty)
+      val locDetails = locs.map(l => s"${l.strategy}(weight=${l.weight})").mkString(", ")
+      if (shouldDebug) println(s"[$siteDateStr/$siteNameStr] XPath: $absPath, Vote: $vote%.4f, Locators: $locDetails")
+    }
+    if (shouldDebug) println(s"[$siteDateStr/$siteNameStr] Chosen bestXPathOpt: ${scoredVotesSorted.headOption.map(_._2)}")
+
+    // Print which strategies voted for the top element
+    val topXPathOpt = scoredVotesSorted.headOption.map(_._2)
+    topXPathOpt.foreach { topXPath =>
+      val voters = grouped.getOrElse(topXPath, Seq.empty).map(_.strategy)
+      if (shouldDebug) println(s"[$siteDateStr/$siteNameStr] Strategies voting for top XPath ($topXPath): ${voters.mkString(", ")}")
+    }
+
+    val bestXPathOpt: Option[String] = scoredVotesSorted.headOption.map(_._2)
+    val endTime = System.nanoTime()
+    val durationMs = (endTime - state.startTime) / 1_000_000.0
+    logTiming(getDateAndSiteFromArchiveUrl(state.element.url.getOrElse("")).map(_._2), "Multi-Locator", state.element.xpath.chrome, durationMs)
+
+    // VISTA fallback
+     val bestOrVista: Option[String] =
+       if withVista then
+         bestXPathOpt.orElse {
+           val vistaOpt = vistaAbsXPath(state, elements, domDocument)
+           if (vistaOpt.isDefined) {
+             if (shouldDebug) println(s"[$siteDateStr/$siteNameStr] [DEBUG] VISTA fallback triggered, produced XPath: ${vistaOpt.get}")
+           }
+           vistaOpt
+         }
+       else
+         bestXPathOpt
+
+//    println(s"[DEBUG] Final XPath: ${bestOrVista} | voters: ${locatorResults.map(_.locator.strategy).mkString(", ")} | fallbackUsed=${bestXPathOpt.isEmpty}")
+
+    val result: Seq[(Double, MyElement)] = pageUrl match {
+      case Some(url) =>
+        bestOrVista match {
+          case Some(bestXPath) =>
+            val foundElements = getJDOMElementsByXPath(bestXPath, domDocument)
+
+            if (foundElements.nonEmpty) {
+
+              // ✅ REPAIR block, only if flag is true
+              if (withRepair && selective) {
+                if (state.healed.nonEmpty) { cHealedUsed.incrementAndGet(); healedAudit(state, bestXPath, domDocument) }
+                selectiveRepair(state, bestXPath, foundElements.head, () => elementsAtAbsPath(bestXPath, elements, domDocument).headOption,
+                  grouped.getOrElse(bestXPath, Seq.empty).map(_.strategy).toSet, domDocument, pageUrl.getOrElse(""))
+              } else if (withRepair && scoredVotesSorted.nonEmpty) {
+                val topScore    = scoredVotesSorted.head._1
+                val secondScore = scoredVotesSorted.lift(1).map(_._1).getOrElse(0.0)
+                if (shouldDebug) println(s"[$siteDateStr/$siteNameStr] [DEBUG] Repair block: topScore = $topScore, secondScore = $secondScore")
+
+                val winnerJdom = foundElements.head
+                val repairedLocators = Seq(
+                  GeneratedLocator(getAbsolutePath(winnerJdom), "ABSOLUTE_XPATH", firePathAbsWeight),
+                  GeneratedLocator(state.element.xpath.idxpath, "RELATIVE_XPATH", firePathRelWeight),
+                  GeneratedLocator(XPathGeneratorUtil.getSeleniumIDEXPath(winnerJdom, domDocument), "SELENIUM_IDE", seleniumIDEWeight),
+                  GeneratedLocator(XPathGeneratorUtil.getMontotoXPath(winnerJdom, domDocument), "MONTOTO", montotoWeight),
+                  GeneratedLocator(buildRobulaPlusXPath(domDocument, getAbsolutePath(winnerJdom), pageUrl.getOrElse("")).head, "ROBULA+", robulaplusWeight)
+                )
+                if (shouldDebug) {
+                  println(s"[$siteDateStr/$siteNameStr] [DEBUG] Candidate locators before repair:")
+                  repairedLocators.foreach(l => println(s"[$siteDateStr/$siteNameStr]   Strategy: ${l.strategy}, XPath: ${l.xpath}"))
+                  println(s"[$siteDateStr/$siteNameStr] [DEBUG] Repaired locators updated in RepairStore.")
+                  println()
+                  println()
+                  println()
+                }
+                RepairStore.updateConfirm(state.element, repairedLocators)
+              }
+              // ✅ END repair block
+
+              val scored = elements.map { el =>
+                val maybeCandidate = getJDOMElementsByXPath(el.xpath.idxpath, domDocument).headOption
+                val isMatch = maybeCandidate.exists { candidate =>
+                  foundElements.exists(found => candidate eq found)
+                }
+                if (isMatch) (1.0, el) else (0.0, el)
+              }
+
+              val allZero = scored.forall { case (score, _) => score == 0.0 }
+              if (allZero) {
+                //              println(s"[DEBUG] No match found for best-voted XPath: $bestXPath")
+              }
+              scored.sortBy(-_._1)
+
+            } else {
+              //            println(s"[DEBUG] No element found in DOM for XPath: $bestXPath")
+              elements.map(el => (0.0, el))
+            }
+
+          case None =>
+            if (selective && state.healed.nonEmpty) cHealedNoAnswer.incrementAndGet()
+            //          println("[DEBUG] No locator voted successfully.")
+            elements.map(el => (0.0, el))
+        }
+
+      case None =>
+        //      println("[DEBUG] No page URL found in elements.")
+        elements.map(el => (0.0, el))
+    }
+
+    result
+
+  // ---- selective, verified, in-memory repair ----
+  private val selectiveStore = scala.collection.concurrent.TrieMap[(String, String), Map[String, GeneratedLocator]]()
+  private val cLookups, cTriggered, cRegenerated, cAccepted, cRejected = new java.util.concurrent.atomic.AtomicLong()
+  private val cAcceptedBy = scala.collection.concurrent.TrieMap[String, java.util.concurrent.atomic.AtomicLong]()
+  private val cRejectedBy = scala.collection.concurrent.TrieMap[String, java.util.concurrent.atomic.AtomicLong]()
+
+  def repairStats: String =
+    def by(m: scala.collection.concurrent.TrieMap[String, java.util.concurrent.atomic.AtomicLong]) =
+      m.toSeq.sortBy(_._1).map((k, v) => s"$k=${v.get}").mkString(" ")
+    s"selective repair: lookups with an answer=${cLookups.get}, repair triggered=${cTriggered.get}, locators regenerated=${cRegenerated.get}, " +
+      s"accepted=${cAccepted.get} [${by(cAcceptedBy)}], rejected=${cRejected.get} [${by(cRejectedBy)}]; " +
+      s"lookups run with a repaired locator=${cHealedUsed.get} (no answer: ${cHealedNoAnswer.get}), rescues=${cRescue.get}, repaired locator lost a vote=${cLost.get}, " +
+      s"repaired locator points elsewhere=${cHarm.get}, answer changed by repair=${cChanged.get}" +
+      (if paperSet then s"\n    paper categories (per locator of L, per lookup with an answer): ${categoryStats}" else "")
+
+  // does a repaired locator ever change anything? (audited at every lookup that ran with a repaired locator)
+  private val cHealedUsed, cHealedNoAnswer, cRescue, cHarm, cLost, cChanged = new java.util.concurrent.atomic.AtomicLong()
+
+  private def healedAudit(state: MultiLocatorState, winnerAbs: String, dom: Document): Unit =
+    for s <- state.healed do
+      val healedRes = scala.util.Try(applyLocator(locatorOf(state, s), dom)).toOption.flatten
+      val origRes   = scala.util.Try(applyLocator(state.originals(s), dom)).toOption.flatten
+      val hv = healedRes.exists(_.elementLocatedXPath == winnerAbs)
+      val ov = origRes.exists(_.elementLocatedXPath == winnerAbs)
+      if hv && !ov then cRescue.incrementAndGet()               // the repaired locator votes for the winner, the original did not
+      if ov && !hv then cLost.incrementAndGet()                 // the original voted for the winner, the repaired one does not
+      if healedRes.exists(_.elementLocatedXPath != winnerAbs) then cHarm.incrementAndGet() // the repaired locator points at another element
+    // would the original locators alone have chosen another element?
+    val originalState = state.copy(
+      firePathAbs = state.originals.getOrElse("ABSOLUTE_XPATH", state.firePathAbs), firePathRel = state.originals.getOrElse("RELATIVE_XPATH", state.firePathRel),
+      seleniumIDE = state.originals.getOrElse("SELENIUM_IDE", state.seleniumIDE), montoto = state.originals.getOrElse("MONTOTO", state.montoto),
+      robulaplus = state.originals.getOrElse("ROBULA+", state.robulaplus))
+    val votes = List(originalState.firePathAbs, originalState.firePathRel, originalState.seleniumIDE, originalState.montoto, originalState.robulaplus)
+      .flatMap(l => scala.util.Try(applyLocator(l, dom)).toOption.flatten)
+      .groupBy(_.elementLocatedXPath).view.mapValues(_.map(_.locator)).toMap
+      .map((abs, ls) => (1 - ls.map(l => 1 - l.weight).product, abs)).toSeq.sortBy(-_._1)
+    if votes.headOption.map(_._2) != Some(winnerAbs) then cChanged.incrementAndGet()
+
+  private val strategies = Seq("ABSOLUTE_XPATH", "RELATIVE_XPATH", "SELENIUM_IDE", "MONTOTO", "ROBULA+")
+
+  private val cCat = scala.collection.concurrent.TrieMap[String, java.util.concurrent.atomic.AtomicLong]()
+  private def cat(name: String): Unit = cCat.getOrElseUpdate(name, new java.util.concurrent.atomic.AtomicLong()).incrementAndGet()
+  def categoryStats: String =
+    Seq("C1 correct, no repair", "C2 correct, wrongly repaired", "C2x correct, wrong repair rejected", "B1 broken, correctly repaired",
+        "B2 broken, no repair (points at the wrong winner)", "B3 broken, wrongly repaired", "B3x broken, wrong repair rejected",
+        "B4 broken, unrepairable").map(k => s"$k=${cCat.get(k).map(_.get).getOrElse(0L)}").mkString("; ")
+
+  private def selectiveRepair(state: MultiLocatorState, winnerAbs: String, winnerJdom: Element, winnerEl: () => Option[MyElement],
+                              voters: Set[String], dom: Document, pageUrl: String): Unit =
+    cLookups.incrementAndGet()
+    val pool = if paperSet then strategies.filter(state.inSet.contains) else strategies
+    val failed = pool.filterNot(voters.contains)
+    // ground truth, for the counters only
+    val truthAbs: Option[String] =
+      if paperSet then GroundTruthProbe.current.get.flatMap(t => scala.util.Try(absPathOf(t, dom)).toOption.flatten) else None
+    val winnerIsTruth = truthAbs.contains(winnerAbs)
+    if paperSet && truthAbs.isDefined then
+      for s <- pool.filter(voters.contains) do                       // locators that already select the winner: no repair triggered
+        val toTruth = scala.util.Try(applyLocator(locatorOf(state, s), dom)).toOption.flatten.exists(r => truthAbs.contains(r.elementLocatedXPath))
+        cat(if toTruth then "C1 correct, no repair" else "B2 broken, no repair (points at the wrong winner)")
+    if failed.nonEmpty then
+      cTriggered.incrementAndGet()
+      val key = (state.element.url.getOrElse(""), state.element.xpath.chrome)
+      var current = selectiveStore.getOrElse(key, Map.empty)
+      for s <- failed do
+        val toTruth = paperSet && truthAbs.isDefined &&
+          scala.util.Try(applyLocator(locatorOf(state, s), dom)).toOption.flatten.exists(r => truthAbs.contains(r.elementLocatedXPath))
+        val regenerated = scala.util.Try(s match
+          case "ABSOLUTE_XPATH" => GeneratedLocator(winnerAbs, s, firePathAbsWeight)
+          case "RELATIVE_XPATH" => GeneratedLocator(winnerEl().get.xpath.idxpath, s, firePathRelWeight)
+          case "SELENIUM_IDE"   => GeneratedLocator(XPathGeneratorUtil.getSeleniumIDEXPath(winnerJdom, dom), s, seleniumIDEWeight)
+          case "MONTOTO"        => GeneratedLocator(XPathGeneratorUtil.getMontotoXPath(winnerJdom, dom), s, montotoWeight)
+          case _                => GeneratedLocator(buildRobulaPlusXPath(dom, winnerAbs, pageUrl).head, s, robulaplusWeight)).toOption
+        var accepted = false
+        regenerated.foreach { l =>
+          cRegenerated.incrementAndGet()
+          // verification: the new locator must resolve uniquely to the winner on this page
+          if scala.util.Try(applyLocator(l, dom)).toOption.flatten.exists(_.elementLocatedXPath == winnerAbs) then
+            accepted = true
+            current = current + (s -> l); cAccepted.incrementAndGet(); cAcceptedBy.getOrElseUpdate(s, new java.util.concurrent.atomic.AtomicLong()).incrementAndGet()
+          else
+            cRejected.incrementAndGet(); cRejectedBy.getOrElseUpdate(s, new java.util.concurrent.atomic.AtomicLong()).incrementAndGet()
+        }
+        if paperSet && truthAbs.isDefined then
+          cat(
+            if toTruth then (if accepted then "C2 correct, wrongly repaired" else "C2x correct, wrong repair rejected")
+            else if winnerIsTruth then (if accepted then "B1 broken, correctly repaired" else "B4 broken, unrepairable")
+            else (if accepted then "B3 broken, wrongly repaired" else "B3x broken, wrong repair rejected"))
+      selectiveStore.put(key, current)
+
+  // ---- building blocks for the hybrids (Hybrid.scala) ----
+
+  /** Votes of the five generated locators on the new page (best first, keyed by the absolute XPath of the element they
+    * resolve to), together with the page's DOM. */
+  def voteTable(state: MultiLocatorState, elements: Seq[MyElement]): (Seq[(Double, String)], Document) =
+    val pageUrl = elements.headOption.flatMap(_.url).getOrElse("")
+    val domDocument = Load.htmlToJDOM(new File(getFilePathToChromeDOM(pageUrl)))
+    val results = List(state.firePathAbs, state.firePathRel, state.seleniumIDE, state.montoto, state.robulaplus)
+      .flatMap(applyLocator(_, domDocument))
+    val grouped = results.groupBy(_.elementLocatedXPath).view.mapValues(_.map(_.locator)).toMap
+    val votes = grouped.map { case (abs, ls) => (1 - ls.map(l => 1 - l.weight).product, abs) }.toSeq.sortBy(-_._1)
+    (votes, domDocument)
+
+  /** Candidate elements that are the element at this absolute XPath. */
+  def elementsAtAbsPath(abs: String, elements: Seq[MyElement], dom: Document): Seq[MyElement] =
+    val found = getJDOMElementsByXPath(abs, dom)
+    if found.isEmpty then Seq.empty
+    else elements.filter(el => getJDOMElementsByXPath(el.xpath.idxpath, dom).headOption.exists(c => found.exists(_ eq c)))
+
+  def absPathOf(el: MyElement, dom: Document): Option[String] =
+    getJDOMElementsByXPath(el.xpath.idxpath, dom).headOption.map(getAbsolutePath)
+
+  /** The five locators regenerated from the element that was found (the repair step). */
+  def regenerate(state: MultiLocatorState, winner: Element, dom: Document, pageUrl: String): Seq[GeneratedLocator] =
+    Seq(
+      GeneratedLocator(getAbsolutePath(winner), "ABSOLUTE_XPATH", firePathAbsWeight),
+      GeneratedLocator(state.element.xpath.idxpath, "RELATIVE_XPATH", firePathRelWeight),
+      GeneratedLocator(XPathGeneratorUtil.getSeleniumIDEXPath(winner, dom), "SELENIUM_IDE", seleniumIDEWeight),
+      GeneratedLocator(XPathGeneratorUtil.getMontotoXPath(winner, dom), "MONTOTO", montotoWeight),
+      GeneratedLocator(buildRobulaPlusXPath(dom, getAbsolutePath(winner), pageUrl).head, "ROBULA+", robulaplusWeight)
+    )
+
+  def locatorOf(state: MultiLocatorState, strategy: String): GeneratedLocator = strategy match
+    case "ABSOLUTE_XPATH" => state.firePathAbs
+    case "RELATIVE_XPATH" => state.firePathRel
+    case "SELENIUM_IDE"   => state.seleniumIDE
+    case "MONTOTO"        => state.montoto
+    case _                => state.robulaplus
+
+  def withHealed(state: MultiLocatorState, healed: Seq[GeneratedLocator]): MultiLocatorState =
+    def pick(name: String, fallback: GeneratedLocator) = healed.find(_.strategy.equalsIgnoreCase(name)).getOrElse(fallback)
+    val names = healed.map(_.strategy).filter(n => healed.exists(_.strategy == n)).toSet
+    state.copy(
+      firePathAbs = pick("ABSOLUTE_XPATH", state.firePathAbs),
+      firePathRel = pick("RELATIVE_XPATH", state.firePathRel),
+      seleniumIDE = pick("SELENIUM_IDE", state.seleniumIDE),
+      montoto = pick("MONTOTO", state.montoto),
+      robulaplus = pick("ROBULA+", state.robulaplus),
+      healed = names,
+      originals = names.map(n => n -> locatorOf(state, n)).toMap
+    )
+
+  def applyLocator(locator: GeneratedLocator, dom: Document): Option[LocatorResult] =
+    val expr = XPathFactory.instance().compile(locator.xpath, Filters.element())
+    val result = expr.evaluate(dom).asScala
+
+    if result.size == 1 then
+      val el = result.head
+      val absPath = getAbsolutePath(el).toString
+      Some(LocatorResult(locator, absPath))
+    else
+      None
+
+  def getAbsolutePath(elem: Element): String =
+    def path(e: Element): String =
+      val parent = e.getParentElement
+      val index = if parent != null then
+        parent.getChildren(e.getName).indexOf(e) + 1
+      else 1
+
+      val selfPath = s"/${e.getName}[$index]"
+      if parent != null then
+        path(parent) + selfPath
+      else
+        selfPath
+
+    path(elem)
+
+  /** VISTA fallback: try to compute an absolute XPath via visual match when no voter succeeds. */
+  private def vistaAbsXPath(
+    state: MultiLocatorState,
+    elements: Seq[MyElement],
+    dom: Document
+  ): Option[String] = {
+    val aUrlOpt   = state.element.url
+    val aShotPath = aUrlOpt.map(getFilePathToScreenshot).getOrElse("")
+    val template  = aUrlOpt.map(u => getFilePathToTemplates(u, state.element)).getOrElse("")
+    val bUrl      = elements.headOption.flatMap(_.url).getOrElse("")
+    val bShotPath = getFilePathToScreenshot(bUrl)
+
+    if (template.isEmpty) return None
+
+    getMatchPointFromCache(bShotPath, template).flatMap { case (mx, my) =>
+      elements
+        .find(el => isPointInsideElement(mx, my, state.element.width, state.element.height, state.element.tag, el))
+        .flatMap { elB =>
+          getJDOMElementsByXPath(elB.xpath.idxpath, dom).headOption.map(getAbsolutePath)
+        }
+    }
+  }
+
+  def isPointInsideElement(x: Int, y: Int, w1: Int, h1: Int, targetTag: String, el: MyElement): Boolean = {
+    val (ex, ey) = el.location
+    val (w2, h2) = el.dimension
+
+    // Return false if any of the coordinates or dimensions are zero
+    if ex < 0 || ey < 0 || (ex == 0 && ey == 0) then return false
+    val tolerance = 5
+
+    val pointInside =
+      x >= ex - tolerance && x <= ex + w2 + tolerance &&
+        y >= ey - tolerance && y <= ey + h2 + tolerance
+
+    val sameTag = el.tag.equalsIgnoreCase(targetTag)
+
+    pointInside && sameTag
+  }
+
+  override def normalizer: Double = 1.0
+
+  def logTiming(site: Option[String], algorithm: String, xpath: String, timeMs: Double): Unit =
+    val dir = java.nio.file.Paths.get("results", "runtime", algorithm)
+    java.nio.file.Files.createDirectories(dir)
+    val logFile = dir.resolve("timing_log_1.csv").toFile
+    val writer = new java.io.BufferedWriter(new java.io.FileWriter(logFile, true))
+    writer.write(s"$site,$algorithm,$xpath,$timeMs\n")
+    writer.close()

@@ -1,0 +1,37 @@
+benchmark,algorithm,family,tier,pairs,right,wrong,silent,precision,removed_pairs,removed_answered,removed_answered_pct
+BEWT,LegacySimilo,Similarity repair,main,337,257,80,0,76.3,337,332,98.5
+Excalidraw,LegacySimilo,Similarity repair,main,132,107,25,0,81.1,132,132,100.0
+Angular-Slickgrid,LegacySimilo,Similarity repair,main,161,161,0,0,100.0,161,161,100.0
+Wayback,LegacySimilo,Similarity repair,main,540,533,7,0,98.7,540,540,100.0
+BEWT,MultiLocator,Multi-locator,main,337,171,7,159,96.1,337,17,5.0
+Excalidraw,MultiLocator,Multi-locator,main,132,130,2,0,98.5,132,27,20.5
+Angular-Slickgrid,MultiLocator,Multi-locator,main,161,157,0,4,100.0,161,94,58.4
+Wayback,MultiLocator,Multi-locator,main,540,496,12,32,97.6,540,96,17.8
+BEWT,MultiLocator+VISTA,Multi-locator,main,337,185,44,108,80.8,337,93,27.6
+Excalidraw,MultiLocator+VISTA,Multi-locator,main,132,130,2,0,98.5,132,72,54.5
+Angular-Slickgrid,MultiLocator+VISTA,Multi-locator,main,161,157,0,4,100.0,161,121,75.2
+Wayback,MultiLocator+VISTA,Multi-locator,main,540,507,15,18,97.1,540,312,57.8
+BEWT,SIDEREAL,Locator generator (learned),main,337,165,9,163,94.8,337,14,4.2
+Excalidraw,SIDEREAL,Locator generator (learned),main,132,129,0,3,100.0,132,0,0.0
+Angular-Slickgrid,SIDEREAL,Locator generator (learned),main,161,157,0,4,100.0,161,42,26.1
+Wayback,SIDEREAL,Locator generator (learned),main,540,473,5,62,99.0,540,4,0.7
+BEWT,RobulaPlus,Locator generator,main,337,175,13,149,93.1,337,16,4.7
+Excalidraw,RobulaPlus,Locator generator,main,132,63,0,69,100.0,132,0,0.0
+Angular-Slickgrid,RobulaPlus,Locator generator,main,161,156,0,5,100.0,161,42,26.1
+Wayback,RobulaPlus,Locator generator,main,540,462,9,69,98.1,540,17,3.1
+BEWT,SeleniumIDE,Locator generator,main,337,144,5,188,96.6,337,11,3.3
+Excalidraw,SeleniumIDE,Locator generator,main,132,110,0,22,100.0,132,0,0.0
+Angular-Slickgrid,SeleniumIDE,Locator generator,main,161,112,0,49,100.0,161,24,14.9
+Wayback,SeleniumIDE,Locator generator,main,540,342,1,197,99.7,540,8,1.5
+BEWT,VISTA,Visual repair,main,337,81,40,216,66.9,337,73,21.7
+Excalidraw,VISTA,Visual repair,main,132,126,2,4,98.4,132,67,50.8
+Angular-Slickgrid,VISTA,Visual repair,main,161,154,2,5,98.7,161,105,65.2
+Wayback,VISTA,Visual repair,main,540,424,30,86,93.4,540,254,47.0
+BEWT,absXPath,Locator generator,main,337,31,3,303,91.2,337,4,1.2
+Excalidraw,absXPath,Locator generator,main,132,100,8,24,92.6,132,27,20.5
+Angular-Slickgrid,absXPath,Locator generator,main,161,155,0,6,100.0,161,88,54.7
+Wayback,absXPath,Locator generator,main,540,337,24,179,93.4,540,72,13.3
+BEWT,Montoto,Locator generator,main,337,63,1,273,98.4,337,2,0.6
+Excalidraw,Montoto,Locator generator,main,132,40,0,92,100.0,132,0,0.0
+Angular-Slickgrid,Montoto,Locator generator,main,161,66,0,95,100.0,161,11,6.8
+Wayback,Montoto,Locator generator,main,540,261,3,276,98.9,540,16,3.0

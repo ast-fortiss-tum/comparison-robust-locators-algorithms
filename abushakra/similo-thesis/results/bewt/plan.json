@@ -1,0 +1,3372 @@
+[
+ {
+  "id": 1,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "addasdraft/AdminLogin.login",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div/div/div/form/div[4]/button",
+  "new_locator": "By.name: save"
+ },
+ {
+  "id": 2,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "addasdraft/AdminLogin.setPassword",
+  "framework": "selenium",
+  "old_locator": "By.name: password",
+  "new_locator": "By.id: jspassword"
+ },
+ {
+  "id": 3,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "addasdraft/AdminLogin.setUsername",
+  "framework": "selenium",
+  "old_locator": "By.name: username",
+  "new_locator": "By.id: jsusername"
+ },
+ {
+  "id": 4,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "addasdraft/AdminSidebar.newContent",
+  "framework": "selenium",
+  "old_locator": "By.linkText: New content",
+  "new_locator": "By.linkText: New content"
+ },
+ {
+  "id": 5,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "addasdraft/NewContentPage.setTitle",
+  "framework": "selenium",
+  "old_locator": "By.id: jstitle",
+  "new_locator": "By.id: jstitle"
+ },
+ {
+  "id": 6,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "addcategory/AdminSidebar.categories",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Categories",
+  "new_locator": "By.linkText: Categories"
+ },
+ {
+  "id": 7,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "addcategory/CategoriesPage.addCategory",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Add a new category",
+  "new_locator": "By.linkText: Add a new category"
+ },
+ {
+  "id": 8,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "addcategory/CategoriesPage.getFirstCategoryName",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"bl-view\"]/table/tbody/tr[1]/td[1]/a",
+  "new_locator": "By.xpath: /html/body/div[3]/div/div[2]/table/tbody/tr[1]/td[1]/a"
+ },
+ {
+  "id": 9,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "addcategory/NewCategoryPage.save",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"bl-view\"]/form/div[2]/div/button",
+  "new_locator": "By.name: save"
+ },
+ {
+  "id": 10,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "addcategory/NewCategoryPage.setName",
+  "framework": "selenium",
+  "old_locator": "By.id: jscategory",
+  "new_locator": "By.id: jsname"
+ },
+ {
+  "id": 11,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "addcontent/ContentPage.getFirstContentTitle",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"bl-view\"]/table/tbody/tr[4]/td[1]/a",
+  "new_locator": "By.xpath: //*[@id=\"pages\"]/table/tbody/tr[1]/td[1]/div[1]/a"
+ },
+ {
+  "id": 12,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "addcontent/NewContentPage.saveAndReturnToContentPage",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"bl-view\"]/form/div/div[1]/div[3]/button[1]",
+  "new_locator": "By.id: jsbuttonSave"
+ },
+ {
+  "id": 13,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "addsocials/AdminSidebar.users",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Users",
+  "new_locator": "By.linkText: Users"
+ },
+ {
+  "id": 14,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "addsocials/UsersPage.editFirstUser",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"bl-view\"]/table/tbody/tr[2]/td[1]/a",
+  "new_locator": "By.xpath: /html/body/div[3]/div/div[2]/table/tbody/tr[1]/td[1]/a"
+ },
+ {
+  "id": 15,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "adduser/AddUserPage.confirmPassword",
+  "framework": "selenium",
+  "old_locator": "By.id: jsconfirm_password",
+  "new_locator": "By.id: jsconfirm_password"
+ },
+ {
+  "id": 16,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "adduser/AddUserPage.save",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"add-user-form\"]/div[6]/div/button",
+  "new_locator": "By.xpath: //*[@id=\"jsform\"]/div[1]/div/button"
+ },
+ {
+  "id": 17,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "adduser/AddUserPage.setEmail",
+  "framework": "selenium",
+  "old_locator": "By.id: jsemail",
+  "new_locator": "By.id: jsemail"
+ },
+ {
+  "id": 18,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "adduser/AddUserPage.setPassword",
+  "framework": "selenium",
+  "old_locator": "By.id: jsnew_password",
+  "new_locator": "By.id: jsnew_password"
+ },
+ {
+  "id": 19,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "adduser/AddUserPage.setRole",
+  "framework": "selenium",
+  "old_locator": "By.id: jsrole",
+  "new_locator": "By.id: jsrole"
+ },
+ {
+  "id": 20,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "adduser/AddUserPage.setUsername",
+  "framework": "selenium",
+  "old_locator": "By.id: jsnew_username",
+  "new_locator": "By.id: jsnew_username"
+ },
+ {
+  "id": 21,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "adduser/UsersPage.addUser",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Add a new user",
+  "new_locator": "By.xpath: /html/body/div[3]/div/div[2]/a"
+ },
+ {
+  "id": 22,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "adduser/UsersPage.getSecondUserName",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"bl-view\"]/table/tbody/tr[2]/td[1]/a",
+  "new_locator": "By.xpath: /html/body/div[3]/div/div[2]/table/tbody/tr[2]/td[1]/a"
+ },
+ {
+  "id": 23,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "assigncategory/AdminSidebar.content",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Content",
+  "new_locator": "By.linkText: Content"
+ },
+ {
+  "id": 24,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "assigncategory/AdminSidebar.content",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Content",
+  "new_locator": "By.linkText: Content"
+ },
+ {
+  "id": 25,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "assigncategory/NewContentPage.getSelectedCategory",
+  "framework": "selenium",
+  "old_locator": "By.id: jscategory",
+  "new_locator": "By.id: jscategory"
+ },
+ {
+  "id": 26,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "assigncategory/NewContentPage.setCategory",
+  "framework": "selenium",
+  "old_locator": "By.id: jscategory",
+  "new_locator": "By.id: jscategory"
+ },
+ {
+  "id": 27,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "badloginfails/AdminLogin.badLogin",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div/div/div/form/div[4]/button",
+  "new_locator": "By.name: save"
+ },
+ {
+  "id": 28,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "badloginfails/AdminLogin.getAlertText",
+  "framework": "selenium",
+  "old_locator": "By.className: uk-alert",
+  "new_locator": "By.id: alert"
+ },
+ {
+  "id": 29,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "badloginfails/AdminLogin.isAlertVisible",
+  "framework": "selenium",
+  "old_locator": "By.className: uk-alert",
+  "new_locator": "By.id: alert"
+ },
+ {
+  "id": 30,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "changehome/AdvancedSettingsPage.getSelectedHome",
+  "framework": "selenium",
+  "old_locator": "By.id: jshomepage",
+  "new_locator": "By.id: select2-jshomepage-container"
+ },
+ {
+  "id": 31,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "changehome/AdvancedSettingsPage.save",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"bl-view\"]/form/div[11]/div/button",
+  "new_locator": "By.xpath: //*[@id=\"jsform\"]/div[1]/div/button"
+ },
+ {
+  "id": 32,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "changelanguage/LanguagePage.getLanguage",
+  "framework": "selenium",
+  "old_locator": "By.id: jslanguage",
+  "new_locator": "By.id: jslanguage"
+ },
+ {
+  "id": 33,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "changelanguage/LanguagePage.save",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"bl-view\"]/form/div[5]/div/button",
+  "new_locator": "By.xpath: //*[@id=\"jsform\"]/div[1]/div/button"
+ },
+ {
+  "id": 34,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "changelanguage/LanguagePage.setLanguage",
+  "framework": "selenium",
+  "old_locator": "By.id: jslanguage",
+  "new_locator": "By.id: jslanguage"
+ },
+ {
+  "id": 35,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "changeparent/NewContentPage.advanced",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"bl-view\"]/form/div/div[2]/ul/li[7]/h2",
+  "new_locator": "By.id: nav-advanced-tab"
+ },
+ {
+  "id": 36,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "changeparent/NewContentPage.advanced",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"bl-view\"]/form/div/div[2]/ul/li[7]/h2",
+  "new_locator": "By.id: nav-advanced-tab"
+ },
+ {
+  "id": 37,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "changepassword/UsersPage.editSecondUser",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"bl-view\"]/table/tbody/tr[2]/td[1]/a",
+  "new_locator": "By.xpath: /html/body/div[3]/div/div[2]/table/tbody/tr[2]/td[1]/a"
+ },
+ {
+  "id": 38,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "changepostdate/NewContentPage.advanced",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"bl-view\"]/form/div/div[2]/ul/li[7]/h2",
+  "new_locator": "By.id: nav-advanced-tab"
+ },
+ {
+  "id": 39,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "changepostdate/NewContentPage.setDate",
+  "framework": "selenium",
+  "old_locator": "By.id: jsdate",
+  "new_locator": "By.id: jsdate"
+ },
+ {
+  "id": 40,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "changeurl/AdminSidebar.content",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Content",
+  "new_locator": "By.linkText: Content"
+ },
+ {
+  "id": 41,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "changeurl/ContentPage.getFirstElementUrl",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"bl-view\"]/table/tbody/tr[4]/td[3]/a",
+  "new_locator": "By.xpath: //*[@id=\"pages\"]/table/tbody/tr[1]/td[2]/a"
+ },
+ {
+  "id": 42,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "changeurl/NewContentPage.saveAndReturnToContentPage",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"bl-view\"]/form/div/div[1]/div[3]/button[1]",
+  "new_locator": "By.id: jsbuttonSave"
+ },
+ {
+  "id": 43,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "deletecategory/CategoriesPage.containsCategory",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"bl-view\"]/table",
+  "new_locator": "By.xpath: /html/body/div[3]/div/div[2]/table"
+ },
+ {
+  "id": 44,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "deletecategory/CategoriesPage.editCategory",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Category001",
+  "new_locator": "By.linkText: Category001"
+ },
+ {
+  "id": 45,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "deletecategory/EditCategoryPage.delete",
+  "framework": "selenium",
+  "old_locator": "By.name: delete",
+  "new_locator": "By.xpath: //*[@id=\"jsform\"]/div[1]/div/button[2]"
+ },
+ {
+  "id": 46,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "deletepost/ContentPage.containsElement",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"bl-view\"]/table",
+  "new_locator": "By.id: pages"
+ },
+ {
+  "id": 47,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "deleteuser/UsersPage.containsUser",
+  "framework": "selenium",
+  "old_locator": "By.tagName: body",
+  "new_locator": "By.tagName: body"
+ },
+ {
+  "id": 48,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "orderbyposition/AdvancedSettingsPage.getPostsOrder",
+  "framework": "selenium",
+  "old_locator": "By.id: jsorderBy",
+  "new_locator": "By.id: jsorderBy"
+ },
+ {
+  "id": 49,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "orderbyposition/AdvancedSettingsPage.setPostsOrder",
+  "framework": "selenium",
+  "old_locator": "By.id: jsorderBy",
+  "new_locator": "By.id: jsorderBy"
+ },
+ {
+  "id": 50,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "seecategoryarticles/CategoriesPage.seeCategoryArticles",
+  "framework": "selenium",
+  "old_locator": "By.linkText: /category/category001",
+  "new_locator": "By.linkText: /category/aaanewurl001"
+ },
+ {
+  "id": 51,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "seecategoryarticles/SiteCategoryPage.getFirstArticle",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/section/div/div/div/a/h2",
+  "new_locator": "By.xpath: /html/body/section/div/div/div/a/h2"
+ },
+ {
+  "id": 52,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "setfooter/GeneralSettingsPage.getFooter",
+  "framework": "selenium",
+  "old_locator": "By.id: jsfooter",
+  "new_locator": "By.id: jsfooter"
+ },
+ {
+  "id": 53,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "setfooter/GeneralSettingsPage.save",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"bl-view\"]/form/div[12]/div/button",
+  "new_locator": "By.xpath: //*[@id=\"jsform\"]/div[1]/div/button"
+ },
+ {
+  "id": 54,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "setfooter/GeneralSettingsPage.setFooter",
+  "framework": "selenium",
+  "old_locator": "By.id: jsfooter",
+  "new_locator": "By.id: jsfooter"
+ },
+ {
+  "id": 55,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "setstickypost/AdminSidebar.content",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Content",
+  "new_locator": "By.linkText: Content"
+ },
+ {
+  "id": 56,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "setstickypost/NewContentPage.advanced",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"bl-view\"]/form/div/div[2]/ul/li[7]/h2",
+  "new_locator": "By.id: nav-advanced-tab"
+ },
+ {
+  "id": 57,
+  "repo": "bewt/bludit",
+  "commit": "bludit-3.13.1",
+  "parent": "bludit-2.3.4",
+  "file": "setstickypost/NewContentPage.setPostType",
+  "framework": "selenium",
+  "old_locator": "By.id: jsstatus",
+  "new_locator": "By.id: jstypeSelector"
+ },
+ {
+  "id": 1,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "addcategory/AuthorLoginPage.login",
+  "framework": "selenium",
+  "old_locator": "By.className: btn-primary",
+  "new_locator": "By.className: btn-primary"
+ },
+ {
+  "id": 2,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "addcategory/AuthorLoginPage.setPassword",
+  "framework": "selenium",
+  "old_locator": "By.id: password",
+  "new_locator": "By.id: password"
+ },
+ {
+  "id": 3,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "addcategory/AuthorLoginPage.setUsername",
+  "framework": "selenium",
+  "old_locator": "By.id: username",
+  "new_locator": "By.id: username"
+ },
+ {
+  "id": 4,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "addcategory/BaseNavBar.authorLogin",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Author Login",
+  "new_locator": "By.linkText: Author Login"
+ },
+ {
+  "id": 5,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "addcategory/LoggedNavBar.siteAdmin",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Site Administrator",
+  "new_locator": "By.linkText: Site Administrator"
+ },
+ {
+  "id": 6,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "addemptyarticle/CreatePostPage.getEmptyTitleAlert",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"system-message-container\"]/div/div",
+  "new_locator": "By.xpath: //*[@id=\"jform_title-lbl\"]/span[2]"
+ },
+ {
+  "id": 7,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "addemptyarticle/CreatePostPage.saveError",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[1]/div/div/main/div[3]/form/div/div[1]/button",
+  "new_locator": "By.xpath: //*[@id=\"adminForm\"]/div/button[2]"
+ },
+ {
+  "id": 8,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "addemptyarticle/LoggedNavBar.createPost",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Create a Post",
+  "new_locator": "By.linkText: Create a Post"
+ },
+ {
+  "id": 9,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "addnewarticle/CreatePostPage.save",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[1]/div/div/main/div[3]/form/div/div[1]/button",
+  "new_locator": "By.xpath: //*[@id=\"adminForm\"]/div/button[2]"
+ },
+ {
+  "id": 10,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "addnewarticle/CreatePostPage.setBody",
+  "framework": "selenium",
+  "old_locator": "By.id: jform_articletext_ifr",
+  "new_locator": "By.id: jform_articletext_ifr"
+ },
+ {
+  "id": 11,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "addnewarticle/CreatePostPage.setBody",
+  "framework": "selenium",
+  "old_locator": "By.id: tinymce",
+  "new_locator": "By.id: tinymce"
+ },
+ {
+  "id": 12,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "addnewarticle/CreatePostPage.setTitle",
+  "framework": "selenium",
+  "old_locator": "By.id: jform_title",
+  "new_locator": "By.id: jform_title"
+ },
+ {
+  "id": 13,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "addnewarticle/LoggedHome.getFirstArticleBody",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div/div/div/main/div[3]/div[1]/div[1]/p",
+  "new_locator": "By.xpath: //*[@id=\"content\"]/div[3]/div[1]/div[1]/div/p"
+ },
+ {
+  "id": 14,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "addnewarticle/LoggedHome.getFirstArticleTitle",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div/div/div/main/div[3]/div[1]/div[1]/div[1]/h2/a",
+  "new_locator": "By.xpath: //*[@id=\"content\"]/div[3]/div[1]/div[1]/div/div/h2/a"
+ },
+ {
+  "id": 15,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "addnewarticle/LoggedNavBar.adminLogout",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Log out",
+  "new_locator": "By.linkText: Log out"
+ },
+ {
+  "id": 16,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "addnewarticle/LoggedNavBar.adminLogout",
+  "framework": "selenium",
+  "old_locator": "By.className: btn-primary",
+  "new_locator": "By.className: btn-primary"
+ },
+ {
+  "id": 17,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "adminlogin/LoggedNavBar.adminLogout",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Log out",
+  "new_locator": "By.linkText: Log out"
+ },
+ {
+  "id": 18,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "badlogin/AuthorLoginPage.badLogin",
+  "framework": "selenium",
+  "old_locator": "By.className: btn-primary",
+  "new_locator": "By.className: btn-primary"
+ },
+ {
+  "id": 19,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "badlogin/AuthorLoginPage.getAlertMessage",
+  "framework": "selenium",
+  "old_locator": "By.className: alert-message",
+  "new_locator": "By.className: alert-message"
+ },
+ {
+  "id": 20,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "changepassword/EditProfilePage.confirmPassword",
+  "framework": "selenium",
+  "old_locator": "By.id: jform_password2",
+  "new_locator": "By.id: jform_password2"
+ },
+ {
+  "id": 21,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "changepassword/EditProfilePage.getAlertMessage",
+  "framework": "selenium",
+  "old_locator": "By.className: alert-message",
+  "new_locator": "By.className: alert-message"
+ },
+ {
+  "id": 22,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "changepassword/EditProfilePage.setPassword",
+  "framework": "selenium",
+  "old_locator": "By.id: jform_password1",
+  "new_locator": "By.id: jform_password1"
+ },
+ {
+  "id": 23,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "changepassword/EditProfilePage.submit",
+  "framework": "selenium",
+  "old_locator": "By.className: btn-primary",
+  "new_locator": "By.className: btn-primary"
+ },
+ {
+  "id": 24,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "changepassword/LoggedNavBar.standardUserLogOut",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Author Login",
+  "new_locator": "By.linkText: Author Login"
+ },
+ {
+  "id": 25,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "changepassword/LoggedNavBar.standardUserLogOut",
+  "framework": "selenium",
+  "old_locator": "By.className: btn-primary",
+  "new_locator": "By.className: btn-primary"
+ },
+ {
+  "id": 26,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "editarticle/BaseNavBar.home",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Home",
+  "new_locator": "By.linkText: Home"
+ },
+ {
+  "id": 27,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "editarticle/CreatePostPage.save",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[1]/div/div/main/div[3]/form/div/div[1]/button",
+  "new_locator": "By.xpath: //*[@id=\"adminForm\"]/div/button[2]"
+ },
+ {
+  "id": 28,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "editarticle/CreatePostPage.setBody",
+  "framework": "selenium",
+  "old_locator": "By.id: jform_articletext_ifr",
+  "new_locator": "By.id: jform_articletext_ifr"
+ },
+ {
+  "id": 29,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "editarticle/CreatePostPage.setBody",
+  "framework": "selenium",
+  "old_locator": "By.id: tinymce",
+  "new_locator": "By.id: tinymce"
+ },
+ {
+  "id": 30,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "editarticle/LoggedHome.editFirstArticle",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div/div/div/main/div[3]/div[1]/div[1]/div[2]/div/button",
+  "new_locator": "By.xpath: /html/body/div/div/div/main/div[3]/div[1]/div[1]/div/div[2]/div/div/a/div"
+ },
+ {
+  "id": 31,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "editarticle/LoggedHome.getFirstArticleBody",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div/div/div/main/div[3]/div[1]/div[1]/p",
+  "new_locator": "By.xpath: //*[@id=\"content\"]/div[3]/div[1]/div[1]/div/p"
+ },
+ {
+  "id": 32,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "editarticle/LoggedNavBar.adminLogout",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Log out",
+  "new_locator": "By.linkText: Log out"
+ },
+ {
+  "id": 33,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "emptylogin/AuthorLoginPage.getEmptyLoginAlert",
+  "framework": "selenium",
+  "old_locator": "By.id: username",
+  "new_locator": "By.xpath: //*[@id=\"username-lbl\"]/span[2]"
+ },
+ {
+  "id": 34,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "loginasnewuser/LoggedNavBar.standardUserLogOut",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Author Login",
+  "new_locator": "By.linkText: Author Login"
+ },
+ {
+  "id": 35,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "seearchivedarticle/ArchivedArticlesPage.containsArticle",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Your Modules",
+  "new_locator": "By.linkText: Your Modules"
+ },
+ {
+  "id": 36,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "seearchivedarticle/LoggedHome.testMenuItem",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Test menu item",
+  "new_locator": "By.linkText: Test menu item"
+ },
+ {
+  "id": 37,
+  "repo": "bewt/joomla",
+  "commit": "joomla-4.2.0",
+  "parent": "joomla-3.10.11",
+  "file": "seearchivedarticle/LoggedNavBar.adminLogout",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Log out",
+  "new_locator": "By.linkText: Log out"
+ },
+ {
+  "id": 1,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addcategory/BaseNavBar.logout",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Logout",
+  "new_locator": "By.className: user-info"
+ },
+ {
+  "id": 2,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addcategory/BaseNavBar.manage",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Manage",
+  "new_locator": "By.linkText: Manage"
+ },
+ {
+  "id": 3,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addcategory/EditProjectPage.addCategory",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[6]/a[1]/table/tbody/tr[4]/td/form/input[4]",
+  "new_locator": "By.xpath: //*[@id=\"project-add-category-form\"]/fieldset/input[4]"
+ },
+ {
+  "id": 4,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addcategory/EditProjectPage.enterCategory",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[6]/a[1]/table/tbody/tr[4]/td/form/input[3]",
+  "new_locator": "By.xpath: //*[@id=\"project-add-category-form\"]/fieldset/input[3]"
+ },
+ {
+  "id": 5,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addcategory/EditProjectPage.getProjectCategory",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[6]/a[1]/table/tbody/tr[3]/td[1]",
+  "new_locator": "By.xpath: //*[@id=\"categories\"]/div/div[3]/div/div/table/tbody/tr[1]/td[1]"
+ },
+ {
+  "id": 6,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addcategory/ManageNavBar.manageProjects",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Manage Projects",
+  "new_locator": "By.linkText: Manage Projects"
+ },
+ {
+  "id": 7,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addcategory/ManageProjectPage.goToProject",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Project001",
+  "new_locator": "By.linkText: Project001"
+ },
+ {
+  "id": 8,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addemptyuserfails/BaseNavBar.manage",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Manage",
+  "new_locator": "By.linkText: Manage"
+ },
+ {
+  "id": 9,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addemptyuserfails/ManageNavBar.manageUsers",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Manage Users",
+  "new_locator": "By.linkText: Manage Users"
+ },
+ {
+  "id": 10,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addemptyuserfails/ManageUsersPage.createNewUser",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/table[3]/tbody/tr[1]/td[1]/form/input[2]",
+  "new_locator": "By.xpath: //*[@id=\"manage-user-div\"]/div[1]/a"
+ },
+ {
+  "id": 11,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addemptyuserfails/NewAccountPage.createUserFails",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[3]/form/table/tbody/tr[8]/td/input",
+  "new_locator": "By.xpath: //*[@id=\"manage-user-create-form\"]/div/div[3]/input"
+ },
+ {
+  "id": 12,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addemptyuserfails/NewAccountPage.getError",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[2]/table/tbody/tr[2]/td/p",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[2]/p[2]"
+ },
+ {
+  "id": 13,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addexistingcategoryfails/EditProjectPage.getError",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[2]/table/tbody/tr[2]/td/p",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[2]/p[2]"
+ },
+ {
+  "id": 14,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addexistingprojectfails/CreateProjectPage.createProjectFails",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[3]/form/table/tbody/tr[8]/td/input",
+  "new_locator": "By.xpath: //*[@id=\"manage-project-create-form\"]/div/div[3]/input"
+ },
+ {
+  "id": 15,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addexistingprojectfails/CreateProjectPage.getError",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[2]/table/tbody/tr[2]/td/p",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[2]/p[2]"
+ },
+ {
+  "id": 16,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addexistingprojectfails/CreateProjectPage.setDescription",
+  "framework": "selenium",
+  "old_locator": "By.name: description",
+  "new_locator": "By.name: description"
+ },
+ {
+  "id": 17,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addexistingprojectfails/CreateProjectPage.setName",
+  "framework": "selenium",
+  "old_locator": "By.name: name",
+  "new_locator": "By.name: name"
+ },
+ {
+  "id": 18,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addexistingprojectfails/CreateProjectPage.setStatus",
+  "framework": "selenium",
+  "old_locator": "By.name: status",
+  "new_locator": "By.name: status"
+ },
+ {
+  "id": 19,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addexistingprojectfails/CreateProjectPage.setVisibility",
+  "framework": "selenium",
+  "old_locator": "By.name: view_state",
+  "new_locator": "By.name: view_state"
+ },
+ {
+  "id": 20,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addexistingprojectfails/ManageProjectPage.createProject",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/table[3]/tbody/tr[1]/td/form/input[2]",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[2]/div[2]/div/div[1]/form/button"
+ },
+ {
+  "id": 21,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addexistinguserfails/NewAccountPage.setAccessLevel",
+  "framework": "selenium",
+  "old_locator": "By.name: access_level",
+  "new_locator": "By.name: access_level"
+ },
+ {
+  "id": 22,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addexistinguserfails/NewAccountPage.setEmail",
+  "framework": "selenium",
+  "old_locator": "By.name: email",
+  "new_locator": "By.name: email"
+ },
+ {
+  "id": 23,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addexistinguserfails/NewAccountPage.setRealname",
+  "framework": "selenium",
+  "old_locator": "By.name: realname",
+  "new_locator": "By.name: realname"
+ },
+ {
+  "id": 24,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addexistinguserfails/NewAccountPage.setUsername",
+  "framework": "selenium",
+  "old_locator": "By.name: username",
+  "new_locator": "By.name: username"
+ },
+ {
+  "id": 25,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addissue/BaseNavBar.logout",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Logout",
+  "new_locator": "By.className: user-info"
+ },
+ {
+  "id": 26,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addissue/BaseNavBar.reportIssue",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Report Issue",
+  "new_locator": "By.linkText: Report Issue"
+ },
+ {
+  "id": 27,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addissue/BaseNavBar.viewIssues",
+  "framework": "selenium",
+  "old_locator": "By.linkText: View Issues",
+  "new_locator": "By.linkText: View Issues"
+ },
+ {
+  "id": 28,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addissue/ViewIssuesPage.getCategory",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"buglist\"]/tbody/tr[4]/td[6]",
+  "new_locator": "By.xpath: //*[@id=\"buglist\"]/tbody/tr/td[7]/div"
+ },
+ {
+  "id": 29,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addissue/ViewIssuesPage.getSeverity",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"buglist\"]/tbody/tr[4]/td[7]/span",
+  "new_locator": "By.xpath: //*[@id=\"buglist\"]/tbody/tr/td[8]/span"
+ },
+ {
+  "id": 30,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addissue/ViewIssuesPage.getSummary",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"buglist\"]/tbody/tr[4]/td[10]",
+  "new_locator": "By.xpath: //*[@id=\"buglist\"]/tbody/tr/td[11]/a"
+ },
+ {
+  "id": 31,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultiplesubprojects/BaseNavBar.manage",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Manage",
+  "new_locator": "By.linkText: Manage"
+ },
+ {
+  "id": 32,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultiplesubprojects/CreateProjectPage.createProject",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[3]/form/table/tbody/tr[8]/td/input",
+  "new_locator": "By.xpath: //*[@id=\"manage-project-create-form\"]/div/div[3]/input"
+ },
+ {
+  "id": 33,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultiplesubprojects/CreateProjectPage.setDescription",
+  "framework": "selenium",
+  "old_locator": "By.name: description",
+  "new_locator": "By.name: description"
+ },
+ {
+  "id": 34,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultiplesubprojects/CreateProjectPage.setName",
+  "framework": "selenium",
+  "old_locator": "By.name: name",
+  "new_locator": "By.name: name"
+ },
+ {
+  "id": 35,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultiplesubprojects/CreateProjectPage.setStatus",
+  "framework": "selenium",
+  "old_locator": "By.name: status",
+  "new_locator": "By.name: status"
+ },
+ {
+  "id": 36,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultiplesubprojects/CreateProjectPage.setVisibility",
+  "framework": "selenium",
+  "old_locator": "By.name: view_state",
+  "new_locator": "By.name: view_state"
+ },
+ {
+  "id": 37,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultiplesubprojects/CreateSubprojectPage.createSubproject",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[3]/form/table/tbody/tr[9]/td/input",
+  "new_locator": "By.xpath: //*[@id=\"manage-project-create-form\"]/div/div[3]/input"
+ },
+ {
+  "id": 38,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultiplesubprojects/CreateSubprojectPage.createSubproject",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Proceed",
+  "new_locator": "By.linkText: Proceed"
+ },
+ {
+  "id": 39,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultiplesubprojects/CreateSubprojectPage.setName",
+  "framework": "selenium",
+  "old_locator": "By.name: name",
+  "new_locator": "By.id: project-name"
+ },
+ {
+  "id": 40,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultiplesubprojects/EditProjectPage.createSubproject",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[5]/table/tbody/tr[1]/td/form/input[2]",
+  "new_locator": "By.xpath: //*[@id=\"manage-project-update-subprojects-div\"]/div/div[2]/form/button"
+ },
+ {
+  "id": 41,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultiplesubprojects/ManageProjectPage.goToProject",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Project001",
+  "new_locator": "By.linkText: Project001"
+ },
+ {
+  "id": 42,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultiplesubprojects/ManageProjectPage.isProjectPresent",
+  "framework": "selenium",
+  "old_locator": "By.tagName: BODY",
+  "new_locator": "By.tagName: BODY"
+ },
+ {
+  "id": 43,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultipleusers/ManageUsersPage.getAccessLevel",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/table[3]/tbody/tr[4]/td[4]",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div/table/tbody/tr[2]/td[4]"
+ },
+ {
+  "id": 44,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultipleusers/ManageUsersPage.getAccessLevel",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/table[3]/tbody/tr[5]/td[4]",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div/table/tbody/tr[3]/td[4]"
+ },
+ {
+  "id": 45,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultipleusers/ManageUsersPage.getAccessLevel",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/table[3]/tbody/tr[6]/td[4]",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div/table/tbody/tr[4]/td[4]"
+ },
+ {
+  "id": 46,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultipleusers/ManageUsersPage.getEmail",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/table[3]/tbody/tr[4]/td[3]",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div/table/tbody/tr[2]/td[3]"
+ },
+ {
+  "id": 47,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultipleusers/ManageUsersPage.getEmail",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/table[3]/tbody/tr[5]/td[3]",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div/table/tbody/tr[3]/td[3]"
+ },
+ {
+  "id": 48,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultipleusers/ManageUsersPage.getEmail",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/table[3]/tbody/tr[6]/td[3]",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div/table/tbody/tr[4]/td[3]"
+ },
+ {
+  "id": 49,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultipleusers/ManageUsersPage.getRealName",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/table[3]/tbody/tr[4]/td[2]",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div/table/tbody/tr[2]/td[2]"
+ },
+ {
+  "id": 50,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultipleusers/ManageUsersPage.getRealName",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/table[3]/tbody/tr[5]/td[2]",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div/table/tbody/tr[3]/td[2]"
+ },
+ {
+  "id": 51,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultipleusers/ManageUsersPage.getRealName",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/table[3]/tbody/tr[6]/td[2]",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div/table/tbody/tr[4]/td[2]"
+ },
+ {
+  "id": 52,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultipleusers/ManageUsersPage.getUsername",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/table[3]/tbody/tr[4]/td[1]/a",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div/table/tbody/tr[2]/td[1]/a"
+ },
+ {
+  "id": 53,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultipleusers/ManageUsersPage.getUsername",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/table[3]/tbody/tr[5]/td[1]/a",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div/table/tbody/tr[3]/td[1]/a"
+ },
+ {
+  "id": 54,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultipleusers/ManageUsersPage.getUsername",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/table[3]/tbody/tr[6]/td[1]/a",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div/table/tbody/tr[4]/td[1]/a"
+ },
+ {
+  "id": 55,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultipleusers/NewAccountPage.createUser",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[3]/form/table/tbody/tr[8]/td/input",
+  "new_locator": "By.xpath: //*[@id=\"manage-user-create-form\"]/div/div[3]/input"
+ },
+ {
+  "id": 56,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addmultipleusers/NewAccountPage.createUser",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Manage Users",
+  "new_locator": "By.linkText: Manage Users"
+ },
+ {
+  "id": 57,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addproject/BaseNavBar.logout",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Logout",
+  "new_locator": "By.className: user-info"
+ },
+ {
+  "id": 58,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addproject/ManageProjectPage.getProjectDescription",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/table[3]/tbody/tr[3]/td[5]",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[2]/div[2]/div/div[2]/table/tbody/tr/td[5]"
+ },
+ {
+  "id": 59,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addproject/ManageProjectPage.getProjectName",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/table[3]/tbody/tr[3]/td[1]/a",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[2]/div[2]/div/div[2]/table/tbody/tr/td[1]/a"
+ },
+ {
+  "id": 60,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addproject/ManageProjectPage.getProjectStatus",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/table[3]/tbody/tr[3]/td[2]",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[2]/div[2]/div/div[2]/table/tbody/tr/td[2]"
+ },
+ {
+  "id": 61,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "addproject/ManageProjectPage.getProjectVisibility",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/table[3]/tbody/tr[3]/td[4]",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[2]/div[2]/div/div[2]/table/tbody/tr/td[4]"
+ },
+ {
+  "id": 62,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "adduser/BaseNavBar.logout",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Logout",
+  "new_locator": "By.className: user-info"
+ },
+ {
+  "id": 63,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "assignissue/AssignIssuePage.confirmAssignment",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[2]/form/table/tbody/tr[2]/td/input",
+  "new_locator": "By.xpath: //*[@id=\"action-group-div\"]/form/div/div[2]/div[2]/input"
+ },
+ {
+  "id": 64,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "assignissue/BaseNavBar.viewIssues",
+  "framework": "selenium",
+  "old_locator": "By.linkText: View Issues",
+  "new_locator": "By.linkText: View Issues"
+ },
+ {
+  "id": 65,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "assignissue/ViewIssuesPage.assignIssue",
+  "framework": "selenium",
+  "old_locator": "By.name: action",
+  "new_locator": "By.name: action"
+ },
+ {
+  "id": 66,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "assignissue/ViewIssuesPage.assignIssue",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"buglist\"]/tbody/tr[5]/td/span[1]/input[2]",
+  "new_locator": "By.xpath: //*[@id=\"bug_action\"]/div/div[2]/div[2]/div[2]/div[1]/input"
+ },
+ {
+  "id": 67,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "assignissue/ViewIssuesPage.getStatus",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"buglist\"]/tbody/tr[4]/td[8]/span",
+  "new_locator": "By.xpath: //*[@id=\"buglist\"]/tbody/tr/td[9]/div"
+ },
+ {
+  "id": 68,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "assignissue/ViewIssuesPage.selectFirstIssue",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"buglist\"]/tbody/tr[4]/td[1]/input",
+  "new_locator": "By.xpath: //*[@id=\"buglist\"]/tbody/tr/td[1]/div/label/span"
+ },
+ {
+  "id": 69,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "badlogin/BaseNavBar.logout",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Logout",
+  "new_locator": "By.className: user-info"
+ },
+ {
+  "id": 70,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "badlogin/LoginPage.isLoginFailed",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[2]/font",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div/div/div/div/div[4]/p"
+ },
+ {
+  "id": 71,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "badlogin/LoginPage.login",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[3]/form/table/tbody/tr[6]/td/input",
+  "new_locator": "By.className: btn"
+ },
+ {
+  "id": 72,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "badlogin/LoginPage.setPassword",
+  "framework": "selenium",
+  "old_locator": "By.name: password",
+  "new_locator": "By.name: password"
+ },
+ {
+  "id": 73,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "badlogin/LoginPage.setUsername",
+  "framework": "selenium",
+  "old_locator": "By.name: username",
+  "new_locator": "By.name: username"
+ },
+ {
+  "id": 74,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "deletecategory/EditProjectPage.confirmDeleteCategory",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[2]/form/input[5]",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[2]/form/input[5]"
+ },
+ {
+  "id": 75,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "deletecategory/EditProjectPage.confirmDeleteCategory",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Proceed",
+  "new_locator": "By.linkText: Proceed"
+ },
+ {
+  "id": 76,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "deletecategory/EditProjectPage.deleteCategory",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[6]/a[1]/table/tbody/tr[3]/td[3]/form[2]/input[2]",
+  "new_locator": "By.xpath: //*[@id=\"categories\"]/div/div[3]/div/div/table/tbody/tr[1]/td[3]/div/div[2]/form/button"
+ },
+ {
+  "id": 77,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "deleteissue/DeleteIssuePage.deleteIssue",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[2]/form/table/tbody/tr[2]/td/input",
+  "new_locator": "By.xpath: //*[@id=\"action-group-div\"]/form/div/div[2]/div[2]/input"
+ },
+ {
+  "id": 78,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "deleteissue/ViewIssuesPage.deleteIssue",
+  "framework": "selenium",
+  "old_locator": "By.name: action",
+  "new_locator": "By.name: action"
+ },
+ {
+  "id": 79,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "deleteissue/ViewIssuesPage.deleteIssue",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"buglist\"]/tbody/tr[5]/td/span[1]/input[2]",
+  "new_locator": "By.xpath: //*[@id=\"bug_action\"]/div/div[2]/div[2]/div[2]/div[1]/input"
+ },
+ {
+  "id": 80,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "deleteissue/ViewIssuesPage.getIssueListText",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"buglist\"]/tbody/tr[1]/td/span[1]",
+  "new_locator": "By.xpath: //*[@id=\"bug_action\"]/div/div[1]/h4"
+ },
+ {
+  "id": 81,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "deletemultipleprojects/DeleteProjectConfirmPage.confirmDelete",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[2]/form/input[4]",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[2]/form/input[4]"
+ },
+ {
+  "id": 82,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "deletemultipleprojects/EditProjectPage.deleteProject",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[4]/form/input[3]",
+  "new_locator": "By.xpath: //*[@id=\"project-delete-form\"]/fieldset/input[3]"
+ },
+ {
+  "id": 83,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "deletemultipleprojects/ManageProjectPage.goToProject",
+  "framework": "selenium",
+  "old_locator": "By.linkText: testSubProject1",
+  "new_locator": "By.linkText: testSubProject1"
+ },
+ {
+  "id": 84,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "deletemultipleprojects/ManageProjectPage.goToProject",
+  "framework": "selenium",
+  "old_locator": "By.linkText: testSubProject2",
+  "new_locator": "By.linkText: testSubProject2"
+ },
+ {
+  "id": 85,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "deletemultipleusers/DeleteUserConfirmPage.confirmDelete",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[2]/form/input[4]",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[2]/form/input[4]"
+ },
+ {
+  "id": 86,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "deletemultipleusers/DeleteUserConfirmPage.confirmDelete",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Proceed",
+  "new_locator": "By.linkText: Proceed"
+ },
+ {
+  "id": 87,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "deletemultipleusers/EditUserPage.deleteUser",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[4]/form[2]/input[3]",
+  "new_locator": "By.xpath: //*[@id=\"manage-user-delete-form\"]/fieldset/span/input"
+ },
+ {
+  "id": 88,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "deletemultipleusers/ManageUsersPage.goToUser",
+  "framework": "selenium",
+  "old_locator": "By.linkText: username001",
+  "new_locator": "By.linkText: username001"
+ },
+ {
+  "id": 89,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "deletemultipleusers/ManageUsersPage.goToUser",
+  "framework": "selenium",
+  "old_locator": "By.linkText: username002",
+  "new_locator": "By.linkText: username002"
+ },
+ {
+  "id": 90,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "deletemultipleusers/ManageUsersPage.goToUser",
+  "framework": "selenium",
+  "old_locator": "By.linkText: username003",
+  "new_locator": "By.linkText: username003"
+ },
+ {
+  "id": 91,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "deletemultipleusers/ManageUsersPage.isUserPresent",
+  "framework": "selenium",
+  "old_locator": "By.tagName: BODY",
+  "new_locator": "By.tagName: BODY"
+ },
+ {
+  "id": 92,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "linkmultiplesubprojects/EditProjectPage.isSubprojectPresent",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[5]/table/tbody/tr[3]/td[1]/a",
+  "new_locator": "By.id: manage-project-update-subprojects-form"
+ },
+ {
+  "id": 93,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "linkmultiplesubprojects/EditProjectPage.linkSubproject",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[5]/table/tbody/tr[3]/td/form/input[3]",
+  "new_locator": "By.xpath: //*[@id=\"manage-project-subproject-add-form\"]/div/div/fieldset/input[3]"
+ },
+ {
+  "id": 94,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "linkmultiplesubprojects/EditProjectPage.linkSubproject",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Proceed",
+  "new_locator": "By.linkText: Proceed"
+ },
+ {
+  "id": 95,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "linkmultiplesubprojects/EditProjectPage.selectSubproject",
+  "framework": "selenium",
+  "old_locator": "By.name: subproject_id",
+  "new_locator": "By.name: subproject_id"
+ },
+ {
+  "id": 96,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "linkmultiplesubprojects/EditProjectPage.selectSubproject",
+  "framework": "selenium",
+  "old_locator": "By.name: subproject_id",
+  "new_locator": "By.name: subproject_id"
+ },
+ {
+  "id": 97,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "logout/LoginPage.isLoginBtnDisplayed",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[3]/form/table/tbody/tr[6]/td/input",
+  "new_locator": "By.className: btn"
+ },
+ {
+  "id": 98,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "unlinkmultiplesubprojects/EditProjectPage.unlinkSubproject",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[5]/table/tbody/tr[3]/td[7]/span[2]/a",
+  "new_locator": "By.xpath: //*[@id=\"manage-project-update-subprojects-form\"]/div/div[2]/div/fieldset/div/table/tbody/tr[1]/td[7]/div/a[2]"
+ },
+ {
+  "id": 99,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "unlinkmultiplesubprojects/EditProjectPage.unlinkSubproject",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Proceed",
+  "new_locator": "By.linkText: Proceed"
+ },
+ {
+  "id": 100,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "unlinkmultiplesubprojects/EditProjectPage.unlinkSubproject",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[5]/table/tbody/tr[3]/td[7]/span[2]/a",
+  "new_locator": "By.xpath: //*[@id=\"manage-project-update-subprojects-form\"]/div/div[2]/div/fieldset/div/table/tbody/tr[1]/td[7]/div/a[2]"
+ },
+ {
+  "id": 101,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "updatecategory/EditCategoryPage.setCategoryName",
+  "framework": "selenium",
+  "old_locator": "By.name: name",
+  "new_locator": "By.id: proj-category-name"
+ },
+ {
+  "id": 102,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "updatecategory/EditCategoryPage.updateCategory",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[3]/form/table/tbody/tr[4]/td[2]/input",
+  "new_locator": "By.xpath: //*[@id=\"manage-proj-category-update-form\"]/div/div[3]/input"
+ },
+ {
+  "id": 103,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "updatecategory/EditProjectPage.editCategory",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[6]/a[1]/table/tbody/tr[3]/td[3]/form[1]/input[2]",
+  "new_locator": "By.xpath: //*[@id=\"categories\"]/div/div[3]/div/div/table/tbody/tr[1]/td[3]/div/div[1]/form/button"
+ },
+ {
+  "id": 104,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "updatecategoryempty/BaseNavBar.logout",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Logout",
+  "new_locator": "By.className: user-info"
+ },
+ {
+  "id": 105,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "updatecategoryempty/EditProjectPage.getError",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[2]/table/tbody/tr[2]/td/p",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[2]/p[2]"
+ },
+ {
+  "id": 106,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "updateissuepriority/BaseNavBar.logout",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Logout",
+  "new_locator": "By.className: user-info"
+ },
+ {
+  "id": 107,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "updateissuepriority/ViewIssueDetailsPage.getPriority",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/table[3]/tbody/tr[7]/td[2]",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div[1]/div/div[2]/div[2]/div/table/tbody/tr[6]/td[1]"
+ },
+ {
+  "id": 108,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "updateissuepriority/ViewIssuesPage.editFirstIssue",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"buglist\"]/tbody/tr[4]/td[2]/a/img",
+  "new_locator": "By.xpath: //*[@id=\"buglist\"]/tbody/tr/td[2]/a/i"
+ },
+ {
+  "id": 109,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "updateissueseverity/ViewIssueDetailsPage.getSeverity",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/table[3]/tbody/tr[7]/td[4]",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div[1]/div/div[2]/div[2]/div/table/tbody/tr[6]/td[2]"
+ },
+ {
+  "id": 110,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "updateissuestatusacknowledged/ViewIssueDetailsPage.getStatus",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/table[3]/tbody/tr[8]/td[2]",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div[1]/div/div[2]/div[2]/div/table/tbody/tr[7]/td[1]"
+ },
+ {
+  "id": 111,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "updateissuesummary/ViewIssueDetailsPage.getSummary",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/table[3]/tbody/tr[11]/td[2]",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div[1]/div/div[2]/div[2]/div/table/tbody/tr[10]/td"
+ },
+ {
+  "id": 112,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "updateprojectdescription/EditProjectPage.setDescription",
+  "framework": "selenium",
+  "old_locator": "By.name: description",
+  "new_locator": "By.name: description"
+ },
+ {
+  "id": 113,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "updateprojectdescription/EditProjectPage.updateProject",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[3]/form/table/tbody/tr[9]/td[2]/input",
+  "new_locator": "By.xpath: //*[@id=\"manage-proj-update-form\"]/div/div[3]/input"
+ },
+ {
+  "id": 114,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "updateprojectstatus/EditProjectPage.setProjectStatus",
+  "framework": "selenium",
+  "old_locator": "By.name: status",
+  "new_locator": "By.id: project-status"
+ },
+ {
+  "id": 115,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "updateprojectviewstatus/EditProjectPage.setViewState",
+  "framework": "selenium",
+  "old_locator": "By.name: view_state",
+  "new_locator": "By.id: project-view-state"
+ },
+ {
+  "id": 116,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "updateuser/BaseNavBar.logout",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Logout",
+  "new_locator": "By.className: user-info"
+ },
+ {
+  "id": 117,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "updateuser/EditUserPage.getRealName",
+  "framework": "selenium",
+  "old_locator": "By.name: realname",
+  "new_locator": "By.id: edit-realname"
+ },
+ {
+  "id": 118,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "updateuser/EditUserPage.setRealName",
+  "framework": "selenium",
+  "old_locator": "By.name: realname",
+  "new_locator": "By.id: edit-realname"
+ },
+ {
+  "id": 119,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "updateuser/EditUserPage.updateUser",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[3]/form/table/tbody/tr[8]/td/input[2]",
+  "new_locator": "By.xpath: //*[@id=\"edit-user-form\"]/div/div[2]/div[2]/input"
+ },
+ {
+  "id": 120,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "updateuser/EditUserPage.updateUser",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Proceed",
+  "new_locator": "By.linkText: Proceed"
+ },
+ {
+  "id": 121,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "updateuserempty/BaseNavBar.logout",
+  "framework": "selenium",
+  "old_locator": "By.linkText: Logout",
+  "new_locator": "By.className: user-info"
+ },
+ {
+  "id": 122,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "updateuserempty/EditUserPage.getError",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[2]/table/tbody/tr[2]/td/p",
+  "new_locator": "By.xpath: //*[@id=\"main-container\"]/div[2]/div[2]/div/div/div[2]/p[2]"
+ },
+ {
+  "id": 123,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "updateuserempty/EditUserPage.setUsername",
+  "framework": "selenium",
+  "old_locator": "By.name: username",
+  "new_locator": "By.id: edit-username"
+ },
+ {
+  "id": 124,
+  "repo": "bewt/mantisbt",
+  "commit": "mantisbt-2.25.4",
+  "parent": "mantisbt-1.2.0",
+  "file": "updateuserempty/EditUserPage.updateUserFails",
+  "framework": "selenium",
+  "old_locator": "By.xpath: /html/body/div[3]/form/table/tbody/tr[8]/td/input[2]",
+  "new_locator": "By.xpath: //*[@id=\"edit-user-form\"]/div/div[2]/div[2]/input"
+ },
+ {
+  "id": 1,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/AddAddressPage.addAddress",
+  "framework": "selenium",
+  "old_locator": "By.id: email",
+  "new_locator": "By.id: customer_address_customer_email"
+ },
+ {
+  "id": 2,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/AddAddressPage.addAddress",
+  "framework": "selenium",
+  "old_locator": "By.id: alias",
+  "new_locator": "By.id: customer_address_alias"
+ },
+ {
+  "id": 3,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/AddAddressPage.addAddress",
+  "framework": "selenium",
+  "old_locator": "By.id: firstname",
+  "new_locator": "By.id: customer_address_first_name"
+ },
+ {
+  "id": 4,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/AddAddressPage.addAddress",
+  "framework": "selenium",
+  "old_locator": "By.id: lastname",
+  "new_locator": "By.id: customer_address_last_name"
+ },
+ {
+  "id": 5,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/AddAddressPage.addAddress",
+  "framework": "selenium",
+  "old_locator": "By.id: address1",
+  "new_locator": "By.id: customer_address_address1"
+ },
+ {
+  "id": 6,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/AddAddressPage.addAddress",
+  "framework": "selenium",
+  "old_locator": "By.id: postcode",
+  "new_locator": "By.id: customer_address_postcode"
+ },
+ {
+  "id": 7,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/AddAddressPage.addAddress",
+  "framework": "selenium",
+  "old_locator": "By.id: phone",
+  "new_locator": "By.id: customer_address_phone"
+ },
+ {
+  "id": 8,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/AddAddressPage.addAddress",
+  "framework": "selenium",
+  "old_locator": "By.id: phone_mobile",
+  "new_locator": "By.id: customer_address_phone_mobile"
+ },
+ {
+  "id": 9,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/AddAddressPage.addAddress",
+  "framework": "selenium",
+  "old_locator": "By.name: id_state",
+  "new_locator": "By.id: customer_address_city"
+ },
+ {
+  "id": 10,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/AddAddressPage.addAddress",
+  "framework": "selenium",
+  "old_locator": "By.id: city",
+  "new_locator": "By.id: save-button"
+ },
+ {
+  "id": 11,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/AddressesPage.addAddress",
+  "framework": "selenium",
+  "old_locator": "By.id: page-header-desc-address-new_address",
+  "new_locator": "By.id: page-header-desc-configuration-add"
+ },
+ {
+  "id": 12,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/AdminSidebar.goToAddresses",
+  "framework": "selenium",
+  "old_locator": "By.id: maintab-AdminParentCustomer",
+  "new_locator": "By.id: subtab-AdminParentCustomer"
+ },
+ {
+  "id": 13,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/PrestaLogin.loginToPresta",
+  "framework": "selenium",
+  "old_locator": "By.name: email",
+  "new_locator": "By.name: email"
+ },
+ {
+  "id": 14,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/PrestaLogin.loginToPresta",
+  "framework": "selenium",
+  "old_locator": "By.name: passwd",
+  "new_locator": "By.name: passwd"
+ },
+ {
+  "id": 15,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddaddress/PrestaLogin.loginToPresta",
+  "framework": "selenium",
+  "old_locator": "By.name: submitLogin",
+  "new_locator": "By.name: submitLogin"
+ },
+ {
+  "id": 16,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddattributes/AddAttributePage.setName",
+  "framework": "selenium",
+  "old_locator": "By.id: name_1",
+  "new_locator": "By.id: name_1"
+ },
+ {
+  "id": 17,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddattributes/AddAttributePage.setPublicName",
+  "framework": "selenium",
+  "old_locator": "By.id: public_name_1",
+  "new_locator": "By.id: public_name_1"
+ },
+ {
+  "id": 18,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddattributes/AddAttributePage.submitAttribute",
+  "framework": "selenium",
+  "old_locator": "By.id: attribute_group_form_submit_btn",
+  "new_locator": "By.id: attribute_group_form_submit_btn"
+ },
+ {
+  "id": 19,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddattributes/AdminSidebar.goToAttributes",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"maintab-AdminCatalog\"]/a",
+  "new_locator": "By.xpath: //*[@id=\"subtab-AdminCatalog\"]/a"
+ },
+ {
+  "id": 20,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddattributes/AttributesPage.clickAddAttribute",
+  "framework": "selenium",
+  "old_locator": "By.id: page-header-desc-attribute_group-new_attribute_group",
+  "new_locator": "By.id: page-header-desc-attribute_group-new_attribute_group"
+ },
+ {
+  "id": 21,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddcategory/AddCategoryPage.submitCategory",
+  "framework": "selenium",
+  "old_locator": "By.id: name_1",
+  "new_locator": "By.id: category_name_1"
+ },
+ {
+  "id": 22,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddcategory/AddCategoryPage.submitCategory",
+  "framework": "selenium",
+  "old_locator": "By.name: submitAddcategoryAndBackToParent",
+  "new_locator": "By.id: save-button"
+ },
+ {
+  "id": 23,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddcategory/AdminSidebar.goToCategories",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"maintab-AdminCatalog\"]/a",
+  "new_locator": "By.xpath: //*[@id=\"subtab-AdminCatalog\"]/a"
+ },
+ {
+  "id": 24,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddcurrency/AddCurrencyPage.addCurrency",
+  "framework": "selenium",
+  "old_locator": "By.id: name",
+  "new_locator": "By.xpath: //*[@id=\"currency_form\"]/div/div[2]/div/div[2]/div"
+ },
+ {
+  "id": 25,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddcurrency/AddCurrencyPage.addCurrency",
+  "framework": "selenium",
+  "old_locator": "By.id: iso_code",
+  "new_locator": "By.id: currency_names_1"
+ },
+ {
+  "id": 26,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddcurrency/AddCurrencyPage.addCurrency",
+  "framework": "selenium",
+  "old_locator": "By.id: iso_code_num",
+  "new_locator": "By.id: currency_iso_code"
+ },
+ {
+  "id": 27,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddcurrency/AddCurrencyPage.addCurrency",
+  "framework": "selenium",
+  "old_locator": "By.id: sign",
+  "new_locator": "By.id: currency_exchange_rate"
+ },
+ {
+  "id": 28,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddcurrency/AddCurrencyPage.addCurrency",
+  "framework": "selenium",
+  "old_locator": "By.id: currency_form_submit_btn",
+  "new_locator": "By.id: save-button"
+ },
+ {
+  "id": 29,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddcurrency/AdminSidebar.goToCurrency",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"maintab-AdminParentLocalization\"]/a",
+  "new_locator": "By.xpath: //*[@id=\"subtab-AdminInternational\"]/a/span"
+ },
+ {
+  "id": 30,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddcurrency/CurrencyPage.clickAddCurrency",
+  "framework": "selenium",
+  "old_locator": "By.id: page-header-desc-currency-new_currency",
+  "new_locator": "By.id: page-header-desc-configuration-add"
+ },
+ {
+  "id": 31,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptyaddress/AddAddressPage.addEmptyAddress",
+  "framework": "selenium",
+  "old_locator": "By.id: address_form_submit_btn",
+  "new_locator": "By.id: save-button"
+ },
+ {
+  "id": 32,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptyattributes/AddAttributePage.getAlertMessage",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"content\"]/div[4]/div",
+  "new_locator": "By.className: alert-danger"
+ },
+ {
+  "id": 33,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptyattributes/AddAttributePage.submitError",
+  "framework": "selenium",
+  "old_locator": "By.id: attribute_group_form_submit_btn",
+  "new_locator": "By.id: attribute_group_form_submit_btn"
+ },
+ {
+  "id": 34,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptycategory/AddCategoryPage.getAlertMessage",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"content\"]/div[4]/div",
+  "new_locator": "By.xpath: //*[@id=\"main-div\"]/div/div/div/div[2]/div/form/div/div[1]/div/div[1]/div/div[2]/div[2]/div"
+ },
+ {
+  "id": 35,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptycategory/AddCategoryPage.submitEmptyCategory",
+  "framework": "selenium",
+  "old_locator": "By.name: submitAddcategoryAndBackToParent",
+  "new_locator": "By.id: save-button"
+ },
+ {
+  "id": 36,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptycurrency/AddCurrencyPage.addEmptyCurrency",
+  "framework": "selenium",
+  "old_locator": "By.id: currency_form_submit_btn",
+  "new_locator": "By.id: save-button"
+ },
+ {
+  "id": 37,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptyfeature/AddFeaturesPage.getAlertMessage",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"content\"]/div[4]/div",
+  "new_locator": "By.className: alert-danger"
+ },
+ {
+  "id": 38,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptyfeature/AddFeaturesPage.submitError",
+  "framework": "selenium",
+  "old_locator": "By.id: feature_form_submit_btn",
+  "new_locator": "By.id: feature_form_submit_btn"
+ },
+ {
+  "id": 39,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptyfeature/AdminSidebar.goToFeatures",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"maintab-AdminCatalog\"]/a",
+  "new_locator": "By.xpath: //*[@id=\"subtab-AdminCatalog\"]/a"
+ },
+ {
+  "id": 40,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptyfeature/FeaturesPage.clickAddFeature",
+  "framework": "selenium",
+  "old_locator": "By.id: page-header-desc-feature-new_feature",
+  "new_locator": "By.id: page-header-desc-feature-new_feature"
+ },
+ {
+  "id": 41,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptymanufacturer/AddManufacturerPage.addEmptyManufacturer",
+  "framework": "selenium",
+  "old_locator": "By.id: manufacturer_form_submit_btn",
+  "new_locator": "By.xpath: //*[@id=\"main-div\"]/div/div[1]/div/div[2]/div/form/div/div[2]/button"
+ },
+ {
+  "id": 42,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptymanufacturer/AdminSidebar.goToManufacturer",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"maintab-AdminCatalog\"]/a",
+  "new_locator": "By.xpath: //*[@id=\"subtab-AdminCatalog\"]/a"
+ },
+ {
+  "id": 43,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptymanufacturer/ManufacturerPage.clickAddManufacturer",
+  "framework": "selenium",
+  "old_locator": "By.id: page-header-desc-address-new_manufacturer",
+  "new_locator": "By.id: page-header-desc-configuration-add_manufacturer"
+ },
+ {
+  "id": 44,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptyproduct/AddProductPage.getAlertMessage",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"content\"]/div[4]/div",
+  "new_locator": "By.xpath: //*[@id=\"form_step1_name\"]/div/div[1]/ul"
+ },
+ {
+  "id": 45,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptyproduct/AdminSidebar.goToProducts",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"maintab-AdminCatalog\"]/a",
+  "new_locator": "By.xpath: //*[@id=\"subtab-AdminCatalog\"]/a"
+ },
+ {
+  "id": 46,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptyproduct/ProductsPage.addNewProduct",
+  "framework": "selenium",
+  "old_locator": "By.id: page-header-desc-product-new_product",
+  "new_locator": "By.id: page-header-desc-configuration-add"
+ },
+ {
+  "id": 47,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptystate/AddNewStatePage.addEmptyState",
+  "framework": "selenium",
+  "old_locator": "By.id: state_form_submit_btn",
+  "new_locator": "By.id: state_form_submit_btn"
+ },
+ {
+  "id": 48,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptystate/AddNewStatePage.getAlertMessage",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"content\"]/div[4]/div",
+  "new_locator": "By.xpath: //*[@id=\"content\"]/div[3]/div"
+ },
+ {
+  "id": 49,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptystate/AdminSidebar.goToStates",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"maintab-AdminParentLocalization\"]/a",
+  "new_locator": "By.xpath: //*[@id=\"subtab-AdminInternational\"]/a/span"
+ },
+ {
+  "id": 50,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptystate/StatesPage.addNewState",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"page-header-desc-state-new_state\"]",
+  "new_locator": "By.id: page-header-desc-state-new_state"
+ },
+ {
+  "id": 51,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptysupplier/AddSupplierPage.addEmptySupplier",
+  "framework": "selenium",
+  "old_locator": "By.id: supplier_form_submit_btn",
+  "new_locator": "By.xpath: //*[@id=\"main-div\"]/div/div/div/div[2]/div/form/div/div[2]/button"
+ },
+ {
+  "id": 52,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptysupplier/SupplierPage.clickAddSupplier",
+  "framework": "selenium",
+  "old_locator": "By.id: page-header-desc-supplier-new_supplier",
+  "new_locator": "By.id: page-header-desc-configuration-add"
+ },
+ {
+  "id": 53,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptytag/AddTagPage.addEmptyTag",
+  "framework": "selenium",
+  "old_locator": "By.id: tag_form_submit_btn",
+  "new_locator": "By.id: tag_form_submit_btn"
+ },
+ {
+  "id": 54,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptytag/AddTagPage.getAlertMessage",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"content\"]/div[4]/div",
+  "new_locator": "By.xpath: //*[@id=\"content\"]/div[3]/div"
+ },
+ {
+  "id": 55,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptytag/AdminSidebar.goToTags",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"maintab-AdminCatalog\"]/a",
+  "new_locator": "By.id: subtab-ShopParameters"
+ },
+ {
+  "id": 56,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddemptytag/TagsPage.addTag",
+  "framework": "selenium",
+  "old_locator": "By.id: page-header-desc-tag-new_tag",
+  "new_locator": "By.id: page-header-desc-tag-new_tag"
+ },
+ {
+  "id": 57,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddfeatures/AddFeaturesPage.addName",
+  "framework": "selenium",
+  "old_locator": "By.id: name_1",
+  "new_locator": "By.id: name_1"
+ },
+ {
+  "id": 58,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddfeatures/AddFeaturesPage.submitFeature",
+  "framework": "selenium",
+  "old_locator": "By.id: feature_form_submit_btn",
+  "new_locator": "By.id: feature_form_submit_btn"
+ },
+ {
+  "id": 59,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddmanufacturer/AddManufacturerPage.addManufacturer",
+  "framework": "selenium",
+  "old_locator": "By.id: name",
+  "new_locator": "By.id: manufacturer_name"
+ },
+ {
+  "id": 60,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddmanufacturer/AddManufacturerPage.addManufacturer",
+  "framework": "selenium",
+  "old_locator": "By.id: manufacturer_form_submit_btn",
+  "new_locator": "By.xpath: //*[@id=\"main-div\"]/div/div[1]/div/div[2]/div/form/div/div[2]/button"
+ },
+ {
+  "id": 61,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewproduct/AddProductPage.addNameOfProduct",
+  "framework": "selenium",
+  "old_locator": "By.id: name_1",
+  "new_locator": "By.id: form_step1_name_1"
+ },
+ {
+  "id": 62,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewproduct/AddProductPage.submitProduct",
+  "framework": "selenium",
+  "old_locator": "By.name: submitAddproduct",
+  "new_locator": "By.id: submit"
+ },
+ {
+  "id": 63,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewproductwithtax/AddProductPage.prices",
+  "framework": "selenium",
+  "old_locator": "By.id: link-Prices",
+  "new_locator": "By.id: tab_step2"
+ },
+ {
+  "id": 64,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewproductwithtax/PricesPage.getFinalPrice",
+  "framework": "selenium",
+  "old_locator": "By.id: finalPrice",
+  "new_locator": "By.id: final_retail_price_ti"
+ },
+ {
+  "id": 65,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewproductwithtax/PricesPage.setPretaxRetail",
+  "framework": "selenium",
+  "old_locator": "By.id: priceTE",
+  "new_locator": "By.id: form_step2_price"
+ },
+ {
+  "id": 66,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewproductwithtax10/AddProductPage.prices",
+  "framework": "selenium",
+  "old_locator": "By.id: link-Prices",
+  "new_locator": "By.id: tab_step2"
+ },
+ {
+  "id": 67,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewproductwithtax10/PricesPage.chooseTaxRules10",
+  "framework": "selenium",
+  "old_locator": "By.id: id_tax_rules_group",
+  "new_locator": "By.xpath: //*[@id=\"step2\"]/div/div/div/div/div[3]/div/div[1]/span"
+ },
+ {
+  "id": 68,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewproductwithtax10/PricesPage.getFinalPrice",
+  "framework": "selenium",
+  "old_locator": "By.id: finalPrice",
+  "new_locator": "By.id: final_retail_price_ti"
+ },
+ {
+  "id": 69,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewproductwithtax10/PricesPage.setPretaxRetail",
+  "framework": "selenium",
+  "old_locator": "By.id: priceTE",
+  "new_locator": "By.id: form_step2_price"
+ },
+ {
+  "id": 70,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewstate/AddNewStatePage.addNewState",
+  "framework": "selenium",
+  "old_locator": "By.id: name",
+  "new_locator": "By.name: name"
+ },
+ {
+  "id": 71,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewstate/AddNewStatePage.addNewState",
+  "framework": "selenium",
+  "old_locator": "By.name: iso_code",
+  "new_locator": "By.name: iso_code"
+ },
+ {
+  "id": 72,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewstate/AddNewStatePage.addNewState",
+  "framework": "selenium",
+  "old_locator": "By.id: id_country",
+  "new_locator": "By.id: id_country"
+ },
+ {
+  "id": 73,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewstate/AddNewStatePage.addNewState",
+  "framework": "selenium",
+  "old_locator": "By.id: id_zone",
+  "new_locator": "By.id: id_zone"
+ },
+ {
+  "id": 74,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddnewstate/AddNewStatePage.addNewState",
+  "framework": "selenium",
+  "old_locator": "By.id: state_form_submit_btn",
+  "new_locator": "By.id: state_form_submit_btn"
+ },
+ {
+  "id": 75,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddsupplier/AddSupplierPage.addSupplier",
+  "framework": "selenium",
+  "old_locator": "By.id: name",
+  "new_locator": "By.id: supplier_name"
+ },
+ {
+  "id": 76,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddsupplier/AddSupplierPage.addSupplier",
+  "framework": "selenium",
+  "old_locator": "By.id: address",
+  "new_locator": "By.id: supplier_address"
+ },
+ {
+  "id": 77,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddsupplier/AddSupplierPage.addSupplier",
+  "framework": "selenium",
+  "old_locator": "By.id: city",
+  "new_locator": "By.id: supplier_city"
+ },
+ {
+  "id": 78,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddsupplier/AddSupplierPage.addSupplier",
+  "framework": "selenium",
+  "old_locator": "By.id: id_country",
+  "new_locator": "By.xpath: //*[@id=\"main-div\"]/div/div/div/div[2]/div/form/div/div[2]/button"
+ },
+ {
+  "id": 79,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddtag/AddTagPage.addTag",
+  "framework": "selenium",
+  "old_locator": "By.id: name",
+  "new_locator": "By.id: name"
+ },
+ {
+  "id": 80,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testaddtag/AddTagPage.addTag",
+  "framework": "selenium",
+  "old_locator": "By.id: tag_form_submit_btn",
+  "new_locator": "By.id: tag_form_submit_btn"
+ },
+ {
+  "id": 81,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testeditaddress/AddAddressPage.editName",
+  "framework": "selenium",
+  "old_locator": "By.id: firstname",
+  "new_locator": "By.id: customer_address_first_name"
+ },
+ {
+  "id": 82,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testeditaddress/AddAddressPage.editName",
+  "framework": "selenium",
+  "old_locator": "By.id: address_form_submit_btn",
+  "new_locator": "By.id: save-button"
+ },
+ {
+  "id": 83,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testeditaddress/AddressesPage.editAddress",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"form-address\"]/div/div[2]/table/tbody/tr[1]/td[9]/div/div/a",
+  "new_locator": "By.xpath: //*[@id=\"address_grid_table\"]/tbody/tr[1]/td[9]/div/div/a[1]"
+ },
+ {
+  "id": 84,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testeditcategory/AddCategoryPage.submitCategory",
+  "framework": "selenium",
+  "old_locator": "By.id: name_1",
+  "new_locator": "By.id: category_name_1"
+ },
+ {
+  "id": 85,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testeditcategory/AddCategoryPage.submitCategory",
+  "framework": "selenium",
+  "old_locator": "By.name: submitAddcategoryAndBackToParent",
+  "new_locator": "By.id: save-button"
+ },
+ {
+  "id": 86,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testeditcategory/CategoriesPage.editCategory",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"tr_2_12_1\"]/td[7]/div/div/a",
+  "new_locator": "By.xpath: //*[@id=\"tr_2_10_3\"]/td[7]/div/div/a[1]"
+ },
+ {
+  "id": 87,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testeditmanufactureraddress/ManufacturerPage.editManufacturer",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"form-manufacturer\"]/div/div[2]/table/tbody/tr[2]/td[8]/div/div/button",
+  "new_locator": "By.xpath: //*[@id=\"manufacturer_grid_table\"]/tbody/tr/td[8]/div/div/a[2]"
+ },
+ {
+  "id": 88,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testeditproduct/AddProductPage.submitProduct",
+  "framework": "selenium",
+  "old_locator": "By.name: submitAddproduct",
+  "new_locator": "By.id: submit"
+ },
+ {
+  "id": 89,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testeditproduct/ProductsPage.editProduct",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"tr__7_0\"]/td[11]/div/div/a",
+  "new_locator": "By.xpath: //*[@id=\"product_catalog_list\"]/div[2]/div/div/table/tbody/tr/td[11]/div/div/a"
+ },
+ {
+  "id": 90,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testoutofstock/AddToCartPage.addCustomerName",
+  "framework": "selenium",
+  "old_locator": "By.id: customer",
+  "new_locator": "By.id: customer-search-input"
+ },
+ {
+  "id": 91,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testoutofstock/AddToCartPage.addQuantity",
+  "framework": "selenium",
+  "old_locator": "By.id: qty",
+  "new_locator": "By.id: quantity-input"
+ },
+ {
+  "id": 92,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testoutofstock/AddToCartPage.clickOnChooseCustomer",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"customers\"]/div/div/div[2]/button",
+  "new_locator": "By.xpath: //*[@id=\"customer-search-block\"]/div/div[4]/div/div/div/div/div[3]/button[1]"
+ },
+ {
+  "id": 93,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testoutofstock/AddToCartPage.getErrorMessage",
+  "framework": "selenium",
+  "old_locator": "By.id: products_err",
+  "new_locator": "By.id: js-cart-error-block"
+ },
+ {
+  "id": 94,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testoutofstock/AddToCartPage.submitProductAndFail",
+  "framework": "selenium",
+  "old_locator": "By.id: submitAddProduct",
+  "new_locator": "By.id: add-product-to-cart-btn"
+ },
+ {
+  "id": 95,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testoutofstock/AdminSidebar.goToOrders",
+  "framework": "selenium",
+  "old_locator": "By.id: maintab-AdminParentOrders",
+  "new_locator": "By.id: subtab-AdminParentOrders"
+ },
+ {
+  "id": 96,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testoutofstock/OrdersPage.addOrder",
+  "framework": "selenium",
+  "old_locator": "By.id: page-header-desc-order-new_order",
+  "new_locator": "By.id: page-header-desc-configuration-add"
+ },
+ {
+  "id": 97,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployee/AdminSidebar.goToEmployees",
+  "framework": "selenium",
+  "old_locator": "By.id: maintab-AdminAdmin",
+  "new_locator": "By.id: subtab-AdminAdvancedParameters"
+ },
+ {
+  "id": 98,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployee/EmployeesPage.addEmployee",
+  "framework": "selenium",
+  "old_locator": "By.id: page-header-desc-employee-new_employee",
+  "new_locator": "By.id: page-header-desc-configuration-add"
+ },
+ {
+  "id": 99,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployee/RegisterEmployeePage.addEmployee",
+  "framework": "selenium",
+  "old_locator": "By.id: firstname",
+  "new_locator": "By.id: employee_firstname"
+ },
+ {
+  "id": 100,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployee/RegisterEmployeePage.addEmployee",
+  "framework": "selenium",
+  "old_locator": "By.id: lastname",
+  "new_locator": "By.id: employee_lastname"
+ },
+ {
+  "id": 101,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployee/RegisterEmployeePage.addEmployee",
+  "framework": "selenium",
+  "old_locator": "By.id: email",
+  "new_locator": "By.id: employee_email"
+ },
+ {
+  "id": 102,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployee/RegisterEmployeePage.addEmployee",
+  "framework": "selenium",
+  "old_locator": "By.id: passwd",
+  "new_locator": "By.id: employee_password"
+ },
+ {
+  "id": 103,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployee/RegisterEmployeePage.addEmployee",
+  "framework": "selenium",
+  "old_locator": "By.id: id_profile",
+  "new_locator": "By.id: save-button"
+ },
+ {
+  "id": 104,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployeenoemail/RegisterEmployeePage.addEmployeeNoEmail",
+  "framework": "selenium",
+  "old_locator": "By.id: firstname",
+  "new_locator": "By.id: employee_firstname"
+ },
+ {
+  "id": 105,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployeenoemail/RegisterEmployeePage.addEmployeeNoEmail",
+  "framework": "selenium",
+  "old_locator": "By.id: lastname",
+  "new_locator": "By.id: employee_lastname"
+ },
+ {
+  "id": 106,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployeenoemail/RegisterEmployeePage.addEmployeeNoEmail",
+  "framework": "selenium",
+  "old_locator": "By.id: passwd",
+  "new_locator": "By.id: employee_password"
+ },
+ {
+  "id": 107,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployeenoemail/RegisterEmployeePage.addEmployeeNoEmail",
+  "framework": "selenium",
+  "old_locator": "By.id: id_profile",
+  "new_locator": "By.id: save-button"
+ },
+ {
+  "id": 108,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployeenoname/RegisterEmployeePage.addEmployeeNoName",
+  "framework": "selenium",
+  "old_locator": "By.id: email",
+  "new_locator": "By.id: employee_email"
+ },
+ {
+  "id": 109,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployeenoname/RegisterEmployeePage.addEmployeeNoName",
+  "framework": "selenium",
+  "old_locator": "By.id: passwd",
+  "new_locator": "By.id: employee_password"
+ },
+ {
+  "id": 110,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployeenoname/RegisterEmployeePage.addEmployeeNoName",
+  "framework": "selenium",
+  "old_locator": "By.id: id_profile",
+  "new_locator": "By.id: save-button"
+ },
+ {
+  "id": 111,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployeenopasssword/RegisterEmployeePage.addEmployeeNoPassword",
+  "framework": "selenium",
+  "old_locator": "By.id: firstname",
+  "new_locator": "By.id: employee_firstname"
+ },
+ {
+  "id": 112,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployeenopasssword/RegisterEmployeePage.addEmployeeNoPassword",
+  "framework": "selenium",
+  "old_locator": "By.id: lastname",
+  "new_locator": "By.id: employee_lastname"
+ },
+ {
+  "id": 113,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployeenopasssword/RegisterEmployeePage.addEmployeeNoPassword",
+  "framework": "selenium",
+  "old_locator": "By.id: email",
+  "new_locator": "By.id: employee_email"
+ },
+ {
+  "id": 114,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testregisteremployeenopasssword/RegisterEmployeePage.addEmployeeNoPassword",
+  "framework": "selenium",
+  "old_locator": "By.id: id_profile",
+  "new_locator": "By.id: save-button"
+ },
+ {
+  "id": 115,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testremovesupplier/SupplierPage.removeSupplier",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"form-supplier\"]/div/div[2]/table/tbody/tr[2]/td[7]/div/div/button",
+  "new_locator": "By.xpath: //*[@id=\"supplier_grid_table\"]/tbody/tr[1]/td[7]/div/div/a[2]"
+ },
+ {
+  "id": 116,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testremovesupplier/SupplierPage.removeSupplier",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"form-supplier\"]/div/div[2]/table/tbody/tr[2]/td[7]/div/div/ul/li[3]/a",
+  "new_locator": "By.xpath: //*[@id=\"supplier_grid_table\"]/tbody/tr[1]/td[7]/div/div/div/a[2]"
+ },
+ {
+  "id": 117,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testupdateemployee/EmployeesPage.editEmployee",
+  "framework": "selenium",
+  "old_locator": "By.xpath: //*[@id=\"form-employee\"]/div/div[2]/table/tbody/tr[1]/td[8]/div/a",
+  "new_locator": "By.xpath: //*[@id=\"employee_grid_table\"]/tbody/tr[2]/td[8]/div/div/a[1]"
+ },
+ {
+  "id": 118,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testupdateemployee/RegisterEmployeePage.editEmployee",
+  "framework": "selenium",
+  "old_locator": "By.id: lastname",
+  "new_locator": "By.id: employee_lastname"
+ },
+ {
+  "id": 119,
+  "repo": "bewt/prestashop",
+  "commit": "prestashop-1.7.8.5",
+  "parent": "prestashop-1.6.1.23",
+  "file": "testupdateemployee/RegisterEmployeePage.editEmployee",
+  "framework": "selenium",
+  "old_locator": "By.id: employee_form_submit_btn",
+  "new_locator": "By.id: save-button"
+ }
+]

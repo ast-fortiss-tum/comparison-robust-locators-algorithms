@@ -3,3 +3,21 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# Build output and IDE files
+.gradle/
+build/
+bin/
+target/
+.bsp/
+.vscode/
+similo-thesis/project/
+
+# Local drivers and data (large, not versioned)
+similo-thesis/drivers/
+sites/
+kluge-sites.zip
+
+# Papers, theses and EAGL artifacts (large / third-party)
+similo-thesis/docs/*.pdf
+similo-thesis/docs/*.7z

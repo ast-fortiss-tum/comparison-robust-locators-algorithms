@@ -1,0 +1,206 @@
+2026-11-19 19:24:12
+Full thread dump OpenJDK 64-Bit Server VM (17.0.21+9 mixed mode, sharing):
+
+Threads class SMR info:
+_java_thread_list=0x00000079c053af00, length=13, elements={
+0x0000000104b01d70, 0x00000079c50a4000, 0x00000079c50a4600, 0x00000079c50a5200,
+0x00000079c50a5800, 0x00000079c50a5e00, 0x00000079c50a6400, 0x00000079c50a6a00,
+0x00000079c50a7000, 0x00000079c50a7600, 0x00000079c54a4000, 0x00000079c55a2a00,
+0x00000079c57d7000
+}
+
+"main" #1 prio=5 os_prio=31 cpu=248.91ms elapsed=151.51s tid=0x0000000104b01d70 nid=0xe03 waiting on condition  [0x000000016bd75000]
+   java.lang.Thread.State: WAITING (parking)
+	at jdk.internal.misc.Unsafe.park(java.base@17.0.21/Native Method)
+	- parking to wait for  <0x0000007003096000> (a scala.collection.parallel.AdaptiveWorkStealingForkJoinTasks$AWSFJTWrappedTask)
+	at java.util.concurrent.locks.LockSupport.park(java.base@17.0.21/LockSupport.java:341)
+	at java.util.concurrent.ForkJoinTask.awaitDone(java.base@17.0.21/ForkJoinTask.java:468)
+	at java.util.concurrent.ForkJoinTask.join(java.base@17.0.21/ForkJoinTask.java:670)
+	at scala.collection.parallel.ForkJoinTasks$FJTWrappedTask.sync(Tasks.scala:243)
+	at scala.collection.parallel.ForkJoinTasks$FJTWrappedTask.sync$(Tasks.scala:241)
+	at scala.collection.parallel.AdaptiveWorkStealingForkJoinTasks$AWSFJTWrappedTask.sync(Tasks.scala:304)
+	at scala.collection.parallel.ForkJoinTasks.executeAndWaitResult(Tasks.scala:287)
+	at scala.collection.parallel.ForkJoinTasks.executeAndWaitResult$(Tasks.scala:239)
+	at scala.collection.parallel.ForkJoinTaskSupport.executeAndWaitResult(TaskSupport.scala:59)
+	at scala.collection.parallel.ExecutionContextTasks.executeAndWaitResult(Tasks.scala:410)
+	at scala.collection.parallel.ExecutionContextTasks.executeAndWaitResult$(Tasks.scala:387)
+	at scala.collection.parallel.ExecutionContextTaskSupport.executeAndWaitResult(TaskSupport.scala:75)
+	at scala.collection.parallel.ParIterableLike.map(ParIterableLike.scala:492)
+	at scala.collection.parallel.ParIterableLike.map$(ParIterableLike.scala:147)
+	at scala.collection.parallel.immutable.ParVector.map(ParVector.scala:40)
+	at evalutation.EvaluationComputing$.computeAll(EvaluationComputing.scala:22)
+	at Main$.$anonfun$6(Main.scala:151)
+	at Main$$$Lambda$208/0x000000e001112000.apply(Unknown Source)
+	at scala.collection.immutable.ArraySeq.map(ArraySeq.scala:75)
+	at scala.collection.immutable.ArraySeq.map(ArraySeq.scala:35)
+	at Main$.main$$anonfun$3(Main.scala:154)
+	at Main$$$Lambda$206/0x000000e0011149a0.applyVoid(Unknown Source)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:575)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:573)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:933)
+	at scala.collection.IterableOps$WithFilter.foreach(Iterable.scala:903)
+	at Main$.main(Main.scala:164)
+	at Main.main(Main.scala)
+
+"Reference Handler" #2 daemon prio=10 os_prio=31 cpu=0.81ms elapsed=151.50s tid=0x00000079c50a4000 nid=0x5a03 waiting on condition  [0x000000016cbca000]
+   java.lang.Thread.State: RUNNABLE
+	at java.lang.ref.Reference.waitForReferencePendingList(java.base@17.0.21/Native Method)
+	at java.lang.ref.Reference.processPendingReferences(java.base@17.0.21/Reference.java:253)
+	at java.lang.ref.Reference$ReferenceHandler.run(java.base@17.0.21/Reference.java:215)
+
+"Finalizer" #3 daemon prio=8 os_prio=31 cpu=0.09ms elapsed=151.50s tid=0x00000079c50a4600 nid=0x7903 in Object.wait()  [0x000000016cdd6000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(java.base@17.0.21/Native Method)
+	- waiting on <0x0000007004800af8> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(java.base@17.0.21/ReferenceQueue.java:155)
+	- locked <0x0000007004800af8> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(java.base@17.0.21/ReferenceQueue.java:176)
+	at java.lang.ref.Finalizer$FinalizerThread.run(java.base@17.0.21/Finalizer.java:172)
+
+"Signal Dispatcher" #4 daemon prio=9 os_prio=31 cpu=0.27ms elapsed=151.49s tid=0x00000079c50a5200 nid=0x7203 waiting on condition  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Service Thread" #5 daemon prio=9 os_prio=31 cpu=0.24ms elapsed=151.49s tid=0x00000079c50a5800 nid=0x6203 runnable  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Monitor Deflation Thread" #6 daemon prio=9 os_prio=31 cpu=6.53ms elapsed=151.49s tid=0x00000079c50a5e00 nid=0x6303 runnable  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C2 CompilerThread0" #7 daemon prio=9 os_prio=31 cpu=2656.40ms elapsed=151.49s tid=0x00000079c50a6400 nid=0x6f03 waiting on condition  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+   No compile task
+
+"C1 CompilerThread0" #10 daemon prio=9 os_prio=31 cpu=586.59ms elapsed=151.49s tid=0x00000079c50a6a00 nid=0x6e03 waiting on condition  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+   No compile task
+
+"Sweeper thread" #11 daemon prio=9 os_prio=31 cpu=13.76ms elapsed=151.49s tid=0x00000079c50a7000 nid=0x6503 runnable  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Notification Thread" #12 daemon prio=9 os_prio=31 cpu=0.01ms elapsed=151.49s tid=0x00000079c50a7600 nid=0x6703 runnable  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Common-Cleaner" #13 daemon prio=8 os_prio=31 cpu=0.97ms elapsed=151.49s tid=0x00000079c54a4000 nid=0x6a03 in Object.wait()  [0x000000016e15a000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(java.base@17.0.21/Native Method)
+	- waiting on <0x0000007004800d08> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(java.base@17.0.21/ReferenceQueue.java:155)
+	- locked <0x0000007004800d08> (a java.lang.ref.ReferenceQueue$Lock)
+	at jdk.internal.ref.CleanerImpl.run(java.base@17.0.21/CleanerImpl.java:140)
+	at java.lang.Thread.run(java.base@17.0.21/Thread.java:840)
+	at jdk.internal.misc.InnocuousThread.run(java.base@17.0.21/InnocuousThread.java:162)
+
+"scala-execution-context-global-15" #15 daemon prio=5 os_prio=31 cpu=147167.42ms elapsed=151.20s tid=0x00000079c55a2a00 nid=0x8903 runnable  [0x000000016f5d0000]
+   java.lang.Thread.State: RUNNABLE
+	at robulanew.Utils.myContains(Utils.java:45)
+	at robulanew.UtilsROBULAPlusNew.evaluateXPaths(UtilsROBULAPlusNew.java:174)
+	at robulanew.UtilsROBULAPlusNew.specialize(UtilsROBULAPlusNew.java:135)
+	at robulanew.UtilsROBULAPlusNew.robustXPathLocatorFinder(UtilsROBULAPlusNew.java:66)
+	at elements.Element$.buildRobulaPlusXPath(Element.scala:243)
+	at multilocator.MultiLocator.$anonfun$65(MultiLocator.scala:368)
+	at multilocator.MultiLocator$$Lambda$441/0x000000e001230a98.apply(Unknown Source)
+	at scala.util.Try$.apply(Try.scala:210)
+	at multilocator.MultiLocator.selectiveRepair$$anonfun$3(MultiLocator.scala:368)
+	at multilocator.MultiLocator$$Lambda$438/0x000000e001230000.applyVoid(Unknown Source)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at multilocator.MultiLocator.selectiveRepair(MultiLocator.scala:383)
+	at multilocator.MultiLocator.locate(MultiLocator.scala:238)
+	at multilocator.MultiLocator.locate(MultiLocator.scala:153)
+	at similo.Guarded.locate$$anonfun$1(Guarded.scala:31)
+	at similo.Guarded$$Lambda$391/0x000000e001218f28.apply(Unknown Source)
+	at scala.util.Try$.apply(Try.scala:210)
+	at similo.Guarded.locate(Guarded.scala:31)
+	at similo.Guarded.locate(Guarded.scala:29)
+	at similo.Locator.locateSorted(Locator.scala:15)
+	at similo.Locator.locateSorted$(Locator.scala:5)
+	at similo.Guarded.locateSorted(Guarded.scala:14)
+	at similo.Locator.locateSortedNormalized(Locator.scala:12)
+	at similo.Locator.locateSortedNormalized$(Locator.scala:5)
+	at similo.Guarded.locateSortedNormalized(Guarded.scala:14)
+	at evalutation.EvaluationComputing.determineResult(EvaluationComputing.scala:104)
+	at evalutation.EvaluationComputing.$anonfun$1$$anonfun$1(EvaluationComputing.scala:95)
+	at evalutation.EvaluationComputing$$Lambda$335/0x000000e0011bda30.apply(Unknown Source)
+	at scala.collection.immutable.List.map(List.scala:250)
+	at scala.collection.immutable.List.map(List.scala:79)
+	at evalutation.EvaluationComputing.$anonfun$1(EvaluationComputing.scala:95)
+	at evalutation.EvaluationComputing$$Lambda$334/0x000000e0011bd660.apply(Unknown Source)
+	at scala.collection.immutable.List.map(List.scala:246)
+	at scala.collection.immutable.List.map(List.scala:79)
+	at evalutation.EvaluationComputing.compute(EvaluationComputing.scala:95)
+	at evalutation.EvaluationComputing$.computeSingle(EvaluationComputing.scala:25)
+	at evalutation.EvaluationComputing$.computeAll$$anonfun$1(EvaluationComputing.scala:22)
+	at evalutation.EvaluationComputing$$$Lambda$214/0x000000e001133f20.apply(Unknown Source)
+	at scala.collection.parallel.AugmentedIterableIterator.map2combiner(RemainsIterator.scala:107)
+	at scala.collection.parallel.AugmentedIterableIterator.map2combiner$(RemainsIterator.scala:40)
+	at scala.collection.parallel.immutable.ParVector$ParVectorIterator.map2combiner(ParVector.scala:70)
+	at scala.collection.parallel.ParIterableLike$Map.leaf(ParIterableLike.scala:1020)
+	at scala.collection.parallel.Task.tryLeaf$$anonfun$1(Tasks.scala:52)
+	at scala.collection.parallel.Task$$Lambda$216/0x000000e00113f030.apply$mcV$sp(Unknown Source)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.util.control.Breaks$$anon$1.catchBreak(Breaks.scala:97)
+	at scala.collection.parallel.Task.tryLeaf(Tasks.scala:56)
+	at scala.collection.parallel.Task.tryLeaf$(Tasks.scala:21)
+	at scala.collection.parallel.ParIterableLike$Map.tryLeaf(ParIterableLike.scala:1017)
+	at scala.collection.parallel.AdaptiveWorkStealingTasks$AWSTWrappedTask.compute(Tasks.scala:152)
+	at scala.collection.parallel.AdaptiveWorkStealingTasks$AWSTWrappedTask.compute$(Tasks.scala:142)
+	at scala.collection.parallel.AdaptiveWorkStealingForkJoinTasks$AWSFJTWrappedTask.compute(Tasks.scala:304)
+	at java.util.concurrent.RecursiveAction.exec(java.base@17.0.21/RecursiveAction.java:194)
+	at java.util.concurrent.ForkJoinTask.doExec(java.base@17.0.21/ForkJoinTask.java:373)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(java.base@17.0.21/ForkJoinPool.java:1182)
+	at java.util.concurrent.ForkJoinPool.scan(java.base@17.0.21/ForkJoinPool.java:1655)
+	at java.util.concurrent.ForkJoinPool.runWorker(java.base@17.0.21/ForkJoinPool.java:1622)
+	at java.util.concurrent.ForkJoinWorkerThread.run(java.base@17.0.21/ForkJoinWorkerThread.java:165)
+
+"Attach Listener" #16 daemon prio=9 os_prio=31 cpu=2.41ms elapsed=136.38s tid=0x00000079c57d7000 nid=0x7507 waiting on condition  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"G1 Conc#1" os_prio=31 cpu=688.46ms elapsed=148.37s tid=0x00000079c574b900 nid=0x9713 runnable  
+
+"G1 Refine#6" os_prio=31 cpu=0.16ms elapsed=150.16s tid=0x00000079c574b300 nid=0x9803 runnable  
+
+"G1 Refine#5" os_prio=31 cpu=0.23ms elapsed=150.16s tid=0x00000079c574ad00 nid=0x9a03 runnable  
+
+"G1 Refine#4" os_prio=31 cpu=0.33ms elapsed=150.16s tid=0x00000079c574a700 nid=0x9c03 runnable  
+
+"G1 Refine#3" os_prio=31 cpu=0.42ms elapsed=150.16s tid=0x00000079c574a100 nid=0x9d03 runnable  
+
+"G1 Refine#2" os_prio=31 cpu=0.55ms elapsed=150.16s tid=0x00000079c5749e00 nid=0x8f03 runnable  
+
+"G1 Refine#1" os_prio=31 cpu=0.96ms elapsed=150.16s tid=0x00000079c5749b00 nid=0x9f03 runnable  
+
+"GC Thread#8" os_prio=31 cpu=330.31ms elapsed=151.21s tid=0x00000079c513aa00 nid=0x8803 runnable  
+
+"GC Thread#7" os_prio=31 cpu=335.63ms elapsed=151.22s tid=0x00000079c513a700 nid=0x8603 runnable  
+
+"GC Thread#6" os_prio=31 cpu=339.96ms elapsed=151.22s tid=0x00000079c513a400 nid=0xa303 runnable  
+
+"GC Thread#5" os_prio=31 cpu=340.24ms elapsed=151.22s tid=0x00000079c513a100 nid=0xa503 runnable  
+
+"GC Thread#4" os_prio=31 cpu=317.12ms elapsed=151.22s tid=0x00000079c5139e00 nid=0x8503 runnable  
+
+"GC Thread#3" os_prio=31 cpu=333.68ms elapsed=151.22s tid=0x00000079c5139b00 nid=0x8303 runnable  
+
+"GC Thread#2" os_prio=31 cpu=335.49ms elapsed=151.22s tid=0x00000079c5139800 nid=0x8203 runnable  
+
+"GC Thread#1" os_prio=31 cpu=339.39ms elapsed=151.22s tid=0x00000079c5139500 nid=0x8103 runnable  
+
+"VM Periodic Task Thread" os_prio=31 cpu=39.60ms elapsed=151.49s tid=0x00000079c547c000 nid=0x6803 waiting on condition  
+
+"VM Thread" os_prio=31 cpu=38.89ms elapsed=151.50s tid=0x0000000104b128f0 nid=0x4903 runnable  
+
+"G1 Service" os_prio=31 cpu=27.07ms elapsed=151.50s tid=0x0000000104b0f9c0 nid=0x4203 runnable  
+
+"G1 Refine#0" os_prio=31 cpu=1.37ms elapsed=151.50s tid=0x0000000104b0f050 nid=0x4103 runnable  
+
+"G1 Conc#0" os_prio=31 cpu=688.11ms elapsed=151.50s tid=0x0000000104b0d560 nid=0x3603 runnable  
+
+"G1 Main Marker" os_prio=31 cpu=0.32ms elapsed=151.50s tid=0x0000000104b0cab0 nid=0x3203 runnable  
+
+"GC Thread#0" os_prio=31 cpu=318.44ms elapsed=151.50s tid=0x0000000104b0c2c0 nid=0x3803 runnable  
+
+JNI global refs: 10, weak refs: 0
+

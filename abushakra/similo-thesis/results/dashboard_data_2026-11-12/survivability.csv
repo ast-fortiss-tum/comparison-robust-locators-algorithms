@@ -1,0 +1,53 @@
+benchmark,algorithm,family,tier,elements,pairs,right,pair_accuracy,survival_ratio,accuracy_ratio,survive_5,survive_10,survive_15
+Wayback,COLOR,Similarity repair,appendix,1024,12266,11329,92.36,90.54,93.41,93.1,85.2,75.6
+Wayback,EAGL,Locator generator (learned),main,1024,12266,6330,51.61,53.83,55.10,51.3,39.0,30.3
+Wayback,IDXPath,Locator generator,appendix,1024,12266,5123,41.77,44.29,46.08,39.8,27.1,22.9
+Wayback,LegacyCombined,Similarity repair,appendix,1024,12266,11332,92.39,91.74,93.25,92.9,87.3,82.1
+Wayback,LegacySimilo,Similarity repair,main,1024,12266,11337,92.43,91.78,93.28,92.9,87.5,82.2
+Wayback,Montoto,Locator generator,main,1024,12266,3357,27.37,29.50,30.92,27.3,17.2,11.4
+Wayback,MultiLocator,Multi-locator,main,1024,12266,8026,65.43,65.93,67.35,66.6,53.2,45.1
+Wayback,MultiLocator+VISTA,Multi-locator,main,1024,12266,8477,69.11,68.32,70.72,70.1,56.3,47.1
+Wayback,MultiLocator+paper-repair,Multi-locator,main,1024,12266,8362,68.17,68.55,69.81,68.7,58.3,49.7
+Wayback,MultiLocator+selective-repair,Multi-locator,appendix,1024,12266,8397,68.46,68.85,70.07,69.1,58.7,50.3
+Wayback,OptimizedCombined,Similarity repair,appendix,1024,12266,11454,93.38,92.87,94.46,94.0,88.4,80.5
+Wayback,OptimizedMinimal,Similarity repair,appendix,1024,12266,11483,93.62,93.03,94.66,94.6,88.4,82.1
+Wayback,OptimizedSimilo,Similarity repair,appendix,1024,12266,11490,93.67,93.14,94.69,94.1,88.6,82.4
+Wayback,RobulaPlus,Locator generator,main,1024,12266,7892,64.34,64.64,65.78,65.1,53.8,46.5
+Wayback,SIDEREAL,Locator generator (learned),main,1024,12266,6647,54.19,54.68,56.34,55.5,40.4,31.7
+Wayback,SeleniumIDE,Locator generator,main,1024,12266,5828,47.51,47.63,49.13,46.9,38.8,31.4
+Wayback,VISTA,Visual repair,main,1024,12266,5252,42.82,39.85,47.57,34.9,20.5,14.0
+Wayback,VonSimilo,Similarity repair,appendix,1024,12266,10523,85.79,84.24,86.93,84.7,79.3,73.2
+Wayback,absXPath,Locator generator,main,1024,12266,1962,16.00,18.71,21.16,11.7,2.7,2.1
+Excalidraw,COLOR,Similarity repair,appendix,125,529,309,58.41,44.60,56.60,,,
+Excalidraw,IDXPath,Locator generator,appendix,125,529,81,15.31,13.60,13.60,,,
+Excalidraw,LegacyCombined,Similarity repair,appendix,125,529,402,75.99,45.60,75.60,,,
+Excalidraw,LegacySimilo,Similarity repair,main,125,529,402,75.99,45.60,75.60,,,
+Excalidraw,Montoto,Locator generator,main,125,529,67,12.67,8.60,8.60,,,
+Excalidraw,MultiLocator,Multi-locator,main,125,529,526,99.43,99.80,99.80,,,
+Excalidraw,MultiLocator+VISTA,Multi-locator,main,125,529,527,99.62,100.00,100.00,,,
+Excalidraw,MultiLocator+VISTA+paper-repair,Multi-locator,main,125,529,520,98.30,99.20,99.20,,,
+Excalidraw,MultiLocator+paper-repair,Multi-locator,main,125,529,527,99.62,100.00,100.00,,,
+Excalidraw,MultiLocator+selective-repair,Multi-locator,appendix,125,529,527,99.62,100.00,100.00,,,
+Excalidraw,OptimizedCombined,Similarity repair,appendix,125,529,526,99.43,99.80,99.80,,,
+Excalidraw,OptimizedMinimal,Similarity repair,appendix,125,529,527,99.62,100.00,100.00,,,
+Excalidraw,OptimizedSimilo,Similarity repair,appendix,125,529,526,99.43,99.80,99.80,,,
+Excalidraw,OptimizedVonSimilo,Similarity repair,appendix,125,529,428,80.91,78.40,80.20,,,
+Excalidraw,RobulaPlus,Locator generator,main,125,529,175,33.08,28.20,28.40,,,
+Excalidraw,SIDEREAL,Locator generator (learned),main,125,529,501,94.71,94.20,94.40,,,
+Excalidraw,SIDEREAL-uniform,Locator generator (learned),appendix,125,529,501,94.71,94.20,94.40,,,
+Excalidraw,SeleniumIDE,Locator generator,main,125,529,478,90.36,92.40,92.60,,,
+Excalidraw,VISTA,Visual repair,main,125,529,492,93.01,94.07,94.07,,,
+Excalidraw,VonSimilo,Similarity repair,appendix,125,529,363,68.62,64.80,67.80,,,
+Excalidraw,absXPath,Locator generator,main,125,529,145,27.41,26.40,26.40,,,
+Angular-Slickgrid,LegacySimilo,Similarity repair,main,125,8276,8181,98.85,98.45,99.07,98.4,98.1,98.1
+Angular-Slickgrid,Montoto,Locator generator,main,125,8276,728,8.80,23.33,23.33,27.9,7.6,7.8
+Angular-Slickgrid,MultiLocator,Multi-locator,main,125,8276,6518,78.76,81.85,82.14,88.5,83.8,81.6
+Angular-Slickgrid,MultiLocator+VISTA,Multi-locator,main,125,8276,6518,78.76,81.85,82.14,88.5,83.8,81.6
+Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,main,125,8276,6789,82.03,84.49,84.78,91.0,86.7,84.5
+Angular-Slickgrid,OptimizedMinimal,Similarity repair,appendix,125,8276,8276,100.00,100.00,100.00,100.0,100.0,100.0
+Angular-Slickgrid,OptimizedSimilo,Similarity repair,appendix,125,8276,8276,100.00,100.00,100.00,100.0,100.0,100.0
+Angular-Slickgrid,RobulaPlus,Locator generator,main,125,8276,4749,57.38,63.31,64.06,72.1,65.7,64.1
+Angular-Slickgrid,SIDEREAL,Locator generator (learned),main,125,8276,5358,64.74,69.46,70.21,74.6,69.5,68.0
+Angular-Slickgrid,SeleniumIDE,Locator generator,main,125,8276,4322,52.22,52.11,52.86,55.7,54.3,54.4
+Angular-Slickgrid,VISTA,Visual repair,main,125,8276,3300,39.87,45.69,49.35,51.6,42.9,42.7
+Angular-Slickgrid,absXPath,Locator generator,main,125,8276,3388,40.94,50.79,50.79,59.8,43.8,42.7

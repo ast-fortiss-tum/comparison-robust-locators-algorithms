@@ -1,0 +1,1472 @@
+Evaluation results: 10,790
+
+*** Old Benchmark: ChromeDriver.137
+
+
+(1) LegacySimilo: Printing stats:LocatorStats(99.02,352984.0,97.74,99.84,99.04,95.97)[success] Total time: 26 s, completed 7 Jun 2025, 10:28:09
+(2) LegacyCombined: Printing stats:LocatorStats(99.01,352888.0,97.72,99.79,99.03,95.92)[success] Total time: 62 s (01:02), completed 7 Jun 2025, 10:30:35
+(3) LegacyVonSimilo: Printing stats:LocatorStats(90.95,326340.0,90.37,99.79,98.83,83.63)[success] Total time: 83 s (01:23), completed 7 Jun 2025, 10:32:07
+
+(4) OptimizedSimilo: Printing stats:LocatorStats(99.74,358724.0,99.33,99.97,99.77,98.75)[success] Total time: 24 s, completed 7 Jun 2025, 09:55:01
+                        Sur: LocatorStats(92.53,497904.0,90.49,98.03,93.3,87.72)
+(5) OptimizedMinimalSimilo: Printing stats:LocatorStats(99.72,358596.0,99.3,99.96,99.74,98.7)[success] Total time: 23 s, completed 7 Jun 2025, 10:32:35
+(6) OptimizedCombinedSimilo: Printing stats:LocatorStats(99.74,358724.0,99.33,99.98,99.77,98.75)[success] Total time: 60 s, completed 7 Jun 2025, 10:34:01
+(7) OptimizedVonSimilo: Printing stats:LocatorStats(91.23,328036.0,90.84,99.98,99.28,84.13)[success] Total time: 62 s (01:02), completed 7 Jun 2025, 10:35:49
+                        Sur: LocatorStats(81.9,431884.0,78.49,96.44,88.36,70.12)
+
+
+*** Modified Benchmark: ChromeDriver.137
+
+
+(1) LegacySimilo: Printing stats:LocatorStats(99.11,351400.0,97.7,99.72,99.11,95.84)[success] Total time: 19 s, completed 7 Jun 2025, 10:13:03
+(2) LegacyCombined: Printing stats:LocatorStats(99.11,351400.0,97.7,99.73,99.11,95.84)[success] Total time: 55 s, completed 7 Jun 2025, 10:15:01
+(3) LegacyVonSimilo: Printing stats:LocatorStats(90.95,324108.0,90.12,99.73,98.87,83.01)[success] Total time: 59 s, completed 7 Jun 2025, 10:17:10
+(4) COLOR: LocatorStats(99.35,353368.0,98.25,99.89,99.35,96.74)
+
+(4) OptimizedSimilo: Printing stats:LocatorStats(99.51,355084.0,98.73,99.94,99.53,97.64)[success] Total time: 27 s, completed 7 Jun 2025, 09:56:47
+(5) OptimizedMinimalSimilo: Printing stats:LocatorStats(99.49,354972.0,98.7,99.93,99.51,97.59)[success] Total time: 19 s, completed 7 Jun 2025, 10:19:46
+(6) OptimizedCombinedSimilo: Printing stats:LocatorStats(99.54,355396.0,98.81,99.95,99.57,97.79)[success] Total time: 61 s (01:01), completed 7 Jun 2025, 10:23:36
+(7) OptimizedVonSimilo: Printing stats:LocatorStats(91.06,325020.0,90.37,99.95,99.08,83.26)[success] Total time: 72 s (01:12), completed 7 Jun 2025, 10:25:16
+
+(8) Robula+ (with idxpath, return abs and taking only firstelement of returned robula+):
+    - Printing stats:LocatorStats(83.84,261584.0,72.73,84.66,83.91,60.82)[success] Total time: 86 s (01:26), completed 7 Jun 2025, 10:10:38
+    - Total comparisons: 9,658
+    - XPath exists in tree but not found on elements from dom B: 761 (Probably need to be manually repaired)
+    - FOUND in elements B and not broken: 8,897
+    - getElementByXPath returned None for a R+ expression with dom B: < 1,145
+
+(9) Robula+ (with idxpath, with jdom2 elements equality and comparing only firstelement of returned robula+):
+    - Printing stats:LocatorStats(90.17,285392.0,79.35,90.69,90.24,65.13)[success] Total time: 546 s (09:06), completed 8 Jun 2025, 02:38:01
+    - XPath exists in tree but not found on elements from dom B: 761 (Probably need to be manually repaired)
+
+(10) Robula+ (with idxpath, with jdom2 elements equality and comparing all elements returned by robula+):
+    - Printing stats:LocatorStats(90.72,288640.0,80.25,91.5,90.79,66.08) [success] Total time: 544 s (09:04), completed 9 Jun 2025, 19:00:54
+
+    after debugging and fixing some xpaths:
+    - Printing stats:LocatorStats(90.78,289300.0,80.44,91.54,90.9,66.43)
+    - Sur: LocatorStats(66.09,310696.0,56.46,67.43,66.69,45.01)
+
+(11) Multi-locator without repair (normal evaluation):
+    - Printing stats:LocatorStats(93.93,301460.0,83.82,94.34,94.03,69.58)
+    - with vista: LocatorStats(93.06,297908.0,82.83,93.49,93.16,68.78)
+
+(12) Multi-locator without repair (Survivability evaluation):
+    - Printing stats: LocatorStats(66.36,305952.0,55.6,67.37,66.82,43.13)
+
+(13) Multi-locator with repair (Survivability evaluation):
+    - Printing stats: LocatorStats(64.15,290064.0,52.71,65.29,64.61,39.51)
+
+(14) Vista (with exact match point comparison/no clamp):
+    - Printing stats:LocatorStats(51.98,138154.0,38.41,60.87,55.47,30.41)
+    - inPointInside: LocatorStats(49.99,149842.0,41.66,65.71,53.93,33.61)
+
+[DEBUG] classification counts: Map(MINOR_CHANGE -> 2092, SAME -> 1041, DELETED -> 435, MAJOR_CHANGE -> 7222)
+[DEBUG] classification counts: Map(MAJOR_CHANGE -> 7223, MINOR_CHANGE -> 2092, DELETED -> 4329, SAME -> 1041)
+
+
+  private val firePathAbsWeight   = 0.32   // From paper
+  private val firePathRelWeight   = 0.50   // From paper
+  private val seleniumIDEWeight   = 0.84   // From paper
+  private val montotoWeight       = 0.77   // From paper
+  private val robulaplusWeight    = 0.88   // From paper
+multilocator with vista fallback:                      LocatorStats(95.37,315404.0,87.69,95.74,95.47,76.9) X
+multilocator without vista fallback:                   LocatorStats(93.93,301460.0,83.82,94.34,94.03,69.58)
+
+vista with levenshetin for text:                       LocatorStats(79.26,251020.0,69.79,81.07,79.31,62.92) X
+vista with levenstein for text and id:                 LocatorStats(79.3,250668.0,69.69,81.05,79.35,62.57)
+
+multilocator   private val firePathAbsWeight   = 0.27
+               private val firePathRelWeight   = 0.52
+               private val seleniumIDEWeight   = 0.63
+               private val montotoWeight       = 0.40
+               private val robulaplusWeight    = 0.80
+LocatorStats(95.17,313356.0,87.13,95.53,95.26,75.8)
+
+  private val firePathAbsWeight   = 0.32   // From paper
+  private val firePathRelWeight   = 0.50   // From paper
+  private val seleniumIDEWeight   = 0.84   // From paper
+  private val montotoWeight       = 0.74   // From paper
+  private val robulaplusWeight    = 0.90   // From paper
+LocatorStats(95.37,315404.0,87.69,95.74,95.47,76.9)
+
+  private val firePathAbsWeight   = 0.32   // From paper
+  private val firePathRelWeight   = 0.50   // From paper
+  private val seleniumIDEWeight   = 0.81   // From paper
+  private val montotoWeight       = 0.64   // From paper
+  private val robulaplusWeight    = 0.90   // From paper
+LocatorStats(95.34,315084.0,87.61,95.71,95.44,76.7)
+
+  private val firePathAbsWeight   = 0.32   // From paper
+  private val firePathRelWeight   = 0.50   // From paper
+  private val seleniumIDEWeight   = 0.81   // From paper
+  private val montotoWeight       = 0.64   // From paper
+  private val robulaplusWeight    = 0.87   // From paper
+LocatorStats(95.34,315084.0,87.61,95.71,95.44,76.7)
+
+[info] Points per algorithm:
+algorithm
+LegacySimilo       979
+OptimizedSimilo    979
+COLOR              979
+VonSimilo          979
+Multi-Locator      979
+ROBULA+            979
+VISTA              979
+[debug] All Elements - LegacySimilo:
+    count = 979
+    mean  = 0.8939
+    median= 1.0000
+    std   = 0.2728
+    min   = 0.0000
+    Q1    = 1.0000
+    Q3    = 1.0000
+    max   = 1.0000
+    count_1.0 = 813
+    percent_1.0 = 83.04%
+[debug] All Elements - OptimizedSimilo:
+    count = 979
+    mean  = 0.9049
+    median= 1.0000
+    std   = 0.2610
+    min   = 0.0000
+    Q1    = 1.0000
+    Q3    = 1.0000
+    max   = 1.0000
+    count_1.0 = 823
+    percent_1.0 = 84.07%
+[debug] All Elements - COLOR:
+    count = 979
+    mean  = 0.8783
+    median= 1.0000
+    std   = 0.2822
+    min   = 0.0000
+    Q1    = 1.0000
+    Q3    = 1.0000
+    max   = 1.0000
+    count_1.0 = 754
+    percent_1.0 = 77.02%
+[debug] All Elements - VonSimilo:
+    count = 979
+    mean  = 0.8253
+    median= 1.0000
+    std   = 0.3413
+    min   = 0.0000
+    Q1    = 0.9300
+    Q3    = 1.0000
+    max   = 1.0000
+    count_1.0 = 728
+    percent_1.0 = 74.36%
+[debug] All Elements - Multi-Locator:
+    count = 979
+    mean  = 0.6909
+    median= 1.0000
+    std   = 0.3974
+    min   = 0.0000
+    Q1    = 0.2600
+    Q3    = 1.0000
+    max   = 1.0000
+    count_1.0 = 539
+    percent_1.0 = 55.06%
+[debug] All Elements - ROBULA+:
+    count = 979
+    mean  = 0.6808
+    median= 1.0000
+    std   = 0.4094
+    min   = 0.0000
+    Q1    = 0.2000
+    Q3    = 1.0000
+    max   = 1.0000
+    count_1.0 = 546
+    percent_1.0 = 55.77%
+[debug] All Elements - VISTA:
+    count = 979
+    mean  = 0.4566
+    median= 0.3300
+    std   = 0.3949
+    min   = 0.0000
+    Q1    = 0.0700
+    Q3    = 0.9300
+    max   = 1.0000
+    count_1.0 = 233
+    percent_1.0 = 23.80%
+/Users/bashirabushakra/Desktop/BachelorThesis/CodeBase/web-element-localization-using-similo-like-approaches/similo-thesis/results/survivability_results/figures/plot_survival_ratios_combined.py:117: FutureWarning:
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.violinplot(
+/Users/bashirabushakra/Desktop/BachelorThesis/CodeBase/web-element-localization-using-similo-like-approaches/similo-thesis/results/survivability_results/figures/plot_survival_ratios_combined.py:125: FutureWarning:
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(
+[info] Panel 'Minor Change': loaded 3661 points
+[debug] Minor Change - LegacySimilo:
+    count = 523
+    mean  = 0.9283
+    median= 1.0000
+    std   = 0.2265
+    min   = 0.0000
+    Q1    = 1.0000
+    Q3    = 1.0000
+    max   = 1.0000
+    count_1.0 = 464
+    percent_1.0 = 88.72%
+[debug] Minor Change - OptimizedSimilo:
+    count = 523
+    mean  = 0.9445
+    median= 1.0000
+    std   = 0.2044
+    min   = 0.0000
+    Q1    = 1.0000
+    Q3    = 1.0000
+    max   = 1.0000
+    count_1.0 = 479
+    percent_1.0 = 91.59%
+[debug] Minor Change - COLOR:
+    count = 523
+    mean  = 0.9389
+    median= 1.0000
+    std   = 0.2056
+    min   = 0.0000
+    Q1    = 1.0000
+    Q3    = 1.0000
+    max   = 1.0000
+    count_1.0 = 468
+    percent_1.0 = 89.48%
+[debug] Minor Change - VonSimilo:
+    count = 523
+    mean  = 0.8630
+    median= 1.0000
+    std   = 0.3181
+    min   = 0.0000
+    Q1    = 1.0000
+    Q3    = 1.0000
+    max   = 1.0000
+    count_1.0 = 430
+    percent_1.0 = 82.22%
+[debug] Minor Change - Multi-Locator:
+    count = 523
+    mean  = 0.7435
+    median= 1.0000
+    std   = 0.3981
+    min   = 0.0000
+    Q1    = 0.5000
+    Q3    = 1.0000
+    max   = 1.0000
+    count_1.0 = 346
+    percent_1.0 = 66.16%
+[debug] Minor Change - ROBULA+:
+    count = 523
+    mean  = 0.7413
+    median= 1.0000
+    std   = 0.3973
+    min   = 0.0000
+    Q1    = 0.5000
+    Q3    = 1.0000
+    max   = 1.0000
+    count_1.0 = 342
+    percent_1.0 = 65.39%
+[debug] Minor Change - VISTA:
+    count = 523
+    mean  = 0.4484
+    median= 0.3300
+    std   = 0.4317
+    min   = 0.0000
+    Q1    = 0.0000
+    Q3    = 1.0000
+    max   = 1.0000
+    count_1.0 = 159
+    percent_1.0 = 30.40%
+/Users/bashirabushakra/Desktop/BachelorThesis/CodeBase/web-element-localization-using-similo-like-approaches/similo-thesis/results/survivability_results/figures/plot_survival_ratios_combined.py:117: FutureWarning:
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.violinplot(
+/Users/bashirabushakra/Desktop/BachelorThesis/CodeBase/web-element-localization-using-similo-like-approaches/similo-thesis/results/survivability_results/figures/plot_survival_ratios_combined.py:125: FutureWarning:
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(
+[info] Panel 'Major Change': loaded 6237 points
+[debug] Major Change - LegacySimilo:
+    count = 891
+    mean  = 0.9293
+    median= 1.0000
+    std   = 0.2108
+    min   = 0.0000
+    Q1    = 1.0000
+    Q3    = 1.0000
+    max   = 1.0000
+    count_1.0 = 771
+    percent_1.0 = 86.53%
+[debug] Major Change - OptimizedSimilo:
+    count = 891
+    mean  = 0.9432
+    median= 1.0000
+    std   = 0.1818
+    min   = 0.0000
+    Q1    = 1.0000
+    Q3    = 1.0000
+    max   = 1.0000
+    count_1.0 = 781
+    percent_1.0 = 87.65%
+[debug] Major Change - COLOR:
+    count = 891
+    mean  = 0.9140
+    median= 1.0000
+    std   = 0.2202
+    min   = 0.0000
+    Q1    = 1.0000
+    Q3    = 1.0000
+    max   = 1.0000
+    count_1.0 = 719
+    percent_1.0 = 80.70%
+[debug] Major Change - VonSimilo:
+    count = 891
+    mean  = 0.8551
+    median= 1.0000
+    std   = 0.3092
+    min   = 0.0000
+    Q1    = 1.0000
+    Q3    = 1.0000
+    max   = 1.0000
+    count_1.0 = 689
+    percent_1.0 = 77.33%
+[debug] Major Change - Multi-Locator:
+    count = 891
+    mean  = 0.6852
+    median= 1.0000
+    std   = 0.4030
+    min   = 0.0000
+    Q1    = 0.2300
+    Q3    = 1.0000
+    max   = 1.0000
+    count_1.0 = 497
+    percent_1.0 = 55.78%
+[debug] Major Change - ROBULA+:
+    count = 891
+    mean  = 0.6713
+    median= 1.0000
+    std   = 0.4184
+    min   = 0.0000
+    Q1    = 0.2000
+    Q3    = 1.0000
+    max   = 1.0000
+    count_1.0 = 505
+    percent_1.0 = 56.68%
+[debug] Major Change - VISTA:
+    count = 891
+    mean  = 0.4377
+    median= 0.3300
+    std   = 0.3933
+    min   = 0.0000
+    Q1    = 0.0700
+    Q3    = 0.8650
+    max   = 1.0000
+    count_1.0 = 203
+    percent_1.0 = 22.78%
+
+Subset: All Elements
+  Algorithm: COLOR           Mean Survival Ratio: 87.83
+  Algorithm: ID_XPath        Mean Survival Ratio: 45.47
+  Algorithm: LegacySimilo    Mean Survival Ratio: 89.39
+  Algorithm: Montoto         Mean Survival Ratio: 30.96
+  Algorithm: Multi-Locator   Mean Survival Ratio: 69.09
+  Algorithm: Multi-Locator Repair Mean Survival Ratio: 66.35
+  Algorithm: OptimizedSimilo Mean Survival Ratio: 90.49
+  Algorithm: ROBULA+         Mean Survival Ratio: 68.08
+  Algorithm: SeleniumIDE     Mean Survival Ratio: 52.70
+  Algorithm: VISTA           Mean Survival Ratio: 45.66
+  Algorithm: VonSimilo       Mean Survival Ratio: 82.53
+
+Subset: Major Change
+  Algorithm: COLOR           Mean Survival Ratio: 91.40
+  Algorithm: ID_XPath        Mean Survival Ratio: 42.27
+  Algorithm: LegacySimilo    Mean Survival Ratio: 92.93
+  Algorithm: Montoto         Mean Survival Ratio: 27.91
+  Algorithm: Multi-Locator   Mean Survival Ratio: 68.52
+  Algorithm: Multi-Locator Repair Mean Survival Ratio: 65.15
+  Algorithm: OptimizedSimilo Mean Survival Ratio: 94.32
+  Algorithm: ROBULA+         Mean Survival Ratio: 67.13
+  Algorithm: SeleniumIDE     Mean Survival Ratio: 52.76
+  Algorithm: VISTA           Mean Survival Ratio: 43.77
+  Algorithm: VonSimilo       Mean Survival Ratio: 85.51
+
+Subset: Minor Change
+  Algorithm: COLOR           Mean Survival Ratio: 93.89
+  Algorithm: ID_XPath        Mean Survival Ratio: 55.55
+  Algorithm: LegacySimilo    Mean Survival Ratio: 92.83
+  Algorithm: Montoto         Mean Survival Ratio: 39.66
+  Algorithm: Multi-Locator   Mean Survival Ratio: 74.35
+  Algorithm: Multi-Locator Repair Mean Survival Ratio: 70.85
+  Algorithm: OptimizedSimilo Mean Survival Ratio: 94.45
+  Algorithm: ROBULA+         Mean Survival Ratio: 74.13
+  Algorithm: SeleniumIDE     Mean Survival Ratio: 53.88
+  Algorithm: VISTA           Mean Survival Ratio: 44.84
+  Algorithm: VonSimilo       Mean Survival Ratio: 86.30
+
+
+Algorithm: OptimizedSimilo
+  Site: accuweather          Mean Survival Ratio: 53.21
+  Site: adobe                Mean Survival Ratio: 54.42
+  Site: amazon               Mean Survival Ratio: 93.37
+  Site: apple                Mean Survival Ratio: 100.00
+  Site: bestbuy              Mean Survival Ratio: 89.35
+  Site: bing                 Mean Survival Ratio: 100.00
+  Site: discord              Mean Survival Ratio: 79.70
+  Site: ebay                 Mean Survival Ratio: 99.78
+  Site: espn                 Mean Survival Ratio: 99.68
+  Site: etsy                 Mean Survival Ratio: 94.05
+  Site: facebook             Mean Survival Ratio: 93.32
+  Site: fidelity             Mean Survival Ratio: 100.00
+  Site: google               Mean Survival Ratio: 97.80
+  Site: indeed               Mean Survival Ratio: 88.67
+  Site: linkedin             Mean Survival Ratio: 86.84
+  Site: netflix              Mean Survival Ratio: 91.35
+  Site: office               Mean Survival Ratio: 96.83
+  Site: paypal               Mean Survival Ratio: 93.18
+  Site: reddit               Mean Survival Ratio: 91.92
+  Site: roblox               Mean Survival Ratio: 95.19
+  Site: t-mobile             Mean Survival Ratio: 72.61
+  Site: tiktok               Mean Survival Ratio: 96.05
+  Site: twitter              Mean Survival Ratio: 96.04
+  Site: usps                 Mean Survival Ratio: 100.00
+  Site: walmart              Mean Survival Ratio: 90.94
+  Site: weather              Mean Survival Ratio: 97.15
+  Site: wikipedia            Mean Survival Ratio: 100.00
+  Site: yahoo                Mean Survival Ratio: 75.00
+  Site: zillow               Mean Survival Ratio: 93.84
+  Site: zoom                 Mean Survival Ratio: 88.61
+
+Algorithm: LegacySimilo
+  Site: accuweather          Mean Survival Ratio: 52.47
+  Site: adobe                Mean Survival Ratio: 50.50
+  Site: amazon               Mean Survival Ratio: 93.65
+  Site: apple                Mean Survival Ratio: 95.56
+  Site: bestbuy              Mean Survival Ratio: 79.02
+  Site: bing                 Mean Survival Ratio: 100.00
+  Site: discord              Mean Survival Ratio: 78.96
+  Site: ebay                 Mean Survival Ratio: 100.00
+  Site: espn                 Mean Survival Ratio: 99.18
+  Site: etsy                 Mean Survival Ratio: 92.97
+  Site: facebook             Mean Survival Ratio: 93.32
+  Site: fidelity             Mean Survival Ratio: 99.22
+  Site: google               Mean Survival Ratio: 96.47
+  Site: indeed               Mean Survival Ratio: 90.22
+  Site: linkedin             Mean Survival Ratio: 91.39
+  Site: netflix              Mean Survival Ratio: 91.35
+  Site: office               Mean Survival Ratio: 94.73
+  Site: paypal               Mean Survival Ratio: 92.09
+  Site: reddit               Mean Survival Ratio: 91.65
+  Site: roblox               Mean Survival Ratio: 95.19
+  Site: t-mobile             Mean Survival Ratio: 77.76
+  Site: tiktok               Mean Survival Ratio: 96.95
+  Site: twitter              Mean Survival Ratio: 92.79
+  Site: usps                 Mean Survival Ratio: 100.00
+  Site: walmart              Mean Survival Ratio: 88.02
+  Site: weather              Mean Survival Ratio: 96.92
+  Site: wikipedia            Mean Survival Ratio: 96.81
+  Site: yahoo                Mean Survival Ratio: 69.50
+  Site: zillow               Mean Survival Ratio: 93.98
+  Site: zoom                 Mean Survival Ratio: 85.89
+
+Algorithm: COLOR
+  Site: accuweather          Mean Survival Ratio: 53.21
+  Site: adobe                Mean Survival Ratio: 57.75
+  Site: amazon               Mean Survival Ratio: 88.74
+  Site: apple                Mean Survival Ratio: 97.44
+  Site: bestbuy              Mean Survival Ratio: 85.70
+  Site: bing                 Mean Survival Ratio: 100.00
+  Site: discord              Mean Survival Ratio: 79.22
+  Site: ebay                 Mean Survival Ratio: 99.53
+  Site: espn                 Mean Survival Ratio: 99.68
+  Site: etsy                 Mean Survival Ratio: 90.81
+  Site: facebook             Mean Survival Ratio: 94.40
+  Site: fidelity             Mean Survival Ratio: 97.98
+  Site: google               Mean Survival Ratio: 96.87
+  Site: indeed               Mean Survival Ratio: 85.37
+  Site: linkedin             Mean Survival Ratio: 72.48
+  Site: netflix              Mean Survival Ratio: 90.59
+  Site: office               Mean Survival Ratio: 96.98
+  Site: paypal               Mean Survival Ratio: 90.03
+  Site: reddit               Mean Survival Ratio: 92.88
+  Site: roblox               Mean Survival Ratio: 88.75
+  Site: t-mobile             Mean Survival Ratio: 77.78
+  Site: tiktok               Mean Survival Ratio: 96.81
+  Site: twitter              Mean Survival Ratio: 96.11
+  Site: usps                 Mean Survival Ratio: 99.55
+  Site: walmart              Mean Survival Ratio: 69.23
+  Site: weather              Mean Survival Ratio: 97.69
+  Site: wikipedia            Mean Survival Ratio: 99.67
+  Site: yahoo                Mean Survival Ratio: 73.31
+  Site: zillow               Mean Survival Ratio: 88.49
+  Site: zoom                 Mean Survival Ratio: 89.68
+
+Algorithm: VonSimilo
+  Site: accuweather          Mean Survival Ratio: 53.38
+  Site: adobe                Mean Survival Ratio: 51.08
+  Site: amazon               Mean Survival Ratio: 92.86
+  Site: apple                Mean Survival Ratio: 94.11
+  Site: bestbuy              Mean Survival Ratio: 74.83
+  Site: bing                 Mean Survival Ratio: 100.00
+  Site: discord              Mean Survival Ratio: 69.07
+  Site: ebay                 Mean Survival Ratio: 100.00
+  Site: espn                 Mean Survival Ratio: 99.18
+  Site: etsy                 Mean Survival Ratio: 65.59
+  Site: facebook             Mean Survival Ratio: 93.32
+  Site: fidelity             Mean Survival Ratio: 98.89
+  Site: google               Mean Survival Ratio: 94.27
+  Site: indeed               Mean Survival Ratio: 89.00
+  Site: linkedin             Mean Survival Ratio: 90.32
+  Site: netflix              Mean Survival Ratio: 16.59
+  Site: office               Mean Survival Ratio: 92.95
+  Site: paypal               Mean Survival Ratio: 92.33
+  Site: reddit               Mean Survival Ratio: 91.65
+  Site: roblox               Mean Survival Ratio: 95.19
+  Site: t-mobile             Mean Survival Ratio: 70.09
+  Site: tiktok               Mean Survival Ratio: 88.71
+  Site: twitter              Mean Survival Ratio: 92.54
+  Site: usps                 Mean Survival Ratio: 100.00
+  Site: walmart              Mean Survival Ratio: 46.23
+  Site: weather              Mean Survival Ratio: 75.12
+  Site: wikipedia            Mean Survival Ratio: 96.81
+  Site: yahoo                Mean Survival Ratio: 69.50
+  Site: zillow               Mean Survival Ratio: 84.84
+  Site: zoom                 Mean Survival Ratio: 86.21
+
+Algorithm: Multi-Locator
+  Site: accuweather          Mean Survival Ratio: 12.06
+  Site: adobe                Mean Survival Ratio: 19.58
+  Site: amazon               Mean Survival Ratio: 86.88
+  Site: apple                Mean Survival Ratio: 86.83
+  Site: bestbuy              Mean Survival Ratio: 61.85
+  Site: bing                 Mean Survival Ratio: 92.00
+  Site: discord              Mean Survival Ratio: 25.96
+  Site: ebay                 Mean Survival Ratio: 94.80
+  Site: espn                 Mean Survival Ratio: 58.77
+  Site: etsy                 Mean Survival Ratio: 51.95
+  Site: facebook             Mean Survival Ratio: 71.40
+  Site: fidelity             Mean Survival Ratio: 91.85
+  Site: google               Mean Survival Ratio: 92.93
+  Site: indeed               Mean Survival Ratio: 69.52
+  Site: linkedin             Mean Survival Ratio: 75.87
+  Site: netflix              Mean Survival Ratio: 80.65
+  Site: office               Mean Survival Ratio: 91.22
+  Site: paypal               Mean Survival Ratio: 75.64
+  Site: reddit               Mean Survival Ratio: 64.35
+  Site: roblox               Mean Survival Ratio: 75.59
+  Site: t-mobile             Mean Survival Ratio: 43.96
+  Site: tiktok               Mean Survival Ratio: 87.67
+  Site: twitter              Mean Survival Ratio: 71.11
+  Site: usps                 Mean Survival Ratio: 98.18
+  Site: walmart              Mean Survival Ratio: 44.94
+  Site: weather              Mean Survival Ratio: 58.88
+  Site: wikipedia            Mean Survival Ratio: 100.00
+  Site: yahoo                Mean Survival Ratio: 47.09
+  Site: zillow               Mean Survival Ratio: 61.27
+  Site: zoom                 Mean Survival Ratio: 78.35
+
+Algorithm: ROBULA+
+  Site: accuweather          Mean Survival Ratio: 37.62
+  Site: adobe                Mean Survival Ratio: 17.33
+  Site: amazon               Mean Survival Ratio: 85.02
+  Site: apple                Mean Survival Ratio: 86.83
+  Site: bestbuy              Mean Survival Ratio: 54.57
+  Site: bing                 Mean Survival Ratio: 88.70
+  Site: discord              Mean Survival Ratio: 24.63
+  Site: ebay                 Mean Survival Ratio: 92.42
+  Site: espn                 Mean Survival Ratio: 52.41
+  Site: etsy                 Mean Survival Ratio: 47.51
+  Site: facebook             Mean Survival Ratio: 66.64
+  Site: fidelity             Mean Survival Ratio: 93.20
+  Site: google               Mean Survival Ratio: 84.47
+  Site: indeed               Mean Survival Ratio: 65.81
+  Site: linkedin             Mean Survival Ratio: 82.35
+  Site: netflix              Mean Survival Ratio: 80.65
+  Site: office               Mean Survival Ratio: 84.46
+  Site: paypal               Mean Survival Ratio: 74.85
+  Site: reddit               Mean Survival Ratio: 64.42
+  Site: roblox               Mean Survival Ratio: 72.50
+  Site: t-mobile             Mean Survival Ratio: 42.11
+  Site: tiktok               Mean Survival Ratio: 87.67
+  Site: twitter              Mean Survival Ratio: 66.14
+  Site: usps                 Mean Survival Ratio: 94.93
+  Site: walmart              Mean Survival Ratio: 47.40
+  Site: weather              Mean Survival Ratio: 60.15
+  Site: wikipedia            Mean Survival Ratio: 100.00
+  Site: yahoo                Mean Survival Ratio: 37.28
+  Site: zillow               Mean Survival Ratio: 60.24
+  Site: zoom                 Mean Survival Ratio: 80.23
+
+Algorithm: VISTA
+  Site: accuweather          Mean Survival Ratio: 8.44
+  Site: adobe                Mean Survival Ratio: 13.33
+  Site: amazon               Mean Survival Ratio: 51.77
+  Site: apple                Mean Survival Ratio: 44.89
+  Site: bestbuy              Mean Survival Ratio: 40.35
+  Site: bing                 Mean Survival Ratio: 44.10
+  Site: discord              Mean Survival Ratio: 46.74
+  Site: ebay                 Mean Survival Ratio: 63.60
+  Site: espn                 Mean Survival Ratio: 26.77
+  Site: etsy                 Mean Survival Ratio: 29.62
+  Site: facebook             Mean Survival Ratio: 57.52
+  Site: fidelity             Mean Survival Ratio: 11.11
+  Site: google               Mean Survival Ratio: 60.60
+  Site: indeed               Mean Survival Ratio: 36.67
+  Site: linkedin             Mean Survival Ratio: 35.13
+  Site: netflix              Mean Survival Ratio: 70.76
+  Site: office               Mean Survival Ratio: 4.41
+  Site: paypal               Mean Survival Ratio: 47.18
+  Site: reddit               Mean Survival Ratio: 39.46
+  Site: roblox               Mean Survival Ratio: 29.38
+  Site: t-mobile             Mean Survival Ratio: 43.02
+  Site: tiktok               Mean Survival Ratio: 88.76
+  Site: twitter              Mean Survival Ratio: 78.36
+  Site: usps                 Mean Survival Ratio: 94.55
+  Site: walmart              Mean Survival Ratio: 51.75
+  Site: weather              Mean Survival Ratio: 69.85
+  Site: wikipedia            Mean Survival Ratio: 37.76
+  Site: yahoo                Mean Survival Ratio: 57.94
+  Site: zillow               Mean Survival Ratio: 52.24
+  Site: zoom                 Mean Survival Ratio: 50.16
+
+
+
+Tradeoff:          Algorithm  AvgRuntimeMs  FitnessPercent  Accuracy (All)
+          0  OptimizedSimilo      4.569890           98.72           99.47
+          1     LegacySimilo      1.807879           97.81           99.11
+          2            Color     20.706582           96.90           98.79
+          3    Multi-Locator     22.075618           83.73           93.90
+          4       RobulaPlus     16.167304           80.44           90.78
+          5        VonSimilo     11.341998           90.06           90.61
+          6            Vista   2282.791012           69.79           79.26
+
+
+Survival curve: Survivability for LegacySimilo:
+                Version Ratio
+                1       0.995
+                2       0.989
+                3       0.964
+                4       0.955
+                5       0.951
+                6       0.932
+                7       0.922
+                8       0.915
+                9       0.911
+                10      0.902
+                11      0.896
+                12      0.877
+                13      0.861
+                14      0.858
+                15      0.850
+
+                Survivability for OptimizedSimilo:
+                Version Ratio
+                1       0.994
+                2       0.994
+                3       0.981
+                4       0.972
+                5       0.964
+                6       0.949
+                7       0.950
+                8       0.936
+                9       0.930
+                10      0.910
+                11      0.898
+                12      0.889
+                13      0.877
+                14      0.858
+                15      0.835
+
+                Survivability for VISTA:
+                Version Ratio
+                1       0.824
+                2       0.740
+                3       0.616
+                4       0.525
+                5       0.447
+                6       0.377
+                7       0.347
+                8       0.297
+                9       0.280
+                10      0.268
+                11      0.252
+                12      0.220
+                13      0.178
+                14      0.170
+                15      0.134
+
+                Survivability for ROBULA+:
+                Version Ratio
+                1       0.890
+                2       0.864
+                3       0.799
+                4       0.737
+                5       0.715
+                6       0.691
+                7       0.679
+                8       0.642
+                9       0.639
+                10      0.621
+                11      0.608
+                12      0.597
+                13      0.578
+                14      0.539
+                15      0.527
+
+                Survivability for COLOR:
+                Version Ratio
+                1       0.981
+                2       0.992
+                3       0.984
+                4       0.974
+                5       0.965
+                6       0.942
+                7       0.937
+                8       0.919
+                9       0.910
+                10      0.884
+                11      0.867
+                12      0.852
+                13      0.830
+                14      0.789
+                15      0.749
+
+                Survivability for VonSimilo:
+                Version Ratio
+                1       0.964
+                2       0.954
+                3       0.894
+                4       0.885
+                5       0.880
+                6       0.862
+                7       0.853
+                8       0.837
+                9       0.833
+                10      0.825
+                11      0.811
+                12      0.792
+                13      0.777
+                14      0.762
+                15      0.745
+
+                Survivability for Multi-Locator:
+                Version Ratio
+                1       0.924
+                2       0.898
+                3       0.815
+                4       0.750
+                5       0.724
+                6       0.706
+                7       0.693
+                8       0.648
+                9       0.644
+                10      0.620
+                11      0.607
+                12      0.592
+                13      0.569
+                14      0.528
+                15      0.512
+
+               Survivability for Multi-Locator Repair:
+               Version Ratio
+               1       0.921
+               2       0.902
+               3       0.816
+               4       0.776
+               5       0.748
+               6       0.739
+               7       0.738
+               8       0.690
+               9       0.691
+               10      0.679
+               11      0.644
+               12      0.625
+               13      0.612
+               14      0.573
+               15      0.563
+
+Survivability curve (VISTA):
+Survivability for Multi-Locator:
+Version Ratio
+1       0.924
+2       0.898
+3       0.815
+4       0.750
+5       0.724
+6       0.706
+7       0.693
+8       0.648
+9       0.644
+10      0.620
+11      0.607
+12      0.592
+13      0.569
+14      0.528
+15      0.512
+
+Survivability for Multi-Locator Repair:
+Version Ratio
+1       0.921
+2       0.902
+3       0.816
+4       0.776
+5       0.748
+6       0.739
+7       0.738
+8       0.690
+9       0.691
+10      0.679
+11      0.644
+12      0.625
+13      0.612
+14      0.573
+15      0.563
+
+Survivability for Multi-Locator (VISTA):
+Version Ratio
+1       0.951
+2       0.933
+3       0.857
+4       0.798
+5       0.771
+6       0.745
+7       0.723
+8       0.678
+9       0.670
+10      0.647
+11      0.633
+12      0.618
+13      0.585
+14      0.553
+15      0.527
+
+Survivability for Multi-Locator Repair (VISTA):
+Version Ratio
+1       0.946
+2       0.934
+3       0.856
+4       0.819
+5       0.791
+6       0.770
+7       0.761
+8       0.715
+9       0.713
+10      0.697
+11      0.660
+12      0.645
+13      0.624
+14      0.596
+15      0.569
+
+
+Survivability boxplot (after fixing repair):
+[info] Panel 'All Elements': loaded 12727 points
+[debug] All Elements - OptimizedSimilo:
+    count = 979
+    mean  = 90.49
+    median= 100.00
+    std   = 26.10
+    min   = 0.00
+    Q1    = 100.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 823
+    percent_1.0 = 84.07%
+[debug] All Elements - LegacySimilo:
+    count = 979
+    mean  = 89.39
+    median= 100.00
+    std   = 27.28
+    min   = 0.00
+    Q1    = 100.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 813
+    percent_1.0 = 83.04%
+[debug] All Elements - COLOR:
+    count = 979
+    mean  = 87.83
+    median= 100.00
+    std   = 28.22
+    min   = 0.00
+    Q1    = 100.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 754
+    percent_1.0 = 77.02%
+[debug] All Elements - VonSimilo:
+    count = 979
+    mean  = 82.53
+    median= 100.00
+    std   = 34.13
+    min   = 0.00
+    Q1    = 93.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 728
+    percent_1.0 = 74.36%
+[debug] All Elements - Multi-Locator:
+    count = 979
+    mean  = 69.09
+    median= 100.00
+    std   = 39.74
+    min   = 0.00
+    Q1    = 26.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 539
+    percent_1.0 = 55.06%
+[debug] All Elements - Multi-Locator (VISTA):
+    count = 979
+    mean  = 72.25
+    median= 100.00
+    std   = 37.69
+    min   = 0.00
+    Q1    = 33.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 558
+    percent_1.0 = 57.00%
+[debug] All Elements - ROBULA+:
+    count = 979
+    mean  = 68.08
+    median= 100.00
+    std   = 40.94
+    min   = 0.00
+    Q1    = 20.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 546
+    percent_1.0 = 55.77%
+[debug] All Elements - VISTA:
+    count = 979
+    mean  = 45.66
+    median= 33.00
+    std   = 39.49
+    min   = 0.00
+    Q1    = 7.00
+    Q3    = 93.00
+    max   = 100.00
+    count_1.0 = 233
+    percent_1.0 = 23.80%
+[debug] All Elements - Multi-Locator Repair:
+    count = 979
+    mean  = 71.47
+    median= 100.00
+    std   = 39.47
+    min   = 0.00
+    Q1    = 31.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 580
+    percent_1.0 = 59.24%
+[debug] All Elements - Multi-Locator Repair (VISTA):
+    count = 979
+    mean  = 74.16
+    median= 100.00
+    std   = 37.36
+    min   = 0.00
+    Q1    = 46.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 591
+    percent_1.0 = 60.37%
+[debug] All Elements - Montoto:
+    count = 979
+    mean  = 30.96
+    median= 7.00
+    std   = 40.33
+    min   = 0.00
+    Q1    = 0.00
+    Q3    = 65.50
+    max   = 100.00
+    count_1.0 = 196
+    percent_1.0 = 20.02%
+[debug] All Elements - ID_XPath:
+    count = 979
+    mean  = 45.47
+    median= 25.00
+    std   = 42.57
+    min   = 0.00
+    Q1    = 0.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 323
+    percent_1.0 = 32.99%
+[debug] All Elements - SeleniumIDE:
+    count = 979
+    mean  = 52.70
+    median= 54.00
+    std   = 44.74
+    min   = 0.00
+    Q1    = 0.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 393
+    percent_1.0 = 40.14%
+/Users/bashirabushakra/Desktop/BachelorThesis/CodeBase/web-element-localization-using-similo-like-approaches/similo-thesis/results/survivability_results/figures/plot_survival_ratios_combined.py:148: FutureWarning:
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.violinplot(
+/Users/bashirabushakra/Desktop/BachelorThesis/CodeBase/web-element-localization-using-similo-like-approaches/similo-thesis/results/survivability_results/figures/plot_survival_ratios_combined.py:156: FutureWarning:
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(
+[info] Panel 'Minor Change': loaded 6799 points
+[debug] Minor Change - OptimizedSimilo:
+    count = 523
+    mean  = 94.45
+    median= 100.00
+    std   = 20.44
+    min   = 0.00
+    Q1    = 100.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 479
+    percent_1.0 = 91.59%
+[debug] Minor Change - LegacySimilo:
+    count = 523
+    mean  = 92.83
+    median= 100.00
+    std   = 22.65
+    min   = 0.00
+    Q1    = 100.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 464
+    percent_1.0 = 88.72%
+[debug] Minor Change - COLOR:
+    count = 523
+    mean  = 93.89
+    median= 100.00
+    std   = 20.56
+    min   = 0.00
+    Q1    = 100.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 468
+    percent_1.0 = 89.48%
+[debug] Minor Change - VonSimilo:
+    count = 523
+    mean  = 86.30
+    median= 100.00
+    std   = 31.81
+    min   = 0.00
+    Q1    = 100.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 430
+    percent_1.0 = 82.22%
+[debug] Minor Change - Multi-Locator:
+    count = 523
+    mean  = 74.35
+    median= 100.00
+    std   = 39.81
+    min   = 0.00
+    Q1    = 50.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 346
+    percent_1.0 = 66.16%
+[debug] Minor Change - Multi-Locator (VISTA):
+    count = 523
+    mean  = 77.02
+    median= 100.00
+    std   = 37.55
+    min   = 0.00
+    Q1    = 50.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 355
+    percent_1.0 = 67.88%
+[debug] Minor Change - ROBULA+:
+    count = 523
+    mean  = 74.13
+    median= 100.00
+    std   = 39.73
+    min   = 0.00
+    Q1    = 50.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 342
+    percent_1.0 = 65.39%
+[debug] Minor Change - VISTA:
+    count = 523
+    mean  = 44.84
+    median= 33.00
+    std   = 43.17
+    min   = 0.00
+    Q1    = 0.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 159
+    percent_1.0 = 30.40%
+[debug] Minor Change - Multi-Locator Repair:
+    count = 523
+    mean  = 76.48
+    median= 100.00
+    std   = 39.07
+    min   = 0.00
+    Q1    = 50.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 362
+    percent_1.0 = 69.22%
+[debug] Minor Change - Multi-Locator Repair (VISTA):
+    count = 523
+    mean  = 78.46
+    median= 100.00
+    std   = 37.09
+    min   = 0.00
+    Q1    = 67.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 367
+    percent_1.0 = 70.17%
+[debug] Minor Change - Montoto:
+    count = 523
+    mean  = 39.66
+    median= 0.00
+    std   = 45.72
+    min   = 0.00
+    Q1    = 0.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 170
+    percent_1.0 = 32.50%
+[debug] Minor Change - ID_XPath:
+    count = 523
+    mean  = 55.55
+    median= 75.00
+    std   = 45.13
+    min   = 0.00
+    Q1    = 0.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 236
+    percent_1.0 = 45.12%
+[debug] Minor Change - SeleniumIDE:
+    count = 523
+    mean  = 53.88
+    median= 80.00
+    std   = 47.36
+    min   = 0.00
+    Q1    = 0.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 247
+    percent_1.0 = 47.23%
+/Users/bashirabushakra/Desktop/BachelorThesis/CodeBase/web-element-localization-using-similo-like-approaches/similo-thesis/results/survivability_results/figures/plot_survival_ratios_combined.py:148: FutureWarning:
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.violinplot(
+/Users/bashirabushakra/Desktop/BachelorThesis/CodeBase/web-element-localization-using-similo-like-approaches/similo-thesis/results/survivability_results/figures/plot_survival_ratios_combined.py:156: FutureWarning:
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(
+[info] Panel 'Major Change': loaded 11583 points
+[debug] Major Change - OptimizedSimilo:
+    count = 891
+    mean  = 94.32
+    median= 100.00
+    std   = 18.18
+    min   = 0.00
+    Q1    = 100.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 781
+    percent_1.0 = 87.65%
+[debug] Major Change - LegacySimilo:
+    count = 891
+    mean  = 92.93
+    median= 100.00
+    std   = 21.08
+    min   = 0.00
+    Q1    = 100.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 771
+    percent_1.0 = 86.53%
+[debug] Major Change - COLOR:
+    count = 891
+    mean  = 91.40
+    median= 100.00
+    std   = 22.02
+    min   = 0.00
+    Q1    = 100.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 719
+    percent_1.0 = 80.70%
+[debug] Major Change - VonSimilo:
+    count = 891
+    mean  = 85.51
+    median= 100.00
+    std   = 30.92
+    min   = 0.00
+    Q1    = 100.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 689
+    percent_1.0 = 77.33%
+[debug] Major Change - Multi-Locator:
+    count = 891
+    mean  = 68.52
+    median= 100.00
+    std   = 40.30
+    min   = 0.00
+    Q1    = 23.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 497
+    percent_1.0 = 55.78%
+[debug] Major Change - Multi-Locator (VISTA):
+    count = 891
+    mean  = 72.36
+    median= 100.00
+    std   = 37.74
+    min   = 0.00
+    Q1    = 36.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 518
+    percent_1.0 = 58.14%
+[debug] Major Change - ROBULA+:
+    count = 891
+    mean  = 67.13
+    median= 100.00
+    std   = 41.84
+    min   = 0.00
+    Q1    = 20.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 505
+    percent_1.0 = 56.68%
+[debug] Major Change - VISTA:
+    count = 891
+    mean  = 43.77
+    median= 33.00
+    std   = 39.33
+    min   = 0.00
+    Q1    = 7.00
+    Q3    = 86.50
+    max   = 100.00
+    count_1.0 = 203
+    percent_1.0 = 22.78%
+[debug] Major Change - Multi-Locator Repair:
+    count = 891
+    mean  = 71.09
+    median= 100.00
+    std   = 40.08
+    min   = 0.00
+    Q1    = 27.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 538
+    percent_1.0 = 60.38%
+[debug] Major Change - Multi-Locator Repair (VISTA):
+    count = 891
+    mean  = 74.43
+    median= 100.00
+    std   = 37.43
+    min   = 0.00
+    Q1    = 47.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 551
+    percent_1.0 = 61.84%
+[debug] Major Change - Montoto:
+    count = 891
+    mean  = 27.91
+    median= 0.00
+    std   = 39.46
+    min   = 0.00
+    Q1    = 0.00
+    Q3    = 50.00
+    max   = 100.00
+    count_1.0 = 166
+    percent_1.0 = 18.63%
+[debug] Major Change - ID_XPath:
+    count = 891
+    mean  = 42.27
+    median= 20.00
+    std   = 43.19
+    min   = 0.00
+    Q1    = 0.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 285
+    percent_1.0 = 31.99%
+[debug] Major Change - SeleniumIDE:
+    count = 891
+    mean  = 52.76
+    median= 60.00
+    std   = 45.01
+    min   = 0.00
+    Q1    = 0.00
+    Q3    = 100.00
+    max   = 100.00
+    count_1.0 = 366
+    percent_1.0 = 41.08%
+/Users/bashirabushakra/Desktop/BachelorThesis/CodeBase/web-element-localization-using-similo-like-approaches/similo-thesis/results/survivability_results/figures/plot_survival_ratios_combined.py:148: FutureWarning:
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.violinplot(
+/Users/bashirabushakra/Desktop/BachelorThesis/CodeBase/web-element-localization-using-similo-like-approaches/similo-thesis/results/survivability_results/figures/plot_survival_ratios_combined.py:156: FutureWarning:
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(
+[ok] Combined figure written to: results/survivability_results/figures/survival_ratios_boxplot_combined.png
+
+[info] Mean survival ratios grouped by algorithm and subset:
+
+Subset: All Elements
+  Algorithm: COLOR           Mean Survival Ratio: 87.83
+  Algorithm: ID_XPath        Mean Survival Ratio: 45.47
+  Algorithm: LegacySimilo    Mean Survival Ratio: 89.39
+  Algorithm: Montoto         Mean Survival Ratio: 30.96
+  Algorithm: Multi-Locator   Mean Survival Ratio: 69.09
+  Algorithm: Multi-Locator (VISTA) Mean Survival Ratio: 72.25
+  Algorithm: Multi-Locator Repair Mean Survival Ratio: 71.47
+  Algorithm: Multi-Locator Repair (VISTA) Mean Survival Ratio: 74.16
+  Algorithm: OptimizedSimilo Mean Survival Ratio: 90.49
+  Algorithm: ROBULA+         Mean Survival Ratio: 68.08
+  Algorithm: SeleniumIDE     Mean Survival Ratio: 52.70
+  Algorithm: VISTA           Mean Survival Ratio: 45.66
+  Algorithm: VonSimilo       Mean Survival Ratio: 82.53
+
+Subset: Major Change
+  Algorithm: COLOR           Mean Survival Ratio: 91.40
+  Algorithm: ID_XPath        Mean Survival Ratio: 42.27
+  Algorithm: LegacySimilo    Mean Survival Ratio: 92.93
+  Algorithm: Montoto         Mean Survival Ratio: 27.91
+  Algorithm: Multi-Locator   Mean Survival Ratio: 68.52
+  Algorithm: Multi-Locator (VISTA) Mean Survival Ratio: 72.36
+  Algorithm: Multi-Locator Repair Mean Survival Ratio: 71.09
+  Algorithm: Multi-Locator Repair (VISTA) Mean Survival Ratio: 74.43
+  Algorithm: OptimizedSimilo Mean Survival Ratio: 94.32
+  Algorithm: ROBULA+         Mean Survival Ratio: 67.13
+  Algorithm: SeleniumIDE     Mean Survival Ratio: 52.76
+  Algorithm: VISTA           Mean Survival Ratio: 43.77
+  Algorithm: VonSimilo       Mean Survival Ratio: 85.51
+
+Subset: Minor Change
+  Algorithm: COLOR           Mean Survival Ratio: 93.89
+  Algorithm: ID_XPath        Mean Survival Ratio: 55.55
+  Algorithm: LegacySimilo    Mean Survival Ratio: 92.83
+  Algorithm: Montoto         Mean Survival Ratio: 39.66
+  Algorithm: Multi-Locator   Mean Survival Ratio: 74.35
+  Algorithm: Multi-Locator (VISTA) Mean Survival Ratio: 77.02
+  Algorithm: Multi-Locator Repair Mean Survival Ratio: 76.48
+  Algorithm: Multi-Locator Repair (VISTA) Mean Survival Ratio: 78.46
+  Algorithm: OptimizedSimilo Mean Survival Ratio: 94.45
+  Algorithm: ROBULA+         Mean Survival Ratio: 74.13
+  Algorithm: SeleniumIDE     Mean Survival Ratio: 53.88
+  Algorithm: VISTA           Mean Survival Ratio: 44.84
+  Algorithm: VonSimilo       Mean Survival Ratio: 86.30
+
+[info] Mean survival ratios grouped by site and subset:
+
+Subset: All Elements
+  Site: accuweather          Mean Survival Ratio: 25.59
+  Site: adobe                Mean Survival Ratio: 28.57
+  Site: amazon               Mean Survival Ratio: 77.18
+  Site: apple                Mean Survival Ratio: 77.03
+  Site: bestbuy              Mean Survival Ratio: 61.75
+  Site: bing                 Mean Survival Ratio: 88.12
+  Site: discord              Mean Survival Ratio: 41.07
+  Site: ebay                 Mean Survival Ratio: 87.12
+  Site: espn                 Mean Survival Ratio: 65.26
+  Site: etsy                 Mean Survival Ratio: 53.90
+  Site: facebook             Mean Survival Ratio: 71.92
+  Site: fidelity             Mean Survival Ratio: 78.45
+  Site: google               Mean Survival Ratio: 82.55
+  Site: indeed               Mean Survival Ratio: 66.84
+  Site: linkedin             Mean Survival Ratio: 69.42
+  Site: netflix              Mean Survival Ratio: 71.91
+  Site: office               Mean Survival Ratio: 81.32
+  Site: paypal               Mean Survival Ratio: 73.55
+  Site: reddit               Mean Survival Ratio: 65.36
+  Site: roblox               Mean Survival Ratio: 71.12
+  Site: t-mobile             Mean Survival Ratio: 53.99
+  Site: tiktok               Mean Survival Ratio: 90.06
+  Site: twitter              Mean Survival Ratio: 71.78
+  Site: usps                 Mean Survival Ratio: 91.07
+  Site: walmart              Mean Survival Ratio: 48.94
+  Site: weather              Mean Survival Ratio: 65.66
+  Site: wikipedia            Mean Survival Ratio: 90.85
+  Site: yahoo                Mean Survival Ratio: 50.89
+  Site: zillow               Mean Survival Ratio: 63.43
+  Site: zoom                 Mean Survival Ratio: 72.99
+
+Subset: Major Change
+  Site: accuweather          Mean Survival Ratio: 42.12
+  Site: adobe                Mean Survival Ratio: 41.55
+  Site: amazon               Mean Survival Ratio: 79.38
+  Site: apple                Mean Survival Ratio: 66.47
+  Site: bestbuy              Mean Survival Ratio: 62.82
+  Site: bing                 Mean Survival Ratio: 86.45
+  Site: discord              Mean Survival Ratio: 46.08
+  Site: ebay                 Mean Survival Ratio: 85.14
+  Site: espn                 Mean Survival Ratio: 63.74
+  Site: etsy                 Mean Survival Ratio: 55.55
+  Site: facebook             Mean Survival Ratio: 69.70
+  Site: fidelity             Mean Survival Ratio: 78.47
+  Site: google               Mean Survival Ratio: 82.34
+  Site: indeed               Mean Survival Ratio: 64.98
+  Site: linkedin             Mean Survival Ratio: 61.88
+  Site: netflix              Mean Survival Ratio: 73.98
+  Site: office               Mean Survival Ratio: 79.75
+  Site: paypal               Mean Survival Ratio: 73.18
+  Site: reddit               Mean Survival Ratio: 67.68
+  Site: roblox               Mean Survival Ratio: 75.76
+  Site: t-mobile             Mean Survival Ratio: 54.54
+  Site: tiktok               Mean Survival Ratio: 65.82
+  Site: twitter              Mean Survival Ratio: 31.44
+  Site: usps                 Mean Survival Ratio: 91.18
+  Site: walmart              Mean Survival Ratio: 52.34
+  Site: weather              Mean Survival Ratio: 62.92
+  Site: wikipedia            Mean Survival Ratio: 90.96
+  Site: yahoo                Mean Survival Ratio: 64.99
+  Site: zillow               Mean Survival Ratio: 64.66
+  Site: zoom                 Mean Survival Ratio: 69.92
+
+Subset: Minor Change
+  Site: accuweather          Mean Survival Ratio: 28.12
+  Site: adobe                Mean Survival Ratio: 75.27
+  Site: amazon               Mean Survival Ratio: 87.06
+  Site: apple                Mean Survival Ratio: 83.32
+  Site: bestbuy              Mean Survival Ratio: 58.73
+  Site: bing                 Mean Survival Ratio: 76.92
+  Site: discord              Mean Survival Ratio: 40.16
+  Site: ebay                 Mean Survival Ratio: 86.81
+  Site: espn                 Mean Survival Ratio: 49.89
+  Site: etsy                 Mean Survival Ratio: 62.08
+  Site: facebook             Mean Survival Ratio: 87.10
+  Site: fidelity             Mean Survival Ratio: 80.60
+  Site: google               Mean Survival Ratio: 83.30
+  Site: indeed               Mean Survival Ratio: 66.24
+  Site: linkedin             Mean Survival Ratio: 73.28
+  Site: netflix              Mean Survival Ratio: 79.31
+  Site: office               Mean Survival Ratio: 84.06
+  Site: paypal               Mean Survival Ratio: 71.22
+  Site: reddit               Mean Survival Ratio: 68.42
+  Site: roblox               Mean Survival Ratio: 80.11
+  Site: t-mobile             Mean Survival Ratio: 26.81
+  Site: tiktok               Mean Survival Ratio: 80.38
+  Site: twitter              Mean Survival Ratio: 82.29
+  Site: usps                 Mean Survival Ratio: 89.76
+  Site: walmart              Mean Survival Ratio: 52.26
+  Site: weather              Mean Survival Ratio: 63.33
+  Site: wikipedia            Mean Survival Ratio: 91.03
+  Site: yahoo                Mean Survival Ratio: 60.00
+  Site: zillow               Mean Survival Ratio: 57.69
+  Site: zoom                 Mean Survival Ratio: 75.40
+

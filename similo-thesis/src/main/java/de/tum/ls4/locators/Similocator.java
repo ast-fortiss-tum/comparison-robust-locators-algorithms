@@ -32,4 +32,14 @@ public class Similocator {
     public static ByCombinedSimilo combined(By by) {
         return new ByCombinedSimilo(by);
     }
+
+    /**
+     * Creates a new instance of the Similocator utilizing the COLOR algorithm to wrap the given By instance.
+     *
+     * @param by the By instance to be wrapped.
+     * @return a wrapped By instance.
+     */
+    public static ByColor color(By by) {
+        return new ByColor(by);
+    }
 }

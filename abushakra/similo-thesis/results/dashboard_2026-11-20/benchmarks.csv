@@ -1,0 +1,7 @@
+benchmark,description,labels_from,units,pairs,status
+Wayback,"Wayback Machine snapshots of 36 popular sites, each snapshot paired with the first one (first-to-all); 30 tuning sites and 6 held-out sites",Manual labels from the Similo study,36,12266,complete
+BEWT,"Four web apps (bludit, joomla, mantisbt, prestashop) in two versions each; the same page-object method at the same step of the same test identifies the element",Test structure (page-object method),4,337,complete
+ReproBreak,Real Cypress and Playwright locator breaks captured before and after the developers fix; only 11 moved pairs are confirmed same-element relocations,Developer fixes (partly re-targeted),4,350,validity caveat
+Excalidraw,"Excalidraw releases with the hidden test id as identity oracle, first-to-all",Hidden test id (oracle),15,529,complete
+Slickgrid,"Angular-Slickgrid releases with the hidden test id as identity oracle, first-to-all",Hidden test id (oracle),23,8276,complete
+AddressBook,"PHP AddressBook, 75 releases with the study suites; 1,958 of 14,028 validated pairs given to the algorithms (all changed or human-validated pairs plus a stable sample)",Developers suites pass on each release; 24 pairs removed after human review,74,1958,complete; XPath-based algorithms rerun after a namespace fix

@@ -1,0 +1,710 @@
+{
+ "3.3.1": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "3.3.2": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "3.3.0": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ],
+  "excluded": [
+   "Languages"
+  ],
+  "note": "suite fault; data from SKIP=Languages replay"
+ },
+ "3.3.4": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "3.3.3": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "3.3.5": {
+  "runs": 4,
+  "failing": [],
+  "stable": true,
+  "history": [
+   1,
+   1,
+   0,
+   0
+  ]
+ },
+ "3.3.6": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "3.3.7": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "3.3.8": {
+  "runs": 4,
+  "failing": [],
+  "stable": true,
+  "history": [
+   1,
+   1,
+   0,
+   0
+  ]
+ },
+ "3.3.10": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "3.3.12": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "3.3.13": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "3.3.9": {
+  "runs": 2,
+  "failing": [
+   "16:EditGroup",
+   "20:ViewGroup",
+   "21:RemoveContactFromGroup",
+   "22:DeleteGroup"
+  ],
+  "stable": true,
+  "history": [
+   4,
+   4
+  ]
+ },
+ "3.3.14": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "3.3.15": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "3.3.16": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "3.3.17": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "3.3.18": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "3.4": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "3.4.2": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "3.4.1": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "3.4.3": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "3.4.4": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "3.4.5": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "3.4.6": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "3.4.7": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "3.4.8": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "4.0": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "4.0.2": {
+  "runs": 4,
+  "failing": [],
+  "stable": true,
+  "history": [
+   1,
+   1,
+   0,
+   0
+  ]
+ },
+ "4.1.1": {
+  "runs": 2,
+  "failing": [
+   "31:SearchNonExistent"
+  ],
+  "stable": true,
+  "history": [
+   1,
+   1
+  ]
+ },
+ "4.1.4": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "5.2": {
+  "runs": 2,
+  "failing": [
+   "16:EditGroup",
+   "17:InvalidEditGroup",
+   "18:Non-SelectedEditGroup",
+   "20:ViewGroup",
+   "21:RemoveContactFromGroup"
+  ],
+  "stable": true,
+  "history": [
+   5,
+   5
+  ]
+ },
+ "5.3": {
+  "runs": 2,
+  "failing": [
+   "16:EditGroup",
+   "17:InvalidEditGroup",
+   "18:Non-SelectedEditGroup",
+   "20:ViewGroup",
+   "21:RemoveContactFromGroup"
+  ],
+  "stable": true,
+  "history": [
+   5,
+   5
+  ]
+ },
+ "5.4.1": {
+  "runs": 2,
+  "failing": [
+   "16:EditGroup",
+   "17:InvalidEditGroup",
+   "18:Non-SelectedEditGroup",
+   "20:ViewGroup",
+   "21:RemoveContactFromGroup"
+  ],
+  "stable": true,
+  "history": [
+   5,
+   5
+  ]
+ },
+ "5.4": {
+  "runs": 2,
+  "failing": [
+   "16:EditGroup",
+   "17:InvalidEditGroup",
+   "18:Non-SelectedEditGroup",
+   "20:ViewGroup",
+   "21:RemoveContactFromGroup"
+  ],
+  "stable": true,
+  "history": [
+   5,
+   5
+  ]
+ },
+ "5.4.2": {
+  "runs": 2,
+  "failing": [
+   "16:EditGroup",
+   "17:InvalidEditGroup",
+   "18:Non-SelectedEditGroup",
+   "20:ViewGroup",
+   "21:RemoveContactFromGroup"
+  ],
+  "stable": true,
+  "history": [
+   5,
+   5
+  ]
+ },
+ "5.4.3": {
+  "runs": 2,
+  "failing": [
+   "16:EditGroup",
+   "17:InvalidEditGroup",
+   "18:Non-SelectedEditGroup",
+   "20:ViewGroup",
+   "21:RemoveContactFromGroup"
+  ],
+  "stable": true,
+  "history": [
+   5,
+   5
+  ]
+ },
+ "5.4.4": {
+  "runs": 2,
+  "failing": [
+   "16:EditGroup",
+   "17:InvalidEditGroup",
+   "18:Non-SelectedEditGroup",
+   "20:ViewGroup",
+   "21:RemoveContactFromGroup"
+  ],
+  "stable": true,
+  "history": [
+   5,
+   5
+  ]
+ },
+ "5.4.7": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "5.4.5": {
+  "runs": 2,
+  "failing": [
+   "16:EditGroup",
+   "17:InvalidEditGroup",
+   "18:Non-SelectedEditGroup",
+   "20:ViewGroup",
+   "21:RemoveContactFromGroup"
+  ],
+  "stable": true,
+  "history": [
+   5,
+   5
+  ]
+ },
+ "5.4.9": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "5.4.6": {
+  "runs": 2,
+  "failing": [
+   "16:EditGroup",
+   "17:InvalidEditGroup",
+   "18:Non-SelectedEditGroup",
+   "20:ViewGroup",
+   "21:RemoveContactFromGroup"
+  ],
+  "stable": true,
+  "history": [
+   5,
+   5
+  ]
+ },
+ "5.6": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "5.7": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "5.5": {
+  "runs": 2,
+  "failing": [
+   "20:ViewGroup",
+   "21:RemoveContactFromGroup"
+  ],
+  "stable": true,
+  "history": [
+   2,
+   2
+  ]
+ },
+ "5.7.1": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "5.7.2": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "5.7.3": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "5.7.4": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "5.7.5": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "5.8": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "5.8.1": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "6.0": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "6.1.2": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "6.1": {
+  "runs": 2,
+  "failing": [
+   "11:DeleteAllBlank",
+   "3:ViewMap",
+   "4:PrintContact",
+   "5:DeleteContact",
+   "8:DeleteOneField"
+  ],
+  "stable": true,
+  "history": [
+   5,
+   5
+  ]
+ },
+ "6.1.3": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "6.1.1": {
+  "runs": 2,
+  "failing": [
+   "11:DeleteAllBlank",
+   "3:ViewMap",
+   "4:PrintContact",
+   "5:DeleteContact",
+   "8:DeleteOneField"
+  ],
+  "stable": true,
+  "history": [
+   5,
+   5
+  ]
+ },
+ "6.2": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "6.2.2": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "6.2.3": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "6.2.4": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "6.2.1": {
+  "runs": 2,
+  "failing": [
+   "20:ViewGroup",
+   "21:RemoveContactFromGroup",
+   "3:ViewMap"
+  ],
+  "stable": true,
+  "history": [
+   3,
+   3
+  ]
+ },
+ "6.2.5": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "6.2.6": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "6.2.7": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "6.2.9": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "6.2.11": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "6.2.10": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "6.2.12": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "7.0.0": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "8.0.0": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "5.0.0": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "5.1": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "4.1.3": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ },
+ "5.0-beta": {
+  "runs": 1,
+  "failing": [],
+  "stable": true,
+  "history": [
+   0
+  ]
+ }
+}

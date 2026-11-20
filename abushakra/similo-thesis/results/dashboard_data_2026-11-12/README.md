@@ -1,0 +1,1 @@
+Local copies of the data files behind the dashboard "Locator Benchmark Results" (artifact Pc7yVKw9Cve7DkepwVuhV3, data-driven from results.csv and benchmarks.csv). That artifact was not reachable from the account used on 2026-11-20 (HTTP 404). Not updated with the AddressBook, Wayback MultiLocator+VISTA+paper-repair or right/wrong/silent results yet.

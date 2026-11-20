@@ -1,0 +1,18 @@
+--- /Users/stocco/repos/tools/hybrid-work/abk/src/main/scala/util/Load.scala.before_xmlns	2026-11-20 06:30:33
++++ /Users/stocco/repos/tools/hybrid-work/abk/src/main/scala/util/Load.scala	2026-11-20 06:30:33
+@@ -200,9 +200,14 @@
+     }
+ 
+     // Sanitize CDATA closers and strip DOCTYPE
+-    val cleanedXhtml = jsoupDoc.html()
++    val cleanedXhtmlRaw = jsoupDoc.html()
+       .replace("]]>", "]]&gt;")
+       .replaceFirst("(?i)<!DOCTYPE[^>]*>", "")
++    // STRIP_XMLNS=1: drop the default namespace of the <html> tag (XHTML pages). A browser matches unprefixed XPaths such as //div on such pages,
++    // but a namespace-aware JDOM tree does not, so every XPath-based algorithm would find nothing. Off by default (earlier results used the old behaviour).
++    val cleanedXhtml =
++      if sys.env.get("STRIP_XMLNS").contains("1") then cleanedXhtmlRaw.replaceFirst("(?is)(<html\\b[^>]*?)\\s+xmlns\\s*=\\s*\"[^\"]*\"", "$1")
++      else cleanedXhtmlRaw
+ 
+     val inputStream = new ByteArrayInputStream(cleanedXhtml.getBytes("UTF-8"))
+ 
