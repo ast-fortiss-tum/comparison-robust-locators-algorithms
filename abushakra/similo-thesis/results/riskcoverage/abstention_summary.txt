@@ -1,0 +1,58 @@
+
+==== cost of a wrong answer = 1 silent answers (score = (right - 1 x wrong) / pairs; higher is better) ====
+threshold chosen on Wayback tuning: OptimizedSimilo: top_score >= 0.132, LegacySimilo: top_score >= 0.397
+algorithm                         Wayback tuning (30 sites)  Wayback held-out (6 sites) AddressBook (1,958 pairs)  Slickgrid (23 sites)       Excalidraw (15 sites)      
+OptimizedSimilo (no abstention)   +0.889  (94%/574w)         +0.786  (89%/202w)         +0.982  (99%/18w)          +1.000  (100%/0w)          +0.989  (99%/3w)           
+LegacySimilo (no abstention)      +0.851  (93%/772w)         +0.834  (92%/157w)         +0.974  (99%/25w)          +0.977  (99%/95w)          +0.520  (76%/127w)         
+OptimizedSimilo + threshold       +0.893  (93%/358w)         +0.846  (88%/65w)          +0.982  (99%/18w)          +1.000  (100%/0w)          +0.989  (99%/3w)           
+LegacySimilo + threshold          +0.868  (90%/302w)         +0.826  (84%/25w)          +0.973  (98%/21w)          +0.976  (99%/95w)          +0.520  (76%/127w)         
+RobulaPlus                        +0.646  (67%/266w)         +0.460  (49%/55w)          +0.959  (96%/8w)           +0.536  (57%/314w)         +0.327  (33%/2w)           
+SIDEREAL                          +0.554  (56%/78w)          +0.422  (43%/20w)          +0.963  (97%/9w)           +0.545  (65%/850w)         +0.932  (95%/8w)           
+SeleniumIDE                       +0.503  (51%/30w)          +0.299  (31%/13w)          +0.918  (92%/9w)           +0.499  (52%/189w)         +0.904  (90%/0w)           
+Montoto                           +0.273  (28%/37w)          +0.237  (26%/40w)          +0.914  (92%/4w)           +0.088  (9%/0w)            +0.127  (13%/0w)           
+absXPath                          +0.127  (15%/283w)         +0.156  (19%/62w)          +0.936  (95%/32w)          +0.360  (41%/406w)         +0.043  (27%/122w)         
+MultiLocator                      -                          -                          +0.975  (98%/18w)          +0.731  (79%/466w)         +0.991  (99%/2w)           
+MultiLocator+VISTA                +0.607  (71%/1038w)        +0.403  (60%/377w)         +0.974  (99%/25w)          +0.731  (79%/466w)         +0.992  (100%/2w)          
+VISTA                             +0.295  (41%/1174w)        +0.427  (54%/214w)         +0.656  (81%/304w)         +0.292  (40%/886w)         +0.919  (93%/6w)           
+(cell: score, then accuracy %/number of wrong answers)
+
+==== cost of a wrong answer = 3 silent answers (score = (right - 3 x wrong) / pairs; higher is better) ====
+threshold chosen on Wayback tuning: OptimizedSimilo: top_score >= 0.190, LegacySimilo: top_score >= 0.404
+algorithm                         Wayback tuning (30 sites)  Wayback held-out (6 sites) AddressBook (1,958 pairs)  Slickgrid (23 sites)       Excalidraw (15 sites)      
+OptimizedSimilo (no abstention)   +0.779  (94%/574w)         +0.572  (89%/202w)         +0.963  (99%/18w)          +1.000  (100%/0w)          +0.977  (99%/3w)           
+LegacySimilo (no abstention)      +0.702  (93%/772w)         +0.668  (92%/157w)         +0.949  (99%/25w)          +0.954  (99%/95w)          +0.040  (76%/127w)         
+OptimizedSimilo + threshold       +0.847  (90%/167w)         +0.767  (82%/34w)          +0.966  (99%/16w)          +1.000  (100%/0w)          +0.977  (99%/3w)           
+LegacySimilo + threshold          +0.810  (89%/285w)         +0.803  (84%/22w)          +0.953  (98%/20w)          +0.952  (99%/95w)          +0.040  (76%/127w)         
+RobulaPlus                        +0.595  (67%/266w)         +0.401  (49%/55w)          +0.951  (96%/8w)           +0.460  (57%/314w)         +0.319  (33%/2w)           
+SIDEREAL                          +0.539  (56%/78w)          +0.401  (43%/20w)          +0.954  (97%/9w)           +0.339  (65%/850w)         +0.902  (95%/8w)           
+SeleniumIDE                       +0.497  (51%/30w)          +0.285  (31%/13w)          +0.909  (92%/9w)           +0.454  (52%/189w)         +0.904  (90%/0w)           
+Montoto                           +0.266  (28%/37w)          +0.195  (26%/40w)          +0.910  (92%/4w)           +0.088  (9%/0w)            +0.127  (13%/0w)           
+absXPath                          +0.073  (15%/283w)         +0.091  (19%/62w)          +0.903  (95%/32w)          +0.262  (41%/406w)         -0.418  (27%/122w)         
+MultiLocator                      -                          -                          +0.957  (98%/18w)          +0.619  (79%/466w)         +0.983  (99%/2w)           
+MultiLocator+VISTA                +0.407  (71%/1038w)        +0.004  (60%/377w)         +0.949  (99%/25w)          +0.619  (79%/466w)         +0.985  (100%/2w)          
+VISTA                             +0.068  (41%/1174w)        +0.200  (54%/214w)         +0.345  (81%/304w)         +0.078  (40%/886w)         +0.896  (93%/6w)           
+(cell: score, then accuracy %/number of wrong answers)
+
+==== cost of a wrong answer = 10 silent answers (score = (right - 10 x wrong) / pairs; higher is better) ====
+threshold chosen on Wayback tuning: OptimizedSimilo: top_score >= 0.227, LegacySimilo: top_score >= 0.451
+algorithm                         Wayback tuning (30 sites)  Wayback held-out (6 sites) AddressBook (1,958 pairs)  Slickgrid (23 sites)       Excalidraw (15 sites)      
+OptimizedSimilo (no abstention)   +0.392  (94%/574w)         -0.176  (89%/202w)         +0.899  (99%/18w)          +1.000  (100%/0w)          +0.938  (99%/3w)           
+LegacySimilo (no abstention)      +0.182  (93%/772w)         +0.086  (92%/157w)         +0.860  (99%/25w)          +0.874  (99%/95w)          -1.641  (76%/127w)         
+OptimizedSimilo + threshold       +0.746  (85%/111w)         +0.638  (77%/25w)          +0.922  (99%/13w)          +0.970  (97%/0w)           +0.938  (99%/3w)           
+LegacySimilo + threshold          +0.671  (83%/169w)         +0.686  (77%/16w)          +0.885  (98%/18w)          +0.854  (97%/95w)          -1.641  (76%/127w)         
+RobulaPlus                        +0.415  (67%/266w)         +0.197  (49%/55w)          +0.922  (96%/8w)           +0.194  (57%/314w)         +0.293  (33%/2w)           
+SIDEREAL                          +0.487  (56%/78w)          +0.327  (43%/20w)          +0.921  (97%/9w)           -0.380  (65%/850w)         +0.796  (95%/8w)           
+SeleniumIDE                       +0.477  (51%/30w)          +0.237  (31%/13w)          +0.877  (92%/9w)           +0.294  (52%/189w)         +0.904  (90%/0w)           
+Montoto                           +0.241  (28%/37w)          +0.047  (26%/40w)          +0.895  (92%/4w)           +0.088  (9%/0w)            +0.127  (13%/0w)           
+absXPath                          -0.118  (15%/283w)         -0.139  (19%/62w)          +0.789  (95%/32w)          -0.081  (41%/406w)         -2.032  (27%/122w)         
+MultiLocator                      -                          -                          +0.892  (98%/18w)          +0.225  (79%/466w)         +0.957  (99%/2w)           
+MultiLocator+VISTA                -0.293  (71%/1038w)        -1.393  (60%/377w)         +0.860  (99%/25w)          +0.225  (79%/466w)         +0.958  (100%/2w)          
+VISTA                             -0.724  (41%/1174w)        -0.593  (54%/214w)         -0.742  (81%/304w)         -0.672  (40%/886w)         +0.817  (93%/6w)           
+(cell: score, then accuracy %/number of wrong answers)
+
+==== Similo risk-coverage: top_score threshold -> coverage, precision, wrong answers ====
+Wayback tuning (30 sites)     100%: 94.5%/574w   99%: 94.8%/533w   97%: 95.8%/418w   95%: 96.7%/324w   90%: 98.3%/155w   80%: 98.9%/89w
+Wayback held-out (6 sites)    100%: 89.3%/202w   99%: 89.6%/194w   97%: 91.0%/164w   95%: 92.9%/127w   90%: 96.8%/54w   80%: 98.3%/26w
+AddressBook (1,958 pairs)     100%: 99.1%/18w   99%: 99.6%/8w   97%: 99.6%/8w   95%: 99.6%/8w   90%: 99.5%/8w   80%: 99.5%/8w
+Slickgrid (23 sites)          100%: 100.0%/0w   99%: 100.0%/0w   97%: 100.0%/0w   95%: 100.0%/0w   90%: 100.0%/0w   80%: 100.0%/0w
+Excalidraw (15 sites)         100%: 99.4%/3w   99%: 99.4%/3w   97%: 99.6%/2w   95%: 99.6%/2w   90%: 99.6%/2w   80%: 99.8%/1w

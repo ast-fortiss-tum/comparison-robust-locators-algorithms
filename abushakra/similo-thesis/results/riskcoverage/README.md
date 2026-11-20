@@ -1,0 +1,2 @@
+# Right / wrong / silent and coverage-vs-precision
+Produced by `scripts/analysis/riskcoverage.py <label> <dump dir...>` from the per-pair dumps: `<label>_summary.csv` (pairs, right, wrong, silent, accuracy, coverage, precision, kind) and `<label>_equal_coverage.csv` (each scored algorithm limited to the same number of answers as each fixed algorithm). Labels: wayback, slickgrid_f2a, excalidraw_f2a, addressbook; files named abk_test come from a 165-pair test and `abk_*` older summaries may predate the namespace fix.

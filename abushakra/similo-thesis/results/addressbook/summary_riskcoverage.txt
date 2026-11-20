@@ -1,0 +1,34 @@
+
+== addressbook: 18 algorithms with >= 1500 pairs
+algorithm                       pairs   right  wrong  silent |  accuracy  coverage precision
+OptimizedMinimal                 1958    1941     17       0 |     99.1%    100.0%     99.1%  scored
+OptimizedCombined                1958    1940     18       0 |     99.1%    100.0%     99.1%  scored
+OptimizedSimilo                  1958    1940     18       0 |     99.1%    100.0%     99.1%  scored
+OptimizedVonSimilo               1958    1938     20       0 |     99.0%    100.0%     99.0%  scored
+VonSimilo                        1958    1934     24       0 |     98.8%    100.0%     98.8%  scored
+LegacyCombined                   1958    1933     25       0 |     98.7%    100.0%     98.7%  scored
+LegacySimilo                     1958    1933     25       0 |     98.7%    100.0%     98.7%  scored
+MultiLocator+VISTA+paper-repair   1958    1933     25       0 |     98.7%    100.0%     98.7%  
+MultiLocator+VISTA               1958    1933     25       0 |     98.7%    100.0%     98.7%  
+COLOR                            1958    1931     27       0 |     98.6%    100.0%     98.6%  scored
+MultiLocator+paper-repair        1958    1927     18      13 |     98.4%     99.3%     99.1%  
+MultiLocator                     1958    1927     18      13 |     98.4%     99.3%     99.1%  
+SIDEREAL                         1958    1894      9      55 |     96.7%     97.2%     99.5%  
+RobulaPlus                       1958    1886      8      64 |     96.3%     96.7%     99.6%  
+absXPath                         1958    1865     32      61 |     95.3%     96.9%     98.3%  
+SeleniumIDE                      1958    1807      9     142 |     92.3%     92.7%     99.5%  
+Montoto                          1958    1793      4     161 |     91.6%     91.8%     99.8%  
+VISTA                            1958    1588    304      66 |     81.1%     96.6%     83.9%  
+
+-- scored algorithms limited to the same number of answers as each fixed algorithm (precision / accuracy):
+reference (fixed)              answers     prec | COLOR              | LegacyCombined     | LegacySimilo       | OptimizedCombined  | OptimizedMinimal   | OptimizedSimilo    | OptimizedVonSimilo | VonSimilo         
+MultiLocator+VISTA+paper-repair      1958    98.7% | 98.6% / 98.6%      | 98.7% / 98.7%      | 98.7% / 98.7%      | 99.1% / 99.1%      | 99.1% / 99.1%      | 99.1% / 99.1%      | 99.0% / 99.0%      | 98.8% / 98.8%     
+MultiLocator+VISTA                1958    98.7% | 98.6% / 98.6%      | 98.7% / 98.7%      | 98.7% / 98.7%      | 99.1% / 99.1%      | 99.1% / 99.1%      | 99.1% / 99.1%      | 99.0% / 99.0%      | 98.8% / 98.8%     
+MultiLocator+paper-repair         1945    99.1% | 98.6% / 98.0%      | 99.0% / 98.3%      | 99.0% / 98.3%      | 99.4% / 98.8%      | 99.4% / 98.8%      | 99.4% / 98.8%      | 99.0% / 98.3%      | 99.1% / 98.5%     
+MultiLocator                      1945    99.1% | 98.6% / 98.0%      | 99.0% / 98.3%      | 99.0% / 98.3%      | 99.4% / 98.8%      | 99.4% / 98.8%      | 99.4% / 98.8%      | 99.0% / 98.3%      | 99.1% / 98.5%     
+SIDEREAL                          1903    99.5% | 99.1% / 96.3%      | 99.4% / 96.6%      | 99.4% / 96.6%      | 99.6% / 96.8%      | 99.6% / 96.8%      | 99.6% / 96.8%      | 99.3% / 96.5%      | 99.5% / 96.7%     
+RobulaPlus                        1894    99.6% | 99.1% / 95.9%      | 99.4% / 96.1%      | 99.4% / 96.1%      | 99.6% / 96.3%      | 99.6% / 96.3%      | 99.6% / 96.3%      | 99.3% / 96.0%      | 99.5% / 96.2%     
+absXPath                          1897    98.3% | 99.1% / 96.0%      | 99.4% / 96.3%      | 99.4% / 96.3%      | 99.6% / 96.5%      | 99.6% / 96.5%      | 99.6% / 96.5%      | 99.3% / 96.2%      | 99.5% / 96.4%     
+SeleniumIDE                       1816    99.5% | 99.1% / 91.9%      | 99.3% / 92.1%      | 99.3% / 92.1%      | 99.6% / 92.3%      | 99.6% / 92.3%      | 99.6% / 92.3%      | 99.5% / 92.3%      | 99.4% / 92.2%     
+Montoto                           1797    99.8% | 99.3% / 91.2%      | 99.6% / 91.4%      | 99.6% / 91.4%      | 99.6% / 91.4%      | 99.6% / 91.4%      | 99.6% / 91.4%      | 99.5% / 91.3%      | 99.6% / 91.4%     
+VISTA                             1892    83.9% | 99.1% / 95.8%      | 99.4% / 96.0%      | 99.4% / 96.0%      | 99.6% / 96.2%      | 99.6% / 96.2%      | 99.6% / 96.2%      | 99.3% / 95.9%      | 99.5% / 96.1%     

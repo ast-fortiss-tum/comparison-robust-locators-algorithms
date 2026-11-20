@@ -1,0 +1,10 @@
+{
+  "at": "2026-11-19T17:51:11.473Z",
+  "id": 12205,
+  "new": "6.2.2",
+  "note": "",
+  "old": "6.2.1",
+  "step": 2,
+  "test": "AddContactToGroup",
+  "verdict": "same"
+}

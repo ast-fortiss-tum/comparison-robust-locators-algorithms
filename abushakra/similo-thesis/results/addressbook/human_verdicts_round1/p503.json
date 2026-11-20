@@ -1,0 +1,10 @@
+{
+  "at": "2026-11-19T09:47:00.766Z",
+  "id": 503,
+  "new": "3.3.3",
+  "note": "",
+  "old": "3.3.2",
+  "step": 5,
+  "test": "InvalidEditGroup",
+  "verdict": "same"
+}

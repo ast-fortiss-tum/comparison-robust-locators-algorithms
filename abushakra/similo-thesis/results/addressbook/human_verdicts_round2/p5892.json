@@ -1,0 +1,10 @@
+{
+  "at": "2026-11-19T17:50:05.918Z",
+  "id": 5892,
+  "new": "4.0",
+  "note": "",
+  "old": "3.4.8",
+  "step": 3,
+  "test": "RemoveContactFromGroup",
+  "verdict": "diff"
+}

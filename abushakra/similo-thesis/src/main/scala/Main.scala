@@ -108,6 +108,8 @@ object Main:
       "MultiLocator+selective-repair" -> similo.Guarded(multilocator.MultiLocator(true, false, selective = true)),
       // Algorithm 2 of the Multi-Locator paper: repair only the locators of the original set L that no longer select the winner
       "MultiLocator+paper-repair" -> similo.Guarded(multilocator.MultiLocator(true, false, selective = true, paperSet = true)),
+      // Algorithm 2 with the VISTA fallback
+      "MultiLocator+VISTA+paper-repair" -> similo.Guarded(multilocator.MultiLocator(true, true, selective = true, paperSet = true)),
       "MultiLocator+VISTA+selective-repair" -> similo.Guarded(multilocator.MultiLocator(true, true, selective = true)),
       // hybrids of the voting generators (no VISTA) with the OptimizedSimilo relocator
       "MultiLocator+Similo-fallback" -> similo.Guarded(multilocator.Hybrid(multilocator.HybridMode.Fallback)),

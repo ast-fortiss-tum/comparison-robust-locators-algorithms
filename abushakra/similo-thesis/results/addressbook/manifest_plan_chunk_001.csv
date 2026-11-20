@@ -1,0 +1,301 @@
+site;id;repo;commit;status;old_matches;new_matches;old_tag;new_tag;old_xpath;new_xpath;old_text;new_text;old_locator;new_locator
+abk_addressbook_6161;6161;abk/addressbook;4.0.2;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[1]/input[3];/html/body/div/div[4]/form[1]/input[3];;;name=lastname;name=lastname
+abk_addressbook_4485;4485;abk/addressbook;3.4.3;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/input;/html/body/table/tbody/tr[2]/td[3]/form/input;;;name=submit;name=submit
+abk_addressbook_10677;10677;abk/addressbook;5.8;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[12];/html/body/div/div[4]/form/input[12];;;name=byear;name=byear
+abk_addressbook_5534;5534;abk/addressbook;3.4.8;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[1]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[1]/td[2]/input;;;name=firstname;name=firstname
+abk_addressbook_10203;10203;abk/addressbook;5.7.3;ok;1;1;SELECT;SELECT;/html/body/div/div[4]/form/select[1];/html/body/div/div[4]/form/select[1];- 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 ;- 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 ;name=bday;name=bday
+abk_addressbook_11755;11755;abk/addressbook;6.1.3;ok;1;1;A;A;/html/body/div/div[4]/div/i/a;/html/body/div/div[4]/div/i/a;group page;group page;link=group page;link=group page
+abk_addressbook_5810;5810;abk/addressbook;4.0;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[5]/td[2]/input;/html/body/div/div[4]/form/input[4];;;name=home;name=home
+abk_addressbook_3820;3820;abk/addressbook;3.4;ok;1;1;A;A;/html/body/table/tbody/tr[2]/td[3]/center/table/tbody/tr[2]/td/a[19];/html/body/table/tbody/tr[2]/td[3]/center/table/tbody/tr[2]/td/a[19];S;S;link=S;link=S
+abk_addressbook_9687;9687;abk/addressbook;5.7;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[13];/html/body/div/div[4]/form/input[13];;;name=phone2;name=phone2
+abk_addressbook_5338;5338;abk/addressbook;3.4.7;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/input;/html/body/table/tbody/tr[2]/td[3]/form/input;;;name=submit;name=submit
+abk_addressbook_13928;13928;abk/addressbook;7.0.0;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/div/form/input;/html/body/div/div[4]/div/form/input;;;name=searchstring;name=searchstring
+abk_addressbook_11615;11615;abk/addressbook;6.1.2;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[1]/input[1];/html/body/div/div[4]/form[1]/input[1];;;name=update;name=update
+abk_addressbook_11818;11818;abk/addressbook;6.2;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[10];/html/body/div/div[4]/form/input[10];;;name=email;name=email
+abk_addressbook_11840;11840;abk/addressbook;6.2;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[14];/html/body/div/div[4]/form/input[14];;;name=phone2;name=phone2
+abk_addressbook_6545;6545;abk/addressbook;4.1.3;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[2];/html/body/div/div[4]/form/input[2];;;name=group_name;name=group_name
+abk_addressbook_6538;6538;abk/addressbook;4.1.3;ok;1;1;TEXTAREA;TEXTAREA;/html/body/div/div[4]/form/textarea[1];/html/body/div/div[4]/form/textarea[1];;;name=group_header;name=group_header
+abk_addressbook_13305;13305;abk/addressbook;6.2.10;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[4];/html/body/div/div[4]/form/input[4];;;name=lastname;name=lastname
+abk_addressbook_13020;13020;abk/addressbook;6.2.7;ok;1;1;TEXTAREA;TEXTAREA;/html/body/div/div[4]/form/textarea[1];/html/body/div/div[4]/form/textarea[1];;;name=address;name=address
+abk_addressbook_13504;13504;abk/addressbook;6.2.11;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[4];/html/body/div/div[4]/form/input[4];;;name=lastname;name=lastname
+abk_addressbook_2250;2250;abk/addressbook;3.3.12;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form[2]/input[1];/html/body/table/tbody/tr[2]/td[3]/form[2]/input[1];;;name=selected[];name=selected[]
+abk_addressbook_13810;13810;abk/addressbook;7.0.0;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[8];/html/body/div/div[4]/form/input[10];;;name=work;name=work
+abk_addressbook_13968;13968;abk/addressbook;8.0.0;ok;1;1;A;A;/html/body/div/div[3]/ul/li[2]/a;/html/body/div/div[3]/ul/li[2]/a;add new;add new;link=add new;link=add new
+abk_addressbook_347;347;abk/addressbook;3.3.2;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form[1]/table/tbody/tr[2]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form[1]/table/tbody/tr[2]/td[2]/input;;;name=lastname;name=lastname
+abk_addressbook_4811;4811;abk/addressbook;3.4.4;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form[1]/table/tbody/tr[2]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form[1]/table/tbody/tr[2]/td[2]/input;;;name=lastname;name=lastname
+abk_addressbook_9098;9098;abk/addressbook;5.4.7;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/input;/html/body/div/div[4]/form/input[3];;;name=update;name=update
+abk_addressbook_4755;4755;abk/addressbook;3.4.4;ok;1;1;A;A;/html/body/table/tbody/tr[2]/td[2]/table/tbody/tr[9]/td/a;/html/body/table/tbody/tr[2]/td[2]/table/tbody/tr[9]/td/a;next birthdays;next birthdays;link=next birthdays;link=next birthdays
+abk_addressbook_439;439;abk/addressbook;3.3.3;ok;1;1;TEXTAREA;TEXTAREA;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[3]/td[2]/textarea;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[3]/td[2]/textarea;;;name=address;name=address
+abk_addressbook_7891;7891;abk/addressbook;5.4;ok;1;1;A;A;/html/body/div/div[4]/div/i/a[2];/html/body/div/div[4]/div/i/a[2];home page;home page;link=home page;link=home page
+abk_addressbook_6680;6680;abk/addressbook;4.1.4;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[4];/html/body/div/div[4]/form/input[4];;;name=home;name=home
+abk_addressbook_1120;1120;abk/addressbook;3.3.6;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[6]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[6]/td[2]/input;;;name=mobile;name=mobile
+abk_addressbook_117;117;abk/addressbook;3.3.1;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form[2]/input[4];/html/body/table/tbody/tr[2]/td[3]/form[2]/input[4];;;name=edit;name=edit
+abk_addressbook_11992;11992;abk/addressbook;6.2.1;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[14];/html/body/div/div[4]/form/input[14];;;name=phone2;name=phone2
+abk_addressbook_6143;6143;abk/addressbook;4.0.2;ok;1;1;IMG;IMG;/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[7]/a/img;/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[7]/a/img;;;css=img[alt="Edit"];css=img[alt="Edit"]
+abk_addressbook_10056;10056;abk/addressbook;5.7.2;ok;1;1;A;A;/html/body/div/div[4]/div/i/a[2];/html/body/div/div[4]/div/i/a[2];home page;home page;link=home page;link=home page
+abk_addressbook_3881;3881;abk/addressbook;3.4;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/center/table/tbody/tr[1]/td[1]/input[1];/html/body/table/tbody/tr[2]/td[3]/center/table/tbody/tr[1]/td[1]/input[1];;;name=searchstring;name=searchstring
+abk_addressbook_13156;13156;abk/addressbook;6.2.9;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[6];/html/body/div/div[4]/form/input[6];;;name=home;name=home
+abk_addressbook_1746;1746;abk/addressbook;3.3.9;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[5]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[5]/td[2]/input;;;name=home;name=home
+abk_addressbook_8416;8416;abk/addressbook;5.4.3;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[2];/html/body/div/div[4]/form/input[2];;;name=submit;name=submit
+abk_addressbook_7319;7319;abk/addressbook;5.1;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[5];/html/body/div/div[4]/form/input[5];;;name=home;name=home
+abk_addressbook_9222;9222;abk/addressbook;5.4.9;ok;1;1;A;A;/html/body/div/div[4]/div/i/a;/html/body/div/div[4]/div/i/a;group page;group page;link=group page;link=group page
+abk_addressbook_8175;8175;abk/addressbook;5.4.1;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[1]/input[3];/html/body/div/div[4]/form[1]/input[3];;;name=lastname;name=lastname
+abk_addressbook_9534;9534;abk/addressbook;5.6;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[7];/html/body/div/div[4]/form/input[7];;;name=work;name=work
+abk_addressbook_11006;11006;abk/addressbook;6.0;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[5];/html/body/div/div[4]/form/input[5];;;name=home;name=home
+abk_addressbook_8382;8382;abk/addressbook;5.4.3;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[9];/html/body/div/div[4]/form/input[9];;;name=email;name=email
+abk_addressbook_2086;2086;abk/addressbook;3.3.10;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table[1]/tbody/tr[2]/td[1]/input;/html/body/table/tbody/tr[2]/td[3]/form/table[1]/tbody/tr[2]/td[1]/input;;;id=MassCB;id=MassCB
+abk_addressbook_6141;6141;abk/addressbook;4.0.2;ok;1;1;A;A;/html/body/div/div[3]/ul/li[1]/a;/html/body/div/div[3]/ul/li[1]/a;home;home;link=home;link=home
+abk_addressbook_7338;7338;abk/addressbook;5.1;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[9];/html/body/div/div[4]/form/input[9];;;name=email;name=email
+abk_addressbook_12087;12087;abk/addressbook;6.2.1;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[2];/html/body/div/div[4]/form/input[2];;;name=group_name;name=group_name
+abk_addressbook_5126;5126;abk/addressbook;3.4.6;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[11]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[11]/td[2]/input;;;name=byear;name=byear
+abk_addressbook_692;692;abk/addressbook;3.3.4;ok;1;1;A;A;/html/body/table/tbody/tr[2]/td[3]/a;/html/body/table/tbody/tr[2]/td[3]/a;group page;group page;link=group page;link=group page
+abk_addressbook_9262;9262;abk/addressbook;5.4.9;ok;1;1;A;A;/html/body/div/div[4]/div/i/a;/html/body/div/div[4]/div/i/a;group page;group page;link=group page;link=group page
+abk_addressbook_8757;8757;abk/addressbook;5.4.5;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[2]/input[1];/html/body/div/div[4]/form[2]/input[1];;;name=selected[];name=selected[]
+abk_addressbook_13365;13365;abk/addressbook;6.2.10;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[1];/html/body/div/div[4]/form/input[1];;;name=submit;name=submit
+abk_addressbook_13642;13642;abk/addressbook;6.2.12;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[7];/html/body/div/div[4]/form/input[7];;;name=mobile;name=mobile
+abk_addressbook_3779;3779;abk/addressbook;3.4;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/input;/html/body/table/tbody/tr[2]/td[3]/form/input;;;name=submit;name=submit
+abk_addressbook_5582;5582;abk/addressbook;3.4.8;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[1]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[1]/td[2]/input;;;name=firstname;name=firstname
+abk_addressbook_5902;5902;abk/addressbook;4.0;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/center/table/tbody/tr[1]/td[1]/input[1];/html/body/div/div[4]/div/form/input[1];;;name=searchstring;name=searchstring
+abk_addressbook_5644;5644;abk/addressbook;3.4.8;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/input;/html/body/table/tbody/tr[2]/td[3]/form/input;;;name=update;name=update
+abk_addressbook_1486;1486;abk/addressbook;3.3.7;ok;1;1;A;A;/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[1];/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[1];+;+;link=+;link=+
+abk_addressbook_9635;9635;abk/addressbook;5.6;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[1]/input[3];/html/body/div/div[4]/form[1]/input[3];;;name=lastname;name=lastname
+abk_addressbook_525;525;abk/addressbook;3.3.3;ok;1;1;A;A;/html/body/table/tbody/tr[2]/td[3]/a;/html/body/table/tbody/tr[2]/td[3]/a;group page;group page;link=group page;link=group page
+abk_addressbook_1829;1829;abk/addressbook;3.3.9;ok;1;1;A;A;/html/body/table/tbody/tr[2]/td[3]/a;/html/body/table/tbody/tr[2]/td[3]/a;home page;home page;link=home page;link=home page
+abk_addressbook_6662;6662;abk/addressbook;4.1.4;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[3];/html/body/div/div[4]/form/input[3];;;name=lastname;name=lastname
+abk_addressbook_11799;11799;abk/addressbook;6.1.3;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[1]/input[1];/html/body/div/div[4]/form[1]/input[1];;;name=update;name=update
+abk_addressbook_1187;1187;abk/addressbook;3.3.6;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/input[2];/html/body/table/tbody/tr[2]/td[3]/form/input[2];;;name=update;name=update
+abk_addressbook_13197;13197;abk/addressbook;6.2.9;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[14];/html/body/div/div[4]/form/input[14];;;name=phone2;name=phone2
+abk_addressbook_1184;1184;abk/addressbook;3.3.6;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[1]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[1]/td[2]/input;;;name=group_name;name=group_name
+abk_addressbook_9730;9730;abk/addressbook;5.7;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[2]/input[2];/html/body/div/div[4]/form[2]/input[2];;;xpath=(//input[@name='update'])[2];xpath=(//input[@name='update'])[2]
+abk_addressbook_1888;1888;abk/addressbook;3.3.9;ok;1;1;TEXTAREA;TEXTAREA;/html/body/table/tbody/tr[2]/td[3]/form[1]/table/tbody/tr[3]/td[2]/textarea;/html/body/table/tbody/tr[2]/td[3]/form[1]/table/tbody/tr[3]/td[2]/textarea;;;name=address;name=address
+abk_addressbook_4940;4940;abk/addressbook;3.4.5;ok;1;1;A;A;/html/body/table/tbody/tr[2]/td[3]/a;/html/body/table/tbody/tr[2]/td[3]/a;home page;home page;link=home page;link=home page
+abk_addressbook_24;24;abk/addressbook;3.3.1;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[6]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[6]/td[2]/input;;;name=mobile;name=mobile
+abk_addressbook_13809;13809;abk/addressbook;7.0.0;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[7];/html/body/div/div[4]/form/input[9];;;name=mobile;name=mobile
+abk_addressbook_9737;9737;abk/addressbook;5.7;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[2];/html/body/div/div[4]/form/input[2];;;name=group_name;name=group_name
+abk_addressbook_12910;12910;abk/addressbook;6.2.6;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[2];/html/body/div/div[4]/form/input[2];;;name=group_name;name=group_name
+abk_addressbook_10591;10591;abk/addressbook;5.7.5;ok;1;1;TEXTAREA;TEXTAREA;/html/body/div/div[4]/form/textarea[1];/html/body/div/div[4]/form/textarea[1];;;name=group_header;name=group_header
+abk_addressbook_12269;12269;abk/addressbook;6.2.2;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[2]/input[2];/html/body/div/div[4]/form[2]/input[2];;;id=MassCB;id=MassCB
+abk_addressbook_11259;11259;abk/addressbook;6.1;ok;1;1;TEXTAREA;TEXTAREA;/html/body/div/div[4]/form/textarea[1];/html/body/div/div[4]/form/textarea[1];;;name=group_header;name=group_header
+abk_addressbook_5975;5975;abk/addressbook;4.0;ok;1;1;IMG;IMG;/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[3]/img;/html/body/div/div[1]/a[3]/img;;;css=img[alt="捷克語"];css=img[alt="捷克語"]
+abk_addressbook_12362;12362;abk/addressbook;6.2.3;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[14];/html/body/div/div[4]/form/input[14];;;name=phone2;name=phone2
+abk_addressbook_8770;8770;abk/addressbook;5.4.5;ok;1;1;A;A;/html/body/div/div[3]/ul/li[4]/a;/html/body/div/div[3]/ul/li[4]/a;next birthdays;next birthdays;link=next birthdays;link=next birthdays
+abk_addressbook_8886;8886;abk/addressbook;5.4.6;ok;1;1;TEXTAREA;TEXTAREA;/html/body/div/div[4]/form/textarea[2];/html/body/div/div[4]/form/textarea[2];;;name=address2;name=address2
+abk_addressbook_2628;2628;abk/addressbook;3.3.14;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[5]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[5]/td[2]/input;;;name=home;name=home
+abk_addressbook_6900;6900;abk/addressbook;5.0.0;ok;1;1;A;A;/html/body/div/div[3]/ul/li[2]/a;/html/body/div/div[3]/ul/li[2]/a;add new;add new;link=add new;link=add new
+abk_addressbook_11790;11790;abk/addressbook;6.1.3;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[1]/input[8];/html/body/div/div[4]/form[1]/input[8];;;name=work;name=work
+abk_addressbook_13605;13605;abk/addressbook;6.2.11;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[2]/div[1]/input;/html/body/div/div[4]/form[2]/div[1]/input;;;css=input[type="button"];css=input[type="button"]
+abk_addressbook_2114;2114;abk/addressbook;3.3.10;ok;1;1;A;A;/html/body/table/tbody/tr[2]/td[2]/table/tbody/tr[1]/td/a;/html/body/table/tbody/tr[2]/td[2]/table/tbody/tr[1]/td/a;home;home;link=home;link=home
+abk_addressbook_4859;4859;abk/addressbook;3.4.5;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[1]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[1]/td[2]/input;;;name=firstname;name=firstname
+abk_addressbook_3020;3020;abk/addressbook;3.3.15;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table[1]/tbody/tr[5]/td[1]/input;/html/body/table/tbody/tr[2]/td[3]/form/table[1]/tbody/tr[5]/td[1]/input;;;id=MassCB;id=MassCB
+abk_addressbook_3969;3969;abk/addressbook;3.4.1;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[11]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[11]/td[2]/input;;;name=byear;name=byear
+abk_addressbook_10269;10269;abk/addressbook;5.7.3;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/div/form/input;/html/body/div/div[4]/div/form/input;;;name=searchstring;name=searchstring
+abk_addressbook_7370;7370;abk/addressbook;5.1;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[9];/html/body/div/div[4]/form/input[9];;;name=email;name=email
+abk_addressbook_12747;12747;abk/addressbook;6.2.5;ok;1;1;A;A;/html/body/div/div[4]/div/i/a;/html/body/div/div[4]/div/i/a;group page;group page;link=group page;link=group page
+abk_addressbook_2931;2931;abk/addressbook;3.3.15;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/input[2];/html/body/table/tbody/tr[2]/td[3]/form/input[2];;;name=update;name=update
+abk_addressbook_664;664;abk/addressbook;3.3.4;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/input;/html/body/table/tbody/tr[2]/td[3]/form/input;;;name=submit;name=submit
+abk_addressbook_4671;4671;abk/addressbook;3.4.4;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[7]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[7]/td[2]/input;;;name=work;name=work
+abk_addressbook_2777;2777;abk/addressbook;3.3.14;ok;1;1;A;A;/html/body/table/tbody/tr[2]/td[3]/center/table/tbody/tr[2]/td/a[16];/html/body/table/tbody/tr[2]/td[3]/center/table/tbody/tr[2]/td/a[16];P;P;link=P;link=P
+abk_addressbook_9402;9402;abk/addressbook;5.5;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[2]/input[3];/html/body/div/div[4]/form[1]/input[2];;;name=delete;name=delete
+abk_addressbook_12368;12368;abk/addressbook;6.2.3;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[2]/div[4]/input;/html/body/div/div[4]/form[2]/div[4]/input;;;name=add;name=add
+abk_addressbook_7764;7764;abk/addressbook;5.3;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[1]/input;/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[1]/input;;;//tr[2]/td/input;//tr[2]/td/input
+abk_addressbook_13408;13408;abk/addressbook;6.2.10;ok;1;1;A;A;/html/body/div/div[3]/ul/li[4]/a;/html/body/div/div[3]/ul/li[4]/a;next birthdays;next birthdays;link=next birthdays;link=next birthdays
+abk_addressbook_1549;1549;abk/addressbook;3.3.8;ok;1;1;A;A;/html/body/table/tbody/tr[2]/td[2]/table/tbody/tr[4]/td/a;/html/body/table/tbody/tr[2]/td[2]/table/tbody/tr[4]/td/a;add new;add new;link=add new;link=add new
+abk_addressbook_1554;1554;abk/addressbook;3.3.8;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[6]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[6]/td[2]/input;;;name=mobile;name=mobile
+abk_addressbook_3980;3980;abk/addressbook;3.4.1;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[7]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[7]/td[2]/input;;;name=work;name=work
+abk_addressbook_3263;3263;abk/addressbook;3.3.16;ok;1;1;IMG;IMG;/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[7]/img;/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[7]/img;;;css=img[alt="Russo"];css=img[alt="Russo"]
+abk_addressbook_13151;13151;abk/addressbook;6.2.9;ok;1;1;A;A;/html/body/div/div[4]/div/i/a[2];/html/body/div/div[4]/div/i/a[2];home page;home page;link=home page;link=home page
+abk_addressbook_14139;14139;abk/addressbook;8.0.0;ok;1;1;SELECT;SELECT;/html/body/div/div[4]/form[1]/select;/html/body/div/div[4]/form[1]/select;[all] [none] ANOTHER EDITED GROUP;[all] [none] ANOTHER EDITED GROUP;name=group;name=group
+abk_addressbook_6546;6546;abk/addressbook;4.1.3;ok;1;1;TEXTAREA;TEXTAREA;/html/body/div/div[4]/form/textarea[1];/html/body/div/div[4]/form/textarea[1];;;name=group_header;name=group_header
+abk_addressbook_1517;1517;abk/addressbook;3.3.8;ok;1;1;A;A;/html/body/table/tbody/tr[2]/td[2]/table/tbody/tr[4]/td/a;/html/body/table/tbody/tr[2]/td[2]/table/tbody/tr[4]/td/a;add new;add new;link=add new;link=add new
+abk_addressbook_12004;12004;abk/addressbook;6.2.1;ok;1;1;SELECT;SELECT;/html/body/div/div[4]/form/select[1];/html/body/div/div[4]/form/select[1];- 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 ;- 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 ;name=bday;name=bday
+abk_addressbook_2082;2082;abk/addressbook;3.3.10;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/center/table/tbody/tr[1]/td[1]/input[1];/html/body/table/tbody/tr[2]/td[3]/center/table/tbody/tr[1]/td[1]/input[1];;;name=searchstring;name=searchstring
+abk_addressbook_6427;6427;abk/addressbook;4.1.3;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[7];/html/body/div/div[4]/form/input[7];;;name=email;name=email
+abk_addressbook_2354;2354;abk/addressbook;3.3.12;ok;1;1;IMG;IMG;/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[6]/img;/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[6]/img;;;css=img[alt="फ़्रेंच"];css=img[alt="फ़्रेंच"]
+abk_addressbook_6084;6084;abk/addressbook;4.0.2;ok;1;1;SELECT;SELECT;/html/body/div/div[4]/form/select;/html/body/div/div[4]/form/select;Standard (mailto:) Gmail Yahoo Hotmail;Standard (mailto:) Gmail Yahoo Hotmail;name=mailer;name=mailer
+abk_addressbook_10860;10860;abk/addressbook;5.8.1;ok;1;1;SELECT;SELECT;/html/body/div/div[4]/form/select[2];/html/body/div/div[4]/form/select[2];- January February March April May June July August September October November D;- January February March April May June July August September October November D;name=bmonth;name=bmonth
+abk_addressbook_9588;9588;abk/addressbook;5.6;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[2];/html/body/div/div[4]/form/input[2];;;name=group_name;name=group_name
+abk_addressbook_10425;10425;abk/addressbook;5.7.4;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[3];/html/body/div/div[4]/form/input[3];;;name=update;name=update
+abk_addressbook_3373;3373;abk/addressbook;3.3.17;ok;1;1;A;A;/html/body/table/tbody/tr[2]/td[3]/a;/html/body/table/tbody/tr[2]/td[3]/a;home page;home page;link=home page;link=home page
+abk_addressbook_8799;8799;abk/addressbook;5.4.5;ok;1;1;A;A;/html/body/div/div[3]/ul/li[1]/a;/html/body/div/div[3]/ul/li[1]/a;home;home;link=home;link=home
+abk_addressbook_13325;13325;abk/addressbook;6.2.10;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[8];/html/body/div/div[4]/form/input[8];;;name=work;name=work
+abk_addressbook_1157;1157;abk/addressbook;3.3.6;ok;1;1;A;A;/html/body/table/tbody/tr[2]/td[3]/a;/html/body/table/tbody/tr[2]/td[3]/a;home page;home page;link=home page;link=home page
+abk_addressbook_3769;3769;abk/addressbook;3.4;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[5]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[5]/td[2]/input;;;name=home;name=home
+abk_addressbook_911;911;abk/addressbook;3.3.5;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form[1]/input;/html/body/table/tbody/tr[2]/td[3]/form[1]/input;;;name=new;name=new
+abk_addressbook_1053;1053;abk/addressbook;3.3.5;ok;1;1;A;A;/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[1];/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[1];+;+;link=+;link=+
+abk_addressbook_4634;4634;abk/addressbook;3.4.4;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[1]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[1]/td[2]/input;;;name=firstname;name=firstname
+abk_addressbook_1312;1312;abk/addressbook;3.3.7;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[5]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[5]/td[2]/input;;;name=home;name=home
+abk_addressbook_5465;5465;abk/addressbook;3.4.7;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form[1]/input;/html/body/table/tbody/tr[2]/td[3]/form[1]/input;;;name=update;name=update
+abk_addressbook_13002;13002;abk/addressbook;6.2.7;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[3];/html/body/div/div[4]/form/input[3];;;name=firstname;name=firstname
+abk_addressbook_7322;7322;abk/addressbook;5.1;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[9];/html/body/div/div[4]/form/input[9];;;name=email;name=email
+abk_addressbook_10051;10051;abk/addressbook;5.7.2;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[2];/html/body/div/div[4]/form/input[2];;;name=submit;name=submit
+abk_addressbook_10551;10551;abk/addressbook;5.7.5;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[1];/html/body/div/div[4]/form/input[1];;;name=new;name=new
+abk_addressbook_13747;13747;abk/addressbook;6.2.12;ok;1;1;TEXTAREA;TEXTAREA;/html/body/div/div[4]/form/textarea[2];/html/body/div/div[4]/form/textarea[2];;;name=group_footer;name=group_footer
+abk_addressbook_6841;6841;abk/addressbook;4.1.4;ok;1;1;IMG;IMG;/html/body/div/div[1]/a[4]/img;/html/body/div/div[1]/a[4]/img;;;css=img[alt="Spanish"];css=img[alt="Spanish"]
+abk_addressbook_13077;13077;abk/addressbook;6.2.7;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[2];/html/body/div/div[4]/form/input[2];;;name=group_name;name=group_name
+abk_addressbook_6836;6836;abk/addressbook;4.1.4;ok;1;1;IMG;IMG;/html/body/div/div[1]/a[5]/img;/html/body/div/div[1]/a[5]/img;;;css=img[alt="Es"];css=img[alt="Es"]
+abk_addressbook_12792;12792;abk/addressbook;6.2.5;ok;1;1;A;A;/html/body/div/div[3]/ul/li[1]/a;/html/body/div/div[3]/ul/li[1]/a;home;home;link=home;link=home
+abk_addressbook_13228;13228;abk/addressbook;6.2.9;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[2];/html/body/div/div[4]/form/input[2];;;name=group_name;name=group_name
+abk_addressbook_7408;7408;abk/addressbook;5.1;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[2]/input[4];/html/body/div/div[4]/form[2]/input[4];;;name=edit;name=edit
+abk_addressbook_1331;1331;abk/addressbook;3.3.7;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[9]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[9]/td[2]/input;;;name=email;name=email
+abk_addressbook_10417;10417;abk/addressbook;5.7.4;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[3];/html/body/div/div[4]/form/input[3];;;name=update;name=update
+abk_addressbook_9981;9981;abk/addressbook;5.7.2;ok;1;1;TEXTAREA;TEXTAREA;/html/body/div/div[4]/form/textarea[1];/html/body/div/div[4]/form/textarea[1];;;name=address;name=address
+abk_addressbook_1152;1152;abk/addressbook;3.3.6;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form[2]/input[3];/html/body/table/tbody/tr[2]/td[3]/form[2]/input[3];;;name=delete;name=delete
+abk_addressbook_4525;4525;abk/addressbook;3.4.3;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[1]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[1]/td[2]/input;;;name=group_name;name=group_name
+abk_addressbook_4687;4687;abk/addressbook;3.4.4;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[7]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[7]/td[2]/input;;;name=work;name=work
+abk_addressbook_10550;10550;abk/addressbook;5.7.5;ok;1;1;A;A;/html/body/div/div[3]/ul/li[3]/a;/html/body/div/div[3]/ul/li[3]/a;groups;groups;link=groups;link=groups
+abk_addressbook_5940;5940;abk/addressbook;4.0;ok;1;1;IMG;IMG;/html/body/table/tbody/tr[2]/td[3]/form/table[1]/tbody/tr[1]/td[9]/font/a/img;/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[9]/a/img;;;xpath=(//img[@alt='vCard'])[2];xpath=(//img[@alt='vCard'])[2]
+abk_addressbook_12133;12133;abk/addressbook;6.2.1;old target not visible;1;1;IMG;IMG;/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[7]/a/img;/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[7]/a/img;;;css=img[alt="Edit"];css=img[alt="Edit"]
+abk_addressbook_11464;11464;abk/addressbook;6.1.1;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/div/form/input;/html/body/div/div[4]/div/form/input;;;name=searchstring;name=searchstring
+abk_addressbook_13744;13744;abk/addressbook;6.2.12;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[3];/html/body/div/div[4]/form/input[3];;;name=edit;name=edit
+abk_addressbook_11439;11439;abk/addressbook;6.1.1;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/div/form/input;/html/body/div/div[4]/div/form/input;;;name=searchstring;name=searchstring
+abk_addressbook_12184;12184;abk/addressbook;6.2.2;ok;1;1;TEXTAREA;TEXTAREA;/html/body/div/div[4]/form/textarea[2];/html/body/div/div[4]/form/textarea[2];;;name=address2;name=address2
+abk_addressbook_8524;8524;abk/addressbook;5.4.4;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[5];/html/body/div/div[4]/form/input[5];;;name=home;name=home
+abk_addressbook_5690;5690;abk/addressbook;3.4.8;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form[1]/input;/html/body/table/tbody/tr[2]/td[3]/form[1]/input;;;name=update;name=update
+abk_addressbook_4628;4628;abk/addressbook;3.4.3;ok;1;1;IMG;IMG;/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[14]/img;/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[14]/img;;;css=img[alt="البولندية"];css=img[alt="البولندية"]
+abk_addressbook_8128;8128;abk/addressbook;5.4.1;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[2]/input[4];/html/body/div/div[4]/form[2]/input[4];;;name=edit;name=edit
+abk_addressbook_5461;5461;abk/addressbook;3.4.7;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table[2]/tbody/tr/td[1]/input;/html/body/table/tbody/tr[2]/td[3]/form/table[2]/tbody/tr/td[1]/input;;;css=input[type="button"];css=input[type="button"]
+abk_addressbook_13931;13931;abk/addressbook;7.0.0;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/div/form/input;/html/body/div/div[4]/div/form/input;;;name=searchstring;name=searchstring
+abk_addressbook_7216;7216;abk/addressbook;5.0-beta;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[2];/html/body/div/div[4]/form/input[2];;;name=group_name;name=group_name
+abk_addressbook_8012;8012;abk/addressbook;5.4;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/div/form/input;/html/body/div/div[4]/div/form/input;;;name=searchstring;name=searchstring
+abk_addressbook_11431;11431;abk/addressbook;6.1.1;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[2]/div[3]/input;/html/body/div/div[4]/form[2]/div[3]/input;;;name=remove;name=remove
+abk_addressbook_5702;5702;abk/addressbook;3.4.8;ok;1;1;A;A;/html/body/table/tbody/tr[2]/td[3]/center/table/tbody/tr[2]/td/a[16];/html/body/table/tbody/tr[2]/td[3]/center/table/tbody/tr[2]/td/a[16];P;P;link=P;link=P
+abk_addressbook_11180;11180;abk/addressbook;6.1;ok;1;1;SELECT;SELECT;/html/body/div/div[4]/form/select[2];/html/body/div/div[4]/form/select[2];- January February March April May June July August September October November D;- January February March April May June July August September October November D;name=bmonth;name=bmonth
+abk_addressbook_8030;8030;abk/addressbook;5.4.1;ok;1;1;SELECT;SELECT;/html/body/div/div[4]/form/select[1];/html/body/div/div[4]/form/select[1];- 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 ;- 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 ;name=bday;name=bday
+abk_addressbook_2951;2951;abk/addressbook;3.3.15;ok;1;1;TEXTAREA;TEXTAREA;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[2]/td[2]/textarea;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[2]/td[2]/textarea;;;name=group_header;name=group_header
+abk_addressbook_10024;10024;abk/addressbook;5.7.2;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[14];/html/body/div/div[4]/form/input[14];;;name=submit;name=submit
+abk_addressbook_12445;12445;abk/addressbook;6.2.3;ok;1;1;TEXTAREA;TEXTAREA;/html/body/div/div[4]/form[1]/textarea[1];/html/body/div/div[4]/form[1]/textarea[1];;;name=address;name=address
+abk_addressbook_4314;4314;abk/addressbook;3.4.2;ok;1;1;A;A;/html/body/table/tbody/tr[2]/td[2]/table/tbody/tr[10]/td/a;/html/body/table/tbody/tr[2]/td[2]/table/tbody/tr[10]/td/a;print all;print all;link=print all;link=print all
+abk_addressbook_3099;3099;abk/addressbook;3.3.16;ok;1;1;SELECT;SELECT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[11]/td[2]/select[1];/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[11]/td[2]/select[1];- 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 ;- 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 ;name=bday;name=bday
+abk_addressbook_5094;5094;abk/addressbook;3.4.6;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[11]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[11]/td[2]/input;;;name=byear;name=byear
+abk_addressbook_5904;5904;abk/addressbook;4.0;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/center/table/tbody/tr[1]/td[1]/input[1];/html/body/div/div[4]/div/form/input[1];;;name=searchstring;name=searchstring
+abk_addressbook_9428;9428;abk/addressbook;5.5;ok;1;1;TEXTAREA;TEXTAREA;/html/body/div/div[4]/form/textarea[2];/html/body/div/div[4]/form/textarea[2];;;name=group_footer;name=group_footer
+abk_addressbook_9990;9990;abk/addressbook;5.7.2;ok;1;1;TEXTAREA;TEXTAREA;/html/body/div/div[4]/form/textarea[2];/html/body/div/div[4]/form/textarea[2];;;name=address2;name=address2
+abk_addressbook_806;806;abk/addressbook;3.3.4;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table[2]/tbody/tr/td[1]/input;/html/body/table/tbody/tr[2]/td[3]/form/table[2]/tbody/tr/td[1]/input;;;css=input[type="button"];css=input[type="button"]
+abk_addressbook_11119;11119;abk/addressbook;6.0;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/div/form/input;/html/body/div/div[4]/div/form/input;;;name=searchstring;name=searchstring
+abk_addressbook_11723;11723;abk/addressbook;6.1.3;old target not visible;1;1;IMG;IMG;/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[7]/a/img;/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[7]/a/img;;;css=img[alt="Edit"];css=img[alt="Edit"]
+abk_addressbook_2291;2291;abk/addressbook;3.3.12;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table[1]/tbody/tr[1]/td[1]/input;/html/body/table/tbody/tr[2]/td[3]/form/table[1]/tbody/tr[1]/td[1]/input;;;//form/table/tbody/tr/td/input;//form/table/tbody/tr/td/input
+abk_addressbook_7666;7666;abk/addressbook;5.2;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[2]/table/tbody/tr[5]/td[1]/input;/html/body/div/div[4]/form[2]/table/tbody/tr[5]/td[1]/input;;;id=MassCB;id=MassCB
+abk_addressbook_3500;3500;abk/addressbook;3.3.17;ok;1;1;IMG;IMG;/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[3]/img;/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[3]/img;;;css=img[alt="捷克語"];css=img[alt="捷克語"]
+abk_addressbook_7747;7747;abk/addressbook;5.3;ok;1;1;A;A;/html/body/div/div[3]/ul/li[2]/a;/html/body/div/div[3]/ul/li[2]/a;add new;add new;link=add new;link=add new
+abk_addressbook_11806;11806;abk/addressbook;6.1.3;ok;1;1;SELECT;SELECT;/html/body/div/div[4]/form[1]/select;/html/body/div/div[4]/form[1]/select;[all] [none] ANOTHER EDITED GROUP;[all] [none] ANOTHER EDITED GROUP;name=group;name=group
+abk_addressbook_13625;13625;abk/addressbook;6.2.11;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[1]/input[3];/html/body/div/div[4]/form[1]/input[3];;;name=firstname;name=firstname
+abk_addressbook_889;889;abk/addressbook;3.3.5;ok;1;1;A;A;/html/body/table/tbody/tr[2]/td[3]/a[2];/html/body/table/tbody/tr[2]/td[3]/a[2];home page;home page;link=home page;link=home page
+abk_addressbook_12501;12501;abk/addressbook;6.2.4;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[3];/html/body/div/div[4]/form/input[3];;;name=firstname;name=firstname
+abk_addressbook_11578;11578;abk/addressbook;6.1.2;ok;1;1;TEXTAREA;TEXTAREA;/html/body/div/div[4]/form/textarea[2];/html/body/div/div[4]/form/textarea[2];;;name=group_footer;name=group_footer
+abk_addressbook_4317;4317;abk/addressbook;3.4.2;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table[1]/tbody/tr[2]/td[1]/input;/html/body/table/tbody/tr[2]/td[3]/form/table[1]/tbody/tr[2]/td[1]/input;;;//tr[2]/td/input;//tr[2]/td/input
+abk_addressbook_12480;12480;abk/addressbook;6.2.4;ok;1;1;TEXTAREA;TEXTAREA;/html/body/div/div[4]/form/textarea[2];/html/body/div/div[4]/form/textarea[2];;;name=address2;name=address2
+abk_addressbook_7610;7610;abk/addressbook;5.2;ok;1;1;TEXTAREA;TEXTAREA;/html/body/div/div[4]/form/textarea[1];/html/body/div/div[4]/form/textarea[1];;;name=group_header;name=group_header
+abk_addressbook_7044;7044;abk/addressbook;5.0.0;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[1]/input[3];/html/body/div/div[4]/form[1]/input[3];;;name=lastname;name=lastname
+abk_addressbook_7374;7374;abk/addressbook;5.1;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[12];/html/body/div/div[4]/form/input[12];;;name=byear;name=byear
+abk_addressbook_10332;10332;abk/addressbook;5.7.4;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[3];/html/body/div/div[4]/form/input[3];;;name=lastname;name=lastname
+abk_addressbook_6045;6045;abk/addressbook;4.0.2;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[11];/html/body/div/div[4]/form/input[11];;;name=submit;name=submit
+abk_addressbook_8933;8933;abk/addressbook;5.4.6;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[2]/input[4];/html/body/div/div[4]/form[2]/input[4];;;name=edit;name=edit
+abk_addressbook_5327;5327;abk/addressbook;3.4.7;ok;1;1;TEXTAREA;TEXTAREA;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[3]/td[2]/textarea;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[3]/td[2]/textarea;;;name=address;name=address
+abk_addressbook_8118;8118;abk/addressbook;5.4.1;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[2];/html/body/div/div[4]/form/input[2];;;name=group_name;name=group_name
+abk_addressbook_7611;7611;abk/addressbook;5.2;ok;1;1;TEXTAREA;TEXTAREA;/html/body/div/div[4]/form/textarea[2];/html/body/div/div[4]/form/textarea[2];;;name=group_footer;name=group_footer
+abk_addressbook_6021;6021;abk/addressbook;4.0.2;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[6];/html/body/div/div[4]/form/input[6];;;name=work;name=work
+abk_addressbook_7605;7605;abk/addressbook;5.2;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[2]/table/tbody/tr[3]/td[1]/input;/html/body/div/div[4]/form[2]/table/tbody/tr[3]/td[1]/input;;;//tr[3]/td/input;//tr[3]/td/input
+abk_addressbook_6170;6170;abk/addressbook;4.0.2;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[2]/table/tbody/tr[5]/td[1]/input;/html/body/div/div[4]/form[2]/table/tbody/tr[5]/td[1]/input;;;id=MassCB;id=MassCB
+abk_addressbook_11527;11527;abk/addressbook;6.1.2;ok;1;1;A;A;/html/body/div/div[4]/div/i/a[2];/html/body/div/div[4]/div/i/a[2];home page;home page;link=home page;link=home page
+abk_addressbook_226;226;abk/addressbook;3.3.2;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[1]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[1]/td[2]/input;;;name=firstname;name=firstname
+abk_addressbook_8048;8048;abk/addressbook;5.4.1;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[12];/html/body/div/div[4]/form/input[12];;;name=byear;name=byear
+abk_addressbook_2301;2301;abk/addressbook;3.3.12;ok;1;1;A;A;/html/body/table/tbody/tr[2]/td[3]/center/table/tbody/tr[2]/td/a[27];/html/body/table/tbody/tr[2]/td[3]/center/table/tbody/tr[2]/td/a[27];All;All;link=All;link=All
+abk_addressbook_6396;6396;abk/addressbook;4.1.1;ok;1;1;A;A;/html/body/div/div[1]/a[1];/html/body/div/div[1]/a[1];+;+;link=+;link=+
+abk_addressbook_4515;4515;abk/addressbook;3.4.3;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table[1]/tbody/tr[5]/td[1]/input;/html/body/table/tbody/tr[2]/td[3]/form/table[1]/tbody/tr[5]/td[1]/input;;;id=MassCB;id=MassCB
+abk_addressbook_14103;14103;abk/addressbook;8.0.0;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/div/form/input;/html/body/div/div[4]/div/form/input;;;name=searchstring;name=searchstring
+abk_addressbook_10711;10711;abk/addressbook;5.8;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[13];/html/body/div/div[4]/form/input[13];;;name=phone2;name=phone2
+abk_addressbook_3254;3254;abk/addressbook;3.3.16;ok;1;1;IMG;IMG;/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[6]/img;/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[6]/img;;;css=img[alt="फ़्रेंच"];css=img[alt="फ़्रेंच"]
+abk_addressbook_497;497;abk/addressbook;3.3.3;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form[2]/input[4];/html/body/table/tbody/tr[2]/td[3]/form[2]/input[4];;;name=edit;name=edit
+abk_addressbook_7225;7225;abk/addressbook;5.0-beta;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[1]/input;/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[1]/input;;;//tr[2]/td/input;//tr[2]/td/input
+abk_addressbook_4872;4872;abk/addressbook;3.4.5;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/input;/html/body/table/tbody/tr[2]/td[3]/form/input;;;name=submit;name=submit
+abk_addressbook_3629;3629;abk/addressbook;3.3.18;ok;1;1;A;A;/html/body/table/tbody/tr[2]/td[3]/a;/html/body/table/tbody/tr[2]/td[3]/a;group page;group page;link=group page;link=group page
+abk_addressbook_4311;4311;abk/addressbook;3.4.2;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/input[2];/html/body/table/tbody/tr[2]/td[3]/form/input[2];;;name=update;name=update
+abk_addressbook_6517;6517;abk/addressbook;4.1.3;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[2];/html/body/div/div[4]/form/input[2];;;name=group_name;name=group_name
+abk_addressbook_10648;10648;abk/addressbook;5.8;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[14];/html/body/div/div[4]/form/input[14];;;name=submit;name=submit
+abk_addressbook_3673;3673;abk/addressbook;3.3.18;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form[1]/table/tbody/tr[7]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form[1]/table/tbody/tr[7]/td[2]/input;;;name=work;name=work
+abk_addressbook_9408;9408;abk/addressbook;5.5;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[2]/input[1];/html/body/div/div[4]/form[2]/input[1];;;name=selected[];name=selected[]
+abk_addressbook_8412;8412;abk/addressbook;5.4.3;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[1]/input;/html/body/div/div[4]/form[1]/input;;;name=new;name=new
+abk_addressbook_8288;8288;abk/addressbook;5.4.2;ok;1;1;A;A;/html/body/div/div[3]/ul/li[3]/a;/html/body/div/div[3]/ul/li[3]/a;groups;groups;link=groups;link=groups
+abk_addressbook_12570;12570;abk/addressbook;6.2.4;ok;1;1;TEXTAREA;TEXTAREA;/html/body/div/div[4]/form/textarea[2];/html/body/div/div[4]/form/textarea[2];;;name=group_footer;name=group_footer
+abk_addressbook_10260;10260;abk/addressbook;5.7.3;ok;1;1;A;A;/html/body/div/div[3]/ul/li[5]/a;/html/body/div/div[3]/ul/li[5]/a;print all;print all;link=print all;link=print all
+abk_addressbook_6617;6617;abk/addressbook;4.1.3;ok;1;1;IMG;IMG;/html/body/div/div[1]/a[4]/img;/html/body/div/div[1]/a[4]/img;;;css=img[alt="Spanish"];css=img[alt="Spanish"]
+abk_addressbook_3971;3971;abk/addressbook;3.4.1;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[14]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[16]/td[2]/input;;;name=phone2;name=phone2
+abk_addressbook_667;667;abk/addressbook;3.3.4;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[1]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[1]/td[2]/input;;;name=firstname;name=firstname
+abk_addressbook_1520;1520;abk/addressbook;3.3.8;ok;1;1;TEXTAREA;TEXTAREA;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[3]/td[2]/textarea;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[3]/td[2]/textarea;;;name=address;name=address
+abk_addressbook_10706;10706;abk/addressbook;5.8;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[10];/html/body/div/div[4]/form/input[10];;;name=email2;name=email2
+abk_addressbook_12928;12928;abk/addressbook;6.2.6;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/div/form/input;/html/body/div/div[4]/div/form/input;;;name=searchstring;name=searchstring
+abk_addressbook_1378;1378;abk/addressbook;3.3.7;ok;1;1;A;A;/html/body/table/tbody/tr[2]/td[3]/a;/html/body/table/tbody/tr[2]/td[3]/a;group page;group page;link=group page;link=group page
+abk_addressbook_2171;2171;abk/addressbook;3.3.12;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[14]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[14]/td[2]/input;;;name=phone2;name=phone2
+abk_addressbook_9659;9659;abk/addressbook;5.7;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[2];/html/body/div/div[4]/form/input[2];;;name=firstname;name=firstname
+abk_addressbook_6833;6833;abk/addressbook;4.1.4;ok;1;1;IMG;IMG;/html/body/div/div[1]/a[2]/img;/html/body/div/div[1]/a[2]/img;;;css=img[alt="Zh"];css=img[alt="Zh"]
+abk_addressbook_7988;7988;abk/addressbook;5.4;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[2]/table/tbody/tr[5]/td[1]/input;/html/body/div/div[4]/form[2]/table/tbody/tr[5]/td[1]/input;;;id=MassCB;id=MassCB
+abk_addressbook_5571;5571;abk/addressbook;3.4.8;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[7]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[7]/td[2]/input;;;name=work;name=work
+abk_addressbook_12507;12507;abk/addressbook;6.2.4;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[10];/html/body/div/div[4]/form/input[10];;;name=email;name=email
+abk_addressbook_7836;7836;abk/addressbook;5.3;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[1]/input[3];/html/body/div/div[4]/form[1]/input[3];;;name=lastname;name=lastname
+abk_addressbook_437;437;abk/addressbook;3.3.3;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[1]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[1]/td[2]/input;;;name=firstname;name=firstname
+abk_addressbook_9856;9856;abk/addressbook;5.7.1;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[14];/html/body/div/div[4]/form/input[14];;;name=submit;name=submit
+abk_addressbook_1668;1668;abk/addressbook;3.3.8;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/center/table/tbody/tr[1]/td[1]/input[2];/html/body/table/tbody/tr[2]/td[3]/center/table/tbody/tr[1]/td[1]/input[2];;;css=input[type="submit"];css=input[type="submit"]
+abk_addressbook_10910;10910;abk/addressbook;5.8.1;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[2];/html/body/div/div[4]/form/input[2];;;name=group_name;name=group_name
+abk_addressbook_2337;2337;abk/addressbook;3.3.12;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form[1]/input;/html/body/table/tbody/tr[2]/td[3]/form[1]/input;;;name=update;name=update
+abk_addressbook_1983;1983;abk/addressbook;3.3.10;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[1]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[1]/td[2]/input;;;name=firstname;name=firstname
+abk_addressbook_12652;12652;abk/addressbook;6.2.5;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[3];/html/body/div/div[4]/form/input[3];;;name=firstname;name=firstname
+abk_addressbook_10130;10130;abk/addressbook;5.7.2;ok;1;1;IMG;IMG;/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[6]/a/img;/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[6]/a/img;;;css=img[alt="Details"];css=img[alt="Details"]
+abk_addressbook_13405;13405;abk/addressbook;6.2.10;ok;1;1;TEXTAREA;TEXTAREA;/html/body/div/div[4]/form/textarea[2];/html/body/div/div[4]/form/textarea[2];;;name=group_footer;name=group_footer
+abk_addressbook_5878;5878;abk/addressbook;4.0;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/input[2];/html/body/div/div[4]/form/input[3];;;name=update;name=update
+abk_addressbook_13766;13766;abk/addressbook;6.2.12;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/div/form/input;/html/body/div/div[4]/div/form/input;;;name=searchstring;name=searchstring
+abk_addressbook_1951;1951;abk/addressbook;3.3.10;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[1]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[1]/td[2]/input;;;name=firstname;name=firstname
+abk_addressbook_6216;6216;abk/addressbook;4.1.1;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[8];/html/body/div/div[4]/form/input[8];;;name=email2;name=email2
+abk_addressbook_7427;7427;abk/addressbook;5.1;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[2]/div[1]/input;/html/body/div/div[4]/form[2]/div[1]/input;;;css=input[type="button"];css=input[type="button"]
+abk_addressbook_3326;3326;abk/addressbook;3.3.17;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[11]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[11]/td[2]/input;;;name=byear;name=byear
+abk_addressbook_2072;2072;abk/addressbook;3.3.10;ok;1;1;A;A;/html/body/table/tbody/tr[2]/td[3]/center/table/tbody/tr[2]/td/a[2];/html/body/table/tbody/tr[2]/td[3]/center/table/tbody/tr[2]/td/a[2];B;B;link=B;link=B
+abk_addressbook_13110;13110;abk/addressbook;6.2.7;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/div/form/input;/html/body/div/div[4]/div/form/input;;;name=searchstring;name=searchstring
+abk_addressbook_5724;5724;abk/addressbook;3.4.8;ok;1;1;A;A;/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[1];/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[1];+;+;link=+;link=+
+abk_addressbook_8214;8214;abk/addressbook;5.4.2;ok;1;1;A;A;/html/body/div/div[3]/ul/li[2]/a;/html/body/div/div[3]/ul/li[2]/a;add new;add new;link=add new;link=add new
+abk_addressbook_3076;3076;abk/addressbook;3.3.16;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[2]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[2]/td[2]/input;;;name=lastname;name=lastname
+abk_addressbook_7048;7048;abk/addressbook;5.0.0;ok;1;1;IMG;IMG;/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[9]/a/img;/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[9]/a/img;;;xpath=(//img[@alt='vCard'])[2];xpath=(//img[@alt='vCard'])[2]
+abk_addressbook_568;568;abk/addressbook;3.3.3;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form[1]/table/tbody/tr[6]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form[1]/table/tbody/tr[6]/td[2]/input;;;name=mobile;name=mobile
+abk_addressbook_12648;12648;abk/addressbook;6.2.5;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[14];/html/body/div/div[4]/form/input[14];;;name=phone2;name=phone2
+abk_addressbook_5468;5468;abk/addressbook;3.4.7;ok;1;1;IMG;IMG;/html/body/table/tbody/tr[2]/td[3]/form/table[1]/tbody/tr[1]/td[7]/a/img;/html/body/table/tbody/tr[2]/td[3]/form/table[1]/tbody/tr[1]/td[7]/a/img;;;css=img[alt="Edit"];css=img[alt="Edit"]
+abk_addressbook_7925;7925;abk/addressbook;5.4;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[1]/input;/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[1]/input;;;//tr[2]/td/input;//tr[2]/td/input
+abk_addressbook_4078;4078;abk/addressbook;3.4.1;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/input[2];/html/body/table/tbody/tr[2]/td[3]/form/input[2];;;name=update;name=update
+abk_addressbook_12275;12275;abk/addressbook;6.2.2;ok;1;1;A;A;/html/body/div/div[3]/ul/li[1]/a;/html/body/div/div[3]/ul/li[1]/a;home;home;link=home;link=home
+abk_addressbook_10002;10002;abk/addressbook;5.7.2;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[10];/html/body/div/div[4]/form/input[10];;;name=email2;name=email2
+abk_addressbook_2622;2622;abk/addressbook;3.3.14;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/input;/html/body/table/tbody/tr[2]/td[3]/form/input;;;name=submit;name=submit
+abk_addressbook_931;931;abk/addressbook;3.3.5;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form[2]/input[2];/html/body/table/tbody/tr[2]/td[3]/form[2]/input[2];;;xpath=(//input[@name='update'])[2];xpath=(//input[@name='update'])[2]
+abk_addressbook_12361;12361;abk/addressbook;6.2.3;ok;1;1;TEXTAREA;TEXTAREA;/html/body/div/div[4]/form/textarea[2];/html/body/div/div[4]/form/textarea[2];;;name=address2;name=address2
+abk_addressbook_12301;12301;abk/addressbook;6.2.3;ok;1;1;A;A;/html/body/div/div[3]/ul/li[2]/a;/html/body/div/div[3]/ul/li[2]/a;add new;add new;link=add new;link=add new
+abk_addressbook_4772;4772;abk/addressbook;3.4.4;ok;1;1;A;A;/html/body/table/tbody/tr[2]/td[3]/center/table/tbody/tr[2]/td/a[3];/html/body/table/tbody/tr[2]/td[3]/center/table/tbody/tr[2]/td/a[3];C;C;link=C;link=C
+abk_addressbook_9748;9748;abk/addressbook;5.7;ok;1;1;A;A;/html/body/div/div[3]/ul/li[3]/a;/html/body/div/div[3]/ul/li[3]/a;groups;groups;link=groups;link=groups
+abk_addressbook_3043;3043;abk/addressbook;3.3.15;ok;1;1;IMG;IMG;/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[7]/img;/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[7]/img;;;css=img[alt="रूसी"];css=img[alt="रूसी"]
+abk_addressbook_942;942;abk/addressbook;3.3.5;ok;1;1;A;A;/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[3]/a;/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[3]/a;preferences;preferences;link=preferences;link=preferences
+abk_addressbook_2303;2303;abk/addressbook;3.3.12;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/center/table/tbody/tr[1]/td[1]/input[2];/html/body/table/tbody/tr[2]/td[3]/center/table/tbody/tr[1]/td[1]/input[2];;;css=input[type="submit"];css=input[type="submit"]
+abk_addressbook_9203;9203;abk/addressbook;5.4.9;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[9];/html/body/div/div[4]/form/input[9];;;name=email;name=email
+abk_addressbook_8831;8831;abk/addressbook;5.4.6;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[6];/html/body/div/div[4]/form/input[6];;;name=mobile;name=mobile
+abk_addressbook_2615;2615;abk/addressbook;3.3.14;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[9]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[9]/td[2]/input;;;name=email;name=email
+abk_addressbook_1724;1724;abk/addressbook;3.3.8;ok;1;1;IMG;IMG;/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[12]/img;/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[13]/img;;;css=img[alt="pt"];css=img[alt="pt"]
+abk_addressbook_7379;7379;abk/addressbook;5.1;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[1]/input;/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[1]/input;;;//form/table/tbody/tr/td/input;//form/table/tbody/tr/td/input
+abk_addressbook_9159;9159;abk/addressbook;5.4.9;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[12];/html/body/div/div[4]/form/input[12];;;name=byear;name=byear
+abk_addressbook_10042;10042;abk/addressbook;5.7.2;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[1]/input;/html/body/div/div[4]/form[2]/table/tbody/tr[2]/td[1]/input;;;//form/table/tbody/tr/td/input;//form/table/tbody/tr/td/input
+abk_addressbook_8259;8259;abk/addressbook;5.4.2;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[14];/html/body/div/div[4]/form/input[14];;;name=submit;name=submit
+abk_addressbook_9608;9608;abk/addressbook;5.6;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/div/form/input;/html/body/div/div[4]/div/form/input;;;name=searchstring;name=searchstring
+abk_addressbook_4575;4575;abk/addressbook;3.4.3;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form[1]/input;/html/body/table/tbody/tr[2]/td[3]/form[1]/input;;;name=update;name=update
+abk_addressbook_9900;9900;abk/addressbook;5.7.1;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[4];/html/body/div/div[4]/form/input[4];;;name=selected[];name=selected[]
+abk_addressbook_9683;9683;abk/addressbook;5.7;ok;1;1;SELECT;SELECT;/html/body/div/div[4]/form/select[1];/html/body/div/div[4]/form/select[1];- 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 ;- 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 ;name=bday;name=bday
+abk_addressbook_5899;5899;abk/addressbook;4.0;ok;1;1;A;A;/html/body/table/tbody/tr[2]/td[3]/center/table/tbody/tr[2]/td/a[11];/html/body/div/div[4]/div/div/a[11];K;K;link=K;link=K
+abk_addressbook_23;23;abk/addressbook;3.3.1;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[5]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[5]/td[2]/input;;;name=home;name=home
+abk_addressbook_8227;8227;abk/addressbook;5.4.2;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[13];/html/body/div/div[4]/form/input[13];;;name=phone2;name=phone2
+abk_addressbook_8828;8828;abk/addressbook;5.4.6;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[3];/html/body/div/div[4]/form/input[3];;;name=lastname;name=lastname
+abk_addressbook_7077;7077;abk/addressbook;5.0.0;ok;1;1;A;A;/html/body/div/div[1]/a[1];/html/body/div/div[1]/a[1];+;+;link=+;link=+
+abk_addressbook_2624;2624;abk/addressbook;3.3.14;ok;1;1;A;A;/html/body/table/tbody/tr[2]/td[2]/table/tbody/tr[4]/td/a;/html/body/table/tbody/tr[2]/td[2]/table/tbody/tr[4]/td/a;add new;add new;link=add new;link=add new
+abk_addressbook_9917;9917;abk/addressbook;5.7.1;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[3];/html/body/div/div[4]/form/input[3];;;name=edit;name=edit
+abk_addressbook_10247;10247;abk/addressbook;5.7.3;ok;1;1;TEXTAREA;TEXTAREA;/html/body/div/div[4]/form/textarea[1];/html/body/div/div[4]/form/textarea[1];;;name=group_header;name=group_header
+abk_addressbook_5411;5411;abk/addressbook;3.4.7;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table[2]/tbody/tr/td[1]/input;/html/body/table/tbody/tr[2]/td[3]/form/table[2]/tbody/tr/td[1]/input;;;css=input[type="button"];css=input[type="button"]
+abk_addressbook_12236;12236;abk/addressbook;6.2.2;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[3];/html/body/div/div[4]/form/input[3];;;name=update;name=update
+abk_addressbook_9632;9632;abk/addressbook;5.6;ok;1;1;A;A;/html/body/div/div[3]/ul/li[1]/a;/html/body/div/div[3]/ul/li[1]/a;home;home;link=home;link=home
+abk_addressbook_2829;2829;abk/addressbook;3.3.14;ok;1;1;IMG;IMG;/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[4]/img;/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[4]/img;;;css=img[alt="Polish"];css=img[alt="Polish"]
+abk_addressbook_8406;8406;abk/addressbook;5.4.3;ok;1;1;A;A;/html/body/div/div[4]/div/i/a[2];/html/body/div/div[4]/div/i/a[2];home page;home page;link=home page;link=home page
+abk_addressbook_3586;3586;abk/addressbook;3.3.18;ok;1;1;A;A;/html/body/table/tbody/tr[2]/td[3]/a[2];/html/body/table/tbody/tr[2]/td[3]/a[2];home page;home page;link=home page;link=home page
+abk_addressbook_8717;8717;abk/addressbook;5.4.5;ok;1;1;INPUT;INPUT;/html/body/div/div[4]/form/input[5];/html/body/div/div[4]/form/input[5];;;name=home;name=home
+abk_addressbook_3936;3936;abk/addressbook;3.4;ok;1;1;A;A;/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[1];/html/body/table/tbody/tr[1]/td/table/tbody/tr/td[2]/a[1];+;+;link=+;link=+
+abk_addressbook_2422;2422;abk/addressbook;3.3.13;ok;1;1;INPUT;INPUT;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[9]/td[2]/input;/html/body/table/tbody/tr[2]/td[3]/form/table/tbody/tr[9]/td[2]/input;;;name=email;name=email
+abk_addressbook_10539;10539;abk/addressbook;5.7.5;ok;1;1;SELECT;SELECT;/html/body/div/div[4]/form/select[1];/html/body/div/div[4]/form/select[1];- 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 ;- 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 ;name=bday;name=bday

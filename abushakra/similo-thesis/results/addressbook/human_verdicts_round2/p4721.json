@@ -1,0 +1,10 @@
+{
+  "at": "2026-11-19T17:52:23.029Z",
+  "id": 4721,
+  "new": "3.4.4",
+  "note": "",
+  "old": "3.4.3",
+  "step": 2,
+  "test": "DeleteOneField",
+  "verdict": "same"
+}

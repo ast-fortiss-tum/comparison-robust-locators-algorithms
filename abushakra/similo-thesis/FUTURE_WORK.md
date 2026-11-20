@@ -202,3 +202,76 @@ VISTA is a computer-vision method (template matching, OpenCV) and is dated; keep
 - **Reproducibility:** pin the model version and the prompts, log the full inputs, and keep the tree and screenshot representations on disk so a rerun does not depend on the extraction code.
 
 **Order.** (1) DOM view only, on BEWT with a mid-size model, on pages that fit. (2) Add the visual view and the agreement rule. (3) Add the anchor description and the windowing. (4) Repeat on the oracle sets. (5) Write-back and survival. Only then the Similo hybrid.
+
+## 8. Which algorithms the study keeps (decision, 2026-11-17)
+
+This is not a Similo experiment, so the algorithm set follows one rule: **one shipped configuration per approach that a developer could adopt, with no per-project tuning.** Tuning done once by the authors and shipped (MultiLocator's published weights, EAGL's pretrained model, the Similo weights) is fine; a search the developer would have to run is not.
+
+**Main set**
+- Locator generators: absXPath, SeleniumIDE, RobulaPlus, Montoto.
+- Voting of generators, in the thesis' own configurations: MultiLocator, MultiLocator with the VISTA fallback (**+VISTA**), and each with paper repair (repair is what we study). The thesis' headline configurations are the ones with VISTA (survival 72.25 with VISTA, 74.16 with VISTA and repair), so the VISTA fallback is part of these rows, not only a baseline.
+- Similarity relocation, one row: **LegacySimilo** (original published weights, an expert choice, not tuned on our data). **OptimizedSimilo** moved to the appendix on 2026-11-18 (decision by the user): its weights were tuned on the 30 Wayback tuning sites, which gives it an advantage on those sites and invites the question of fairness. Its results stay in the files and behind the dashboard's "Show appendix algorithms" switch. What is lost is the side result that tuned weights do not transfer reliably (Excalidraw 75.8% for the original weights against 99.4% tuned, first-to-all; Wayback held-out 91.7% against 89.3%), which can be reported from the appendix. With LegacySimilo alone, "Similo wins everywhere" no longer holds: on Excalidraw MultiLocator reaches 99.4% against 76.0%.
+- Learned: EAGL (released-model configuration), SIDEREAL (needs a history of versions, a different assumption: say so in the table).
+- Visual: VISTA on its own is a dated reference baseline (no standalone VISTA+repair); the VLM relocator of section 7 replaces the visual part of the pipeline.
+
+**Appendix (results kept, no more runs)**: OptimizedSimilo, LegacyCombined, OptimizedCombined, OptimizedMinimal, VonSimilo, OptimizedVonSimilo (these are near-duplicates of the two Similo rows or worse), COLOR, SIDEREAL-uniform, IDXPath as a standalone (it stays inside MultiLocator as a voter), the EAGL fold models, the hybrids of section 4, MultiLocator selective repair, and the VISTA repair variants.
+
+**Setup error found 2026-11-17.** On the oracle sets VISTA scored 0% and `MultiLocator+VISTA` was identical to `MultiLocator`: the project copy used for those runs had no `scripts/` directory, so every call to `crop_element.py` failed. Fixed (symlink to the repository's `scripts`); the VISTA family on Excalidraw was rerun, and the Slickgrid queue gets `MultiLocator+VISTA` after the current list.
+
+**Known gap.** `MultiLocator+VISTA+paper-repair` (the thesis' best configuration) did not finish on Wayback: on Wayback adobe, first-to-all, the repair step regenerates Robula+ locators from the element the VISTA fallback chose and the search ran for over 70 minutes (the same site takes 26 seconds for `MultiLocator+VISTA`). It needs a time limit on Robula+ regeneration before it can be reported.
+
+## 9. Learning-to-rank Similo (Coppola, Feldt, Nass, Alégroth, JSS 222, 2025): not an algorithm to add, two uses (2026-11-17)
+
+Paper: "Ranking approaches for similarity-based web element location" (the PDF is in the repository root). It keeps Similo's 14 attribute similarities (and the VON variant) and replaces the expert-set weights by a learned ranker: XGBoost learning-to-rank (pairwise, MAP, NDCG), random forest and logistic regression. Data: 1,163 element pairs from 40 apps (Internet Archive versions 12 to 60 months apart, the Similo benchmark), 10-fold cross-validation split by application. Replication package: figshare DOI 10.6084/m9.figshare.26311990 (contents not checked).
+
+**Results that matter here.** Best top-1 is 88.5% against 88.0% for standard Similo; the gain is in the order of the other candidates (mean rank of the correct element 1.57 against 4.28). Random weights range from 74.9% to 90.5% top-1, so weights matter a lot. The authors conclude that conventional Similo is preferable when cost matters and learning only when robustness matters more, and note that even at 98% success one expects two failing interactions per 100.
+
+**Why it is not a row in the main set.** It is one more Similo variant (section 8 decides this is not a Similo experiment), it needs trained models, and the top-1 gain is small. The "re-tuned weights" row already asks whether tuned weights help. The authors call Similo a "multi-locator" approach because it uses several locator parameters, but it generates no locator, so the separation between generators and similarity search (section 8) stays.
+
+**Use 1: does learned weighting transfer to unseen apps?** Our re-tuned weights helped on the oracle sets but not on the held-out Wayback sites (89.3% against 91.7% first-to-all). Train their rankers on their 1,163 pairs and score them on BEWT, Excalidraw and Slickgrid, which they never saw. One appendix-level experiment, reported next to the two Similo rows. Needs: the 14 similarities exported from our Similo implementation, models trained in Python, scores read from the JVM. First check that their pairs do not overlap with our Wayback sites.
+
+**Use 2: confidence from a ranked list.** Their point that a similarity threshold produces "no match" cases is our abstention problem. The margin between the first and second candidate of a learned ranker is a natural confidence signal for the gate in section 5 (step 4) and for the agreement rule of the relocator in section 7. A design input, not an algorithm to evaluate on its own.
+
+## 10. Removal test: what happens when the target element is gone (2026-11-18, partial)
+
+**Why.** All benchmarks score only elements that still exist in the new version (`existsOnNewVersion`), so they never reward an algorithm for saying "this element is gone". Similo always returns its best candidate and never abstains, so the benchmarks hide a real operational difference: when the element has been deleted, a similarity relocator returns a wrong element (a lucky same-page hit, or a mis-selection that carries the failure into later steps), while a locator generator mostly returns nothing and the test fails at the right step.
+
+**Method.** Pairs of old and new version are sampled; in the removed copy the target (with its children) is deleted from the new version's elements, DOM and screenshot, and the remaining elements' paths are recomputed from the modified DOM (`scripts/oracle/removal_sites.py`, `removal_pairs.py`). The intact copy of the same pairs is run as control. Per algorithm: right / wrong / silent on the intact pair, and answered / silent on the removed pair (an answer on the removed pair is by definition wrong). Summary: `oracle-work/removal2/summarize.py`; resume notes in `hybrid-work/RESUME.md`. Original benchmarks are untouched (separate project copies).
+
+**Results (share of removed pairs where the algorithm still answers; lower is better here).**
+
+| Algorithm | BEWT (stage 1) | Excalidraw (132) | Slickgrid (161) | Wayback (540) |
+|---|---|---|---|---|
+| LegacySimilo | 98.5% | 100% | 100% | 100% |
+| MultiLocator | 5.0% | 20.5% | 58.4% | 17.8% |
+| MultiLocator+VISTA | 27.6% | 54.5% | 75.2% | 57.8% |
+| VISTA | 21.7% | 50.8% | 65.2% | 47.0% |
+| absXPath | 1.2% | 20.5% | 54.7% | 13.3% |
+| RobulaPlus | 4.7% | 0% | 26.1% | 3.1% |
+| SeleniumIDE | 3.3% | 0% | 14.9% | 1.5% |
+| Montoto | 0.6% | 0% | 6.8% | 3.0% |
+| SIDEREAL | 4.2% | 0% | 26.1% | 0.7% |
+
+BEWT: all 337 pairs (stage 1). Precision on the unchanged pairs is low for the similarity-based algorithms there (LegacySimilo 76.3%, MultiLocator+VISTA 80.8%, VISTA 66.9%, against 91-98% for the generators), because they answer wrongly where generators stay silent. The same numbers are in the dashboard's "Removal test" tab.
+
+**Findings.**
+- Similo's accuracy advantage on the benchmarks comes with a cost the benchmarks do not measure: it answers 100% of the time when the element is gone. Generators are silent in most cases (0-5% on BEWT and Wayback).
+- MultiLocator is not uniformly safe: 20.5% on Excalidraw and 58.4% on Slickgrid, inherited from its absolute-XPath voter (absXPath alone answers 20.5% and 54.7%): after a layout shift the old path points at some other element. The VISTA fallback raises the answers a lot (54.5%, 75.2%), so the +VISTA gain in accuracy is paid for with wrong answers on deleted elements.
+- Precision on existing elements is ~98-100% for everything except absXPath (92.6%) and VISTA (92.9-98.4%); the accuracy differences are mostly about how often an algorithm stays silent, which is exactly what the removal test rewards.
+
+**Still to do.**
+1. Stage 2 is complete (all 540 Wayback pairs after the gap fill, 2026-11-18). Wayback precision on existing elements: Similo 98.7%, MultiLocator 97.6%, MultiLocator+VISTA 97.1%, VISTA 93.4%, absXPath 93.4%. MultiLocator+VISTA answers on 57.8% of removed pairs (MultiLocator 17.8%) for +3.5 right answers per 100 pairs.
+2. A combined metric: cost-weighted outcome (wrong answer on a deleted element propagates the failure; silence stops it at the right step), and a table with accuracy on existing elements next to the removal answer rate per algorithm.
+3. Add the removal-test columns to the dashboard.
+4. A confidence or margin rule for Similo (see section 9, use 2) evaluated on this test: how many of its answers on removed elements can be turned into abstentions without losing right answers.
+
+## 11. Bridge baselines for a level comparison of generators and relocators (idea, 2026-11-19)
+
+**Why.** Generators and Similo-style relocators do not play on equal terms (reviewers Filippo and Maurizio). Both see the new page, since a locator is evaluated on it, but they store different things from the old page (one expression, several expressions, or the full property vector) and use different matching rules (exact expression against ranking every candidate). Blinding Similo is impossible, and giving Robula+ the true new target is an oracle that always succeeds.
+
+**Done instead (2026-11-19).** Every algorithm is reported as right, wrong and silent; scored algorithms (Similo family, COLOR, VISTA) also get a coverage-against-precision comparison at the same number of answers as each fixed algorithm (`scripts/analysis/riskcoverage.py`, from the per-pair dumps).
+
+**Future work.** Two bridge baselines to separate the matching rule from the information stored:
+1. *Similo as a locator*: only the attributes a locator can encode (tag, id, name, class, XPath-like), exact match required, abstain otherwise.
+2. *Robula+ with soft matching*: relax the generated XPath into partial constraints and rank the candidates.
+If soft Robula+ ends near Similo, the gap is the matching rule; if it stays far below, the gap is the information (text, neighbours, location).

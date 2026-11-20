@@ -1,0 +1,6 @@
+# Why MultiLocator was slow on some pages (2026-11-19) and the AddressBook namespace issue
+1. Robula+ `evaluateXPaths`: indexed `LinkedList.get(i)` replaced by a `ListIterator` (`patches/robula_evaluateXPaths_listiterator.diff`). Identical result rows, no speedup (`before_after_robula_listiterator.txt`).
+2. bestbuy: Robula+ is under 2% of the time (770 calls, 10 s in total, slowest 211 ms; `robula_call_times_bestbuy.log`, columns ms|iterations|candidates left|robust found|xpath). The cost was `Load.htmlToJDOM` re-parsing the page on every `locate` plus one XPath evaluation per page element and target. LRU caches for parsed pages and XPath results (`patches/Load_scala_dom_and_xpath_cache.diff`, in the `ob` project copy only): bestbuy 776 s to 53 s, accuweather 58 s to 18 s, result rows identical to the production run (`before_after_dom_and_xpath_cache.txt`). Needs JDK 17 to build with sbt.
+3. adobe and zz_cnn still reach the 10-minute limit: one Robula+ call that does not terminate (`jstack_adobe_*_sample.txt`). No per-call budget was implemented.
+4. AddressBook: see `../addressbook/README.md` (xmlns artefact) and `patches/Load_scala_strip_xmlns_switch.diff`.
+`patches/resume_mlvp.sh` (per-site wall-clock limit, resumable; guard: pause below 20% free memory or above 12 GB swap, stop below 15 GB disk) and `retry_timeouts.sh` are the run scripts used.

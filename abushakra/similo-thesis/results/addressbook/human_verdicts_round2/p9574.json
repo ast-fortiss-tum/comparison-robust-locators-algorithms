@@ -1,0 +1,10 @@
+{
+  "at": "2026-11-19T17:50:37.658Z",
+  "id": 9574,
+  "new": "5.6",
+  "note": "",
+  "old": "5.5",
+  "step": 6,
+  "test": "EditGroup",
+  "verdict": "same"
+}
