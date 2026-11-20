@@ -33,6 +33,12 @@ public class UtilsROBULAPlusNew
     static List<String> ordineAttributi     = new ArrayList<String>(Arrays.asList("id", "name", "class", "title", "alt", "value"));
     static List<String> attributiBlackList  = new ArrayList<String>(Arrays.asList("href", "src", "onclick", "onload", "tabindex", "width", "height", "style", "size", "maxlength"));
 
+    // Optional wall-clock budget per generation call (env ROBULA_BUDGET_MS, default off). When it runs out the search stops and returns what it has
+    // (possibly nothing, so the caller regenerates no locator) and the target is logged, so the elements that make the search blow up can be found.
+    private static final long BUDGET_MS = Long.parseLong(System.getenv().getOrDefault("ROBULA_BUDGET_MS", "0"));
+    private static final ThreadLocal<Long> DEADLINE = ThreadLocal.withInitial(() -> Long.MAX_VALUE);
+    private static boolean overBudget() { return BUDGET_MS > 0 && System.currentTimeMillis() > DEADLINE.get(); }
+
     // return a list of robustXPathLocators
     public static LinkedList<XPathInfo> robustXPathLocatorFinder(Document pageDOM, ArrayList<ElementInfo> elementInfoFullPath, String absoluteXPath, String url, AlgorithmSettings settings) throws IOException
     {
@@ -59,10 +65,12 @@ public class UtilsROBULAPlusNew
 	    // at the beginning the candidateXPathLocatorsList contains only "//*"
 	    candidateXPathLocatorsList.add(new XPathInfo("//*", Double.valueOf(Utils.precision(pageDOM, "//*", el))));
 	    long count = 0;
+	    if (BUDGET_MS > 0) DEADLINE.set(System.currentTimeMillis() + BUDGET_MS);
 	    boolean passato = false;
 	    long inizio = 0;
 	    while (!candidateXPathLocatorsList.isEmpty())
 	    {
+		if (overBudget()) { System.err.println("ROBULA_BUDGET hit after " + count + " expansions, " + candidateXPathLocatorsList.size() + " candidates queued, target " + absoluteXPath + " url " + url); break; }
 		specialize(candidateXPathLocatorsList.remove(0), pageDOM, el, candidateXPathLocatorsList, robustXPathLocatorsList, elementInfoFullPath, settings);
 
 		if (!robustXPathLocatorsList.isEmpty())
@@ -164,6 +172,7 @@ public class UtilsROBULAPlusNew
 	{
 	    for (String xPath : trans)
 	    {
+		if (overBudget()) return;
 		double precision = Utils.precision(document, xPath, target);
 		double recall = Utils.recall(document, xPath, target);
 		if (recall == 1.0 && precision == 1.0)
@@ -177,13 +186,17 @@ public class UtilsROBULAPlusNew
 		    { // inserimento ordinato
 			if (!candidateXPathLocatorsList.isEmpty())
 			{
-			    for (int i = 0; i < candidateXPathLocatorsList.size(); i++)
+			    // Same result as the former indexed loop (get(i) / add(i, ...)), but a ListIterator walks a LinkedList in linear time;
+			    // get(i) on a LinkedList is linear itself, which made this insertion quadratic on large pages.
+			    java.util.ListIterator<XPathInfo> it = candidateXPathLocatorsList.listIterator();
+			    while (it.hasNext())
 			    {
-				if (candidateXPathLocatorsList.get(i).getPrecision() < precision)
-				{
-				    candidateXPathLocatorsList.add(i, new XPathInfo(xPath, precision));
-				    break;
-				}
+			        if (it.next().getPrecision() < precision)
+			        {
+			            it.previous(); // step back so the new element goes before the one just read, as add(i, ...) did
+			            it.add(new XPathInfo(xPath, precision));
+			            break;
+			        }
 			    }
 			    candidateXPathLocatorsList.add(new XPathInfo(xPath, precision));
 			}

@@ -150,7 +150,22 @@ object Load:
     val filePath = absPathToTemplates
     filePath
 
+  // Parsed pages are cached per file (canonical path, modification time and size), so a page is parsed once, not once per element. Nothing in the
+  // code base mutates a loaded Document. The cache is bounded (least recently used) because some runs load many sites in one JVM.
+  private val domCacheMax = sys.env.get("DOM_CACHE_MAX").flatMap(_.toIntOption).getOrElse(64)
+  private val domCache = new java.util.LinkedHashMap[String, Document](16, 0.75f, true) {
+    override def removeEldestEntry(e: java.util.Map.Entry[String, Document]): Boolean = size() > domCacheMax
+  }
   def htmlToJDOM(file: File): Document = {
+    val key = s"${file.getCanonicalPath}|${file.lastModified}|${file.length}"
+    domCache.synchronized(Option(domCache.get(key))) match
+      case Some(doc) => doc
+      case None =>
+        val doc = parseHtmlToJDOM(file) // parsed outside the lock; a rare duplicate parse is harmless
+        domCache.synchronized { Option(domCache.get(key)).getOrElse { domCache.put(key, doc); doc } }
+  }
+
+  private def parseHtmlToJDOM(file: File): Document = {
     val jsoupDoc = Jsoup.parse(file, "UTF-8")
 
     // Configure output for well-formed XHTML
@@ -185,9 +200,14 @@ object Load:
     }
 
     // Sanitize CDATA closers and strip DOCTYPE
-    val cleanedXhtml = jsoupDoc.html()
+    val cleanedXhtmlRaw = jsoupDoc.html()
       .replace("]]>", "]]&gt;")
       .replaceFirst("(?i)<!DOCTYPE[^>]*>", "")
+    // STRIP_XMLNS=1: drop the default namespace of the <html> tag (XHTML pages). A browser matches unprefixed XPaths such as //div on such pages,
+    // but a namespace-aware JDOM tree does not, so every XPath-based algorithm would find nothing. Off by default (earlier results used the old behaviour).
+    val cleanedXhtml =
+      if sys.env.get("STRIP_XMLNS").contains("1") then cleanedXhtmlRaw.replaceFirst("(?is)(<html\\b[^>]*?)\\s+xmlns\\s*=\\s*\"[^\"]*\"", "$1")
+      else cleanedXhtmlRaw
 
     val inputStream = new ByteArrayInputStream(cleanedXhtml.getBytes("UTF-8"))
 
@@ -295,7 +315,28 @@ object Load:
    * @param url Element url where the dom will be extracted
    * @return The JDOM Element found
    */
+  // XPath results are cached per Document object (bounded, least recently used): the same page is queried with the same expressions again and again
+  // (once per page element and target element in MultiLocator.locate). A cached page is never mutated, so the cached elements stay valid.
+  private final class DocKey(val d: Document) {
+    override def hashCode: Int = System.identityHashCode(d)
+    override def equals(o: Any): Boolean = o match { case k: DocKey => k.d eq d; case _ => false }
+  }
+  private val xpathCacheMax = sys.env.get("XPATH_CACHE_DOCS").flatMap(_.toIntOption).getOrElse(128)
+  private val xpathCache = new java.util.LinkedHashMap[DocKey, java.util.concurrent.ConcurrentHashMap[String, Seq[Element]]](16, 0.75f, true) {
+    override def removeEldestEntry(e: java.util.Map.Entry[DocKey, java.util.concurrent.ConcurrentHashMap[String, Seq[Element]]]): Boolean = size() > xpathCacheMax
+  }
+
   def getJDOMElementsByXPath(xpath: String, dom: Document): Seq[Element] = {
+    val perDoc = xpathCache.synchronized {
+      val k = new DocKey(dom)
+      Option(xpathCache.get(k)).getOrElse { val m = new java.util.concurrent.ConcurrentHashMap[String, Seq[Element]](); xpathCache.put(k, m); m }
+    }
+    val hit = perDoc.get(xpath)
+    if (hit != null) hit
+    else { val r = evaluateXPathUncached(xpath, dom); perDoc.put(xpath, r); r }
+  }
+
+  private def evaluateXPathUncached(xpath: String, dom: Document): Seq[Element] = {
     try {
       val xPathExpr: XPathExpression[Element] =
         XPathFactory.instance().compile(xpath, Filters.element())

@@ -4,3 +4,8 @@
 3. adobe and zz_cnn still reach the 10-minute limit: one Robula+ call that does not terminate (`jstack_adobe_*_sample.txt`). No per-call budget was implemented.
 4. AddressBook: see `../addressbook/README.md` (xmlns artefact) and `patches/Load_scala_strip_xmlns_switch.diff`.
 `patches/resume_mlvp.sh` (per-site wall-clock limit, resumable; guard: pause below 20% free memory or above 12 GB swap, stop below 15 GB disk) and `retry_timeouts.sh` are the run scripts used.
+
+## Ported to the source tree (2026-11-20)
+The fixes described above now live in `src/`: the page and XPath caches in `util/Load.scala` (bounds `DOM_CACHE_MAX`, `XPATH_CACHE_DOCS`), the linear-time candidate insertion in `robulanew/UtilsROBULAPlusNew.java`, and two opt-in switches that are off by default so earlier results stay reproducible:
+- `STRIP_XMLNS=1` drops the default namespace of `<html>` (XHTML pages such as AddressBook); without it unprefixed XPaths match nothing in the namespace-aware JDOM tree.
+- `ROBULA_BUDGET_MS=<ms>` caps each Robula+ generation call; on a hit the search stops, the call returns what it has and the target is logged to stderr (used for adobe, whose deeply nested div chains make the search explode).
