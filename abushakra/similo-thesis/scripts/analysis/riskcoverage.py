@@ -6,17 +6,18 @@ For algorithms with a real score (Similo family, COLOR, ...) the answers are ran
 coverage/precision curve. Algorithms with a fixed behaviour (generators) are single points. The comparison "at equal coverage" takes, for every
 fixed algorithm, the scored algorithm's top-k answers with k = that algorithm's number of answers.
 
-usage: riskcoverage.py <label> <dump dir> [<dump dir> ...]      (dirs are merged; an algorithm needs >= MIN_ROWS rows to count)
+usage: [EXCLUDE_SITES=<file with one site per line>] riskcoverage.py <label> <dump dir> [<dump dir> ...]      (dirs are merged; an algorithm needs >= MIN_ROWS rows to count)
 Writes <label>_summary.csv and <label>_equal_coverage.csv next to the script's out/ directory (analysis/out/)."""
 import csv, glob, os, sys, collections
 MIN_ROWS = int(os.environ.get('MIN_ROWS', '0'))
 label, dirs = sys.argv[1], sys.argv[2:]
+EXCL = set(open(os.environ['EXCLUDE_SITES']).read().split()) if os.environ.get('EXCLUDE_SITES') else set()   # sites (pairs) left out of the scoring
 data = collections.defaultdict(list)           # algorithm -> [(outcome, score)]
 for d in dirs:
     for f in sorted(glob.glob(d + '/*.csv')):
         algo = os.path.basename(f)[:-4]
         for r in list(csv.reader(open(f, encoding='utf8', errors='ignore')))[1:]:
-            if len(r) < 8: continue
+            if len(r) < 8 or r[1] in EXCL: continue
             try: s = float(r[7])
             except ValueError: s = None
             data[algo].append((r[6], s))

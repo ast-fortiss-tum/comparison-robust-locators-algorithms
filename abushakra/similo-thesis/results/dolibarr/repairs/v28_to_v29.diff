@@ -1,0 +1,106 @@
+diff --color -ru -x S run/wd_v28/src/main/java/pageobjects/ContactPage.java run/wd_v29/src/main/java/pageobjects/ContactPage.java
+--- run/wd_v28/src/main/java/pageobjects/ContactPage.java	2026-11-20 22:21:51
++++ run/wd_v29/src/main/java/pageobjects/ContactPage.java	2026-11-20 23:09:16
+@@ -59,7 +59,8 @@
+ 	@FindBy(xpath=".//*[contains(@class,'jnotify-notification-error')]")
+ 	private WebElement error_msg;
+ 	
+-	@FindBy(linkText="List")
++	// 3.8.0 shows the menus of third parties and contacts together, each with a "List" entry: the contacts one is meant
++	@FindBy(xpath=".//a[contains(@href,'contact/list.php?leftmenu=contacts') and normalize-space()='List']")
+ 	private WebElement listContacts;
+ 	
+ 	@FindBy(linkText="Stocco")
+diff --color -ru -x S run/wd_v28/src/main/java/pageobjects/HomePage.java run/wd_v29/src/main/java/pageobjects/HomePage.java
+--- run/wd_v28/src/main/java/pageobjects/HomePage.java	2026-11-20 22:21:51
++++ run/wd_v29/src/main/java/pageobjects/HomePage.java	2026-11-20 22:28:04
+@@ -7,7 +7,7 @@
+ 
+ public class HomePage {
+ 	
+-	@FindBy(linkText="admin")
++	@FindBy(linkText="SuperAdmin")
+ 	private WebElement loggedUser;
+ 	
+ 	@FindBy(linkText="Mandatory setup parameters are not yet defined")
+diff --color -ru -x S run/wd_v28/src/main/java/pageobjects/IndexPage.java run/wd_v29/src/main/java/pageobjects/IndexPage.java
+--- run/wd_v28/src/main/java/pageobjects/IndexPage.java	2026-11-20 22:21:51
++++ run/wd_v29/src/main/java/pageobjects/IndexPage.java	2026-11-20 22:28:04
+@@ -19,7 +19,7 @@
+ 	@FindBy(xpath="//*[@id='login']/table/tbody/tr/td")
+ 	private WebElement version;
+ 	
+-	@FindBy(xpath="html/body/center/div/div")
++	@FindBy(xpath="html/body/div/div/div/div")
+ 	private WebElement errorMsg;
+ 	
+ 	public IndexPage(WebDriver driver){
+diff --color -ru -x S run/wd_v28/src/main/java/pageobjects/ProductsPage.java run/wd_v29/src/main/java/pageobjects/ProductsPage.java
+--- run/wd_v28/src/main/java/pageobjects/ProductsPage.java	2026-11-20 22:21:51
++++ run/wd_v29/src/main/java/pageobjects/ProductsPage.java	2026-11-20 22:31:17
+@@ -16,7 +16,7 @@
+ 	@FindBy(name="ref")
+ 	private WebElement ref;
+ 	
+-	@FindBy(name="libelle")
++	@FindBy(name="label")
+ 	private WebElement label;
+ 	
+ 	@FindBy(xpath=".//*[@value='Create']")
+diff --color -ru -x S run/wd_v28/src/main/java/pageobjects/SetupPage.java run/wd_v29/src/main/java/pageobjects/SetupPage.java
+--- run/wd_v28/src/main/java/pageobjects/SetupPage.java	2026-11-20 22:21:58
++++ run/wd_v29/src/main/java/pageobjects/SetupPage.java	2026-11-20 23:12:32
+@@ -59,7 +59,7 @@
+ 	private WebElement accounting;
+ 	
+ 	              //".//*[@id='id-right']/div/div[2]/table/tbody/tr[21]/td[5]/a/img"
+-	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[26]/td[5]/a/img")
++	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[28]/td[5]/a/img")
+ 	private WebElement products;
+ 	
+ 	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[21]/td[5]/a/img")
+@@ -76,10 +76,10 @@
+ 	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[5]/td[5]/a/img")
+ 	private WebElement margins;
+ 	
+-	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[7]/td[5]/a/img")
++	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[9]/td[5]/a/img")
+ 	private WebElement resource;
+ 	
+-	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[9]/td[5]/a/img")
++	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[11]/td[5]/a/img")
+ 	private WebElement tags; 
+ 
+ 	// INTERFACE MODULES
+@@ -93,7 +93,7 @@
+ 	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[7]/td[5]/a/img")
+ 	private WebElement paypal;
+ 	
+-	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[11]/td[5]/a/img")
++	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[10]/td[5]/a/img")
+ 	private WebElement lpdap;
+ 	
+ 	
+diff --color -ru -x S run/wd_v28/src/main/java/pageobjects/ThirdPartyPage.java run/wd_v29/src/main/java/pageobjects/ThirdPartyPage.java
+--- run/wd_v28/src/main/java/pageobjects/ThirdPartyPage.java	2026-11-20 22:21:51
++++ run/wd_v29/src/main/java/pageobjects/ThirdPartyPage.java	2026-11-20 22:28:04
+@@ -27,7 +27,7 @@
+ 		
+ 	// CREATE THIRD PARTY PAGE
+ 	
+-	@FindBy(name="nom")
++	@FindBy(name="name")
+ 	private WebElement name;
+ 	
+ 	@FindBy(name="client")
+diff --color -ru -x S run/wd_v28/src/test/java/tests/TestLoginOk.java run/wd_v29/src/test/java/tests/TestLoginOk.java
+--- run/wd_v28/src/test/java/tests/TestLoginOk.java	2026-11-20 22:21:51
++++ run/wd_v29/src/test/java/tests/TestLoginOk.java	2026-11-20 22:31:17
+@@ -13,6 +13,6 @@
+ 	public void test() throws InterruptedException {
+ 		ip.login("admin", "admin");
+ 		HomePage hp = new HomePage(driver);
+-		assertTrue(hp.getLoggedUser().contains("admin"));
++		assertTrue(hp.getLoggedUser().contains("Admin"));
+ 	}
+ }

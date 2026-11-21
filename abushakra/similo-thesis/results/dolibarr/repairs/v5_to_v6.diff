@@ -1,0 +1,84 @@
+diff --color -ru -x S run/wd_v5/src/main/java/pageobjects/BankPage.java run/wd_v6/src/main/java/pageobjects/BankPage.java
+--- run/wd_v5/src/main/java/pageobjects/BankPage.java	2026-11-20 16:57:44
++++ run/wd_v6/src/main/java/pageobjects/BankPage.java	2026-11-20 19:14:42
+@@ -14,7 +14,7 @@
+ 	@FindBy(linkText="Categories")
+ 	private WebElement tags;
+ 				   
+-	@FindBy(xpath=".//*[@id='undertopmenu']/tbody/tr/td[2]/div/div")
++	@FindBy(xpath=".//*[contains(@class,'jnotify-notification-error')]")
+ 	private WebElement erroMsg;
+ 	
+ 	@FindBy(name="ref")
+diff --color -ru -x S run/wd_v5/src/main/java/pageobjects/ContactPage.java run/wd_v6/src/main/java/pageobjects/ContactPage.java
+--- run/wd_v5/src/main/java/pageobjects/ContactPage.java	2026-11-20 16:57:44
++++ run/wd_v6/src/main/java/pageobjects/ContactPage.java	2026-11-20 19:14:42
+@@ -8,7 +8,7 @@
+ 
+ public class ContactPage {
+ 	
+-	@FindBy(name="name")
++	@FindBy(name="lastname")
+ 	private WebElement lastname;
+ 	
+ 	@FindBy(name="firstname")
+diff --color -ru -x S run/wd_v5/src/main/java/pageobjects/IndexPage.java run/wd_v6/src/main/java/pageobjects/IndexPage.java
+--- run/wd_v5/src/main/java/pageobjects/IndexPage.java	2026-11-20 16:57:44
++++ run/wd_v6/src/main/java/pageobjects/IndexPage.java	2026-11-20 17:04:27
+@@ -13,7 +13,7 @@
+ 	@FindBy(id="password")
+ 	private WebElement password;
+ 	
+-	@FindBy(xpath=".//*[@id='login']/table[2]/tbody/tr[5]/td/input[1]")
++	@FindBy(xpath=".//*[@id='login']/table[2]/tbody/tr[2]/td/input")
+ 	private WebElement loginButton;
+ 	
+ 	@FindBy(xpath="//*[@id='login']/table/tbody/tr/td")
+diff --color -ru -x S run/wd_v5/src/main/java/pageobjects/ProductsPage.java run/wd_v6/src/main/java/pageobjects/ProductsPage.java
+--- run/wd_v5/src/main/java/pageobjects/ProductsPage.java	2026-11-20 16:57:44
++++ run/wd_v6/src/main/java/pageobjects/ProductsPage.java	2026-11-20 19:14:42
+@@ -10,7 +10,7 @@
+ 	@FindBy(linkText="New product")
+ 	private WebElement new_product;
+ 				   
+-	@FindBy(xpath=".//*[@id='undertopmenu']/tbody/tr/td[2]/div/form/div")
++	@FindBy(xpath=".//*[contains(@class,'jnotify-notification-error')]")
+ 	private WebElement erroMsg;
+ 	
+ 	@FindBy(name="ref")
+diff --color -ru -x S run/wd_v5/src/main/java/pageobjects/SetupPage.java run/wd_v6/src/main/java/pageobjects/SetupPage.java
+--- run/wd_v5/src/main/java/pageobjects/SetupPage.java	2026-11-20 16:57:44
++++ run/wd_v6/src/main/java/pageobjects/SetupPage.java	2026-11-20 19:14:42
+@@ -23,7 +23,7 @@
+ 	@FindBy(name="ville")
+ 	private WebElement town;
+ 	
+-	@FindBy(id="selectpays_id")
++	@FindBy(id="selectcountry_id")
+ 	private WebElement country;
+ 	
+ 	@FindBy(id="departement_id")
+diff --color -ru -x S run/wd_v5/src/main/java/pageobjects/ThirdPartyPage.java run/wd_v6/src/main/java/pageobjects/ThirdPartyPage.java
+--- run/wd_v5/src/main/java/pageobjects/ThirdPartyPage.java	2026-11-20 16:57:44
++++ run/wd_v6/src/main/java/pageobjects/ThirdPartyPage.java	2026-11-20 19:14:42
+@@ -109,7 +109,7 @@
+ 	@FindBy(xpath=".//*[@id='mainbody']/div[3]/div[3]/div/button[1]")
+ 	private WebElement alert;
+ 	
+-	@FindBy(xpath=".//*[@id='undertopmenu']/tbody/tr/td[2]/div/div")
++	@FindBy(xpath=".//*[contains(@class,'jnotify-notification')]")
+ 	private WebElement delete_message;
+ 	
+ 	// LIST OF PROSPECTS
+diff --color -ru -x S run/wd_v5/src/test/java/tests/AddContactEmpty.java run/wd_v6/src/test/java/tests/AddContactEmpty.java
+--- run/wd_v5/src/test/java/tests/AddContactEmpty.java	2026-11-20 16:57:44
++++ run/wd_v6/src/test/java/tests/AddContactEmpty.java	2026-11-20 19:18:29
+@@ -23,7 +23,7 @@
+ 
+ 		cp.addContact(param);
+ 
+-		assertTrue(cp.getErrorMsg().contains("Field 'Lastname / Label' is required"));
++		assertTrue(cp.getErrorMsg().contains("Field 'Last name / Label' is required"));
+ 
+ 	}
+ }

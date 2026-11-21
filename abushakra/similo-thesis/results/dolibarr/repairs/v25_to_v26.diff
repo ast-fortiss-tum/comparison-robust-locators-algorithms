@@ -1,0 +1,36 @@
+diff --color -ru -x S run/wd_v25/src/main/java/pageobjects/BankPage.java run/wd_v26/src/main/java/pageobjects/BankPage.java
+--- run/wd_v25/src/main/java/pageobjects/BankPage.java	2026-11-20 21:59:07
++++ run/wd_v26/src/main/java/pageobjects/BankPage.java	2026-11-20 22:09:07
+@@ -11,7 +11,7 @@
+ 	@FindBy(linkText="New financial account")
+ 	private WebElement new_invoice;
+ 	
+-	@FindBy(linkText="Categories")
++	@FindBy(linkText="Tags/Categories")
+ 	private WebElement tags;
+ 				   
+ 	@FindBy(xpath=".//*[contains(@class,'jnotify-notification-error')]")
+diff --color -ru -x S run/wd_v25/src/main/java/pageobjects/SetupPage.java run/wd_v26/src/main/java/pageobjects/SetupPage.java
+--- run/wd_v25/src/main/java/pageobjects/SetupPage.java	2026-11-20 21:59:13
++++ run/wd_v26/src/main/java/pageobjects/SetupPage.java	2026-11-20 22:12:21
+@@ -93,7 +93,7 @@
+ 	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[7]/td[5]/a/img")
+ 	private WebElement paypal;
+ 	
+-	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[12]/td[5]/a/img")
++	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[11]/td[5]/a/img")
+ 	private WebElement lpdap;
+ 	
+ 	
+diff --color -ru -x S run/wd_v25/src/main/java/pageobjects/ThirdPartyPage.java run/wd_v26/src/main/java/pageobjects/ThirdPartyPage.java
+--- run/wd_v25/src/main/java/pageobjects/ThirdPartyPage.java	2026-11-20 21:59:07
++++ run/wd_v26/src/main/java/pageobjects/ThirdPartyPage.java	2026-11-20 22:05:47
+@@ -16,7 +16,7 @@
+ 	@FindBy(linkText="List of prospects")
+ 	private WebElement list;
+ 	
+-	@FindBy(xpath=".//*[@value='Add third party']")
++	@FindBy(xpath=".//*[@value='Create third party']")
+ 	private WebElement save;
+ 	
+ 	@FindBy(xpath=".//*[contains(@class,'jnotify-notification-error')]")

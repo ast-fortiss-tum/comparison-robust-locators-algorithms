@@ -1,0 +1,493 @@
+id,version,step,rule,status,detail
+73,v2,BankPage.deleteLabel.deleteLabel,delete,ok,Delete -> Delete
+74,v2,BankPage.deleteLabel.tags,delete,ok,None -> None
+105,v2,DisplayPage.modifyDisplay.skin_1,skin,ok,freelug -> freelug
+106,v2,DisplayPage.modifyDisplay.skin_2,skin,ok,yellow -> yellow
+107,v2,DisplayPage.modifyDisplay.skin_3,skin,ok,eldy -> eldy
+108,v2,DisplayPage.modifyDisplay.skin_4,skin,ok,auguria -> auguria
+122,v2,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> ExternalSite Include any external web si
+123,v2,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.0.1
+124,v2,SetupPage.activateInterfaceModules.lpdap,module,ok,WebServices Enable the Dolibarr web serv -> WebServices Enable the Dolibarr web serv
+125,v2,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+127,v2,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting management 
+128,v2,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+129,v2,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product's management 3.0.1
+130,v2,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact's ma
+133,v2,SetupPage.activateOtherModules.logs,module,ok,Syslog Logging facilities (syslog) 3.0.0 -> Syslog Logging facilities (syslog) 3.0.1
+134,v2,SetupPage.activateOtherModules.margins,module,ok,Categories Categorie's management (produ -> Categories Categorie's management (produ
+135,v2,SetupPage.activateOtherModules.resource,module,ok,Bookmarks Bookmark's management 3.0.0 -> Bookmarks Bookmark's management 3.0.1
+250,v3,BankPage.deleteLabel.deleteLabel,delete,ok,Delete -> Delete
+251,v3,BankPage.deleteLabel.tags,delete,ok,None -> None
+282,v3,DisplayPage.modifyDisplay.skin_1,skin,ok,freelug -> freelug
+283,v3,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> cameleo
+284,v3,DisplayPage.modifyDisplay.skin_3,skin,SUSPECT,eldy -> yellow
+285,v3,DisplayPage.modifyDisplay.skin_4,skin,SUSPECT,auguria -> eldy
+299,v3,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> ExternalSite Include any external web si
+300,v3,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.1.0
+301,v3,SetupPage.activateInterfaceModules.lpdap,module,ok,WebServices Enable the Dolibarr web serv -> WebServices Enable the Dolibarr web serv
+302,v3,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+304,v3,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting management 
+305,v3,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+306,v3,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product's management 3.1.0
+307,v3,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact's ma
+310,v3,SetupPage.activateOtherModules.logs,module,ok,Syslog Logging facilities (syslog) 3.0.0 -> Syslog Logging facilities (syslog) 3.1.0
+311,v3,SetupPage.activateOtherModules.margins,module,ok,Categories Categorie's management (produ -> Categories Categorie's management (produ
+312,v3,SetupPage.activateOtherModules.resource,module,ok,Bookmarks Bookmark's management 3.0.0 -> Bookmarks Bookmark's management 3.1.0
+427,v4,BankPage.deleteLabel.deleteLabel,delete,ok,Delete -> Delete
+428,v4,BankPage.deleteLabel.tags,delete,ok,None -> None
+459,v4,DisplayPage.modifyDisplay.skin_1,skin,ok,freelug -> freelug
+460,v4,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> cameleo
+461,v4,DisplayPage.modifyDisplay.skin_3,skin,SUSPECT,eldy -> yellow
+462,v4,DisplayPage.modifyDisplay.skin_4,skin,SUSPECT,auguria -> eldy
+476,v4,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> ExternalSite Include any external web si
+477,v4,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.1.1
+478,v4,SetupPage.activateInterfaceModules.lpdap,module,ok,WebServices Enable the Dolibarr web serv -> WebServices Enable the Dolibarr web serv
+479,v4,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+481,v4,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting management 
+482,v4,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+483,v4,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product's management 3.1.1
+484,v4,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact's ma
+487,v4,SetupPage.activateOtherModules.logs,module,ok,Syslog Logging facilities (syslog) 3.0.0 -> Syslog Logging facilities (syslog) 3.1.1
+488,v4,SetupPage.activateOtherModules.margins,module,ok,Categories Categorie's management (produ -> Categories Categorie's management (produ
+489,v4,SetupPage.activateOtherModules.resource,module,ok,Bookmarks Bookmark's management 3.0.0 -> Bookmarks Bookmark's management 3.1.1
+604,v5,BankPage.deleteLabel.deleteLabel,delete,ok,Delete -> Delete
+605,v5,BankPage.deleteLabel.tags,delete,ok,None -> None
+636,v5,DisplayPage.modifyDisplay.skin_1,skin,ok,freelug -> freelug
+637,v5,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> cameleo
+638,v5,DisplayPage.modifyDisplay.skin_3,skin,SUSPECT,eldy -> yellow
+639,v5,DisplayPage.modifyDisplay.skin_4,skin,SUSPECT,auguria -> eldy
+653,v5,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> ExternalSite Include any external web si
+654,v5,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.1.2
+655,v5,SetupPage.activateInterfaceModules.lpdap,module,ok,WebServices Enable the Dolibarr web serv -> WebServices Enable the Dolibarr web serv
+656,v5,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+658,v5,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting management 
+659,v5,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+660,v5,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product's management 3.1.2
+661,v5,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact's ma
+664,v5,SetupPage.activateOtherModules.logs,module,ok,Syslog Logging facilities (syslog) 3.0.0 -> Syslog Logging facilities (syslog) 3.1.2
+665,v5,SetupPage.activateOtherModules.margins,module,ok,Categories Categorie's management (produ -> Categories Categorie's management (produ
+666,v5,SetupPage.activateOtherModules.resource,module,ok,Bookmarks Bookmark's management 3.0.0 -> Bookmarks Bookmark's management 3.1.2
+781,v6,BankPage.deleteLabel.deleteLabel,delete,ok,Delete -> Delete
+782,v6,BankPage.deleteLabel.tags,delete,ok,None -> None
+812,v6,DisplayPage.modifyDisplay.skin_1,skin,SUSPECT,freelug -> bureau2crea
+813,v6,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> cameleo
+814,v6,DisplayPage.modifyDisplay.skin_3,skin,ok,eldy -> eldy
+815,v6,DisplayPage.modifyDisplay.skin_4,skin,ok,auguria -> auguria
+829,v6,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> External site Include any external web s
+830,v6,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.2.0
+831,v6,SetupPage.activateInterfaceModules.lpdap,module,SUSPECT,WebServices Enable the Dolibarr web serv -> LDAP LDAP directory synchronisation 3.2.
+832,v6,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+834,v6,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting management 
+835,v6,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+836,v6,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product's management 3.2.0
+837,v6,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact's ma
+840,v6,SetupPage.activateOtherModules.logs,module,ok,"Syslog Logging facilities (syslog) 3.0.0 -> Logs Logging facilities (file, syslog, ."
+841,v6,SetupPage.activateOtherModules.margins,module,ok,Categories Categorie's management (produ -> Categories Categorie's management (produ
+842,v6,SetupPage.activateOtherModules.resource,module,ok,Bookmarks Bookmark's management 3.0.0 -> Bookmarks Bookmark's management 3.2.0
+957,v7,BankPage.deleteLabel.deleteLabel,delete,ok,Delete -> Delete
+958,v7,BankPage.deleteLabel.tags,delete,ok,None -> None
+989,v7,DisplayPage.modifyDisplay.skin_1,skin,ok,freelug -> freelug
+990,v7,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> cameleo
+991,v7,DisplayPage.modifyDisplay.skin_3,skin,SUSPECT,eldy -> yellow
+992,v7,DisplayPage.modifyDisplay.skin_4,skin,SUSPECT,auguria -> eldy
+1006,v7,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> ExternalSite Include any external web si
+1007,v7,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.1.3
+1008,v7,SetupPage.activateInterfaceModules.lpdap,module,ok,WebServices Enable the Dolibarr web serv -> WebServices Enable the Dolibarr web serv
+1009,v7,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+1011,v7,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting management 
+1012,v7,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+1013,v7,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product's management 3.1.3
+1014,v7,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact's ma
+1017,v7,SetupPage.activateOtherModules.logs,module,ok,Syslog Logging facilities (syslog) 3.0.0 -> Syslog Logging facilities (syslog) 3.1.3
+1018,v7,SetupPage.activateOtherModules.margins,module,ok,Categories Categorie's management (produ -> Categories Categorie's management (produ
+1019,v7,SetupPage.activateOtherModules.resource,module,ok,Bookmarks Bookmark's management 3.0.0 -> Bookmarks Bookmark's management 3.1.3
+1134,v8,BankPage.deleteLabel.deleteLabel,delete,ok,Delete -> Delete
+1135,v8,BankPage.deleteLabel.tags,delete,ok,None -> None
+1165,v8,DisplayPage.modifyDisplay.skin_1,skin,SUSPECT,freelug -> bureau2crea
+1166,v8,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> cameleo
+1167,v8,DisplayPage.modifyDisplay.skin_3,skin,ok,eldy -> eldy
+1168,v8,DisplayPage.modifyDisplay.skin_4,skin,ok,auguria -> auguria
+1182,v8,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> External site Include any external web s
+1183,v8,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.2.1
+1184,v8,SetupPage.activateInterfaceModules.lpdap,module,SUSPECT,WebServices Enable the Dolibarr web serv -> LDAP LDAP directory synchronisation 3.2.
+1185,v8,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+1187,v8,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting management 
+1188,v8,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+1189,v8,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product's management 3.2.1
+1190,v8,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact's ma
+1193,v8,SetupPage.activateOtherModules.logs,module,ok,"Syslog Logging facilities (syslog) 3.0.0 -> Logs Logging facilities (file, syslog, ."
+1194,v8,SetupPage.activateOtherModules.margins,module,ok,Categories Categorie's management (produ -> Categories Categorie's management (produ
+1195,v8,SetupPage.activateOtherModules.resource,module,ok,Bookmarks Bookmark's management 3.0.0 -> Bookmarks Bookmark's management 3.2.1
+1310,v9,BankPage.deleteLabel.deleteLabel,delete,ok,Delete -> Delete
+1311,v9,BankPage.deleteLabel.tags,delete,ok,None -> None
+1341,v9,DisplayPage.modifyDisplay.skin_1,skin,SUSPECT,freelug -> bureau2crea
+1342,v9,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> cameleo
+1343,v9,DisplayPage.modifyDisplay.skin_3,skin,ok,eldy -> eldy
+1344,v9,DisplayPage.modifyDisplay.skin_4,skin,ok,auguria -> auguria
+1358,v9,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> External site Include any external web s
+1359,v9,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.2.2
+1360,v9,SetupPage.activateInterfaceModules.lpdap,module,SUSPECT,WebServices Enable the Dolibarr web serv -> LDAP LDAP directory synchronisation 3.2.
+1361,v9,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+1363,v9,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting management 
+1364,v9,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+1365,v9,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product's management 3.2.2
+1366,v9,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact's ma
+1369,v9,SetupPage.activateOtherModules.logs,module,ok,"Syslog Logging facilities (syslog) 3.0.0 -> Logs Logging facilities (file, syslog, ."
+1370,v9,SetupPage.activateOtherModules.margins,module,ok,Categories Categorie's management (produ -> Categories Categorie's management (produ
+1371,v9,SetupPage.activateOtherModules.resource,module,ok,Bookmarks Bookmark's management 3.0.0 -> Bookmarks Bookmark's management 3.2.2
+1486,v10,BankPage.deleteLabel.deleteLabel,delete,ok,Delete -> Delete
+1487,v10,BankPage.deleteLabel.tags,delete,ok,None -> None
+1517,v10,DisplayPage.modifyDisplay.skin_1,skin,SUSPECT,freelug -> bureau2crea
+1518,v10,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> cameleo
+1519,v10,DisplayPage.modifyDisplay.skin_3,skin,ok,eldy -> eldy
+1520,v10,DisplayPage.modifyDisplay.skin_4,skin,ok,auguria -> auguria
+1534,v10,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> External site Include any external web s
+1535,v10,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.2.3
+1536,v10,SetupPage.activateInterfaceModules.lpdap,module,SUSPECT,WebServices Enable the Dolibarr web serv -> LDAP LDAP directory synchronisation 3.2.
+1537,v10,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+1539,v10,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting management 
+1540,v10,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+1541,v10,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product's management 3.2.3
+1542,v10,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact's ma
+1545,v10,SetupPage.activateOtherModules.logs,module,ok,"Syslog Logging facilities (syslog) 3.0.0 -> Logs Logging facilities (file, syslog, ."
+1546,v10,SetupPage.activateOtherModules.margins,module,ok,Categories Categorie's management (produ -> Categories Categorie's management (produ
+1547,v10,SetupPage.activateOtherModules.resource,module,ok,Bookmarks Bookmark's management 3.0.0 -> Bookmarks Bookmark's management 3.2.3
+1662,v11,BankPage.deleteLabel.deleteLabel,delete,ok,Delete -> Delete
+1663,v11,BankPage.deleteLabel.tags,delete,ok,None -> None
+1693,v11,DisplayPage.modifyDisplay.skin_1,skin,SUSPECT,freelug -> amarok
+1694,v11,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> bureau2crea
+1695,v11,DisplayPage.modifyDisplay.skin_3,skin,SUSPECT,eldy -> cameleo
+1696,v11,DisplayPage.modifyDisplay.skin_4,skin,SUSPECT,auguria -> eldy
+1710,v11,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> External site This module include an ext
+1711,v11,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.3.0
+1712,v11,SetupPage.activateInterfaceModules.lpdap,module,SUSPECT,WebServices Enable the Dolibarr web serv -> LDAP LDAP directory synchronisation 3.3.
+1713,v11,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+1715,v11,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting management 
+1716,v11,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+1717,v11,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product management 3.3.0
+1718,v11,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact mana
+1721,v11,SetupPage.activateOtherModules.logs,module,ok,"Syslog Logging facilities (syslog) 3.0.0 -> Logs Logging facilities (file, syslog, ."
+1722,v11,SetupPage.activateOtherModules.margins,module,SUSPECT,Categories Categorie's management (produ -> Margins Module to manage margins 3.3.0
+1723,v11,SetupPage.activateOtherModules.resource,module,SUSPECT,Bookmarks Bookmark's management 3.0.0 -> Categories Category management (products
+1838,v12,BankPage.deleteLabel.deleteLabel,delete,ok,Delete -> Delete
+1839,v12,BankPage.deleteLabel.tags,delete,ok,None -> None
+1869,v12,DisplayPage.modifyDisplay.skin_1,skin,SUSPECT,freelug -> amarok
+1870,v12,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> bureau2crea
+1871,v12,DisplayPage.modifyDisplay.skin_3,skin,SUSPECT,eldy -> cameleo
+1872,v12,DisplayPage.modifyDisplay.skin_4,skin,SUSPECT,auguria -> eldy
+1886,v12,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> External site This module include an ext
+1887,v12,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.3.1
+1888,v12,SetupPage.activateInterfaceModules.lpdap,module,SUSPECT,WebServices Enable the Dolibarr web serv -> LDAP LDAP directory synchronisation 3.3.
+1889,v12,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+1891,v12,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting management 
+1892,v12,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+1893,v12,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product management 3.3.1
+1894,v12,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact mana
+1897,v12,SetupPage.activateOtherModules.logs,module,ok,"Syslog Logging facilities (syslog) 3.0.0 -> Logs Logging facilities (file, syslog, ."
+1898,v12,SetupPage.activateOtherModules.margins,module,SUSPECT,Categories Categorie's management (produ -> Margins Module to manage margins 3.3.1
+1899,v12,SetupPage.activateOtherModules.resource,module,SUSPECT,Bookmarks Bookmark's management 3.0.0 -> Categories Category management (products
+2014,v13,BankPage.deleteLabel.deleteLabel,delete,ok,Delete -> Delete
+2015,v13,BankPage.deleteLabel.tags,delete,ok,None -> None
+2045,v13,DisplayPage.modifyDisplay.skin_1,skin,SUSPECT,freelug -> amarok
+2046,v13,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> bureau2crea
+2047,v13,DisplayPage.modifyDisplay.skin_3,skin,SUSPECT,eldy -> cameleo
+2048,v13,DisplayPage.modifyDisplay.skin_4,skin,SUSPECT,auguria -> eldy
+2062,v13,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> External site This module include an ext
+2063,v13,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.3.2
+2064,v13,SetupPage.activateInterfaceModules.lpdap,module,SUSPECT,WebServices Enable the Dolibarr web serv -> LDAP LDAP directory synchronisation 3.3.
+2065,v13,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+2067,v13,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting management 
+2068,v13,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+2069,v13,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product management 3.3.2
+2070,v13,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact mana
+2073,v13,SetupPage.activateOtherModules.logs,module,ok,"Syslog Logging facilities (syslog) 3.0.0 -> Logs Logging facilities (file, syslog, ."
+2074,v13,SetupPage.activateOtherModules.margins,module,SUSPECT,Categories Categorie's management (produ -> Margins Module to manage margins 3.3.2
+2075,v13,SetupPage.activateOtherModules.resource,module,SUSPECT,Bookmarks Bookmark's management 3.0.0 -> Categories Category management (products
+2190,v14,BankPage.deleteLabel.deleteLabel,delete,ok,Delete -> Delete
+2191,v14,BankPage.deleteLabel.tags,delete,ok,None -> None
+2221,v14,DisplayPage.modifyDisplay.skin_1,skin,SUSPECT,freelug -> amarok
+2222,v14,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> bureau2crea
+2223,v14,DisplayPage.modifyDisplay.skin_3,skin,SUSPECT,eldy -> cameleo
+2224,v14,DisplayPage.modifyDisplay.skin_4,skin,SUSPECT,auguria -> eldy
+2238,v14,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> External site This module include an ext
+2239,v14,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.3.3
+2240,v14,SetupPage.activateInterfaceModules.lpdap,module,SUSPECT,WebServices Enable the Dolibarr web serv -> LDAP LDAP directory synchronisation 3.3.
+2241,v14,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+2243,v14,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting management 
+2244,v14,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+2245,v14,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product management 3.3.3
+2246,v14,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact mana
+2249,v14,SetupPage.activateOtherModules.logs,module,ok,"Syslog Logging facilities (syslog) 3.0.0 -> Logs Logging facilities (file, syslog, ."
+2250,v14,SetupPage.activateOtherModules.margins,module,SUSPECT,Categories Categorie's management (produ -> Margins Module to manage margins 3.3.3
+2251,v14,SetupPage.activateOtherModules.resource,module,SUSPECT,Bookmarks Bookmark's management 3.0.0 -> Categories Category management (products
+2366,v15,BankPage.deleteLabel.deleteLabel,delete,ok,Delete -> Delete
+2367,v15,BankPage.deleteLabel.tags,delete,ok,None -> None
+2397,v15,DisplayPage.modifyDisplay.skin_1,skin,SUSPECT,freelug -> amarok
+2398,v15,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> bureau2crea
+2399,v15,DisplayPage.modifyDisplay.skin_3,skin,SUSPECT,eldy -> cameleo
+2400,v15,DisplayPage.modifyDisplay.skin_4,skin,SUSPECT,auguria -> eldy
+2414,v15,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> External site This module include an ext
+2415,v15,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.4.0
+2416,v15,SetupPage.activateInterfaceModules.lpdap,module,SUSPECT,WebServices Enable the Dolibarr web serv -> LDAP LDAP directory synchronisation 3.4.
+2417,v15,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+2419,v15,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting reports (jo
+2420,v15,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+2421,v15,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product management 3.4.0
+2422,v15,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact mana
+2425,v15,SetupPage.activateOtherModules.logs,module,ok,"Syslog Logging facilities (syslog) 3.0.0 -> Logs Logging facilities (file, syslog, ."
+2426,v15,SetupPage.activateOtherModules.margins,module,SUSPECT,Categories Categorie's management (produ -> Margins Module to manage margins 3.4.0
+2427,v15,SetupPage.activateOtherModules.resource,module,SUSPECT,Bookmarks Bookmark's management 3.0.0 -> Categories Category management (products
+2541,v16,BankPage.deleteLabel.deleteLabel,delete,ok,Delete -> Delete
+2542,v16,BankPage.deleteLabel.tags,delete,ok,None -> None
+2572,v16,DisplayPage.modifyDisplay.skin_1,skin,SUSPECT,freelug -> amarok
+2573,v16,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> bureau2crea
+2574,v16,DisplayPage.modifyDisplay.skin_3,skin,SUSPECT,eldy -> cameleo
+2575,v16,DisplayPage.modifyDisplay.skin_4,skin,SUSPECT,auguria -> eldy
+2589,v16,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> External site This module include an ext
+2590,v16,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.4.1
+2591,v16,SetupPage.activateInterfaceModules.lpdap,module,SUSPECT,WebServices Enable the Dolibarr web serv -> LDAP LDAP directory synchronisation 3.4.
+2592,v16,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+2594,v16,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting reports (jo
+2595,v16,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+2596,v16,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product management 3.4.1
+2597,v16,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact mana
+2600,v16,SetupPage.activateOtherModules.logs,module,ok,"Syslog Logging facilities (syslog) 3.0.0 -> Logs Logging facilities (file, syslog, ."
+2601,v16,SetupPage.activateOtherModules.margins,module,SUSPECT,Categories Categorie's management (produ -> Margins Module to manage margins 3.4.1
+2602,v16,SetupPage.activateOtherModules.resource,module,SUSPECT,Bookmarks Bookmark's management 3.0.0 -> Categories Category management (products
+2716,v17,BankPage.deleteLabel.deleteLabel,delete,ok,Delete -> Delete
+2717,v17,BankPage.deleteLabel.tags,delete,ok,None -> None
+2747,v17,DisplayPage.modifyDisplay.skin_1,skin,SUSPECT,freelug -> amarok
+2748,v17,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> bureau2crea
+2749,v17,DisplayPage.modifyDisplay.skin_3,skin,SUSPECT,eldy -> cameleo
+2750,v17,DisplayPage.modifyDisplay.skin_4,skin,SUSPECT,auguria -> eldy
+2764,v17,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> External site This module include an ext
+2765,v17,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.4.2
+2766,v17,SetupPage.activateInterfaceModules.lpdap,module,SUSPECT,WebServices Enable the Dolibarr web serv -> LDAP LDAP directory synchronisation 3.4.
+2767,v17,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+2769,v17,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting reports (jo
+2770,v17,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+2771,v17,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product management 3.4.2
+2772,v17,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact mana
+2775,v17,SetupPage.activateOtherModules.logs,module,ok,"Syslog Logging facilities (syslog) 3.0.0 -> Logs Logging facilities (file, syslog, ."
+2776,v17,SetupPage.activateOtherModules.margins,module,SUSPECT,Categories Categorie's management (produ -> Margins Module to manage margins 3.4.2
+2777,v17,SetupPage.activateOtherModules.resource,module,SUSPECT,Bookmarks Bookmark's management 3.0.0 -> Categories Category management (products
+2891,v18,BankPage.deleteLabel.deleteLabel,delete,SUSPECT,Delete -> Modify
+2892,v18,BankPage.deleteLabel.tags,delete,ok,None -> None
+2923,v18,DisplayPage.modifyDisplay.skin_1,skin,SUSPECT,freelug -> amarok
+2924,v18,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> bureau2crea
+2925,v18,DisplayPage.modifyDisplay.skin_3,skin,SUSPECT,eldy -> cameleo
+2926,v18,DisplayPage.modifyDisplay.skin_4,skin,SUSPECT,auguria -> eldy
+2940,v18,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> External site This module include an ext
+2941,v18,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.5.0
+2942,v18,SetupPage.activateInterfaceModules.lpdap,module,SUSPECT,WebServices Enable the Dolibarr web serv -> LDAP LDAP directory synchronisation 3.5.
+2943,v18,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+2945,v18,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting reports (jo
+2946,v18,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+2947,v18,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product management 3.5.0
+2948,v18,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact mana
+2951,v18,SetupPage.activateOtherModules.logs,module,ok,"Syslog Logging facilities (syslog) 3.0.0 -> Logs Logging facilities (file, syslog, ."
+2952,v18,SetupPage.activateOtherModules.margins,module,SUSPECT,Categories Categorie's management (produ -> Margins Module to manage margins 3.5.0
+2953,v18,SetupPage.activateOtherModules.resource,module,SUSPECT,Bookmarks Bookmark's management 3.0.0 -> Categories Category management (products
+3067,v19,BankPage.deleteLabel.deleteLabel,delete,SUSPECT,Delete -> Modify
+3068,v19,BankPage.deleteLabel.tags,delete,ok,None -> None
+3099,v19,DisplayPage.modifyDisplay.skin_1,skin,SUSPECT,freelug -> amarok
+3100,v19,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> bureau2crea
+3101,v19,DisplayPage.modifyDisplay.skin_3,skin,SUSPECT,eldy -> cameleo
+3102,v19,DisplayPage.modifyDisplay.skin_4,skin,SUSPECT,auguria -> eldy
+3116,v19,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> External site This module include an ext
+3117,v19,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.5.1
+3118,v19,SetupPage.activateInterfaceModules.lpdap,module,SUSPECT,WebServices Enable the Dolibarr web serv -> LDAP LDAP directory synchronisation 3.5.
+3119,v19,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+3121,v19,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting reports (jo
+3122,v19,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+3123,v19,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product management 3.5.1
+3124,v19,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact mana
+3127,v19,SetupPage.activateOtherModules.logs,module,ok,"Syslog Logging facilities (syslog) 3.0.0 -> Logs Logging facilities (file, syslog, ."
+3128,v19,SetupPage.activateOtherModules.margins,module,SUSPECT,Categories Categorie's management (produ -> Margins Module to manage margins 3.5.1
+3129,v19,SetupPage.activateOtherModules.resource,module,SUSPECT,Bookmarks Bookmark's management 3.0.0 -> Categories Category management (products
+3243,v20,BankPage.deleteLabel.deleteLabel,delete,SUSPECT,Delete -> Modify
+3244,v20,BankPage.deleteLabel.tags,delete,ok,None -> None
+3275,v20,DisplayPage.modifyDisplay.skin_1,skin,SUSPECT,freelug -> amarok
+3276,v20,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> bureau2crea
+3277,v20,DisplayPage.modifyDisplay.skin_3,skin,SUSPECT,eldy -> cameleo
+3278,v20,DisplayPage.modifyDisplay.skin_4,skin,SUSPECT,auguria -> eldy
+3292,v20,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> External site This module include an ext
+3293,v20,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.5.2
+3294,v20,SetupPage.activateInterfaceModules.lpdap,module,SUSPECT,WebServices Enable the Dolibarr web serv -> LDAP LDAP directory synchronisation 3.5.
+3295,v20,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+3297,v20,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting reports (jo
+3298,v20,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+3299,v20,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product management 3.5.2
+3300,v20,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact mana
+3303,v20,SetupPage.activateOtherModules.logs,module,ok,"Syslog Logging facilities (syslog) 3.0.0 -> Logs Logging facilities (file, syslog, ."
+3304,v20,SetupPage.activateOtherModules.margins,module,SUSPECT,Categories Categorie's management (produ -> Margins Module to manage margins 3.5.2
+3305,v20,SetupPage.activateOtherModules.resource,module,SUSPECT,Bookmarks Bookmark's management 3.0.0 -> Categories Category management (products
+3419,v21,BankPage.deleteLabel.deleteLabel,delete,SUSPECT,Delete -> Modify
+3420,v21,BankPage.deleteLabel.tags,delete,ok,None -> None
+3451,v21,DisplayPage.modifyDisplay.skin_1,skin,SUSPECT,freelug -> amarok
+3452,v21,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> bureau2crea
+3453,v21,DisplayPage.modifyDisplay.skin_3,skin,SUSPECT,eldy -> cameleo
+3454,v21,DisplayPage.modifyDisplay.skin_4,skin,SUSPECT,auguria -> eldy
+3468,v21,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> External site This module include an ext
+3469,v21,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.5.3
+3470,v21,SetupPage.activateInterfaceModules.lpdap,module,SUSPECT,WebServices Enable the Dolibarr web serv -> LDAP LDAP directory synchronisation 3.5.
+3471,v21,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+3473,v21,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting reports (jo
+3474,v21,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+3475,v21,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product management 3.5.3
+3476,v21,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact mana
+3479,v21,SetupPage.activateOtherModules.logs,module,ok,"Syslog Logging facilities (syslog) 3.0.0 -> Logs Logging facilities (file, syslog, ."
+3480,v21,SetupPage.activateOtherModules.margins,module,SUSPECT,Categories Categorie's management (produ -> Margins Module to manage margins 3.5.3
+3481,v21,SetupPage.activateOtherModules.resource,module,SUSPECT,Bookmarks Bookmark's management 3.0.0 -> Categories Category management (products
+3595,v22,BankPage.deleteLabel.deleteLabel,delete,SUSPECT,Delete -> Modify
+3596,v22,BankPage.deleteLabel.tags,delete,ok,None -> None
+3627,v22,DisplayPage.modifyDisplay.skin_1,skin,SUSPECT,freelug -> amarok
+3628,v22,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> bureau2crea
+3629,v22,DisplayPage.modifyDisplay.skin_3,skin,SUSPECT,eldy -> cameleo
+3630,v22,DisplayPage.modifyDisplay.skin_4,skin,SUSPECT,auguria -> eldy
+3644,v22,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> External site This module include an ext
+3645,v22,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.5.4
+3646,v22,SetupPage.activateInterfaceModules.lpdap,module,SUSPECT,WebServices Enable the Dolibarr web serv -> LDAP LDAP directory synchronisation 3.5.
+3647,v22,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+3649,v22,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting reports (jo
+3650,v22,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+3651,v22,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product management 3.5.4
+3652,v22,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact mana
+3655,v22,SetupPage.activateOtherModules.logs,module,ok,"Syslog Logging facilities (syslog) 3.0.0 -> Logs Logging facilities (file, syslog, ."
+3656,v22,SetupPage.activateOtherModules.margins,module,SUSPECT,Categories Categorie's management (produ -> Margins Module to manage margins 3.5.4
+3657,v22,SetupPage.activateOtherModules.resource,module,SUSPECT,Bookmarks Bookmark's management 3.0.0 -> Categories Category management (products
+3771,v23,BankPage.deleteLabel.deleteLabel,delete,SUSPECT,Delete -> Modify
+3772,v23,BankPage.deleteLabel.tags,delete,ok,None -> None
+3803,v23,DisplayPage.modifyDisplay.skin_1,skin,SUSPECT,freelug -> amarok
+3804,v23,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> bureau2crea
+3805,v23,DisplayPage.modifyDisplay.skin_3,skin,SUSPECT,eldy -> cameleo
+3806,v23,DisplayPage.modifyDisplay.skin_4,skin,SUSPECT,auguria -> eldy
+3820,v23,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> External site This module include an ext
+3821,v23,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.6.0
+3822,v23,SetupPage.activateInterfaceModules.lpdap,module,SUSPECT,WebServices Enable the Dolibarr web serv -> LDAP LDAP directory synchronisation 3.6.
+3823,v23,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+3825,v23,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting reports (jo
+3826,v23,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+3827,v23,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product management 3.6.0
+3828,v23,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact mana
+3831,v23,SetupPage.activateOtherModules.logs,module,ok,"Syslog Logging facilities (syslog) 3.0.0 -> Logs Logging facilities (file, syslog, ."
+3832,v23,SetupPage.activateOtherModules.margins,module,SUSPECT,Categories Categorie's management (produ -> Margins Module to manage margins 3.6.0
+3833,v23,SetupPage.activateOtherModules.resource,module,SUSPECT,Bookmarks Bookmark's management 3.0.0 -> Categories Category management (products
+3947,v24,BankPage.deleteLabel.deleteLabel,delete,SUSPECT,Delete -> Modify
+3948,v24,BankPage.deleteLabel.tags,delete,ok,None -> None
+3979,v24,DisplayPage.modifyDisplay.skin_1,skin,SUSPECT,freelug -> amarok
+3980,v24,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> bureau2crea
+3981,v24,DisplayPage.modifyDisplay.skin_3,skin,SUSPECT,eldy -> cameleo
+3982,v24,DisplayPage.modifyDisplay.skin_4,skin,SUSPECT,auguria -> eldy
+3996,v24,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> External site This module include an ext
+3997,v24,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.6.2
+3998,v24,SetupPage.activateInterfaceModules.lpdap,module,SUSPECT,WebServices Enable the Dolibarr web serv -> LDAP LDAP directory synchronisation 3.6.
+3999,v24,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+4001,v24,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting reports (jo
+4002,v24,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+4003,v24,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product management 3.6.2
+4004,v24,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact mana
+4007,v24,SetupPage.activateOtherModules.logs,module,ok,"Syslog Logging facilities (syslog) 3.0.0 -> Logs Logging facilities (file, syslog, ."
+4008,v24,SetupPage.activateOtherModules.margins,module,SUSPECT,Categories Categorie's management (produ -> Margins Module to manage margins 3.6.2
+4009,v24,SetupPage.activateOtherModules.resource,module,SUSPECT,Bookmarks Bookmark's management 3.0.0 -> Categories Category management (products
+4123,v25,BankPage.deleteLabel.deleteLabel,delete,SUSPECT,Delete -> Modify
+4124,v25,BankPage.deleteLabel.tags,delete,ok,None -> None
+4155,v25,DisplayPage.modifyDisplay.skin_1,skin,SUSPECT,freelug -> amarok
+4156,v25,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> bureau2crea
+4157,v25,DisplayPage.modifyDisplay.skin_3,skin,SUSPECT,eldy -> cameleo
+4158,v25,DisplayPage.modifyDisplay.skin_4,skin,SUSPECT,auguria -> eldy
+4172,v25,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> External site This module include an ext
+4173,v25,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.6.3
+4174,v25,SetupPage.activateInterfaceModules.lpdap,module,SUSPECT,WebServices Enable the Dolibarr web serv -> LDAP LDAP directory synchronisation 3.6.
+4175,v25,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+4177,v25,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting reports (jo
+4178,v25,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+4179,v25,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product management 3.6.3
+4180,v25,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact mana
+4183,v25,SetupPage.activateOtherModules.logs,module,ok,"Syslog Logging facilities (syslog) 3.0.0 -> Logs Logging facilities (file, syslog, ."
+4184,v25,SetupPage.activateOtherModules.margins,module,SUSPECT,Categories Categorie's management (produ -> Margins Module to manage margins 3.6.3
+4185,v25,SetupPage.activateOtherModules.resource,module,SUSPECT,Bookmarks Bookmark's management 3.0.0 -> Categories Category management (products
+4299,v26,BankPage.deleteLabel.deleteLabel,delete,SUSPECT,Delete -> Modify
+4300,v26,BankPage.deleteLabel.tags,delete,ok,None -> None
+4331,v26,DisplayPage.modifyDisplay.skin_1,skin,SUSPECT,freelug -> amarok
+4332,v26,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> bureau2crea
+4333,v26,DisplayPage.modifyDisplay.skin_3,skin,SUSPECT,eldy -> cameleo
+4334,v26,DisplayPage.modifyDisplay.skin_4,skin,SUSPECT,auguria -> eldy
+4348,v26,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> External site This module include an ext
+4349,v26,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.7.0
+4350,v26,SetupPage.activateInterfaceModules.lpdap,module,SUSPECT,WebServices Enable the Dolibarr web serv -> LDAP LDAP directory synchronisation 3.7.
+4351,v26,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+4353,v26,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting reports (jo
+4354,v26,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+4355,v26,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product management 3.7.0
+4356,v26,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact mana
+4359,v26,SetupPage.activateOtherModules.logs,module,ok,"Syslog Logging facilities (syslog) 3.0.0 -> Logs Logging facilities (file, syslog, ."
+4360,v26,SetupPage.activateOtherModules.margins,module,SUSPECT,Categories Categorie's management (produ -> Margins Module to manage margins 3.7.0
+4361,v26,SetupPage.activateOtherModules.resource,module,SUSPECT,Bookmarks Bookmark's management 3.0.0 -> Tags/Categories Create tags/category on 
+4475,v27,BankPage.deleteLabel.deleteLabel,delete,SUSPECT,Delete -> Modify
+4476,v27,BankPage.deleteLabel.tags,delete,ok,None -> None
+4507,v27,DisplayPage.modifyDisplay.skin_1,skin,SUSPECT,freelug -> amarok
+4508,v27,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> bureau2crea
+4509,v27,DisplayPage.modifyDisplay.skin_3,skin,SUSPECT,eldy -> cameleo
+4510,v27,DisplayPage.modifyDisplay.skin_4,skin,SUSPECT,auguria -> eldy
+4524,v27,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> External site This module include an ext
+4525,v27,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.6.4
+4526,v27,SetupPage.activateInterfaceModules.lpdap,module,SUSPECT,WebServices Enable the Dolibarr web serv -> LDAP LDAP directory synchronisation 3.6.
+4527,v27,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+4529,v27,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting reports (jo
+4530,v27,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+4531,v27,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product management 3.6.4
+4532,v27,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact mana
+4535,v27,SetupPage.activateOtherModules.logs,module,ok,"Syslog Logging facilities (syslog) 3.0.0 -> Logs Logging facilities (file, syslog, ."
+4536,v27,SetupPage.activateOtherModules.margins,module,SUSPECT,Categories Categorie's management (produ -> Margins Module to manage margins 3.6.4
+4537,v27,SetupPage.activateOtherModules.resource,module,SUSPECT,Bookmarks Bookmark's management 3.0.0 -> Categories Category management (products
+4651,v28,BankPage.deleteLabel.deleteLabel,delete,SUSPECT,Delete -> Modify
+4652,v28,BankPage.deleteLabel.tags,delete,ok,None -> None
+4683,v28,DisplayPage.modifyDisplay.skin_1,skin,SUSPECT,freelug -> amarok
+4684,v28,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> bureau2crea
+4685,v28,DisplayPage.modifyDisplay.skin_3,skin,SUSPECT,eldy -> cameleo
+4686,v28,DisplayPage.modifyDisplay.skin_4,skin,SUSPECT,auguria -> eldy
+4700,v28,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> External site This module include an ext
+4701,v28,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.7.1
+4702,v28,SetupPage.activateInterfaceModules.lpdap,module,SUSPECT,WebServices Enable the Dolibarr web serv -> LDAP LDAP directory synchronisation 3.7.
+4703,v28,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+4705,v28,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting reports (jo
+4706,v28,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+4707,v28,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product management 3.7.1
+4708,v28,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact mana
+4711,v28,SetupPage.activateOtherModules.logs,module,ok,"Syslog Logging facilities (syslog) 3.0.0 -> Logs Logging facilities (file, syslog, ."
+4712,v28,SetupPage.activateOtherModules.margins,module,SUSPECT,Categories Categorie's management (produ -> Margins Module to manage margins 3.7.1
+4713,v28,SetupPage.activateOtherModules.resource,module,SUSPECT,Bookmarks Bookmark's management 3.0.0 -> Tags/Categories Create tags/category on 
+4827,v29,BankPage.deleteLabel.deleteLabel,delete,SUSPECT,Delete -> Modify
+4828,v29,BankPage.deleteLabel.tags,delete,ok,None -> None
+4857,v29,DisplayPage.modifyDisplay.skin_1,skin,SUSPECT,freelug -> amarok
+4858,v29,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> bureau2crea
+4859,v29,DisplayPage.modifyDisplay.skin_3,skin,SUSPECT,eldy -> cameleo
+4860,v29,DisplayPage.modifyDisplay.skin_4,skin,SUSPECT,auguria -> eldy
+4874,v29,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> External site This module include an ext
+4875,v29,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.8.0
+4876,v29,SetupPage.activateInterfaceModules.lpdap,module,SUSPECT,WebServices Enable the Dolibarr web serv -> LDAP LDAP directory synchronisation 3.8.
+4877,v29,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+4879,v29,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting reports (jo
+4880,v29,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+4881,v29,SetupPage.activateMainModules.products,module,ok,Products Product's management 3.0.0 -> Products Product management 3.8.0
+4882,v29,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact mana
+4885,v29,SetupPage.activateOtherModules.logs,module,ok,"Syslog Logging facilities (syslog) 3.0.0 -> Logs Logging facilities (file, syslog, ."
+4886,v29,SetupPage.activateOtherModules.margins,module,SUSPECT,Categories Categorie's management (produ -> Margins Module to manage margins 3.8.0
+4887,v29,SetupPage.activateOtherModules.resource,module,SUSPECT,Bookmarks Bookmark's management 3.0.0 -> Tags/Categories Create tags/category (pr
+4995,v30,BankPage.deleteLabel.deleteLabel,delete,ok,Delete -> Delete
+4996,v30,BankPage.deleteLabel.tags,delete,ok,None -> None
+5026,v30,DisplayPage.modifyDisplay.skin_1,skin,SUSPECT,freelug -> amarok
+5027,v30,DisplayPage.modifyDisplay.skin_2,skin,SUSPECT,yellow -> bureau2crea
+5028,v30,DisplayPage.modifyDisplay.skin_3,skin,SUSPECT,eldy -> cameleo
+5029,v30,DisplayPage.modifyDisplay.skin_4,skin,SUSPECT,auguria -> eldy
+5043,v30,SetupPage.activateInterfaceModules.external,module,ok,ExternalSite Include any external web si -> External site This module include an ext
+5044,v30,SetupPage.activateInterfaceModules.ftp,module,ok,FTP FTP Client 3.0.0 -> FTP FTP Client 3.9.0-beta
+5045,v30,SetupPage.activateInterfaceModules.lpdap,module,SUSPECT,WebServices Enable the Dolibarr web serv -> LDAP LDAP directory synchronisation 3.9.
+5046,v30,SetupPage.activateInterfaceModules.paypal,module,ok,Paypal Module to offer an online payment -> Paypal Module to offer an online payment
+5047,v30,SetupPage.activateMainModules.accounting,module,ok,Accounting Simple accounting management  -> Accounting Simple accounting reports (jo
+5048,v30,SetupPage.activateMainModules.members,module,ok,Members Foundation members management 3. -> Members Foundation members management 3.
+5049,v30,SetupPage.activateMainModules.third_parties,module,ok,Third parties Companies and contact's ma -> Third parties Companies and contact mana
+5052,v30,SetupPage.activateOtherModules.logs,module,ok,"Syslog Logging facilities (syslog) 3.0.0 -> Logs Logging facilities (file, syslog, ."
+5053,v30,SetupPage.activateOtherModules.margins,module,SUSPECT,Categories Categorie's management (produ -> Margins Module to manage margins 3.9.0-b
+5054,v30,SetupPage.activateOtherModules.resource,module,SUSPECT,"Bookmarks Bookmark's management 3.0.0 -> Resource Manage resources (printers, car"

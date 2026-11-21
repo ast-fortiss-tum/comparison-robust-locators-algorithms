@@ -1,0 +1,73 @@
+diff --color -ru -x S run/wd_v10/src/main/java/pageobjects/AlertsPage.java run/wd_v11/src/main/java/pageobjects/AlertsPage.java
+--- run/wd_v10/src/main/java/pageobjects/AlertsPage.java	2026-11-20 19:35:18
++++ run/wd_v11/src/main/java/pageobjects/AlertsPage.java	2026-11-20 19:42:52
+@@ -16,16 +16,16 @@
+ 	@FindBy(name="MAIN_DELAY_PROPALS_TO_BILL")
+ 	private WebElement main_delay_to_bill;
+ 	
+-	@FindBy(name="CustomerBillsUnpaid")
++	@FindBy(name="MAIN_DELAY_CUSTOMER_BILLS_UNPAYED")
+ 	private WebElement main_delay_bill_unpayed;
+ 	
+-	@FindBy(name="TransactionsToConciliate")
++	@FindBy(name="MAIN_DELAY_TRANSACTIONS_TO_CONCILIATE")
+ 	private WebElement main_delay_transactions_conciliate;
+ 	
+-	@FindBy(name="ChequesToDeposit")
++	@FindBy(name="MAIN_DELAY_CHEQUES_TO_DEPOSIT")
+ 	private WebElement main_delay_cheques_deposit;
+ 	
+-	@FindBy(name="Members")
++	@FindBy(name="MAIN_DELAY_MEMBERS")
+ 	private WebElement main_delay_members;
+ 	
+ 	@FindBy(xpath=".//*[@value='Save']")
+diff --color -ru -x S run/wd_v10/src/main/java/pageobjects/HomePage.java run/wd_v11/src/main/java/pageobjects/HomePage.java
+--- run/wd_v10/src/main/java/pageobjects/HomePage.java	2026-11-20 19:35:18
++++ run/wd_v11/src/main/java/pageobjects/HomePage.java	2026-11-20 19:42:52
+@@ -113,8 +113,12 @@
+ 		return new SetupPage(driver);
+ 	}
+ 	
++	@FindBy(linkText="Setup -> Company/foundation")
++	private WebElement setupCompanyLink;
++
+ 	public SetupPage goToNewSetup(WebDriver driver) throws InterruptedException{
+ 		//setupMandatoryParameters.click();
++		setupCompanyLink.click();
+ 		
+ 		return new SetupPage(driver);
+ 	}
+diff --color -ru -x S run/wd_v10/src/main/java/pageobjects/OtherSetupPage.java run/wd_v11/src/main/java/pageobjects/OtherSetupPage.java
+--- run/wd_v10/src/main/java/pageobjects/OtherSetupPage.java	2026-11-20 19:35:18
++++ run/wd_v11/src/main/java/pageobjects/OtherSetupPage.java	2026-11-20 19:46:27
+@@ -16,7 +16,7 @@
+ 	@FindBy(name="Button")
+ 	private WebElement add;
+ 	
+-	@FindBy(xpath=".//*[@id='undertopmenu']/tbody/tr/td[2]/div/div[1]")
++	@FindBy(xpath=".//*[contains(@class,'jnotify-notification-error')]")
+ 	private WebElement error;
+ 	              
+ 	@FindBy(xpath=".//*[@id='undertopmenu']/tbody/tr/td[2]/div/table[2]/tbody/tr[4]/td[1]")
+diff --color -ru -x S run/wd_v10/src/main/java/pageobjects/ThirdPartyPage.java run/wd_v11/src/main/java/pageobjects/ThirdPartyPage.java
+--- run/wd_v10/src/main/java/pageobjects/ThirdPartyPage.java	2026-11-20 19:35:18
++++ run/wd_v11/src/main/java/pageobjects/ThirdPartyPage.java	2026-11-20 19:46:27
+@@ -54,7 +54,7 @@
+ 	@FindBy(name="url")
+ 	private WebElement url;
+ 	
+-	@FindBy(name="tel")
++	@FindBy(name="phone")
+ 	private WebElement phone;
+ 	
+ 	@FindBy(name="fax")
+@@ -151,7 +151,7 @@
+ 	private WebElement button_search;
+ 	
+ 	//".//*[@id='formulaire_recherche']/table/tbody/tr[4]/td[1]/a[2]"
+-	@FindBy(xpath=".//*[@id='formulaire_recherche']/table/tbody/tr[4]/td[1]/a[2]")
++	@FindBy(xpath=".//*[@id='undertopmenu']/tbody/tr/td[2]/div/form/table/tbody/tr[3]/td[1]/a[2]")
+ 	private WebElement searched;
+ 	
+ 	// CONTACTS

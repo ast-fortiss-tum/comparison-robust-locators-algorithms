@@ -1,0 +1,102 @@
+diff --color -ru -x S run/wd_v17/src/main/java/pageobjects/DisplayPage.java run/wd_v18/src/main/java/pageobjects/DisplayPage.java
+--- run/wd_v17/src/main/java/pageobjects/DisplayPage.java	2026-11-20 20:29:01
++++ run/wd_v18/src/main/java/pageobjects/DisplayPage.java	2026-11-20 20:36:18
+@@ -11,19 +11,19 @@
+ 	@FindBy(linkText="Modify")
+ 	private WebElement modify;
+ 	              
+-	@FindBy(xpath=".//*[@id='id-right']/div/form/table[3]/tbody/tr[3]/td/table/tbody/tr/td[1]/table/tbody/tr[2]/td/input")
++	@FindBy(xpath=".//*[@id='id-right']/div/form/table[3]/tbody/tr[3]/td/table/tbody/tr/td/div/div[1]/input")
+ 	private WebElement skin_1;
+ 	
+-	@FindBy(xpath=".//*[@id='id-right']/div/form/table[3]/tbody/tr[3]/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td/input")
++	@FindBy(xpath=".//*[@id='id-right']/div/form/table[3]/tbody/tr[3]/td/table/tbody/tr/td/div/div[2]/input")
+ 	private WebElement skin_2;
+ 	
+-	@FindBy(xpath=".//*[@id='id-right']/div/form/table[3]/tbody/tr[3]/td/table/tbody/tr/td[3]/table/tbody/tr[2]/td/input")
++	@FindBy(xpath=".//*[@id='id-right']/div/form/table[3]/tbody/tr[3]/td/table/tbody/tr/td/div/div[3]/input")
+ 	private WebElement skin_3;
+ 	
+-	@FindBy(xpath=".//*[@id='id-right']/div/form/table[3]/tbody/tr[3]/td/table/tbody/tr/td[4]/table/tbody/tr[2]/td/input")
++	@FindBy(xpath=".//*[@id='id-right']/div/form/table[3]/tbody/tr[3]/td/table/tbody/tr/td/div/div[4]/input")
+ 	private WebElement skin_4;
+ 	
+-	@FindBy(xpath=".//*[@id='id-right']/div/form/table[3]/tbody/tr[3]/td/table/tbody/tr/td[5]/table/tbody/tr[2]/td/input")
++	@FindBy(xpath=".//*[@id='id-right']/div/form/table[3]/tbody/tr[3]/td/table/tbody/tr/td/div/div[5]/input")
+ 	private WebElement skin_5;
+ 	
+ 	@FindBy(name="MAIN_SEARCHFORM_SOCIETE")
+diff --color -ru -x S run/wd_v17/src/main/java/pageobjects/OtherSetupPage.java run/wd_v18/src/main/java/pageobjects/OtherSetupPage.java
+--- run/wd_v17/src/main/java/pageobjects/OtherSetupPage.java	2026-11-20 20:29:01
++++ run/wd_v18/src/main/java/pageobjects/OtherSetupPage.java	2026-11-20 21:28:10
+@@ -13,13 +13,13 @@
+ 	@FindBy(name="constvalue")
+ 	private WebElement value;
+ 	
+-	@FindBy(name="Button")
++	@FindBy(name="add")
+ 	private WebElement add;
+ 	
+ 	@FindBy(xpath=".//*[contains(@class,'jnotify-notification-error')]")
+ 	private WebElement error;
+ 	              
+-	@FindBy(xpath=".//*[@id='id-right']/div/table[2]/tbody/tr[6]/td[1]")
++	@FindBy(xpath=".//*[@id='id-right']/div/form/table/tbody/tr[6]/td[1]")
+ 	private WebElement new_entry;
+ 	
+ 	@FindBy(id="value_3")
+@@ -31,7 +31,7 @@
+ 	@FindBy(name="delete")
+ 	private WebElement delete;
+ 
+-	@FindBy(xpath=".//*[@id='id-right']/div/table[2]/tbody/tr[6]/td[1]")
++	@FindBy(xpath=".//*[@id='id-right']/div/form/table/tbody/tr[6]/td[1]")
+ 	private WebElement recordSaved;
+ 	
+ 	public OtherSetupPage(WebDriver driver){
+diff --color -ru -x S run/wd_v17/src/main/java/pageobjects/SetupPage.java run/wd_v18/src/main/java/pageobjects/SetupPage.java
+--- run/wd_v17/src/main/java/pageobjects/SetupPage.java	2026-11-20 20:41:59
++++ run/wd_v18/src/main/java/pageobjects/SetupPage.java	2026-11-20 20:42:00
+@@ -52,17 +52,17 @@
+ 	
+ 	// MAIN MODULES
+ 	
+-	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[5]/td[5]/a/img")
++	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[4]/td[5]/a/img")
+ 	private WebElement third_parties;
+ 	
+-	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[14]/td[5]/a/img")
++	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[13]/td[5]/a/img")
+ 	private WebElement accounting;
+ 	
+ 	              //".//*[@id='id-right']/div/div[2]/table/tbody/tr[21]/td[5]/a/img"
+-	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[26]/td[5]/a/img")
++	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[25]/td[5]/a/img")
+ 	private WebElement products;
+ 	
+-	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[23]/td[5]/a/img")
++	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[22]/td[5]/a/img")
+ 	private WebElement members;
+ 	
+ 	@FindBy(xpath=".//*[@id='id-right']/div/b")
+@@ -84,16 +84,16 @@
+ 
+ 	// INTERFACE MODULES
+ 	
+-	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[3]/td[5]/a/img")
++	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[2]/td[5]/a/img")
+ 	private WebElement external;
+ 	
+-	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[4]/td[5]/a/img")
++	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[3]/td[5]/a/img")
+ 	private WebElement ftp;
+ 	
+-	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[6]/td[5]/a/img")
++	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[5]/td[5]/a/img")
+ 	private WebElement paypal;
+ 	
+-	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[11]/td[5]/a/img")
++	@FindBy(xpath=".//*[@id='id-right']/div/div[2]/table/tbody/tr[10]/td[5]/a/img")
+ 	private WebElement lpdap;
+ 	
+ 	
