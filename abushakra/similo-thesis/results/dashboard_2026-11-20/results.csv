@@ -102,7 +102,6 @@ BEWT,SIDEREAL,Locator generator (learned),main,337,165,9,163,49.0,51.6,94.8,
 BEWT,SIDEREAL-uniform,Locator generator (learned),appendix,337,165,,,49.0,,,accuracy only (no per-pair dump)
 BEWT,MultiLocator+VISTA,Multi-locator (voting),main,337,185,44,108,54.9,68.0,80.8,
 BEWT,MultiLocator,Multi-locator (voting),main,337,171,7,159,50.7,52.8,96.1,
-BEWT,MultiLocator+VISTA+full-repair,Multi-locator (voting),appendix,337,185,,,54.9,,,accuracy only (no per-pair dump)
 BEWT,EAGL-scaled-f0,Locator generator (learned),appendix,337,125,,,37.1,,,accuracy only (no per-pair dump)
 BEWT,EAGL-scaled-f1,Locator generator (learned),appendix,337,125,,,37.1,,,accuracy only (no per-pair dump)
 BEWT,EAGL-scaled-f2,Locator generator (learned),appendix,337,125,,,37.1,,,accuracy only (no per-pair dump)
@@ -114,7 +113,6 @@ ReproBreak,LegacyCombined,Similarity (relocator),appendix,350,181,,,51.71,,,accu
 ReproBreak,LegacySimilo,Similarity (relocator),main,350,181,169,0,51.71,100.0,51.71,Similo always answers: wrong = pairs minus right
 ReproBreak,Montoto,Locator generator,main,350,78,,,22.29,,,accuracy only (no per-pair dump)
 ReproBreak,MultiLocator+VISTA,Multi-locator (voting),main,350,181,165,4,51.7,98.9,52.3,
-ReproBreak,MultiLocator+VISTA+full-repair,Multi-locator (voting),appendix,350,178,,,50.86,,,accuracy only (no per-pair dump)
 ReproBreak,MultiLocator,Multi-locator (voting),main,350,181,163,6,51.7,98.3,52.6,
 ReproBreak,OptimizedCombined,Similarity (relocator),appendix,350,180,,,51.43,,,accuracy only (no per-pair dump)
 ReproBreak,OptimizedMinimal,Similarity (relocator),appendix,350,179,,,51.14,,,accuracy only (no per-pair dump)
@@ -181,3 +179,31 @@ PHP-Fusion,COLOR,Similarity (relocator),appendix,1916,1803,113,0,94.1,100.0,94.1
 PHP-Fusion,MultiLocator+repair,Multi-locator (voting),main,1916,1699,34,183,88.7,90.4,98.0,
 PHP-Fusion,MultiLocator+selective-repair,Multi-locator (voting),appendix,1916,1699,34,183,88.7,90.4,98.0,
 PHP-Fusion,MultiLocator+VISTA+repair,Multi-locator (voting),main,1916,1720,89,107,89.8,94.4,95.1,
+PHP-Fusion,MultiLocator+full-repair,Multi-locator (voting),appendix,1916,1699,34,183,88.7,90.4,98.0,
+PHP-Fusion,MultiLocator+VISTA+full-repair,Multi-locator (voting),appendix,1916,1720,89,107,89.8,94.4,95.1,
+PHP-Fusion,MultiLocator+VISTA+selective-repair,Multi-locator (voting),appendix,1916,1720,89,107,89.8,94.4,95.1,
+Dolibarr,MultiLocator+full-repair,Multi-locator (voting),appendix,4916,4214,231,471,85.7,90.4,94.8,
+Dolibarr,MultiLocator+VISTA+full-repair,Multi-locator (voting),appendix,4916,4270,453,193,86.9,96.1,90.4,
+Dolibarr,MultiLocator+VISTA+selective-repair,Multi-locator (voting),appendix,4916,4270,453,193,86.9,96.1,90.4,
+AddressBook,MultiLocator+full-repair,Multi-locator (voting),appendix,1958,1927,18,13,98.4,99.3,99.1,
+AddressBook,MultiLocator+selective-repair,Multi-locator (voting),appendix,1958,1927,18,13,98.4,99.3,99.1,
+AddressBook,MultiLocator+VISTA+full-repair,Multi-locator (voting),appendix,1958,1933,25,0,98.7,100.0,98.7,
+AddressBook,MultiLocator+VISTA+selective-repair,Multi-locator (voting),appendix,1958,1933,25,0,98.7,100.0,98.7,
+Excalidraw,MultiLocator+full-repair,Multi-locator (voting),appendix,529,527,2,0,99.6,100.0,99.6,
+Excalidraw,MultiLocator+VISTA+full-repair,Multi-locator (voting),appendix,529,520,9,0,98.3,100.0,98.3,
+Excalidraw,MultiLocator+VISTA+selective-repair,Multi-locator (voting),appendix,529,520,9,0,98.3,100.0,98.3,
+Slickgrid,MultiLocator+full-repair,Multi-locator (voting),appendix,8276,6789,466,1021,82.0,87.7,93.6,
+Slickgrid,MultiLocator+VISTA+full-repair,Multi-locator (voting),appendix,8276,7149,513,614,86.4,92.6,93.3,
+Slickgrid,MultiLocator+VISTA+selective-repair,Multi-locator (voting),appendix,8276,7281,543,452,88.0,94.5,93.1,
+BEWT,MultiLocator+full-repair,Multi-locator (voting),appendix,337,171,7,159,50.7,52.8,96.1,
+ReproBreak,MultiLocator+full-repair,Multi-locator (voting),appendix,350,181,163,6,51.7,98.3,52.6,
+BEWT,MultiLocator+selective-repair,Multi-locator (voting),appendix,337,171,7,159,50.7,52.8,96.1,
+ReproBreak,MultiLocator+selective-repair,Multi-locator (voting),appendix,350,181,163,6,51.7,98.3,52.6,
+BEWT,MultiLocator+VISTA+full-repair,Multi-locator (voting),appendix,337,185,44,108,54.9,68.0,80.8,
+ReproBreak,MultiLocator+VISTA+full-repair,Multi-locator (voting),appendix,350,181,165,4,51.7,98.9,52.3,
+BEWT,MultiLocator+VISTA+selective-repair,Multi-locator (voting),appendix,337,185,44,108,54.9,68.0,80.8,
+ReproBreak,MultiLocator+VISTA+selective-repair,Multi-locator (voting),appendix,350,181,165,4,51.7,98.9,52.3,
+Wayback,MultiLocator+full-repair,Multi-locator (voting),appendix,12266,8338,548,3380,68.0,72.4,93.8,
+Wayback,MultiLocator+selective-repair,Multi-locator (voting),appendix,12266,8397,546,3323,68.5,72.9,93.9,
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator (voting),appendix,12266,8485,1608,2173,69.2,82.3,84.1,
+Wayback,MultiLocator+VISTA+selective-repair,Multi-locator (voting),appendix,11524,8612,1334,1578,74.7,86.3,86.6,partial: 11524 of 12266 pairs
