@@ -7,8 +7,8 @@ Wayback,LegacySimilo,Similarity (relocator),main,12266,11337,929,0,92.4,100.0,92
 Wayback,Montoto,Locator generator,main,12266,3357,77,8832,27.4,28.0,97.8,
 Wayback,MultiLocator,Multi-locator (voting),main,12266,8026,428,3812,65.4,68.9,94.9,
 Wayback,MultiLocator+VISTA,Multi-locator (voting),main,12266,8477,1415,2374,69.1,80.6,85.7,
-Wayback,MultiLocator+VISTA+paper-repair,Multi-locator (voting),main,12266,8860,1642,1764,72.2,85.6,84.4,
-Wayback,MultiLocator+paper-repair,Multi-locator (voting),main,12266,8362,546,3358,68.2,72.6,93.9,
+Wayback,MultiLocator+VISTA+repair,Multi-locator (voting),main,12266,8860,1642,1764,72.2,85.6,84.4,
+Wayback,MultiLocator+repair,Multi-locator (voting),main,12266,8362,546,3358,68.2,72.6,93.9,
 Wayback,OptimizedCombined,Similarity (relocator),appendix,12266,11454,812,0,93.4,100.0,93.4,
 Wayback,OptimizedMinimal,Similarity (relocator),appendix,12266,11483,783,0,93.6,100.0,93.6,
 Wayback,OptimizedSimilo,Similarity (relocator),main,12266,11490,776,0,93.7,100.0,93.7,
@@ -27,8 +27,8 @@ Slickgrid,LegacySimilo,Similarity (relocator),main,8276,8181,95,0,98.9,100.0,98.
 Slickgrid,Montoto,Locator generator,main,8276,728,0,7548,8.8,8.8,100.0,
 Slickgrid,MultiLocator,Multi-locator (voting),main,8276,6518,466,1292,78.8,84.4,93.3,
 Slickgrid,MultiLocator+VISTA,Multi-locator (voting),main,8276,6927,559,790,83.7,90.5,92.5,
-Slickgrid,MultiLocator+VISTA+paper-repair,Multi-locator (voting),main,8276,7281,543,452,88.0,94.5,93.1,
-Slickgrid,MultiLocator+paper-repair,Multi-locator (voting),main,8276,6789,466,1021,82.0,87.7,93.6,
+Slickgrid,MultiLocator+VISTA+repair,Multi-locator (voting),main,8276,7281,543,452,88.0,94.5,93.1,
+Slickgrid,MultiLocator+repair,Multi-locator (voting),main,8276,6789,466,1021,82.0,87.7,93.6,
 Slickgrid,MultiLocator+selective-repair,Multi-locator (voting),appendix,8276,6789,466,1021,82.0,87.7,93.6,
 Slickgrid,OptimizedCombined,Similarity (relocator),appendix,8276,8276,0,0,100.0,100.0,100.0,
 Slickgrid,OptimizedMinimal,Similarity (relocator),appendix,8276,8276,0,0,100.0,100.0,100.0,
@@ -49,8 +49,8 @@ Excalidraw,LegacySimilo,Similarity (relocator),main,529,402,127,0,76.0,100.0,76.
 Excalidraw,Montoto,Locator generator,main,529,67,0,462,12.7,12.7,100.0,
 Excalidraw,MultiLocator,Multi-locator (voting),main,529,526,2,1,99.4,99.8,99.6,
 Excalidraw,MultiLocator+VISTA,Multi-locator (voting),main,529,527,2,0,99.6,100.0,99.6,
-Excalidraw,MultiLocator+VISTA+paper-repair,Multi-locator (voting),main,529,520,9,0,98.3,100.0,98.3,
-Excalidraw,MultiLocator+paper-repair,Multi-locator (voting),main,529,527,2,0,99.6,100.0,99.6,
+Excalidraw,MultiLocator+VISTA+repair,Multi-locator (voting),main,529,520,9,0,98.3,100.0,98.3,
+Excalidraw,MultiLocator+repair,Multi-locator (voting),main,529,527,2,0,99.6,100.0,99.6,
 Excalidraw,MultiLocator+selective-repair,Multi-locator (voting),appendix,529,527,2,0,99.6,100.0,99.6,
 Excalidraw,OptimizedCombined,Similarity (relocator),appendix,529,526,3,0,99.4,100.0,99.4,
 Excalidraw,OptimizedMinimal,Similarity (relocator),appendix,529,527,2,0,99.6,100.0,99.6,
@@ -70,8 +70,8 @@ AddressBook,LegacySimilo,Similarity (relocator),main,1958,1933,25,0,98.7,100.0,9
 AddressBook,Montoto,Locator generator,main,1958,1793,4,161,91.6,91.8,99.8,
 AddressBook,MultiLocator,Multi-locator (voting),main,1958,1927,18,13,98.4,99.3,99.1,
 AddressBook,MultiLocator+VISTA,Multi-locator (voting),main,1958,1933,25,0,98.7,100.0,98.7,
-AddressBook,MultiLocator+VISTA+paper-repair,Multi-locator (voting),main,1958,1933,25,0,98.7,100.0,98.7,
-AddressBook,MultiLocator+paper-repair,Multi-locator (voting),main,1958,1927,18,13,98.4,99.3,99.1,
+AddressBook,MultiLocator+VISTA+repair,Multi-locator (voting),main,1958,1933,25,0,98.7,100.0,98.7,
+AddressBook,MultiLocator+repair,Multi-locator (voting),main,1958,1927,18,13,98.4,99.3,99.1,
 AddressBook,OptimizedCombined,Similarity (relocator),appendix,1958,1940,18,0,99.1,100.0,99.1,
 AddressBook,OptimizedMinimal,Similarity (relocator),appendix,1958,1941,17,0,99.1,100.0,99.1,
 AddressBook,OptimizedSimilo,Similarity (relocator),main,1958,1940,18,0,99.1,100.0,99.1,
@@ -102,7 +102,7 @@ BEWT,SIDEREAL,Locator generator (learned),main,337,165,9,163,49.0,51.6,94.8,
 BEWT,SIDEREAL-uniform,Locator generator (learned),appendix,337,165,,,49.0,,,accuracy only (no per-pair dump)
 BEWT,MultiLocator+VISTA,Multi-locator (voting),main,337,185,44,108,54.9,68.0,80.8,
 BEWT,MultiLocator,Multi-locator (voting),main,337,171,7,159,50.7,52.8,96.1,
-BEWT,MultiLocator+VISTA+repair,Multi-locator (voting),appendix,337,185,,,54.9,,,accuracy only (no per-pair dump)
+BEWT,MultiLocator+VISTA+full-repair,Multi-locator (voting),appendix,337,185,,,54.9,,,accuracy only (no per-pair dump)
 BEWT,EAGL-scaled-f0,Locator generator (learned),appendix,337,125,,,37.1,,,accuracy only (no per-pair dump)
 BEWT,EAGL-scaled-f1,Locator generator (learned),appendix,337,125,,,37.1,,,accuracy only (no per-pair dump)
 BEWT,EAGL-scaled-f2,Locator generator (learned),appendix,337,125,,,37.1,,,accuracy only (no per-pair dump)
@@ -114,7 +114,7 @@ ReproBreak,LegacyCombined,Similarity (relocator),appendix,350,181,,,51.71,,,accu
 ReproBreak,LegacySimilo,Similarity (relocator),main,350,181,169,0,51.71,100.0,51.71,Similo always answers: wrong = pairs minus right
 ReproBreak,Montoto,Locator generator,main,350,78,,,22.29,,,accuracy only (no per-pair dump)
 ReproBreak,MultiLocator+VISTA,Multi-locator (voting),main,350,181,165,4,51.7,98.9,52.3,
-ReproBreak,MultiLocator+VISTA+repair,Multi-locator (voting),appendix,350,178,,,50.86,,,accuracy only (no per-pair dump)
+ReproBreak,MultiLocator+VISTA+full-repair,Multi-locator (voting),appendix,350,178,,,50.86,,,accuracy only (no per-pair dump)
 ReproBreak,MultiLocator,Multi-locator (voting),main,350,181,163,6,51.7,98.3,52.6,
 ReproBreak,OptimizedCombined,Similarity (relocator),appendix,350,180,,,51.43,,,accuracy only (no per-pair dump)
 ReproBreak,OptimizedMinimal,Similarity (relocator),appendix,350,179,,,51.14,,,accuracy only (no per-pair dump)
@@ -133,10 +133,10 @@ ReproBreak,EAGL-scaled-f2,Locator generator (learned),appendix,350,93,,,26.57,,,
 ReproBreak,EAGL-scaled-f3,Locator generator (learned),appendix,350,89,,,25.43,,,accuracy only (no per-pair dump)
 ReproBreak,EAGL-scaled-f4,Locator generator (learned),appendix,350,89,,,25.43,,,accuracy only (no per-pair dump)
 ReproBreak,EAGL,Locator generator (learned),main,350,180,158,12,51.4,96.6,53.3,
-BEWT,MultiLocator+VISTA+paper-repair,Multi-locator (voting),main,337,185,44,108,54.9,68.0,80.8,
-ReproBreak,MultiLocator+VISTA+paper-repair,Multi-locator (voting),main,350,181,165,4,51.7,98.9,52.3,
-BEWT,MultiLocator+paper-repair,Multi-locator (voting),main,337,171,7,159,50.7,52.8,96.1,
-ReproBreak,MultiLocator+paper-repair,Multi-locator (voting),main,350,181,163,6,51.7,98.3,52.6,
+BEWT,MultiLocator+VISTA+repair,Multi-locator (voting),main,337,185,44,108,54.9,68.0,80.8,
+ReproBreak,MultiLocator+VISTA+repair,Multi-locator (voting),main,350,181,165,4,51.7,98.9,52.3,
+BEWT,MultiLocator+repair,Multi-locator (voting),main,337,171,7,159,50.7,52.8,96.1,
+ReproBreak,MultiLocator+repair,Multi-locator (voting),main,350,181,163,6,51.7,98.3,52.6,
 Dolibarr,absXPath,Locator generator,main,4916,1811,128,2977,36.8,39.4,93.4,
 Dolibarr,SeleniumIDE,Locator generator,main,4916,3434,96,1386,69.9,71.8,97.3,
 Dolibarr,RobulaPlus,Locator generator,main,4916,4127,318,471,84.0,90.4,92.8,
@@ -147,9 +147,9 @@ Dolibarr,LegacySimilo,Similarity (relocator),main,4916,4502,414,0,91.6,100.0,91.
 Dolibarr,OptimizedSimilo,Similarity (relocator),main,4916,4601,315,0,93.6,100.0,93.6,
 Dolibarr,MultiLocator,Multi-locator (voting),main,4916,4214,231,471,85.7,90.4,94.8,
 Dolibarr,MultiLocator+VISTA,Multi-locator (voting),main,4916,4220,248,448,85.8,90.9,94.4,
-Dolibarr,MultiLocator+paper-repair,Multi-locator (voting),main,4916,4214,231,471,85.7,90.4,94.8,
+Dolibarr,MultiLocator+repair,Multi-locator (voting),main,4916,4214,231,471,85.7,90.4,94.8,
 Dolibarr,MultiLocator+selective-repair,Multi-locator (voting),appendix,4916,4214,231,471,85.7,90.4,94.8,
-Dolibarr,MultiLocator+VISTA+paper-repair,Multi-locator (voting),main,4916,4220,248,448,85.8,90.9,94.4,
+Dolibarr,MultiLocator+VISTA+repair,Multi-locator (voting),main,4916,4220,248,448,85.8,90.9,94.4,
 Dolibarr,VISTA,Visual,main,4916,2571,1049,1296,52.3,73.6,71.0,
 Dolibarr,IDXPath,Locator generator,appendix,4916,2154,104,2658,43.8,45.9,95.4,
 Dolibarr,SIDEREAL-uniform,Locator generator (learned),appendix,4916,3396,80,1440,69.1,70.7,97.7,
@@ -178,6 +178,6 @@ PHP-Fusion,OptimizedVonSimilo,Similarity (relocator),appendix,1916,1801,115,0,94
 PHP-Fusion,LegacyCombined,Similarity (relocator),appendix,1916,1775,141,0,92.6,100.0,92.6,
 PHP-Fusion,OptimizedCombined,Similarity (relocator),appendix,1916,1813,103,0,94.6,100.0,94.6,
 PHP-Fusion,COLOR,Similarity (relocator),appendix,1916,1803,113,0,94.1,100.0,94.1,
-PHP-Fusion,MultiLocator+paper-repair,Multi-locator (voting),main,1916,1699,34,183,88.7,90.4,98.0,
+PHP-Fusion,MultiLocator+repair,Multi-locator (voting),main,1916,1699,34,183,88.7,90.4,98.0,
 PHP-Fusion,MultiLocator+selective-repair,Multi-locator (voting),appendix,1916,1699,34,183,88.7,90.4,98.0,
-PHP-Fusion,MultiLocator+VISTA+paper-repair,Multi-locator (voting),main,1916,1720,89,107,89.8,94.4,95.1,
+PHP-Fusion,MultiLocator+VISTA+repair,Multi-locator (voting),main,1916,1720,89,107,89.8,94.4,95.1,

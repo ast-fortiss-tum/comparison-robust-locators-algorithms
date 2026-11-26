@@ -1,12 +1,12 @@
 algorithm,pairs,right,wrong,silent,accuracy,coverage,precision,kind
 MultiLocator+VISTA,529,527,2,0,0.9962,1.0,0.9962,fixed
-MultiLocator+paper-repair,529,527,2,0,0.9962,1.0,0.9962,fixed
+MultiLocator+repair,529,527,2,0,0.9962,1.0,0.9962,fixed
 MultiLocator+selective-repair,529,527,2,0,0.9962,1.0,0.9962,fixed
 OptimizedMinimal,529,527,2,0,0.9962,1.0,0.9962,scored
 MultiLocator,529,526,2,1,0.9943,0.9981,0.9962,fixed
 OptimizedCombined,529,526,3,0,0.9943,1.0,0.9943,scored
 OptimizedSimilo,529,526,3,0,0.9943,1.0,0.9943,scored
-MultiLocator+VISTA+paper-repair,529,520,9,0,0.983,1.0,0.983,fixed
+MultiLocator+VISTA+repair,529,520,9,0,0.983,1.0,0.983,fixed
 SIDEREAL-uniform,529,501,8,20,0.9471,0.9622,0.9843,fixed
 SIDEREAL,529,501,8,20,0.9471,0.9622,0.9843,fixed
 VISTA,529,492,6,31,0.9301,0.9414,0.988,fixed

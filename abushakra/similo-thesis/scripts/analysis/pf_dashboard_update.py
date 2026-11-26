@@ -5,7 +5,7 @@ import csv, os, re, sys, collections
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 S = '/Users/stocco/repos/tools/comparison-robust-locators-algorithms/abushakra/similo-thesis'; OUT = S + '/results/dashboard_2026-11-20'
 P = '/Users/stocco/repos/tools/hybrid-work/pf/out'
-MAIN = {'absXPath', 'SeleniumIDE', 'RobulaPlus', 'Montoto', 'SIDEREAL', 'EAGL', 'MultiLocator', 'MultiLocator+paper-repair', 'MultiLocator+VISTA', 'MultiLocator+VISTA+paper-repair', 'LegacySimilo', 'OptimizedSimilo', 'VISTA'}
+MAIN = {'absXPath', 'SeleniumIDE', 'RobulaPlus', 'Montoto', 'SIDEREAL', 'EAGL', 'MultiLocator', 'MultiLocator+repair', 'MultiLocator+VISTA', 'MultiLocator+VISTA+repair', 'LegacySimilo', 'OptimizedSimilo', 'VISTA'}
 def family(a):
     if a.startswith('MultiLocator'): return 'Multi-locator (voting)'
     if a == 'VISTA': return 'Visual'

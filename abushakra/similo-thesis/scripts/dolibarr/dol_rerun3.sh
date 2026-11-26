@@ -8,7 +8,7 @@ until grep -q " OptimizedSimilo complete$" out/algos.progress; do sleep 1; done
 pkill -f "dol_rerun2.sh"; pkill -f "dol_rerun.sh"; pkill -f "caffeinate -i ./run_algos"; pkill -f "./run_algos.sh"; sleep 1; pkill -f "Main dol_dolibarr"; sleep 3
 rm -f out/dump/MultiLocator.csv out/done/MultiLocator.* out/logs/MultiLocator.log   # partial start of the next algorithm in the old order
 echo "$(date +%m-%d\ %H:%M) RERUN3: OptimizedSimilo done; MultiLocator family first, then VISTA, then the other appendix algorithms" >> $LOG
-caffeinate -i ./run_algos.sh "MultiLocator MultiLocator+VISTA MultiLocator+paper-repair MultiLocator+selective-repair MultiLocator+VISTA+paper-repair VISTA IDXPath SIDEREAL-uniform OptimizedMinimal VonSimilo OptimizedVonSimilo LegacyCombined OptimizedCombined COLOR" 50 out >> $LOG 2>&1 || { echo "$(date +%m-%d\ %H:%M) rerun3 aborted (see algos.progress)" >> $LOG; exit 3; }
+caffeinate -i ./run_algos.sh "MultiLocator MultiLocator+VISTA MultiLocator+repair MultiLocator+selective-repair MultiLocator+VISTA+repair VISTA IDXPath SIDEREAL-uniform OptimizedMinimal VonSimilo OptimizedVonSimilo LegacyCombined OptimizedCombined COLOR" 50 out >> $LOG 2>&1 || { echo "$(date +%m-%d\ %H:%M) rerun3 aborted (see algos.progress)" >> $LOG; exit 3; }
 cd /Users/stocco/repos/tools/comparison-robust-locators-algorithms/abushakra/similo-thesis
 python3 scripts/analysis/riskcoverage.py dolibarr_all_pairs $P/out/dump > $P/out/summary_all_pairs.txt 2>&1
 EXCLUDE_SITES=$P/out/excluded_sites.txt python3 scripts/analysis/riskcoverage.py dolibarr_clean $P/out/dump > $P/out/summary_clean.txt 2>&1

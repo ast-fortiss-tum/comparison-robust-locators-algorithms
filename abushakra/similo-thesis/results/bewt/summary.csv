@@ -179,15 +179,15 @@ MultiLocator,locator changed,69,219,31.5
 MultiLocator,locator unchanged,102,118,86.4
 MultiLocator,moved,144,310,46.5
 MultiLocator,same position,27,27,100.0
-MultiLocator+VISTA+repair,ALL,185,337,54.9
-MultiLocator+VISTA+repair,app: bludit,37,57,64.9
-MultiLocator+VISTA+repair,app: joomla,31,37,83.8
-MultiLocator+VISTA+repair,app: mantisbt,85,124,68.5
-MultiLocator+VISTA+repair,app: prestashop,32,119,26.9
-MultiLocator+VISTA+repair,locator changed,80,219,36.5
-MultiLocator+VISTA+repair,locator unchanged,105,118,89.0
-MultiLocator+VISTA+repair,moved,158,310,51.0
-MultiLocator+VISTA+repair,same position,27,27,100.0
+MultiLocator+VISTA+full-repair,ALL,185,337,54.9
+MultiLocator+VISTA+full-repair,app: bludit,37,57,64.9
+MultiLocator+VISTA+full-repair,app: joomla,31,37,83.8
+MultiLocator+VISTA+full-repair,app: mantisbt,85,124,68.5
+MultiLocator+VISTA+full-repair,app: prestashop,32,119,26.9
+MultiLocator+VISTA+full-repair,locator changed,80,219,36.5
+MultiLocator+VISTA+full-repair,locator unchanged,105,118,89.0
+MultiLocator+VISTA+full-repair,moved,158,310,51.0
+MultiLocator+VISTA+full-repair,same position,27,27,100.0
 EAGL-scaled-f0,ALL,125,337,37.1
 EAGL-scaled-f0,app: bludit,32,57,56.1
 EAGL-scaled-f0,app: joomla,28,37,75.7

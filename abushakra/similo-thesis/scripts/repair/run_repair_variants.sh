@@ -17,8 +17,8 @@ run() { # algo part sites
 }
 LANE=$1
 if [ $LANE = A ]; then
-  for A in MultiLocator+VISTA+repair MultiLocator+repair; do run $A bewt "$BEWT"; run $A reprobreak "$RB"; done
-  for A in MultiLocator+repair MultiLocator+VISTA+repair; do run $A tuning "$TUNING"; run $A heldout "$HELD"; done
+  for A in MultiLocator+VISTA+full-repair MultiLocator+full-repair; do run $A bewt "$BEWT"; run $A reprobreak "$RB"; done
+  for A in MultiLocator+full-repair MultiLocator+VISTA+full-repair; do run $A tuning "$TUNING"; run $A heldout "$HELD"; done
 else
   run VISTA+repair bewt "$BEWT"; run VISTA+repair reprobreak "$RB"; run VISTA+repair tuning "$TUNING"; run VISTA+repair heldout "$HELD"
 fi

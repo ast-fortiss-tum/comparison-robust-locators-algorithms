@@ -4,7 +4,7 @@ Writes results/dashboard_2026-11-20/{results,benchmarks,abstention,removal}.csv"
 import csv, glob, os, collections, shutil
 S = '/Users/stocco/repos/tools/comparison-robust-locators-algorithms/abushakra/similo-thesis'; R = S + '/results'; H = '/Users/stocco/repos/tools/hybrid-work'
 OUT = R + '/dashboard_2026-11-20'; os.makedirs(OUT, exist_ok=True)
-MAIN = {'absXPath', 'SeleniumIDE', 'RobulaPlus', 'Montoto', 'SIDEREAL', 'EAGL', 'MultiLocator', 'MultiLocator+paper-repair', 'MultiLocator+VISTA', 'MultiLocator+VISTA+paper-repair', 'LegacySimilo', 'OptimizedSimilo', 'VISTA'}
+MAIN = {'absXPath', 'SeleniumIDE', 'RobulaPlus', 'Montoto', 'SIDEREAL', 'EAGL', 'MultiLocator', 'MultiLocator+repair', 'MultiLocator+VISTA', 'MultiLocator+VISTA+repair', 'LegacySimilo', 'OptimizedSimilo', 'VISTA'}
 def family(a):
     if a.startswith('MultiLocator'): return 'Multi-locator (voting)'
     if a in ('VISTA',): return 'Visual'

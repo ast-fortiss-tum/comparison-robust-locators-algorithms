@@ -7,8 +7,8 @@ LegacySimilo,8276,8181,95,0,0.9885,1.0,0.9885,scored
 VonSimilo,8276,8181,95,0,0.9885,1.0,0.9885,scored
 OptimizedVonSimilo,8276,8041,235,0,0.9716,1.0,0.9716,scored
 COLOR,8276,7928,348,0,0.958,1.0,0.958,scored
-MultiLocator+VISTA+paper-repair,8276,7281,543,452,0.8798,0.9454,0.9306,fixed
-MultiLocator+paper-repair,8276,6789,466,1021,0.8203,0.8766,0.9358,fixed
+MultiLocator+VISTA+repair,8276,7281,543,452,0.8798,0.9454,0.9306,fixed
+MultiLocator+repair,8276,6789,466,1021,0.8203,0.8766,0.9358,fixed
 MultiLocator+selective-repair,8276,6789,466,1021,0.8203,0.8766,0.9358,fixed
 MultiLocator+VISTA,8276,6518,466,1292,0.7876,0.8439,0.9333,fixed
 MultiLocator,8276,6518,466,1292,0.7876,0.8439,0.9333,fixed

@@ -9,9 +9,9 @@ LegacyCombined                   4916    4502    414       0 |     91.6%    100.
 LegacySimilo                     4916    4502    414       0 |     91.6%    100.0%     91.6%  scored
 VonSimilo                        4916    4295    621       0 |     87.4%    100.0%     87.4%  scored
 OptimizedVonSimilo               4916    4290    626       0 |     87.3%    100.0%     87.3%  scored
-MultiLocator+VISTA+paper-repair   4916    4220    248     448 |     85.8%     90.9%     94.4%  
+MultiLocator+VISTA+repair   4916    4220    248     448 |     85.8%     90.9%     94.4%  
 MultiLocator+VISTA               4916    4220    248     448 |     85.8%     90.9%     94.4%  
-MultiLocator+paper-repair        4916    4214    231     471 |     85.7%     90.4%     94.8%  
+MultiLocator+repair        4916    4214    231     471 |     85.7%     90.4%     94.8%  
 MultiLocator+selective-repair    4916    4214    231     471 |     85.7%     90.4%     94.8%  
 MultiLocator                     4916    4214    231     471 |     85.7%     90.4%     94.8%  
 RobulaPlus                       4916    4127    318     471 |     84.0%     90.4%     92.8%  
@@ -26,9 +26,9 @@ absXPath                         4916    1811    128    2977 |     36.8%     39.
 
 -- scored algorithms limited to the same number of answers as each fixed algorithm (precision / accuracy):
 reference (fixed)              answers     prec | COLOR              | LegacyCombined     | LegacySimilo       | OptimizedCombined  | OptimizedMinimal   | OptimizedSimilo    | OptimizedVonSimilo | VISTA              | VonSimilo         
-MultiLocator+VISTA+paper-repair      4468    94.4% | 96.2% / 87.4%      | 97.0% / 88.2%      | 97.0% / 88.2%      | 97.4% / 88.5%      | 97.9% / 89.0%      | 97.4% / 88.5%      | 91.0% / 82.7%      | -                  | 92.5% / 84.1%     
+MultiLocator+VISTA+repair      4468    94.4% | 96.2% / 87.4%      | 97.0% / 88.2%      | 97.0% / 88.2%      | 97.4% / 88.5%      | 97.9% / 89.0%      | 97.4% / 88.5%      | 91.0% / 82.7%      | -                  | 92.5% / 84.1%     
 MultiLocator+VISTA                4468    94.4% | 96.2% / 87.4%      | 97.0% / 88.2%      | 97.0% / 88.2%      | 97.4% / 88.5%      | 97.9% / 89.0%      | 97.4% / 88.5%      | 91.0% / 82.7%      | -                  | 92.5% / 84.1%     
-MultiLocator+paper-repair         4445    94.8% | 96.2% / 87.0%      | 97.1% / 87.8%      | 97.1% / 87.8%      | 97.4% / 88.1%      | 98.0% / 88.6%      | 97.4% / 88.1%      | 91.0% / 82.3%      | -                  | 92.4% / 83.6%     
+MultiLocator+repair         4445    94.8% | 96.2% / 87.0%      | 97.1% / 87.8%      | 97.1% / 87.8%      | 97.4% / 88.1%      | 98.0% / 88.6%      | 97.4% / 88.1%      | 91.0% / 82.3%      | -                  | 92.4% / 83.6%     
 MultiLocator+selective-repair      4445    94.8% | 96.2% / 87.0%      | 97.1% / 87.8%      | 97.1% / 87.8%      | 97.4% / 88.1%      | 98.0% / 88.6%      | 97.4% / 88.1%      | 91.0% / 82.3%      | -                  | 92.4% / 83.6%     
 MultiLocator                      4445    94.8% | 96.2% / 87.0%      | 97.1% / 87.8%      | 97.1% / 87.8%      | 97.4% / 88.1%      | 98.0% / 88.6%      | 97.4% / 88.1%      | 91.0% / 82.3%      | -                  | 92.4% / 83.6%     
 RobulaPlus                        4445    92.8% | 96.2% / 87.0%      | 97.1% / 87.8%      | 97.1% / 87.8%      | 97.4% / 88.1%      | 98.0% / 88.6%      | 97.4% / 88.1%      | 91.0% / 82.3%      | -                  | 92.4% / 83.6%     

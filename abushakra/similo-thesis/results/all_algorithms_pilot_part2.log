@@ -170,9 +170,9 @@ MultiLocator+VISTA@zillow,82.14,276,336,65.38,17,26,82.59,242,293,11112.00,75.28
 MultiLocator+VISTA@amazon,94.46,478,506,100.00,63,63,93.60,410,438,17496.00,86.68,71.13,69,97,367.5
 MultiLocator+VISTA@ALL,92.26,1049,1137,96.41,242,251,90.51,754,833,37616.00,85.58,77.13,226,293,398.6
 # MultiLocator+VISTA: no locator generated for 40 elements
-MultiLocator+VISTA+repair@wikipedia,100.00,295,295,100.00,162,162,100.00,102,102,9008.00,100.00,100.00,82,82,15.0
-MultiLocator+VISTA+repair@zillow,82.14,276,336,65.38,17,26,82.59,242,293,11112.00,75.28,65.78,75,114,18.5
-MultiLocator+VISTA+repair@amazon,94.46,478,506,100.00,63,63,93.60,410,438,17496.00,86.68,71.13,69,97,372.3
-MultiLocator+VISTA+repair@ALL,92.26,1049,1137,96.41,242,251,90.51,754,833,37616.00,85.58,77.13,226,293,405.9
-# MultiLocator+VISTA+repair: no locator generated for 40 elements
+MultiLocator+VISTA+full-repair@wikipedia,100.00,295,295,100.00,162,162,100.00,102,102,9008.00,100.00,100.00,82,82,15.0
+MultiLocator+VISTA+full-repair@zillow,82.14,276,336,65.38,17,26,82.59,242,293,11112.00,75.28,65.78,75,114,18.5
+MultiLocator+VISTA+full-repair@amazon,94.46,478,506,100.00,63,63,93.60,410,438,17496.00,86.68,71.13,69,97,372.3
+MultiLocator+VISTA+full-repair@ALL,92.26,1049,1137,96.41,242,251,90.51,754,833,37616.00,85.58,77.13,226,293,405.9
+# MultiLocator+VISTA+full-repair: no locator generated for 40 elements
 [success] Total time: 3457 s (57:37), completed 11 Nov 2026, 15:43:48

@@ -1,8 +1,8 @@
 #!/bin/bash
-# MultiLocator+VISTA+paper-repair with a wall-clock limit per site (it stalls in Robula+ regeneration on some sites).
+# MultiLocator+VISTA+repair with a wall-clock limit per site (it stalls in Robula+ regeneration on some sites).
 # usage: resume_mlvp.sh wayback | asg_f2a | asg_consec        limit: LIMIT seconds per site (default 300)
 # A site that hits the limit is written to <out>/mlvp.timeouts and skipped on later runs (counts as "no result", report it).
-A="MultiLocator+VISTA+paper-repair"; LIMIT=${LIMIT:-300}; H=/Users/stocco/repos/tools/hybrid-work
+A="MultiLocator+VISTA+repair"; LIMIT=${LIMIT:-300}; H=/Users/stocco/repos/tools/hybrid-work
 export PATH="/Users/stocco/repos/tools/abushakra-comparison-robust-locators-algorithms/similo-thesis/.venv/bin:$PATH"
 JAVA=/Users/stocco/Library/Java/JavaVirtualMachines/jdk-17.0.21+9/Contents/Home/bin/java
 CP="$(cat $H/cp_ob.txt)"   # ob classes contain the paper-repair entry; the dev classes are older

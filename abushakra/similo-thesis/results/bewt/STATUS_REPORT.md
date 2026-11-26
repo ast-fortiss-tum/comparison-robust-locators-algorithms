@@ -17,7 +17,7 @@ MultiLocator+VISTA 69.2% (MultiLocator 64.9%), RobulaPlus 68.2%, SIDEREAL 62.6%,
 - BEWT pages have fewer candidates than ReproBreak (median 107 vs 350 elements), and many pairs are login/admin pages, so the benchmark is easier than ReproBreak. Dedupe is per (po method, locators, xpaths, url path).
 - EAGL-scaled-f0..f4 rows in eval_final.log are meaningless (category fold models need Wayback categories; no caches); ignore them. Only EAGL plain and scaled-adobe were generated.
 - VISTA's OpenCV fallback bug fixed (venv python symlink); VISTA 28% is real now.
-- Not done: ReproBreak EAGL fold variants, Wayback (MultiLocator+VISTA+repair) items from the plan; nothing committed.
+- Not done: ReproBreak EAGL fold variants, Wayback (MultiLocator+VISTA+full-repair) items from the plan; nothing committed.
 
 ## Files
 Work dir /Users/stocco/repos/tools/bewt-work (LOG.md, out/, imp/); repo changes uncommitted in comparison-robust-locators-algorithms: results/bewt/, scripts/bewt/, ImportReproBreak.scala (prefix arg), crop_element.py/visual_match.py.

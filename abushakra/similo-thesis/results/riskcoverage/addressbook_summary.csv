@@ -6,10 +6,10 @@ OptimizedVonSimilo,1958,1938,20,0,0.9898,1.0,0.9898,scored
 VonSimilo,1958,1934,24,0,0.9877,1.0,0.9877,scored
 LegacyCombined,1958,1933,25,0,0.9872,1.0,0.9872,scored
 LegacySimilo,1958,1933,25,0,0.9872,1.0,0.9872,scored
-MultiLocator+VISTA+paper-repair,1958,1933,25,0,0.9872,1.0,0.9872,fixed
+MultiLocator+VISTA+repair,1958,1933,25,0,0.9872,1.0,0.9872,fixed
 MultiLocator+VISTA,1958,1933,25,0,0.9872,1.0,0.9872,fixed
 COLOR,1958,1931,27,0,0.9862,1.0,0.9862,scored
-MultiLocator+paper-repair,1958,1927,18,13,0.9842,0.9934,0.9907,fixed
+MultiLocator+repair,1958,1927,18,13,0.9842,0.9934,0.9907,fixed
 MultiLocator,1958,1927,18,13,0.9842,0.9934,0.9907,fixed
 SIDEREAL,1958,1894,9,55,0.9673,0.9719,0.9953,fixed
 RobulaPlus,1958,1886,8,64,0.9632,0.9673,0.9958,fixed

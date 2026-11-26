@@ -7,7 +7,7 @@ Wayback,LegacySimilo,Similarity repair,main,1024,12266,11337,92.43,91.78,93.28,9
 Wayback,Montoto,Locator generator,main,1024,12266,3357,27.37,29.50,30.92,27.3,17.2,11.4
 Wayback,MultiLocator,Multi-locator,main,1024,12266,8026,65.43,65.93,67.35,66.6,53.2,45.1
 Wayback,MultiLocator+VISTA,Multi-locator,main,1024,12266,8477,69.11,68.32,70.72,70.1,56.3,47.1
-Wayback,MultiLocator+paper-repair,Multi-locator,main,1024,12266,8362,68.17,68.55,69.81,68.7,58.3,49.7
+Wayback,MultiLocator+repair,Multi-locator,main,1024,12266,8362,68.17,68.55,69.81,68.7,58.3,49.7
 Wayback,MultiLocator+selective-repair,Multi-locator,appendix,1024,12266,8397,68.46,68.85,70.07,69.1,58.7,50.3
 Wayback,OptimizedCombined,Similarity repair,appendix,1024,12266,11454,93.38,92.87,94.46,94.0,88.4,80.5
 Wayback,OptimizedMinimal,Similarity repair,appendix,1024,12266,11483,93.62,93.03,94.66,94.6,88.4,82.1
@@ -25,8 +25,8 @@ Excalidraw,LegacySimilo,Similarity repair,main,125,529,402,75.99,45.60,75.60,,,
 Excalidraw,Montoto,Locator generator,main,125,529,67,12.67,8.60,8.60,,,
 Excalidraw,MultiLocator,Multi-locator,main,125,529,526,99.43,99.80,99.80,,,
 Excalidraw,MultiLocator+VISTA,Multi-locator,main,125,529,527,99.62,100.00,100.00,,,
-Excalidraw,MultiLocator+VISTA+paper-repair,Multi-locator,main,125,529,520,98.30,99.20,99.20,,,
-Excalidraw,MultiLocator+paper-repair,Multi-locator,main,125,529,527,99.62,100.00,100.00,,,
+Excalidraw,MultiLocator+VISTA+repair,Multi-locator,main,125,529,520,98.30,99.20,99.20,,,
+Excalidraw,MultiLocator+repair,Multi-locator,main,125,529,527,99.62,100.00,100.00,,,
 Excalidraw,MultiLocator+selective-repair,Multi-locator,appendix,125,529,527,99.62,100.00,100.00,,,
 Excalidraw,OptimizedCombined,Similarity repair,appendix,125,529,526,99.43,99.80,99.80,,,
 Excalidraw,OptimizedMinimal,Similarity repair,appendix,125,529,527,99.62,100.00,100.00,,,
@@ -43,7 +43,7 @@ Angular-Slickgrid,LegacySimilo,Similarity repair,main,125,8276,8181,98.85,98.45,
 Angular-Slickgrid,Montoto,Locator generator,main,125,8276,728,8.80,23.33,23.33,27.9,7.6,7.8
 Angular-Slickgrid,MultiLocator,Multi-locator,main,125,8276,6518,78.76,81.85,82.14,88.5,83.8,81.6
 Angular-Slickgrid,MultiLocator+VISTA,Multi-locator,main,125,8276,6518,78.76,81.85,82.14,88.5,83.8,81.6
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,main,125,8276,6789,82.03,84.49,84.78,91.0,86.7,84.5
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,main,125,8276,6789,82.03,84.49,84.78,91.0,86.7,84.5
 Angular-Slickgrid,OptimizedMinimal,Similarity repair,appendix,125,8276,8276,100.00,100.00,100.00,100.0,100.0,100.0
 Angular-Slickgrid,OptimizedSimilo,Similarity repair,appendix,125,8276,8276,100.00,100.00,100.00,100.0,100.0,100.0
 Angular-Slickgrid,RobulaPlus,Locator generator,main,125,8276,4749,57.38,63.31,64.06,72.1,65.7,64.1

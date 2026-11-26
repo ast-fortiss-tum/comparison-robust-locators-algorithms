@@ -3,7 +3,7 @@
 # usage: run_algos.sh [algorithms: space-separated list or 'all'] [batch size, default 50] [out dir, default out]
 # VISTA and the MultiLocator variants that use it run sequentially in this one lane because VISTA writes its cache.
 H=/Users/stocco/repos/tools/hybrid-work; P=$H/dol; cd $P
-ALL="absXPath IDXPath SeleniumIDE RobulaPlus Montoto SIDEREAL SIDEREAL-uniform LegacySimilo OptimizedSimilo OptimizedMinimal VonSimilo OptimizedVonSimilo LegacyCombined OptimizedCombined COLOR MultiLocator MultiLocator+paper-repair MultiLocator+selective-repair VISTA MultiLocator+VISTA MultiLocator+VISTA+paper-repair"
+ALL="absXPath IDXPath SeleniumIDE RobulaPlus Montoto SIDEREAL SIDEREAL-uniform LegacySimilo OptimizedSimilo OptimizedMinimal VonSimilo OptimizedVonSimilo LegacyCombined OptimizedCombined COLOR MultiLocator MultiLocator+repair MultiLocator+selective-repair VISTA MultiLocator+VISTA MultiLocator+VISTA+repair"
 LIST=${1:-all}; [ "$LIST" = all ] && LIST=$ALL; BATCH=${2:-50}; OUT=${3:-out}
 JAVA=/Users/stocco/Library/Java/JavaVirtualMachines/jdk-17.0.21+9/Contents/Home/bin/java
 export PATH="/Users/stocco/repos/tools/abushakra-comparison-robust-locators-algorithms/similo-thesis/.venv/bin:$PATH"

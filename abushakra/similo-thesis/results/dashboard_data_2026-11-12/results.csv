@@ -12,7 +12,7 @@ Wayback,LegacyCombined,Similarity repair,ALL,98.95,12136,12265,,,95.75,2365,2470
 Wayback,LegacySimilo,Similarity repair,ALL,98.96,12138,12265,,,95.83,2367,2470,253.7,"all 36 sites (30 tuning + 6 held-out), rebuilt DOMs (2026-11-12)",main
 Wayback,Montoto,Locator generator,ALL,49.88,6118,12265,,,31.21,771,2470,2347.5,"all 36 sites (30 tuning + 6 held-out), rebuilt DOMs (2026-11-12)",main
 Wayback,MultiLocator+VISTA,Multi-locator,ALL,93.18,11429,12265,,,70.04,1730,2470,16791.5,"all 36 sites (30 tuning + 6 held-out), rebuilt DOMs (2026-11-12)",main
-Wayback,MultiLocator+VISTA+repair,Multi-locator,ALL,93.18,11429,12265,,,70.04,1730,2470,15554.4,"all 36 sites (30 tuning + 6 held-out), rebuilt DOMs (2026-11-12)",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,ALL,93.18,11429,12265,,,70.04,1730,2470,15554.4,"all 36 sites (30 tuning + 6 held-out), rebuilt DOMs (2026-11-12)",appendix
 Wayback,MultiLocator,Multi-locator,ALL,91.71,11248,12265,,,62.79,1551,2470,13142.7,"all 36 sites (30 tuning + 6 held-out), rebuilt DOMs (2026-11-12)",main
 Wayback,OptimizedCombined,Similarity repair,ALL,99.59,12215,12265,,,98.06,2422,2470,431.7,"all 36 sites (30 tuning + 6 held-out), rebuilt DOMs (2026-11-12)",appendix
 Wayback,OptimizedMinimal,Similarity repair,ALL,99.58,12213,12265,,,98.06,2422,2470,112.3,"all 36 sites (30 tuning + 6 held-out), rebuilt DOMs (2026-11-12)",appendix
@@ -55,11 +55,11 @@ ReproBreak,MultiLocator+VISTA,Multi-locator,same position,98.34,178,181,,,,,,,tr
 ReproBreak,MultiLocator+VISTA,Multi-locator,"moved, same element",18.18,2,11,,,,,,,true relocations (labelled same element),main
 ReproBreak,MultiLocator+VISTA,Multi-locator,"moved, different element",0.00,0,121,,,,,,,fix re-targets a different element; not a locator-repair case,main
 ReproBreak,MultiLocator+VISTA,Multi-locator,"moved, unsure/bad/unlabelled",2.70,1,37,,,,,,,identity not settled,main
-ReproBreak,MultiLocator+VISTA+repair,Multi-locator,ALL,50.86,178,350,,,,,,,,appendix
-ReproBreak,MultiLocator+VISTA+repair,Multi-locator,same position,96.69,175,181,,,,,,,trivial: target at the same absolute XPath,appendix
-ReproBreak,MultiLocator+VISTA+repair,Multi-locator,"moved, same element",18.18,2,11,,,,,,,true relocations (labelled same element),appendix
-ReproBreak,MultiLocator+VISTA+repair,Multi-locator,"moved, different element",0.00,0,121,,,,,,,fix re-targets a different element; not a locator-repair case,appendix
-ReproBreak,MultiLocator+VISTA+repair,Multi-locator,"moved, unsure/bad/unlabelled",2.70,1,37,,,,,,,identity not settled,appendix
+ReproBreak,MultiLocator+VISTA+full-repair,Multi-locator,ALL,50.86,178,350,,,,,,,,appendix
+ReproBreak,MultiLocator+VISTA+full-repair,Multi-locator,same position,96.69,175,181,,,,,,,trivial: target at the same absolute XPath,appendix
+ReproBreak,MultiLocator+VISTA+full-repair,Multi-locator,"moved, same element",18.18,2,11,,,,,,,true relocations (labelled same element),appendix
+ReproBreak,MultiLocator+VISTA+full-repair,Multi-locator,"moved, different element",0.00,0,121,,,,,,,fix re-targets a different element; not a locator-repair case,appendix
+ReproBreak,MultiLocator+VISTA+full-repair,Multi-locator,"moved, unsure/bad/unlabelled",2.70,1,37,,,,,,,identity not settled,appendix
 ReproBreak,MultiLocator,Multi-locator,ALL,51.71,181,350,,,,,,,,main
 ReproBreak,MultiLocator,Multi-locator,same position,98.34,178,181,,,,,,,trivial: target at the same absolute XPath,main
 ReproBreak,MultiLocator,Multi-locator,"moved, same element",18.18,2,11,,,,,,,true relocations (labelled same element),main
@@ -523,37 +523,37 @@ Wayback,MultiLocator+VISTA,Multi-locator,yahoo,94.07,270,287,82.35,94.26,75.36,5
 Wayback,MultiLocator+VISTA,Multi-locator,zillow,97.32,327,336,100.00,96.92,92.10,105,114,29.7,"rebuilt DOMs (2026-11-12), all algorithms",main
 Wayback,MultiLocator+VISTA,Multi-locator,zoom,95.96,666,694,100.00,92.37,35.71,15,42,187.9,"rebuilt DOMs (2026-11-12), all algorithms",main
 Wayback,MultiLocator+VISTA,Multi-locator,tuning sites (30),93.68,9720,10376,98.04,91.69,71.95,1447,2011,7008.7,weights of the Optimized variants were tuned on these sites; rebuilt DOMs (2026-11-12),main
-Wayback,MultiLocator+VISTA+repair,Multi-locator,accuweather,92.36,242,262,100.00,91.34,83.33,100,120,122.0,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,adobe,49.46,46,93,87.50,33.82,9.67,3,31,54.4,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,amazon,94.46,478,506,100.00,93.60,71.13,69,97,454.8,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,apple,98.86,261,264,100.00,98.02,91.17,31,34,20.5,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,bestbuy,93.81,440,469,98.30,93.15,80.66,121,150,319.8,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,bing,87.93,51,58,85.71,84.21,0.00,0,1,7.3,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,discord,85.50,230,269,86.11,75.42,37.03,20,54,57.0,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,ebay,96.84,521,538,100.00,94.70,69.09,38,55,166.8,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,espn,93.38,240,257,100.00,91.94,32.00,8,25,854.7,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,etsy,94.21,440,467,98.63,93.26,78.90,101,128,517.4,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,facebook,87.19,177,203,100.00,78.86,56.14,32,57,9.1,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,fidelity,94.08,684,727,88.00,96.12,83.33,5,6,152.6,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,google,99.05,209,211,100.00,98.95,96.15,25,26,2.4,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,indeed,96.06,317,330,100.00,93.04,85.71,72,84,7.4,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,linkedin,95.08,271,285,100.00,93.48,88.33,106,120,10.9,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,netflix,93.33,224,240,100.00,90.30,84.46,87,103,5.9,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,office,98.78,571,578,100.00,98.12,72.00,18,25,38.0,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,paypal,93.89,354,377,100.00,92.17,79.76,67,84,14.0,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,reddit,91.35,222,243,100.00,87.27,79.20,80,101,84.8,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,roblox,98.37,363,369,100.00,96.92,86.04,37,43,8.3,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,t-mobile,93.75,435,464,100.00,93.27,69.14,65,94,78.9,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,tiktok,75.55,34,45,100.00,60.00,38.46,5,13,1.7,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,twitter,86.36,266,308,100.00,57.99,30.00,18,60,9.7,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,usps,99.82,557,558,100.00,99.74,66.66,2,3,71.6,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,walmart,69.27,230,332,63.63,69.67,18.64,22,118,40.6,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,weather,96.14,299,311,100.00,94.84,84.72,61,72,27.7,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,wikipedia,100.00,295,295,100.00,100.00,100.00,82,82,17.9,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,yahoo,94.07,270,287,82.35,94.26,75.36,52,69,60.5,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,zillow,97.32,327,336,100.00,96.92,92.10,105,114,24.9,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,zoom,95.96,666,694,100.00,92.37,35.71,15,42,150.9,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,tuning sites (30),93.68,9720,10376,98.04,91.69,71.95,1447,2011,3392.5,weights of the Optimized variants were tuned on these sites; rebuilt DOMs (2026-11-12),appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,accuweather,92.36,242,262,100.00,91.34,83.33,100,120,122.0,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,adobe,49.46,46,93,87.50,33.82,9.67,3,31,54.4,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,amazon,94.46,478,506,100.00,93.60,71.13,69,97,454.8,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,apple,98.86,261,264,100.00,98.02,91.17,31,34,20.5,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,bestbuy,93.81,440,469,98.30,93.15,80.66,121,150,319.8,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,bing,87.93,51,58,85.71,84.21,0.00,0,1,7.3,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,discord,85.50,230,269,86.11,75.42,37.03,20,54,57.0,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,ebay,96.84,521,538,100.00,94.70,69.09,38,55,166.8,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,espn,93.38,240,257,100.00,91.94,32.00,8,25,854.7,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,etsy,94.21,440,467,98.63,93.26,78.90,101,128,517.4,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,facebook,87.19,177,203,100.00,78.86,56.14,32,57,9.1,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,fidelity,94.08,684,727,88.00,96.12,83.33,5,6,152.6,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,google,99.05,209,211,100.00,98.95,96.15,25,26,2.4,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,indeed,96.06,317,330,100.00,93.04,85.71,72,84,7.4,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,linkedin,95.08,271,285,100.00,93.48,88.33,106,120,10.9,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,netflix,93.33,224,240,100.00,90.30,84.46,87,103,5.9,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,office,98.78,571,578,100.00,98.12,72.00,18,25,38.0,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,paypal,93.89,354,377,100.00,92.17,79.76,67,84,14.0,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,reddit,91.35,222,243,100.00,87.27,79.20,80,101,84.8,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,roblox,98.37,363,369,100.00,96.92,86.04,37,43,8.3,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,t-mobile,93.75,435,464,100.00,93.27,69.14,65,94,78.9,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,tiktok,75.55,34,45,100.00,60.00,38.46,5,13,1.7,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,twitter,86.36,266,308,100.00,57.99,30.00,18,60,9.7,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,usps,99.82,557,558,100.00,99.74,66.66,2,3,71.6,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,walmart,69.27,230,332,63.63,69.67,18.64,22,118,40.6,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,weather,96.14,299,311,100.00,94.84,84.72,61,72,27.7,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,wikipedia,100.00,295,295,100.00,100.00,100.00,82,82,17.9,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,yahoo,94.07,270,287,82.35,94.26,75.36,52,69,60.5,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,zillow,97.32,327,336,100.00,96.92,92.10,105,114,24.9,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,zoom,95.96,666,694,100.00,92.37,35.71,15,42,150.9,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,tuning sites (30),93.68,9720,10376,98.04,91.69,71.95,1447,2011,3392.5,weights of the Optimized variants were tuned on these sites; rebuilt DOMs (2026-11-12),appendix
 Wayback,MultiLocator,Multi-locator,accuweather,90.45,237,262,100.00,89.17,79.16,95,120,53.4,"rebuilt DOMs (2026-11-12), all algorithms",main
 Wayback,MultiLocator,Multi-locator,adobe,49.46,46,93,87.50,33.82,9.67,3,31,56.7,"rebuilt DOMs (2026-11-12), all algorithms",main
 Wayback,MultiLocator,Multi-locator,amazon,94.46,478,506,100.00,93.60,71.13,69,97,1287.5,"rebuilt DOMs (2026-11-12), all algorithms",main
@@ -1017,13 +1017,13 @@ Wayback,MultiLocator+VISTA,Multi-locator,foxnews,98.68,225,228,100.00,97.05,94.6
 Wayback,MultiLocator+VISTA,Multi-locator,imdb,95.84,300,313,100.00,95.16,80.00,52,65,496.7,"rebuilt DOMs (2026-11-12), all algorithms",main
 Wayback,MultiLocator+VISTA,Multi-locator,instagram,88.20,157,178,100.00,77.41,27.58,8,29,9.5,"rebuilt DOMs (2026-11-12), all algorithms",main
 Wayback,MultiLocator+VISTA,Multi-locator,held-out sites (6),90.47,1709,1889,99.75,86.58,61.66,283,459,9782.8,never used for tuning; rebuilt DOMs (2026-11-12),main
-Wayback,MultiLocator+VISTA+repair,Multi-locator,aol,92.68,393,424,100.00,89.45,63.95,55,86,453.8,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,cnn,84.59,549,649,99.04,81.70,50.76,99,195,10638.0,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,fandom,87.62,85,97,100.00,65.71,57.14,16,28,467.6,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,foxnews,98.68,225,228,100.00,97.05,94.64,53,56,401.9,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,imdb,95.84,300,313,100.00,95.16,80.00,52,65,197.5,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,instagram,88.20,157,178,100.00,77.41,27.58,8,29,3.1,"rebuilt DOMs (2026-11-12), all algorithms",appendix
-Wayback,MultiLocator+VISTA+repair,Multi-locator,held-out sites (6),90.47,1709,1889,99.75,86.58,61.66,283,459,12161.9,never used for tuning; rebuilt DOMs (2026-11-12),appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,aol,92.68,393,424,100.00,89.45,63.95,55,86,453.8,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,cnn,84.59,549,649,99.04,81.70,50.76,99,195,10638.0,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,fandom,87.62,85,97,100.00,65.71,57.14,16,28,467.6,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,foxnews,98.68,225,228,100.00,97.05,94.64,53,56,401.9,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,imdb,95.84,300,313,100.00,95.16,80.00,52,65,197.5,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,instagram,88.20,157,178,100.00,77.41,27.58,8,29,3.1,"rebuilt DOMs (2026-11-12), all algorithms",appendix
+Wayback,MultiLocator+VISTA+full-repair,Multi-locator,held-out sites (6),90.47,1709,1889,99.75,86.58,61.66,283,459,12161.9,never used for tuning; rebuilt DOMs (2026-11-12),appendix
 Wayback,MultiLocator,Multi-locator,aol,91.98,390,424,100.00,88.43,60.46,52,86,622.1,"rebuilt DOMs (2026-11-12), all algorithms",main
 Wayback,MultiLocator,Multi-locator,cnn,79.81,518,649,99.04,75.97,34.87,68,195,5533.6,"rebuilt DOMs (2026-11-12), all algorithms",main
 Wayback,MultiLocator,Multi-locator,fandom,87.62,85,97,100.00,65.71,57.14,16,28,428.5,"rebuilt DOMs (2026-11-12), all algorithms",main
@@ -1298,15 +1298,15 @@ BEWT,MultiLocator,Multi-locator,locator changed,31.5,69,219,,,,,,,the page-objec
 BEWT,MultiLocator,Multi-locator,locator unchanged,86.4,102,118,,,,,,,the same locator text is used in v1 and v2,main
 BEWT,MultiLocator,Multi-locator,moved,46.5,144,310,,,,,,,target at a different absolute XPath in v2,main
 BEWT,MultiLocator,Multi-locator,same position,100.0,27,27,,,,,,,trivial: target at the same absolute XPath in v1 and v2,main
-BEWT,MultiLocator+VISTA+repair,Multi-locator,ALL,54.9,185,337,,,,,,,,appendix
-BEWT,MultiLocator+VISTA+repair,Multi-locator,bludit,64.9,37,57,,,,,,,"one web app, v1 to v2",appendix
-BEWT,MultiLocator+VISTA+repair,Multi-locator,joomla,83.8,31,37,,,,,,,"one web app, v1 to v2",appendix
-BEWT,MultiLocator+VISTA+repair,Multi-locator,mantisbt,68.5,85,124,,,,,,,"one web app, v1 to v2",appendix
-BEWT,MultiLocator+VISTA+repair,Multi-locator,prestashop,26.9,32,119,,,,,,,"one web app, v1 to v2",appendix
-BEWT,MultiLocator+VISTA+repair,Multi-locator,locator changed,36.5,80,219,,,,,,,the page-object locator text differs between v1 and v2,appendix
-BEWT,MultiLocator+VISTA+repair,Multi-locator,locator unchanged,89.0,105,118,,,,,,,the same locator text is used in v1 and v2,appendix
-BEWT,MultiLocator+VISTA+repair,Multi-locator,moved,51.0,158,310,,,,,,,target at a different absolute XPath in v2,appendix
-BEWT,MultiLocator+VISTA+repair,Multi-locator,same position,100.0,27,27,,,,,,,trivial: target at the same absolute XPath in v1 and v2,appendix
+BEWT,MultiLocator+VISTA+full-repair,Multi-locator,ALL,54.9,185,337,,,,,,,,appendix
+BEWT,MultiLocator+VISTA+full-repair,Multi-locator,bludit,64.9,37,57,,,,,,,"one web app, v1 to v2",appendix
+BEWT,MultiLocator+VISTA+full-repair,Multi-locator,joomla,83.8,31,37,,,,,,,"one web app, v1 to v2",appendix
+BEWT,MultiLocator+VISTA+full-repair,Multi-locator,mantisbt,68.5,85,124,,,,,,,"one web app, v1 to v2",appendix
+BEWT,MultiLocator+VISTA+full-repair,Multi-locator,prestashop,26.9,32,119,,,,,,,"one web app, v1 to v2",appendix
+BEWT,MultiLocator+VISTA+full-repair,Multi-locator,locator changed,36.5,80,219,,,,,,,the page-object locator text differs between v1 and v2,appendix
+BEWT,MultiLocator+VISTA+full-repair,Multi-locator,locator unchanged,89.0,105,118,,,,,,,the same locator text is used in v1 and v2,appendix
+BEWT,MultiLocator+VISTA+full-repair,Multi-locator,moved,51.0,158,310,,,,,,,target at a different absolute XPath in v2,appendix
+BEWT,MultiLocator+VISTA+full-repair,Multi-locator,same position,100.0,27,27,,,,,,,trivial: target at the same absolute XPath in v1 and v2,appendix
 ReproBreak,EAGL-scaled-f0,Locator generator (learned),ALL,27.43,96,350,,,,,,,,appendix
 ReproBreak,EAGL-scaled-f0,Locator generator (learned),same position,50.83,92,181,,,,,,,trivial: target at the same absolute XPath,appendix
 ReproBreak,EAGL-scaled-f0,Locator generator (learned),"moved, same element",27.27,3,11,,,,,,,true relocations (labelled same element),appendix
@@ -1377,20 +1377,20 @@ BEWT,EAGL-scaled-f4,Locator generator (learned),locator changed,17.8,39,219,,,,,
 BEWT,EAGL-scaled-f4,Locator generator (learned),locator unchanged,72.9,86,118,,,,,,,the same locator text is used in v1 and v2,appendix
 BEWT,EAGL-scaled-f4,Locator generator (learned),moved,31.9,99,310,,,,,,,target at a different absolute XPath in v2,appendix
 BEWT,EAGL-scaled-f4,Locator generator (learned),same position,96.3,26,27,,,,,,,trivial: target at the same absolute XPath in v1 and v2,appendix
-ReproBreak,MultiLocator+paper-repair,Multi-locator,ALL,51.71,181,350,,,,,,,"one version pair per element: repaired locators are never reused, so identical to MultiLocator (per-element outcomes verified)",main
-ReproBreak,MultiLocator+paper-repair,Multi-locator,same position,98.34,178,181,,,,,,,trivial: target at the same absolute XPath,main
-ReproBreak,MultiLocator+paper-repair,Multi-locator,"moved, same element",18.18,2,11,,,,,,,true relocations (labelled same element),main
-ReproBreak,MultiLocator+paper-repair,Multi-locator,"moved, different element",0.00,0,121,,,,,,,fix re-targets a different element; not a locator-repair case,main
-ReproBreak,MultiLocator+paper-repair,Multi-locator,"moved, unsure/bad/unlabelled",2.70,1,37,,,,,,,identity not settled,main
-BEWT,MultiLocator+paper-repair,Multi-locator,ALL,50.7,171,337,,,,,,,"one version pair per element: repaired locators are never reused, so identical to MultiLocator (per-element outcomes verified)",main
-BEWT,MultiLocator+paper-repair,Multi-locator,bludit,64.9,37,57,,,,,,,"one web app, v1 to v2",main
-BEWT,MultiLocator+paper-repair,Multi-locator,joomla,83.8,31,37,,,,,,,"one web app, v1 to v2",main
-BEWT,MultiLocator+paper-repair,Multi-locator,mantisbt,61.3,76,124,,,,,,,"one web app, v1 to v2",main
-BEWT,MultiLocator+paper-repair,Multi-locator,prestashop,22.7,27,119,,,,,,,"one web app, v1 to v2",main
-BEWT,MultiLocator+paper-repair,Multi-locator,locator changed,31.5,69,219,,,,,,,the page-object locator text differs between v1 and v2,main
-BEWT,MultiLocator+paper-repair,Multi-locator,locator unchanged,86.4,102,118,,,,,,,the same locator text is used in v1 and v2,main
-BEWT,MultiLocator+paper-repair,Multi-locator,moved,46.5,144,310,,,,,,,target at a different absolute XPath in v2,main
-BEWT,MultiLocator+paper-repair,Multi-locator,same position,100.0,27,27,,,,,,,trivial: target at the same absolute XPath in v1 and v2,main
+ReproBreak,MultiLocator+repair,Multi-locator,ALL,51.71,181,350,,,,,,,"one version pair per element: repaired locators are never reused, so identical to MultiLocator (per-element outcomes verified)",main
+ReproBreak,MultiLocator+repair,Multi-locator,same position,98.34,178,181,,,,,,,trivial: target at the same absolute XPath,main
+ReproBreak,MultiLocator+repair,Multi-locator,"moved, same element",18.18,2,11,,,,,,,true relocations (labelled same element),main
+ReproBreak,MultiLocator+repair,Multi-locator,"moved, different element",0.00,0,121,,,,,,,fix re-targets a different element; not a locator-repair case,main
+ReproBreak,MultiLocator+repair,Multi-locator,"moved, unsure/bad/unlabelled",2.70,1,37,,,,,,,identity not settled,main
+BEWT,MultiLocator+repair,Multi-locator,ALL,50.7,171,337,,,,,,,"one version pair per element: repaired locators are never reused, so identical to MultiLocator (per-element outcomes verified)",main
+BEWT,MultiLocator+repair,Multi-locator,bludit,64.9,37,57,,,,,,,"one web app, v1 to v2",main
+BEWT,MultiLocator+repair,Multi-locator,joomla,83.8,31,37,,,,,,,"one web app, v1 to v2",main
+BEWT,MultiLocator+repair,Multi-locator,mantisbt,61.3,76,124,,,,,,,"one web app, v1 to v2",main
+BEWT,MultiLocator+repair,Multi-locator,prestashop,22.7,27,119,,,,,,,"one web app, v1 to v2",main
+BEWT,MultiLocator+repair,Multi-locator,locator changed,31.5,69,219,,,,,,,the page-object locator text differs between v1 and v2,main
+BEWT,MultiLocator+repair,Multi-locator,locator unchanged,86.4,102,118,,,,,,,the same locator text is used in v1 and v2,main
+BEWT,MultiLocator+repair,Multi-locator,moved,46.5,144,310,,,,,,,target at a different absolute XPath in v2,main
+BEWT,MultiLocator+repair,Multi-locator,same position,100.0,27,27,,,,,,,trivial: target at the same absolute XPath in v1 and v2,main
 Excalidraw,COLOR,Similarity repair,ALL,85.22,444,521,,,54.17,91,168,1.7,"15 sites (one per UI state), identity oracle with the test id hidden; each release paired with the previous one",appendix
 Excalidraw,COLOR,Similarity repair,ex_initial,86.53,45,52,,,66.67,14,21,0.2,,appendix
 Excalidraw,COLOR,Similarity repair,ex_initial_from_v0_14_0,77.77,35,45,,,16.67,2,12,0.2,,appendix
@@ -1503,38 +1503,38 @@ Excalidraw,MultiLocator+VISTA,Multi-locator,ex_text_added_from_v0_11_0,100.00,22
 Excalidraw,MultiLocator+VISTA,Multi-locator,ex_text_added_from_v0_14_0,100.00,45,45,,,100.00,10,10,1.6,,main
 Excalidraw,MultiLocator+VISTA,Multi-locator,ex_text_added_from_v0_16_0,100.00,8,8,,,,,,0.3,,main
 Excalidraw,MultiLocator+VISTA,Multi-locator,ex_text_added_from_v0_17_0,71.42,5,7,,,0.00,0,2,0.3,,main
-Excalidraw,MultiLocator+VISTA+paper-repair,Multi-locator,ALL,99.62,519,521,,,98.81,166,168,22.5,"15 sites (one per UI state), identity oracle with the test id hidden; each release paired with the previous one",main
-Excalidraw,MultiLocator+VISTA+paper-repair,Multi-locator,ex_initial,100.00,52,52,,,100.00,21,21,1.3,,main
-Excalidraw,MultiLocator+VISTA+paper-repair,Multi-locator,ex_initial_from_v0_14_0,100.00,45,45,,,100.00,12,12,1.4,,main
-Excalidraw,MultiLocator+VISTA+paper-repair,Multi-locator,ex_library_open,100.00,52,52,,,100.00,27,27,2.6,,main
-Excalidraw,MultiLocator+VISTA+paper-repair,Multi-locator,ex_library_open_from_v0_11_0,100.00,2,2,,,100.00,1,1,0.4,,main
-Excalidraw,MultiLocator+VISTA+paper-repair,Multi-locator,ex_library_open_from_v0_14_0,100.00,45,45,,,100.00,10,10,1.1,,main
-Excalidraw,MultiLocator+VISTA+paper-repair,Multi-locator,ex_main_menu,100.00,76,76,,,100.00,22,22,4.4,,main
-Excalidraw,MultiLocator+VISTA+paper-repair,Multi-locator,ex_main_menu_from_v0_17_0,100.00,5,5,,,100.00,5,5,0.4,,main
-Excalidraw,MultiLocator+VISTA+paper-repair,Multi-locator,ex_rectangle_selected,100.00,52,52,,,100.00,21,21,2.5,,main
-Excalidraw,MultiLocator+VISTA+paper-repair,Multi-locator,ex_rectangle_selected_from_v0_14_0,100.00,45,45,,,100.00,10,10,2.1,,main
-Excalidraw,MultiLocator+VISTA+paper-repair,Multi-locator,ex_rectangle_selected_from_v0_17_0,100.00,13,13,,,,,,0.4,,main
-Excalidraw,MultiLocator+VISTA+paper-repair,Multi-locator,ex_text_added,100.00,52,52,,,100.00,18,18,2.2,,main
-Excalidraw,MultiLocator+VISTA+paper-repair,Multi-locator,ex_text_added_from_v0_11_0,100.00,22,22,,,100.00,9,9,1.2,,main
-Excalidraw,MultiLocator+VISTA+paper-repair,Multi-locator,ex_text_added_from_v0_14_0,100.00,45,45,,,100.00,10,10,2.0,,main
-Excalidraw,MultiLocator+VISTA+paper-repair,Multi-locator,ex_text_added_from_v0_16_0,100.00,8,8,,,,,,0.3,,main
-Excalidraw,MultiLocator+VISTA+paper-repair,Multi-locator,ex_text_added_from_v0_17_0,71.42,5,7,,,0.00,0,2,0.2,,main
-Excalidraw,MultiLocator+paper-repair,Multi-locator,ALL,99.62,519,521,,,98.81,166,168,18.6,"15 sites (one per UI state), identity oracle with the test id hidden; each release paired with the previous one",main
-Excalidraw,MultiLocator+paper-repair,Multi-locator,ex_initial,100.00,52,52,,,100.00,21,21,2.3,,main
-Excalidraw,MultiLocator+paper-repair,Multi-locator,ex_initial_from_v0_14_0,100.00,45,45,,,100.00,12,12,1.8,,main
-Excalidraw,MultiLocator+paper-repair,Multi-locator,ex_library_open,100.00,52,52,,,100.00,27,27,1.6,,main
-Excalidraw,MultiLocator+paper-repair,Multi-locator,ex_library_open_from_v0_11_0,100.00,2,2,,,100.00,1,1,0.2,,main
-Excalidraw,MultiLocator+paper-repair,Multi-locator,ex_library_open_from_v0_14_0,100.00,45,45,,,100.00,10,10,0.8,,main
-Excalidraw,MultiLocator+paper-repair,Multi-locator,ex_main_menu,100.00,76,76,,,100.00,22,22,3.3,,main
-Excalidraw,MultiLocator+paper-repair,Multi-locator,ex_main_menu_from_v0_17_0,100.00,5,5,,,100.00,5,5,0.3,,main
-Excalidraw,MultiLocator+paper-repair,Multi-locator,ex_rectangle_selected,100.00,52,52,,,100.00,21,21,1.9,,main
-Excalidraw,MultiLocator+paper-repair,Multi-locator,ex_rectangle_selected_from_v0_14_0,100.00,45,45,,,100.00,10,10,1.8,,main
-Excalidraw,MultiLocator+paper-repair,Multi-locator,ex_rectangle_selected_from_v0_17_0,100.00,13,13,,,,,,0.4,,main
-Excalidraw,MultiLocator+paper-repair,Multi-locator,ex_text_added,100.00,52,52,,,100.00,18,18,1.6,,main
-Excalidraw,MultiLocator+paper-repair,Multi-locator,ex_text_added_from_v0_11_0,100.00,22,22,,,100.00,9,9,0.8,,main
-Excalidraw,MultiLocator+paper-repair,Multi-locator,ex_text_added_from_v0_14_0,100.00,45,45,,,100.00,10,10,1.4,,main
-Excalidraw,MultiLocator+paper-repair,Multi-locator,ex_text_added_from_v0_16_0,100.00,8,8,,,,,,0.2,,main
-Excalidraw,MultiLocator+paper-repair,Multi-locator,ex_text_added_from_v0_17_0,71.42,5,7,,,0.00,0,2,0.2,,main
+Excalidraw,MultiLocator+VISTA+repair,Multi-locator,ALL,99.62,519,521,,,98.81,166,168,22.5,"15 sites (one per UI state), identity oracle with the test id hidden; each release paired with the previous one",main
+Excalidraw,MultiLocator+VISTA+repair,Multi-locator,ex_initial,100.00,52,52,,,100.00,21,21,1.3,,main
+Excalidraw,MultiLocator+VISTA+repair,Multi-locator,ex_initial_from_v0_14_0,100.00,45,45,,,100.00,12,12,1.4,,main
+Excalidraw,MultiLocator+VISTA+repair,Multi-locator,ex_library_open,100.00,52,52,,,100.00,27,27,2.6,,main
+Excalidraw,MultiLocator+VISTA+repair,Multi-locator,ex_library_open_from_v0_11_0,100.00,2,2,,,100.00,1,1,0.4,,main
+Excalidraw,MultiLocator+VISTA+repair,Multi-locator,ex_library_open_from_v0_14_0,100.00,45,45,,,100.00,10,10,1.1,,main
+Excalidraw,MultiLocator+VISTA+repair,Multi-locator,ex_main_menu,100.00,76,76,,,100.00,22,22,4.4,,main
+Excalidraw,MultiLocator+VISTA+repair,Multi-locator,ex_main_menu_from_v0_17_0,100.00,5,5,,,100.00,5,5,0.4,,main
+Excalidraw,MultiLocator+VISTA+repair,Multi-locator,ex_rectangle_selected,100.00,52,52,,,100.00,21,21,2.5,,main
+Excalidraw,MultiLocator+VISTA+repair,Multi-locator,ex_rectangle_selected_from_v0_14_0,100.00,45,45,,,100.00,10,10,2.1,,main
+Excalidraw,MultiLocator+VISTA+repair,Multi-locator,ex_rectangle_selected_from_v0_17_0,100.00,13,13,,,,,,0.4,,main
+Excalidraw,MultiLocator+VISTA+repair,Multi-locator,ex_text_added,100.00,52,52,,,100.00,18,18,2.2,,main
+Excalidraw,MultiLocator+VISTA+repair,Multi-locator,ex_text_added_from_v0_11_0,100.00,22,22,,,100.00,9,9,1.2,,main
+Excalidraw,MultiLocator+VISTA+repair,Multi-locator,ex_text_added_from_v0_14_0,100.00,45,45,,,100.00,10,10,2.0,,main
+Excalidraw,MultiLocator+VISTA+repair,Multi-locator,ex_text_added_from_v0_16_0,100.00,8,8,,,,,,0.3,,main
+Excalidraw,MultiLocator+VISTA+repair,Multi-locator,ex_text_added_from_v0_17_0,71.42,5,7,,,0.00,0,2,0.2,,main
+Excalidraw,MultiLocator+repair,Multi-locator,ALL,99.62,519,521,,,98.81,166,168,18.6,"15 sites (one per UI state), identity oracle with the test id hidden; each release paired with the previous one",main
+Excalidraw,MultiLocator+repair,Multi-locator,ex_initial,100.00,52,52,,,100.00,21,21,2.3,,main
+Excalidraw,MultiLocator+repair,Multi-locator,ex_initial_from_v0_14_0,100.00,45,45,,,100.00,12,12,1.8,,main
+Excalidraw,MultiLocator+repair,Multi-locator,ex_library_open,100.00,52,52,,,100.00,27,27,1.6,,main
+Excalidraw,MultiLocator+repair,Multi-locator,ex_library_open_from_v0_11_0,100.00,2,2,,,100.00,1,1,0.2,,main
+Excalidraw,MultiLocator+repair,Multi-locator,ex_library_open_from_v0_14_0,100.00,45,45,,,100.00,10,10,0.8,,main
+Excalidraw,MultiLocator+repair,Multi-locator,ex_main_menu,100.00,76,76,,,100.00,22,22,3.3,,main
+Excalidraw,MultiLocator+repair,Multi-locator,ex_main_menu_from_v0_17_0,100.00,5,5,,,100.00,5,5,0.3,,main
+Excalidraw,MultiLocator+repair,Multi-locator,ex_rectangle_selected,100.00,52,52,,,100.00,21,21,1.9,,main
+Excalidraw,MultiLocator+repair,Multi-locator,ex_rectangle_selected_from_v0_14_0,100.00,45,45,,,100.00,10,10,1.8,,main
+Excalidraw,MultiLocator+repair,Multi-locator,ex_rectangle_selected_from_v0_17_0,100.00,13,13,,,,,,0.4,,main
+Excalidraw,MultiLocator+repair,Multi-locator,ex_text_added,100.00,52,52,,,100.00,18,18,1.6,,main
+Excalidraw,MultiLocator+repair,Multi-locator,ex_text_added_from_v0_11_0,100.00,22,22,,,100.00,9,9,0.8,,main
+Excalidraw,MultiLocator+repair,Multi-locator,ex_text_added_from_v0_14_0,100.00,45,45,,,100.00,10,10,1.4,,main
+Excalidraw,MultiLocator+repair,Multi-locator,ex_text_added_from_v0_16_0,100.00,8,8,,,,,,0.2,,main
+Excalidraw,MultiLocator+repair,Multi-locator,ex_text_added_from_v0_17_0,71.42,5,7,,,0.00,0,2,0.2,,main
 Excalidraw,MultiLocator+selective-repair,Multi-locator,ALL,99.62,519,521,,,98.81,166,168,17.5,"15 sites (one per UI state), identity oracle with the test id hidden; each release paired with the previous one",appendix
 Excalidraw,MultiLocator+selective-repair,Multi-locator,ex_initial,100.00,52,52,,,100.00,21,21,1.2,,appendix
 Excalidraw,MultiLocator+selective-repair,Multi-locator,ex_initial_from_v0_14_0,100.00,45,45,,,100.00,12,12,0.9,,appendix
@@ -1823,30 +1823,30 @@ Angular-Slickgrid,MultiLocator+VISTA,Multi-locator,asg_trading_from_v4_1_4,54.92
 Angular-Slickgrid,MultiLocator+VISTA,Multi-locator,asg_tree_data_hierarchical_from_v2_29_1,99.14,232,234,,,0.00,0,2,37.0,,main
 Angular-Slickgrid,MultiLocator+VISTA,Multi-locator,asg_tree_data_hierarchical_from_v6_2_1,100.00,147,147,,,,,,28.4,,main
 Angular-Slickgrid,MultiLocator+VISTA,Multi-locator,asg_tree_data_parent_child_from_v2_29_1,99.57,466,468,,,0.00,0,2,88.6,,main
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,ALL,98.61,8159,8274,,,76.06,54,71,1309.0,"23 sites (one per UI state), identity oracle with the test id hidden; each release paired with the previous one",main
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,asg_additem,100.00,574,574,,,,,,59.5,,main
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,asg_autoheight,100.00,246,246,,,100.00,7,7,14.9,,main
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,asg_basic,100.00,179,179,,,100.00,2,2,11.5,,main
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,asg_clientside,100.00,328,328,,,,,,92.4,,main
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,asg_composite_editor,98.88,177,179,,,50.00,2,4,28.6,,main
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,asg_composite_editor_from_v3_0_5,100.00,760,760,,,,,,85.9,,main
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,asg_context,100.00,492,492,,,100.00,6,6,88.6,,main
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,asg_custom_tooltip,100.00,31,31,,,100.00,2,2,9.1,,main
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,asg_draggrouping,99.39,815,820,,,70.00,7,10,114.8,,main
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,asg_editor,99.18,244,246,,,50.00,2,4,91.7,,main
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,asg_gridmenu,100.00,246,246,,,,,,29.2,,main
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,asg_gridstate,99.76,424,425,,,50.00,1,2,124.5,,main
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,asg_grouping,99.88,901,902,,,90.91,10,11,153.9,,main
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,asg_range,99.82,573,574,,,85.71,6,7,32.2,,main
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,asg_resize_by_content,100.00,124,124,,,,,,21.5,,main
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,asg_resize_by_content_from_v2_28_2,99.24,392,395,,,0.00,0,3,75.5,,main
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,asg_rowmove,100.00,410,410,,,100.00,5,5,53.1,,main
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,asg_selection,100.00,246,246,,,100.00,2,2,37.3,,main
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,asg_trading,100.00,35,35,,,100.00,2,2,18.0,,main
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,asg_trading_from_v4_1_4,54.92,117,213,,,,,,50.3,,main
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,asg_tree_data_hierarchical_from_v2_29_1,99.14,232,234,,,0.00,0,2,19.1,,main
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,asg_tree_data_hierarchical_from_v6_2_1,100.00,147,147,,,,,,13.1,,main
-Angular-Slickgrid,MultiLocator+paper-repair,Multi-locator,asg_tree_data_parent_child_from_v2_29_1,99.57,466,468,,,0.00,0,2,84.3,,main
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,ALL,98.61,8159,8274,,,76.06,54,71,1309.0,"23 sites (one per UI state), identity oracle with the test id hidden; each release paired with the previous one",main
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,asg_additem,100.00,574,574,,,,,,59.5,,main
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,asg_autoheight,100.00,246,246,,,100.00,7,7,14.9,,main
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,asg_basic,100.00,179,179,,,100.00,2,2,11.5,,main
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,asg_clientside,100.00,328,328,,,,,,92.4,,main
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,asg_composite_editor,98.88,177,179,,,50.00,2,4,28.6,,main
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,asg_composite_editor_from_v3_0_5,100.00,760,760,,,,,,85.9,,main
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,asg_context,100.00,492,492,,,100.00,6,6,88.6,,main
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,asg_custom_tooltip,100.00,31,31,,,100.00,2,2,9.1,,main
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,asg_draggrouping,99.39,815,820,,,70.00,7,10,114.8,,main
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,asg_editor,99.18,244,246,,,50.00,2,4,91.7,,main
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,asg_gridmenu,100.00,246,246,,,,,,29.2,,main
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,asg_gridstate,99.76,424,425,,,50.00,1,2,124.5,,main
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,asg_grouping,99.88,901,902,,,90.91,10,11,153.9,,main
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,asg_range,99.82,573,574,,,85.71,6,7,32.2,,main
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,asg_resize_by_content,100.00,124,124,,,,,,21.5,,main
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,asg_resize_by_content_from_v2_28_2,99.24,392,395,,,0.00,0,3,75.5,,main
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,asg_rowmove,100.00,410,410,,,100.00,5,5,53.1,,main
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,asg_selection,100.00,246,246,,,100.00,2,2,37.3,,main
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,asg_trading,100.00,35,35,,,100.00,2,2,18.0,,main
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,asg_trading_from_v4_1_4,54.92,117,213,,,,,,50.3,,main
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,asg_tree_data_hierarchical_from_v2_29_1,99.14,232,234,,,0.00,0,2,19.1,,main
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,asg_tree_data_hierarchical_from_v6_2_1,100.00,147,147,,,,,,13.1,,main
+Angular-Slickgrid,MultiLocator+repair,Multi-locator,asg_tree_data_parent_child_from_v2_29_1,99.57,466,468,,,0.00,0,2,84.3,,main
 Angular-Slickgrid,OptimizedMinimal,Similarity repair,ALL,100.00,8274,8274,,,100.00,71,71,193.3,"23 sites (one per UI state), identity oracle with the test id hidden; each release paired with the previous one",appendix
 Angular-Slickgrid,OptimizedMinimal,Similarity repair,asg_additem,100.00,574,574,,,,,,7.6,,appendix
 Angular-Slickgrid,OptimizedMinimal,Similarity repair,asg_autoheight,100.00,246,246,,,100.00,7,7,5.1,,appendix

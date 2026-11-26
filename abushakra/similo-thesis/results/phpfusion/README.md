@@ -20,7 +20,7 @@ The original suites do not pass on their own releases and the authors' `test.php
 | OptimizedVonSimilo | 94.0 | 6.0 | 0 |
 | LegacySimilo / LegacyCombined | 92.6 | 7.4 | 0 |
 | VonSimilo | 92.4 | 7.6 | 0 |
-| MultiLocator+VISTA (and +paper-repair) | 89.8 | 4.6 | 5.6 |
+| MultiLocator+VISTA (and +repair) | 89.8 | 4.6 | 5.6 |
 | MultiLocator (and both repair variants) | 88.7 | 1.8 | 9.6 |
 | RobulaPlus | 87.8 | 2.6 | 9.6 |
 | EAGL | 79.1 | 0.6 | 20.3 |
