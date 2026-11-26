@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://cse.unl.edu/" />
+<title>shout-privatemess-memlist-shout</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">shout-privatemess-memlist-shout</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/~mouna/WebApps/PHPFusion/PHP-Fusion6.00.207/php-files/members.php</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Admin Panel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=System Admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=img[alt="Infusions"]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=infusion</td>
+	<td>label=Shoutbox Panel</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=infuse</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Private Messages</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Members List</td>
+	<td></td>
+</tr>
+
+<tr>
+	<td>type</td>
+	<td>name=shout_message</td>
+	<td>shout!</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=post_shout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=shout_message</td>
+	<td>shout 2</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=post_shout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=shout_message</td>
+	<td>shout 3</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=post_shout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'mouna')])[3]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

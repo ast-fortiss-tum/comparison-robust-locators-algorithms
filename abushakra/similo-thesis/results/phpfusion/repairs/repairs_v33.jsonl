@@ -1,0 +1,1 @@
+{"ts": "2026-11-25 19:53:09", "op": "del", "test": "4-Admin/CustomPages", "i": 22, "old": ["type", "name=admin_password", "Admin2069"], "new": null, "why": "7.00.07: the edit form of a custom page does not ask for the administrator password any more (it did in 7.00.06)"}

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://cse.unl.edu/" />
+<title>Forum</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Admin Panel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=img[alt="Forums"]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=cat_name</td>
+	<td>new category</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=cat_order</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=save_cat</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=cat_name</td>
+	<td>category forum </td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=cat_order</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=save_cat</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=forum_name</td>
+	<td>my new forum </td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=forum_description</td>
+	<td>this is my forum </td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=forum_cat</td>
+	<td>label=category forum</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=forum_order</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=save_forum</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=forum_name</td>
+	<td>my second forum </td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=forum_description</td>
+	<td>my second forum </td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=forum_order</td>
+	<td>5</td>
+</tr>
+
+<tr>
+	<td>clickAndWait</td>
+	<td>name=save_forum</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=forum_name</td>
+	<td>my third forum </td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=forum_description</td>
+	<td>my third forum </td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=forum_cat</td>
+	<td>label=category forum</td>
+</tr>
+
+<tr>
+	<td>type</td>
+	<td>name=forum_order</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=save_forum</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=forum_name</td>
+	<td>my fourth forum </td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=forum_description</td>
+	<td>my fourth forum </td>
+</tr>
+
+<tr>
+	<td>type</td>
+	<td>name=forum_order</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=save_forum</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Edit')])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=forum_description</td>
+	<td>my second forum edited </td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=save_forum</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Delete')])[2]</td>
+	<td></td>
+</tr>
+
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=cat_name</td>
+	<td>new category edited </td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=save_cat</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Delete</td>
+	<td></td>
+</tr>
+
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Delete</td>
+	<td></td>
+</tr>
+
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Delete')])[2]</td>
+	<td></td>
+</tr>
+
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Delete</td>
+	<td></td>
+</tr>
+
+<tr>
+	<td>type</td>
+	<td>name=cat_name</td>
+	<td>new cat</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=cat_order</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=save_cat</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
