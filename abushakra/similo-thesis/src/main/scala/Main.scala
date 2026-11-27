@@ -31,7 +31,6 @@ import idxpath.IDXPath
 import montoto.Montoto
 import selenium_ide.SeleniumIDE
 import vista.Vista
-import color.LegacyColor
 import multilocator.MultiLocator
 import similo.{AttributeComparison, Locator}
 import util.Utils
@@ -83,7 +82,7 @@ object Main:
       "LegacyCombined" -> LegacyCombined,
       "OptimizedCombined" -> OptimizedCombinedSimilo,
       "OptimizedMinimal" -> OptimizedMinimalSimilo,
-      "COLOR" -> LegacyColor,
+      "COLOR" -> color.PaperColor,
       "VISTA" -> Vista(),
       "VISTA+repair" -> Vista(withRepair = true),
       "absXPath" -> similo.Guarded(absXPath()),
@@ -216,7 +215,7 @@ object Main:
 //     println("[DONE] OptimizedSimilo finished. Calculating next algorithm ...")
 //
 //     println("[RUN] Evaluating COLOR ...")
-//     val colorStats = EvaluationComputing.computeAll(color.LegacyColor, mapper = EvaluationComputing.firstToAllMapper)
+//     val colorStats = EvaluationComputing.computeAll(color.PaperColor, mapper = EvaluationComputing.firstToAllMapper)
 //     println("[DONE] COLOR finished. Calculating next algorithm ...")
 //
 //     println("[RUN] Evaluating ROBULA+ ...")
@@ -610,7 +609,7 @@ object Main:
       ("Vista", Vista()),
       ("RobulaPlus", RobulaPlus()),
 //      ("Multi Locator", MultiLocator()),
-      ("COLOR", LegacyColor),
+      ("COLOR", color.PaperColor),
       ("SeleniumIDE", SeleniumIDE()),
       ("Montoto", Montoto()),
       ("IDXPath", IDXPath())

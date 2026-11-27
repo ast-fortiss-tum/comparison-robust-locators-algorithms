@@ -21,7 +21,7 @@ object FailureDump:
     "OptimizedSimilo" -> similo.optimized.OptimizedSimilo,
     "LegacySimilo" -> similo.legacy.LegacySimilo,
     "VonSimilo" -> similo.legacy.LegacyVonSimilo,
-    "COLOR" -> color.LegacyColor
+    "COLOR" -> color.PaperColor
   )
 
   def main(args: Array[String]): Unit =

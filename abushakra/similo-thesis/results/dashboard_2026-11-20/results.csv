@@ -1,5 +1,5 @@
 benchmark,algorithm,family,tier,pairs,right,wrong,silent,accuracy,coverage,precision,note
-Wayback,COLOR,Similarity (relocator),appendix,12266,11329,937,0,92.4,100.0,92.4,
+Wayback,COLOR,Similarity (relocator),appendix,12266,8818,3448,0,71.9,100.0,71.9,Kirinuki et al. 2019: weighted average over the properties both elements have (the earlier row used the same attributes inside Similo scoring; replaced 2026-11-27)
 Wayback,EAGL,Locator generator (learned),main,12266,6330,752,5184,51.6,57.7,89.4,
 Wayback,IDXPath,Locator generator,appendix,12266,5123,766,6377,41.8,48.0,87.0,
 Wayback,LegacyCombined,Similarity (relocator),appendix,12266,11332,934,0,92.4,100.0,92.4,
@@ -19,7 +19,7 @@ Wayback,SeleniumIDE,Locator generator,main,12266,5828,43,6395,47.5,47.9,99.3,
 Wayback,VISTA,Visual,main,12266,5252,1388,5626,42.8,54.1,79.1,
 Wayback,VonSimilo,Similarity (relocator),appendix,12266,10523,1743,0,85.8,100.0,85.8,
 Wayback,absXPath,Locator generator,main,12266,1962,345,9959,16.0,18.8,85.0,
-Slickgrid,COLOR,Similarity (relocator),appendix,8276,7928,348,0,95.8,100.0,95.8,
+Slickgrid,COLOR,Similarity (relocator),appendix,8276,6216,2060,0,75.1,100.0,75.1,Kirinuki et al. 2019: weighted average over the properties both elements have (the earlier row used the same attributes inside Similo scoring; replaced 2026-11-27)
 Slickgrid,EAGL,Locator generator (learned),main,8276,4625,467,3184,55.9,61.5,90.8,
 Slickgrid,IDXPath,Locator generator,appendix,8276,3444,406,4426,41.6,46.5,89.5,
 Slickgrid,LegacyCombined,Similarity (relocator),appendix,8276,8181,95,0,98.9,100.0,98.9,
@@ -41,7 +41,7 @@ Slickgrid,SeleniumIDE,Locator generator,main,8276,4322,189,3765,52.2,54.5,95.8,
 Slickgrid,VISTA,Visual,main,8276,3300,886,4090,39.9,50.6,78.8,
 Slickgrid,VonSimilo,Similarity (relocator),appendix,8276,8181,95,0,98.9,100.0,98.9,
 Slickgrid,absXPath,Locator generator,main,8276,3388,406,4482,40.9,45.8,89.3,
-Excalidraw,COLOR,Similarity (relocator),appendix,529,309,220,0,58.4,100.0,58.4,
+Excalidraw,COLOR,Similarity (relocator),appendix,529,344,185,0,65.0,100.0,65.0,Kirinuki et al. 2019: weighted average over the properties both elements have (the earlier row used the same attributes inside Similo scoring; replaced 2026-11-27)
 Excalidraw,EAGL,Locator generator (learned),main,529,517,2,10,97.7,98.1,99.6,
 Excalidraw,IDXPath,Locator generator,appendix,529,81,2,446,15.3,15.7,97.6,
 Excalidraw,LegacyCombined,Similarity (relocator),appendix,529,402,127,0,76.0,100.0,76.0,
@@ -63,7 +63,7 @@ Excalidraw,SeleniumIDE,Locator generator,main,529,478,0,51,90.4,90.4,100.0,
 Excalidraw,VISTA,Visual,main,529,492,6,31,93.0,94.1,98.8,
 Excalidraw,VonSimilo,Similarity (relocator),appendix,529,363,166,0,68.6,100.0,68.6,
 Excalidraw,absXPath,Locator generator,main,529,145,122,262,27.4,50.5,54.3,
-AddressBook,COLOR,Similarity (relocator),appendix,1958,1931,27,0,98.6,100.0,98.6,
+AddressBook,COLOR,Similarity (relocator),appendix,1958,1926,32,0,98.4,100.0,98.4,Kirinuki et al. 2019: weighted average over the properties both elements have (the earlier row used the same attributes inside Similo scoring; replaced 2026-11-27)
 AddressBook,EAGL,Locator generator (learned),main,1958,1877,12,69,95.9,96.5,99.4,
 AddressBook,LegacyCombined,Similarity (relocator),appendix,1958,1933,25,0,98.7,100.0,98.7,
 AddressBook,LegacySimilo,Similarity (relocator),main,1958,1933,25,0,98.7,100.0,98.7,
@@ -89,7 +89,7 @@ BEWT,OptimizedVonSimilo,Similarity (relocator),appendix,337,245,92,0,72.7,100.0,
 BEWT,LegacyCombined,Similarity (relocator),appendix,337,247,,,73.3,,,accuracy only (no per-pair dump)
 BEWT,OptimizedCombined,Similarity (relocator),appendix,337,267,,,79.2,,,accuracy only (no per-pair dump)
 BEWT,OptimizedMinimal,Similarity (relocator),appendix,337,266,,,78.9,,,accuracy only (no per-pair dump)
-BEWT,COLOR,Similarity (relocator),appendix,337,262,75,0,77.7,100.0,77.7,
+BEWT,COLOR,Similarity (relocator),appendix,337,202,135,0,59.9,100.0,59.9,Kirinuki et al. 2019: weighted average over the properties both elements have (the earlier row used the same attributes inside Similo scoring; replaced 2026-11-27)
 BEWT,VISTA,Visual,main,337,84,,,24.9,,,accuracy only (no per-pair dump)
 BEWT,absXPath,Locator generator,main,337,32,,,9.5,,,accuracy only (no per-pair dump)
 BEWT,IDXPath,Locator generator,appendix,337,72,,,21.4,,,accuracy only (no per-pair dump)
@@ -107,7 +107,7 @@ BEWT,EAGL-scaled-f1,Locator generator (learned),appendix,337,125,,,37.1,,,accura
 BEWT,EAGL-scaled-f2,Locator generator (learned),appendix,337,125,,,37.1,,,accuracy only (no per-pair dump)
 BEWT,EAGL-scaled-f3,Locator generator (learned),appendix,337,125,,,37.1,,,accuracy only (no per-pair dump)
 BEWT,EAGL-scaled-f4,Locator generator (learned),appendix,337,125,,,37.1,,,accuracy only (no per-pair dump)
-ReproBreak,COLOR,Similarity (relocator),appendix,350,184,166,0,52.6,100.0,52.6,
+ReproBreak,COLOR,Similarity (relocator),appendix,350,181,169,0,51.7,100.0,51.7,Kirinuki et al. 2019: weighted average over the properties both elements have (the earlier row used the same attributes inside Similo scoring; replaced 2026-11-27)
 ReproBreak,IDXPath,Locator generator,appendix,350,181,,,51.71,,,accuracy only (no per-pair dump)
 ReproBreak,LegacyCombined,Similarity (relocator),appendix,350,181,,,51.71,,,accuracy only (no per-pair dump)
 ReproBreak,LegacySimilo,Similarity (relocator),main,350,181,169,0,51.71,100.0,51.71,Similo always answers: wrong = pairs minus right
@@ -156,7 +156,7 @@ Dolibarr,VonSimilo,Similarity (relocator),appendix,4916,4295,621,0,87.4,100.0,87
 Dolibarr,OptimizedVonSimilo,Similarity (relocator),appendix,4916,4290,626,0,87.3,100.0,87.3,
 Dolibarr,LegacyCombined,Similarity (relocator),appendix,4916,4502,414,0,91.6,100.0,91.6,
 Dolibarr,OptimizedCombined,Similarity (relocator),appendix,4916,4601,315,0,93.6,100.0,93.6,
-Dolibarr,COLOR,Similarity (relocator),appendix,4916,4531,385,0,92.2,100.0,92.2,
+Dolibarr,COLOR,Similarity (relocator),appendix,4916,4162,754,0,84.7,100.0,84.7,Kirinuki et al. 2019: weighted average over the properties both elements have (the earlier row used the same attributes inside Similo scoring; replaced 2026-11-27)
 PHP-Fusion,absXPath,Locator generator,main,1916,522,10,1384,27.2,27.8,98.1,
 PHP-Fusion,SeleniumIDE,Locator generator,main,1916,1403,29,484,73.2,74.7,98.0,
 PHP-Fusion,RobulaPlus,Locator generator,main,1916,1683,49,184,87.8,90.4,97.2,
@@ -175,7 +175,7 @@ PHP-Fusion,VonSimilo,Similarity (relocator),appendix,1916,1771,145,0,92.4,100.0,
 PHP-Fusion,OptimizedVonSimilo,Similarity (relocator),appendix,1916,1801,115,0,94.0,100.0,94.0,
 PHP-Fusion,LegacyCombined,Similarity (relocator),appendix,1916,1775,141,0,92.6,100.0,92.6,
 PHP-Fusion,OptimizedCombined,Similarity (relocator),appendix,1916,1813,103,0,94.6,100.0,94.6,
-PHP-Fusion,COLOR,Similarity (relocator),appendix,1916,1803,113,0,94.1,100.0,94.1,
+PHP-Fusion,COLOR,Similarity (relocator),appendix,1916,1725,191,0,90.0,100.0,90.0,Kirinuki et al. 2019: weighted average over the properties both elements have (the earlier row used the same attributes inside Similo scoring; replaced 2026-11-27)
 PHP-Fusion,MultiLocator+repair,Multi-locator (voting),main,1916,1699,34,183,88.7,90.4,98.0,
 PHP-Fusion,MultiLocator+selective-repair,Multi-locator (voting),appendix,1916,1699,34,183,88.7,90.4,98.0,
 PHP-Fusion,MultiLocator+VISTA+repair,Multi-locator (voting),main,1916,1720,89,107,89.8,94.4,95.1,
